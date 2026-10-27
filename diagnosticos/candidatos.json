@@ -1,0 +1,37 @@
+{
+  "nota": "Fuentes públicas alternativas para diagnóstico. NO forman parte de lista_clasica.m3u, ni están certificadas o autorizadas para redistribuir. Probar conectividad antes de proponer cambios. No copiar enlaces de retransmisores privados.",
+  "canales": [
+    {
+      "nombre": "América TV alternativa (iptv-org)",
+      "url": "https://prepublish.f.qaotic.net/a07/americahls-100056/playlist_720p.m3u8",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/112.0.0.0 Mobile Safari/537.36",
+      "origen": "iptv-org/iptv streams/ar.m3u"
+    },
+    {
+      "nombre": "El Trece alternativa (iptv-org)",
+      "url": "https://livetrx01.vodgc.net/eltrecetv/index.m3u8",
+      "referrer": "https://vodgc.net",
+      "origen": "iptv-org/iptv streams/ar.m3u"
+    },
+    {
+      "nombre": "Telemax alternativa (iptv-org)",
+      "url": "https://stream-gtlc.telecentro.net.ar/hls/telemaxhls/main.m3u8",
+      "origen": "iptv-org/iptv streams/ar.m3u"
+    },
+    {
+      "nombre": "Canal 26 alternativa (iptv-org)",
+      "url": "https://stream-gtlc.telecentro.net.ar/hls/canal26hls/0/playlist.m3u8",
+      "origen": "iptv-org/iptv streams/ar.m3u"
+    },
+    {
+      "nombre": "Net TV alternativa (iptv-org)",
+      "url": "https://unlimited6-cl.dps.live/nettv/nettv.smil/playlist.m3u8",
+      "origen": "iptv-org/iptv streams/ar.m3u"
+    },
+    {
+      "nombre": "Telefe Tucumán (señal regional independiente)",
+      "url": "https://g2.mc-hor.transport.edge-access.net/a05/ngrp:elochotv-100168_all/Playlist.m3u8?sense=true",
+      "origen": "iptv-org/iptv streams/ar.m3u — NO reemplaza Telefe nacional"
+    }
+  ]
+}
