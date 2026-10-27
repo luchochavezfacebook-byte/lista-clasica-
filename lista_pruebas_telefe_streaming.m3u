@@ -1,5 +1,5 @@
 #EXTM3U
-#PLAYLIST:Pruebas LN+ Telefe LUZU OLGA
+#PLAYLIST:Pruebas LN+ Telefe LUZU OLGA C5N
 # Lista experimental: enlaces permanentes de YouTube, NO HLS directos
 # Requiere reproductor que resuelva videos y directos de YouTube
 # No usar como reemplazo de lista_clasica.m3u en TV FULL PRO V62
@@ -16,3 +16,6 @@ https://www.youtube.com/@luzutv/live
 
 #EXTINF:-1 tvg-id="Olga.ar" tvg-name="OLGA (prueba)" group-title="Pruebas Streaming Argentina",OLGA (prueba)
 https://www.youtube.com/@olgaenvivo_/live
+
+#EXTINF:-1 tvg-id="C5N.ar" tvg-name="C5N (prueba)" tvg-logo="https://www.c5n.com/css-custom/326/images/logo-c5n.svg" group-title="Noticias Argentina",C5N (prueba)
+https://www.youtube.com/@c5n/live
