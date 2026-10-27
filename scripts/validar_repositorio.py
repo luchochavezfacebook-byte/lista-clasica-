@@ -25,6 +25,26 @@ def main():
         params = {name.lower() for name, _ in parse_qsl(parts.query, keep_blank_values=True)}
         assert not params.intersection({'access_token', 'token', 'sig', 'signature', 'expire', 'sid', 'uid'}), 'Parámetros temporales'
         assert not re.search(r'[\r\n]', url), 'Salto de línea en URL'
+        for field in ('user_agent', 'referrer'):
+            val = channel.get(field, '')
+            assert isinstance(val, str) and len(val) <= 240 and not re.search(r'[\r\n]', val), 'Encabezado inválido'
+        backups = channel.get('backups', [])
+        assert isinstance(backups, list) and len(backups) <= 2, 'Demasiados respaldos'
+        for backup in backups:
+            assert isinstance(backup, dict), 'Respaldo no válido'
+            backup_url = backup.get('url', '')
+            parts = urlsplit(backup_url)
+            assert parts.scheme == 'https' and parts.hostname, 'Respaldo URL no HTTPS'
+            assert parts.path.lower().endswith('.m3u8') and parts.hostname != 'manifest.googlevideo.com', 'Respaldo no HLS o firmado'
+            backup_params = {name.lower() for name, _ in parse_qsl(parts.query, keep_blank_values=True)}
+            assert not backup_params.intersection({'access_token', 'token', 'sig', 'signature', 'expire', 'sid', 'uid'}), 'Respaldo con token'
+            assert not re.search(r'[\r\n]', backup_url), 'Salto de línea en respaldo'
+            headers = backup.get('headers', {})
+            assert isinstance(headers, dict), 'Encabezados de respaldo inválidos'
+            assert all(isinstance(k, str) and isinstance(v, str)
+                       and not re.search(r'[\r\n]', k + v)
+                       and k.lower() not in ('cookie', 'authorization')
+                       for k, v in headers.items()), 'Credencial o encabezado inválido'
 
     for channel in youtube:
         url = channel['url_permanente'].strip()
