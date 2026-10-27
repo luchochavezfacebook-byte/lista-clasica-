@@ -4,7 +4,7 @@ Repositorio **independiente de TV FULL PRO** con una lista de señales gratuitas
 
 ## Listas
 
-- [Lista Clásica HLS](lista_clasica.m3u): 9 fuentes HLS candidatas. **No todas están verificadas ni garantizadas**.
+- [Lista Clásica HLS](lista_clasica.m3u): 11 fuentes HLS candidatas. **No todas están verificadas ni garantizadas**.
 - [YouTube LIVE](lista_clasica_youtube.m3u): 16 referencias a canales oficiales de YouTube. **No son enlaces HLS** y requieren reproductor compatible con YouTube.
 
 Usá la dirección RAW para cargar la lista HLS en un reproductor compatible:
@@ -30,6 +30,16 @@ python3 scripts/generar_lista.py
 python3 scripts/generar_lista_youtube.py
 python3 scripts/verificar_canales.py
 ```
+
+## Lista HLS conectada a TV FULL PRO V62
+
+La app lee **`lista_clasica.m3u`**, no `lista_clasica_youtube.m3u`. Se mantienen los 9 HLS anteriores y se añadieron **A24 (América 24)** y **Canal E / Perfil TV** como **candidatos de prueba** (11 entradas HLS en total). Las dos nuevas fuentes están publicadas como URLs HLS sin firmas ni sesiones privadas. A24 declara un `User-Agent` para TV FULL PRO V62 mediante `#EXTVLCOPT:http-user-agent`, que su parser admite.
+
+**La presencia de un canal en el M3U no garantiza reproducción.** Se encontraron referencias a esas URLs en catálogos públicos de IPTV, pero no se confirmó HTTP 200, decodificación o continuidad en un TV Box real. Si fallan, no añadir más enlaces dudosos ni sustituir una fuente conocida por otra sin verificar.
+
+Los canales **C5N, Crónica, LN+, Telefe Noticias, Infobae y Telenueve** siguen solo en la lista complementaria de YouTube, porque el reproductor HLS de V62 no resuelve enlaces `/@canal/live`. No publicar los `manifest.googlevideo.com` firmados y caducables como si fueran URL permanentes. Para ofrecer esos canales dentro de la APK hace falta soporte específico de YouTube o encontrar HLS directo legalmente accesible y probado.
+
+En V62, seleccionar Lista Clásica y ejecutar **Actualizar listas** debe solicitar el M3U RAW; verificar en la TV que se reciben 11 canales y que A24/Canal E reproducen antes de anunciarlos como operativos.
 
 ## Noticias argentinas más conocidas (YouTube)
 
