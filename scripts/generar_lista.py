@@ -16,7 +16,7 @@ def build(data):
         '#EXTM3U',
         '#PLAYLIST:Lista Clásica - Canales gratuitos',
         '# Proyecto: Canales (independiente de TV FULL PRO)',
-        '# Solo HLS directo: sin enlaces watch de YouTube, sin cuentas Xtream ni DRM',
+        '# HLS directo + pruebas etiquetadas de YouTube. V62 puede no reproducir YouTube.',
         '# IMPORTANTE: enlaces de prueba, disponibilidad sujeta a verificación',
         '',
     ]
@@ -24,7 +24,11 @@ def build(data):
     for channel in data['canales']:
         url = channel['url'].strip()
         parsed = urlsplit(url)
-        if parsed.scheme != 'https' or not parsed.netloc or not parsed.path.lower().endswith('.m3u8'):
+        if channel.get('tipo') == 'youtube_live':
+            valid = parsed.scheme == 'https' and parsed.hostname == 'www.youtube.com' and parsed.path.endswith('/live') and not parsed.query
+        else:
+            valid = parsed.scheme == 'https' and bool(parsed.netloc) and parsed.path.lower().endswith('.m3u8')
+        if not valid:
             raise ValueError(f"URL HLS no válida para {channel['nombre']}")
         if url in seen:
             continue
@@ -32,7 +36,9 @@ def build(data):
         name = escape_attr(channel['nombre'])
         category = escape_attr(channel['categoria'])
         tvg_id = escape_attr(channel['tvg_id'])
-        lines.append(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}",{name}')
+        logo = escape_attr(channel.get('logo', ''))
+        logo_attr = f' tvg-logo="{logo}"' if logo else ''
+        lines.append(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}"{logo_attr} group-title="{category}",{name}')
         # V62 acepta EXTVLCOPT para las fuentes con encabezado HTTP declarado.
         # No incluir cookies, autorización, firmas ni tokens en listas públicas.
         user_agent = channel.get('user_agent', '').strip()
