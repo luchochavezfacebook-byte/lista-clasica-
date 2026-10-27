@@ -1,0 +1,90 @@
+{
+  "nombre": "Canales — YouTube Live gratuitos",
+  "proyecto": "Canales",
+  "independiente_de_tv_full_pro": true,
+  "nota": "Referencias /live a canales YouTube, no HLS directo ni garantía de emisión continua. ID referenciales no atribuidos cuando existe conflicto.",
+  "canales": [
+    {
+      "nombre": "Canal Siete / TV Pública",
+      "tvg_id": "TVPublica.ar",
+      "categoria": "TV Abierta Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@canalsieteok/live",
+      "video_id_referencia": "8BRocXfSogU",
+      "url_video_referencia": "https://www.youtube.com/watch?v=8BRocXfSogU"
+    },
+    {
+      "nombre": "Canal 26",
+      "tvg_id": "Canal26.ar",
+      "categoria": "Noticias Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/channel/UCrpMfcQNog595v5gAS-oUsQ/live",
+      "video_id_referencia": "C_RnFD6xiX8",
+      "url_video_referencia": "https://www.youtube.com/watch?v=C_RnFD6xiX8"
+    },
+    {
+      "nombre": "Argentina 12",
+      "tvg_id": "Argentina12.ar",
+      "categoria": "Noticias Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@argentina12ok/live",
+      "video_id_referencia": "21UP3XoRIBU",
+      "url_video_referencia": "https://www.youtube.com/watch?v=21UP3XoRIBU"
+    },
+    {
+      "nombre": "Urbana Play 104.3 FM",
+      "tvg_id": "UrbanaPlayFM.ar",
+      "categoria": "Radio y Streaming Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@UrbanaPlayFM/live",
+      "video_id_referencia": "36RmH3c-_3k",
+      "url_video_referencia": "https://www.youtube.com/watch?v=36RmH3c-_3k"
+    },
+    {
+      "nombre": "El Ocho (Tucumán)",
+      "tvg_id": "ElOchoTucuman.ar",
+      "categoria": "TV Regional Tucumán",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@elochotuc/live"
+    },
+    {
+      "nombre": "Melisa Tim Noticias (Neuquén)",
+      "tvg_id": "MelisaTimNoticias.ar",
+      "categoria": "Noticias Neuquén",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@MelisaTimNoticias/live"
+    },
+    {
+      "nombre": "CNN en Español",
+      "tvg_id": "CNNEspanol.int",
+      "categoria": "Noticias Internacionales",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@cnnee/live",
+      "video_id_referencia": "Qr61waJ6AZg",
+      "url_video_referencia": "https://www.youtube.com/watch?v=Qr61waJ6AZg"
+    },
+    {
+      "nombre": "DW Español",
+      "tvg_id": "DWEspanol.int",
+      "categoria": "Noticias Internacionales",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@dwespanol/live",
+      "video_id_referencia": "yZh3xsFqCt8",
+      "url_video_referencia": "https://www.youtube.com/watch?v=yZh3xsFqCt8"
+    },
+    {
+      "nombre": "Crónica TV",
+      "tvg_id": "CronicaTV.ar",
+      "categoria": "Noticias Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@cronicatv/live"
+    },
+    {
+      "nombre": "LA NACION / LN+",
+      "tvg_id": "LNPlus.ar",
+      "categoria": "Noticias Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@lanacion/live"
+    }
+  ]
+}
