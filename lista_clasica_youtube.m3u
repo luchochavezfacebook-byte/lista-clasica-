@@ -34,3 +34,18 @@ https://www.youtube.com/@lanacion/live
 
 #EXTINF:-1 tvg-id="TelefeNoticias.ar" group-title="Noticias Argentina",Telefe Noticias — 24 h
 https://www.youtube.com/@telefenoticias/live
+
+#EXTINF:-1 tvg-id="TodoNoticias.ar" group-title="Noticias Argentina",TN - Todo Noticias
+https://www.youtube.com/@todonoticias/live
+
+#EXTINF:-1 tvg-id="A24.ar" group-title="Noticias Argentina",A24 - América 24
+https://www.youtube.com/@a24com/live
+
+#EXTINF:-1 tvg-id="C5N.ar" group-title="Noticias Argentina",C5N
+https://www.youtube.com/@c5n/live
+
+#EXTINF:-1 tvg-id="InfobaeEnVivo.ar" group-title="Noticias Argentina",Infobae en Vivo
+https://www.youtube.com/@infobae/live
+
+#EXTINF:-1 tvg-id="Telenueve.ar" group-title="Noticias Argentina",Telenueve
+https://www.youtube.com/@telenuevec9/live
