@@ -5,7 +5,7 @@ Repositorio **independiente de TV FULL PRO** con una lista de señales gratuitas
 ## Listas
 
 - [Lista Clásica HLS](lista_clasica.m3u): 11 fuentes HLS candidatas. **No todas están verificadas ni garantizadas**.
-- [YouTube LIVE](lista_clasica_youtube.m3u): 16 referencias a canales oficiales de YouTube. **No son enlaces HLS** y requieren reproductor compatible con YouTube.
+- [YouTube LIVE](lista_clasica_youtube.m3u): 26 referencias a canales oficiales de YouTube. **No son enlaces HLS** y requieren reproductor compatible con YouTube.
 
 Usá la dirección RAW para cargar la lista HLS en un reproductor compatible:
 
@@ -40,6 +40,14 @@ La app lee **`lista_clasica.m3u`**, no `lista_clasica_youtube.m3u`. Se mantienen
 Los canales **C5N, Crónica, LN+, Telefe Noticias, Infobae y Telenueve** siguen solo en la lista complementaria de YouTube, porque el reproductor HLS de V62 no resuelve enlaces `/@canal/live`. No publicar los `manifest.googlevideo.com` firmados y caducables como si fueran URL permanentes. Para ofrecer esos canales dentro de la APK hace falta soporte específico de YouTube o encontrar HLS directo legalmente accesible y probado.
 
 En V62, seleccionar Lista Clásica y ejecutar **Actualizar listas** debe solicitar el M3U RAW; verificar en la TV que se reciben 11 canales y que A24/Canal E reproducen antes de anunciarlos como operativos.
+
+## Streaming argentino conocido — LUZU, OLGA y otros
+
+Agregados a **`lista_clasica_youtube.m3u`**: **LUZU TV**, **OLGA**, **BLENDER**, **GELATINA**, **Vorterix**, **Bondi Live**, **Futurock FM**, **AZZ Streaming**, **Neura Media** y **Carajo Stream**. La categoría M3U es `Streaming Argentina`.
+
+Son rutas permanentes hacia el canal de YouTube (`/@canal/live`), no manifiestos HLS. Algunas señales emiten solo en horarios de programación y la disponibilidad puede cambiar. No se encontraron ni verificaron URLs HLS permanentes para esos diez medios. No almacenar `manifest.googlevideo.com` firmado ni copiar sesiones de navegador como enlaces públicos.
+
+**IMPORTANTE — TV FULL PRO V62:** la APK está conectada exclusivamente a `lista_clasica.m3u` (11 HLS) y **no mostrará estas 10 incorporaciones al apretar Actualizar listas**. Para agregarlas en una nueva versión sin enlaces rotos se requiere integrar un reproductor oficial de YouTube o lanzar la aplicación de YouTube del TV Box. La lista principal HLS y el Proveedor 2 permanecen sin cambios.
 
 ## Noticias argentinas más conocidas (YouTube)
 
