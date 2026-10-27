@@ -19,7 +19,10 @@ def main():
         url = channel['url'].strip()
         parts = urlsplit(url)
         assert parts.scheme == 'https' and parts.hostname, 'URL inválida: ' + channel['nombre']
-        assert parts.path.lower().endswith('.m3u8'), 'Señal no HLS: ' + channel['nombre']
+        if channel.get('tipo') == 'youtube_live':
+            assert parts.hostname == 'www.youtube.com' and parts.path.endswith('/live') and not parts.query, 'URL YouTube de prueba inválida: ' + channel['nombre']
+        else:
+            assert parts.path.lower().endswith('.m3u8'), 'Señal no HLS: ' + channel['nombre']
         assert parts.hostname != 'manifest.googlevideo.com', 'Manifiesto temporal'
         assert not parts.username and not parts.password, 'Credenciales en URL'
         params = {name.lower() for name, _ in parse_qsl(parts.query, keep_blank_values=True)}
