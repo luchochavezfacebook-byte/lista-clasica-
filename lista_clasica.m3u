@@ -1,7 +1,7 @@
 #EXTM3U
 #PLAYLIST:Lista Clásica - Canales gratuitos
 # Proyecto: Canales (independiente de TV FULL PRO)
-# Solo HLS directo: sin enlaces watch de YouTube, sin cuentas Xtream ni DRM
+# HLS y enlaces YouTube: los segundos requieren apertura externa en APK corregida.
 # IMPORTANTE: enlaces de prueba, disponibilidad sujeta a verificación
 
 #EXTINF:-1 tvg-id="TodoNoticias.ar" tvg-name="TN - Todo Noticias" group-title="Noticias Argentina",TN - Todo Noticias
@@ -41,3 +41,17 @@ https://g5.vxral-slo.transport.edge-access.net/a12/ngrp:a24-100056_all/playlist.
 #EXTINF:-1 tvg-id="CanalE.ar" tvg-name="Canal E / Perfil TV (prueba)" group-title="Noticias Argentina",Canal E / Perfil TV (prueba)
 https://unlimited1-us.dps.live/perfiltv/perfiltv.smil/playlist.m3u8
 
+#EXTINF:-1 tvg-id="TelefeNacional.test" tvg-name="Telefe nacional (YouTube)" tvg-logo="https://commons.wikimedia.org/wiki/Special:FilePath/Telefe%20Logo.svg" group-title="TV Abierta Argentina",Telefe nacional (YouTube)
+https://www.youtube.com/@telefe/live
+
+#EXTINF:-1 tvg-id="LNPlus.test" tvg-name="LN+ / La Nación (YouTube)" tvg-logo="https://commons.wikimedia.org/wiki/Special:FilePath/La-Nacion-Mas-Logo.svg" group-title="Noticias Argentina",LN+ / La Nación (YouTube)
+https://www.youtube.com/@lanacion/live
+
+#EXTINF:-1 tvg-id="C5N.test" tvg-name="C5N (YouTube)" tvg-logo="https://www.c5n.com/css-custom/326/images/logo-c5n.svg" group-title="Noticias Argentina",C5N (YouTube)
+https://www.youtube.com/@c5n/live
+
+#EXTINF:-1 tvg-id="LuzuTV.test" tvg-name="LUZU TV (YouTube)" tvg-logo="https://commons.wikimedia.org/wiki/Special:FilePath/Luzu%20Tv%21%202025.png" group-title="Streaming Argentina",LUZU TV (YouTube)
+https://www.youtube.com/@luzutv/live
+
+#EXTINF:-1 tvg-id="Olga.test" tvg-name="OLGA (YouTube)" tvg-logo="https://unavatar.io/youtube/@olgaenvivo_" group-title="Streaming Argentina",OLGA (YouTube)
+https://www.youtube.com/@olgaenvivo_/live
