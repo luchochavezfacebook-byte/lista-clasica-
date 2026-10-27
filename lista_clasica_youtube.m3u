@@ -31,3 +31,6 @@ https://www.youtube.com/@cronicatv/live
 
 #EXTINF:-1 tvg-id="LNPlus.ar" group-title="Noticias Argentina",LA NACION / LN+
 https://www.youtube.com/@lanacion/live
+
+#EXTINF:-1 tvg-id="TelefeNoticias.ar" group-title="Noticias Argentina",Telefe Noticias — 24 h
+https://www.youtube.com/@telefenoticias/live
