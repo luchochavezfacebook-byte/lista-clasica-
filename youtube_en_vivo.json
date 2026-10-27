@@ -134,6 +134,86 @@
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@telenuevec9/live",
       "nota": "Noticieros en horarios de programación; no emite continuamente"
+    },
+    {
+      "nombre": "LUZU TV",
+      "tvg_id": "LuzuTV.ar",
+      "categoria": "Streaming Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@luzutv/live",
+      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa."
+    },
+    {
+      "nombre": "OLGA",
+      "tvg_id": "Olga.ar",
+      "categoria": "Streaming Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@olgaenvivo_/live",
+      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa."
+    },
+    {
+      "nombre": "BLENDER",
+      "tvg_id": "Blender.ar",
+      "categoria": "Streaming Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@estoesblender/live",
+      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa."
+    },
+    {
+      "nombre": "GELATINA",
+      "tvg_id": "Gelatina.ar",
+      "categoria": "Streaming Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@somosgelatina/live",
+      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa."
+    },
+    {
+      "nombre": "Vorterix",
+      "tvg_id": "Vorterix.ar",
+      "categoria": "Streaming Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@vorterixoficial/live",
+      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa."
+    },
+    {
+      "nombre": "Bondi Live",
+      "tvg_id": "BondiLive.ar",
+      "categoria": "Streaming Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@Bondi_liveok/live",
+      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa."
+    },
+    {
+      "nombre": "Futurock FM",
+      "tvg_id": "Futurock.ar",
+      "categoria": "Streaming Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@futurock/live",
+      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa."
+    },
+    {
+      "nombre": "AZZ Streaming",
+      "tvg_id": "Azz.ar",
+      "categoria": "Streaming Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@somosazz/live",
+      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa."
+    },
+    {
+      "nombre": "Neura Media",
+      "tvg_id": "NeuraMedia.ar",
+      "categoria": "Streaming Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@NeuraMedia/live",
+      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa."
+    },
+    {
+      "nombre": "Carajo Stream",
+      "tvg_id": "CarajoStream.ar",
+      "categoria": "Streaming Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@CarajoStream/live",
+      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa."
     }
   ]
 }
