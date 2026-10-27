@@ -32,7 +32,15 @@ def build(data):
         name = escape_attr(channel['nombre'])
         category = escape_attr(channel['categoria'])
         tvg_id = escape_attr(channel['tvg_id'])
-        lines += [f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}",{name}', url, '']
+        lines.append(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}",{name}')
+        # V62 acepta EXTVLCOPT para las fuentes con encabezado HTTP declarado.
+        # No incluir cookies, autorización, firmas ni tokens en listas públicas.
+        user_agent = channel.get('user_agent', '').strip()
+        if user_agent:
+            if any(char in user_agent for char in '\\r\\n'):
+                raise ValueError('User-Agent inválido: ' + name)
+            lines.append('#EXTVLCOPT:http-user-agent=' + user_agent)
+        lines.extend([url, ''])
     return '\n'.join(lines).rstrip() + '\n'
 
 
