@@ -5,7 +5,7 @@ Repositorio **independiente de TV FULL PRO** con una lista de señales gratuitas
 ## Listas
 
 - [Lista Clásica HLS](lista_clasica.m3u): 9 fuentes HLS candidatas. **No todas están verificadas ni garantizadas**.
-- [YouTube LIVE](lista_clasica_youtube.m3u): 11 referencias a canales oficiales de YouTube. **No son enlaces HLS** y requieren reproductor compatible con YouTube.
+- [YouTube LIVE](lista_clasica_youtube.m3u): 16 referencias a canales oficiales de YouTube. **No son enlaces HLS** y requieren reproductor compatible con YouTube.
 
 Usá la dirección RAW para cargar la lista HLS en un reproductor compatible:
 
@@ -30,6 +30,12 @@ python3 scripts/generar_lista.py
 python3 scripts/generar_lista_youtube.py
 python3 scripts/verificar_canales.py
 ```
+
+## Noticias argentinas más conocidas (YouTube)
+
+La lista complementaria incluye TN, A24, C5N, Canal 26, Crónica TV, LN+, Telefe Noticias, Argentina/12, Infobae en Vivo y Telenueve, además de otras referencias. Los nuevos enlaces usan rutas `/@canal/live` que no contienen firmas temporales.
+
+**No implica emisión las 24 horas:** Infobae en Vivo y Telenueve tienen programación en franjas horarias. La pestaña `/live` puede no ofrecer directo cuando no están transmitiendo. Todas estas URLs necesitan un cliente de YouTube compatible; **TV FULL PRO V62 no reproduce estos enlaces directamente con Media3**.
 
 ## Telefe Noticias: referencia persistente y actualizaciones
 
