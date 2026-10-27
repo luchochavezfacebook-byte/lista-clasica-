@@ -40,6 +40,24 @@ def build(data):
             if len(user_agent) > 240 or any(ord(char) < 32 for char in user_agent):
                 raise ValueError('User-Agent inválido: ' + name)
             lines.append('#EXTVLCOPT:http-user-agent=' + user_agent)
+        referrer = channel.get('referrer', '').strip()
+        if referrer:
+            if not referrer.startswith('https://') or len(referrer) > 240 or any(ord(c) < 32 for c in referrer):
+                raise ValueError('Referer inválido: ' + name)
+            lines.append('#EXTVLCOPT:http-referrer=' + referrer)
+        # Los respaldos locales se activan solo ante error en el reproductor V62.
+        # Sin firmas, cookies ni credenciales privadas en el repositorio público.
+        for backup in channel.get('backups', []):
+            backup_url = backup['url'].strip()
+            p = urlsplit(backup_url)
+            if p.scheme != 'https' or not p.hostname or not p.path.lower().endswith('.m3u8'):
+                raise ValueError('Respaldo HLS inválido: ' + name)
+            if p.hostname == 'manifest.googlevideo.com':
+                raise ValueError('Respaldo de sesión YouTube temporal')
+            headers = backup.get('headers', {})
+            lines.append('#EXT-X-TVFULL-BACKUP:' + json.dumps(
+                {'url': backup_url, 'headers': headers},
+                ensure_ascii=False, separators=(',', ':')))
         lines.extend([url, ''])
     return '\n'.join(lines).rstrip() + '\n'
 
