@@ -5,7 +5,7 @@ Repositorio **independiente de TV FULL PRO** con una lista de señales gratuitas
 ## Listas
 
 - [Lista Clásica HLS](lista_clasica.m3u): 9 fuentes HLS candidatas. **No todas están verificadas ni garantizadas**.
-- [YouTube LIVE](lista_clasica_youtube.m3u): 10 referencias a canales oficiales de YouTube. **No son enlaces HLS** y requieren reproductor compatible con YouTube.
+- [YouTube LIVE](lista_clasica_youtube.m3u): 11 referencias a canales oficiales de YouTube. **No son enlaces HLS** y requieren reproductor compatible con YouTube.
 
 Usá la dirección RAW para cargar la lista HLS en un reproductor compatible:
 
@@ -30,6 +30,14 @@ python3 scripts/generar_lista.py
 python3 scripts/generar_lista_youtube.py
 python3 scripts/verificar_canales.py
 ```
+
+## Telefe Noticias: referencia persistente y actualizaciones
+
+La referencia estable de **Telefe Noticias — 24 h** es `https://www.youtube.com/@telefenoticias/live` (video observado: `XhAYcYpPzTc`). Está incluida **solo** en `lista_clasica_youtube.m3u`, no en `lista_clasica.m3u`, porque la aplicación TV FULL PRO V62 espera HLS directo y **no interpreta una URL `youtube.com/@.../live` como video**.
+
+Si el directo cambia de identificador, la ruta `/@telefenoticias/live` es una referencia al canal; el reproductor oficial de YouTube resuelve la emisión vigente al abrirla. Si el canal deja de emitir o restringe incorporaciones, no se puede garantizar reproducción. La URL de la transmisión en sí no es un M3U8 y no debe enviarse directamente a Media3/ExoPlayer como HLS.
+
+Para reproducirla desde TV FULL PRO se necesita una función específica: **abrir el directo con el reproductor oficial de YouTube o utilizar el IFrame Player autorizado**, sin alterar las fuentes HLS existentes. Este soporte **no está disponible en la V62**. No usar GitHub Actions para reemplazar HLS firmados por sesiones obtenidas en la IP de un runner: los tokens son de corta vida y pueden estar vinculados a la IP o sesión.
 
 Los enlaces `manifest.googlevideo.com` de YouTube con `expire`, `sig` o dirección IP son **temporales** y no se publican. Algunas fuentes, particularmente Telefe, han respondido HTTP 403 desde ciertas redes. Una entrada en la lista no certifica que el video funcione o que esté autorizada su redistribución.
 
