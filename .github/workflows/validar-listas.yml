@@ -1,0 +1,26 @@
+name: Validar Lista Clásica
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Comprobar que las listas no contienen URLs temporales o secretos
+        run: python3 scripts/validar_repositorio.py
+      - name: Comprobar que las listas se regeneran sin diferencias
+        run: |
+          python3 scripts/generar_lista.py
+          python3 scripts/generar_lista_youtube.py
+          git diff --exit-code -- lista_clasica.m3u lista_clasica_youtube.m3u
