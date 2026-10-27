@@ -1,0 +1,33 @@
+#EXTM3U
+#PLAYLIST:Lista Clasica - YouTube Live (reproductor compatible)
+# AVISO: enlaces /live de YouTube, NO son m3u8 ni compatibles con todos los IPTV
+
+#EXTINF:-1 tvg-id="TVPublica.ar" group-title="TV Abierta Argentina",Canal Siete / TV Pública
+https://www.youtube.com/@canalsieteok/live
+
+#EXTINF:-1 tvg-id="Canal26.ar" group-title="Noticias Argentina",Canal 26
+https://www.youtube.com/channel/UCrpMfcQNog595v5gAS-oUsQ/live
+
+#EXTINF:-1 tvg-id="Argentina12.ar" group-title="Noticias Argentina",Argentina 12
+https://www.youtube.com/@argentina12ok/live
+
+#EXTINF:-1 tvg-id="UrbanaPlayFM.ar" group-title="Radio y Streaming Argentina",Urbana Play 104.3 FM
+https://www.youtube.com/@UrbanaPlayFM/live
+
+#EXTINF:-1 tvg-id="ElOchoTucuman.ar" group-title="TV Regional Tucumán",El Ocho (Tucumán)
+https://www.youtube.com/@elochotuc/live
+
+#EXTINF:-1 tvg-id="MelisaTimNoticias.ar" group-title="Noticias Neuquén",Melisa Tim Noticias (Neuquén)
+https://www.youtube.com/@MelisaTimNoticias/live
+
+#EXTINF:-1 tvg-id="CNNEspanol.int" group-title="Noticias Internacionales",CNN en Español
+https://www.youtube.com/@cnnee/live
+
+#EXTINF:-1 tvg-id="DWEspanol.int" group-title="Noticias Internacionales",DW Español
+https://www.youtube.com/@dwespanol/live
+
+#EXTINF:-1 tvg-id="CronicaTV.ar" group-title="Noticias Argentina",Crónica TV
+https://www.youtube.com/@cronicatv/live
+
+#EXTINF:-1 tvg-id="LNPlus.ar" group-title="Noticias Argentina",LA NACION / LN+
+https://www.youtube.com/@lanacion/live
