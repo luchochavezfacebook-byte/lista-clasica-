@@ -1,7 +1,7 @@
 {
   "nombre": "Lista Clásica",
   "proyecto": "Canales",
-  "descripcion": "Canales gratuitos HLS. Proyecto independiente de TV FULL PRO.",
+  "descripcion": "Canales gratuitos HLS; fuentes verificadas desde runner remoto sin garantizar disponibilidad regional o decodificación.",
   "fecha": "2026-10-27",
   "advertencia": "Enlaces candidatos sujetos a pruebas; no publicar tokens, firmas ni sesiones.",
   "canales": [
@@ -24,35 +24,42 @@
       "tvg_id": "NETTV.ar",
       "categoria": "TV Abierta Argentina",
       "url": "https://unlimited1-us.dps.live/nettv/nettv.smil/playlist.m3u8",
-      "verificacion": "Pendiente de verificar en TV Box"
+      "verificacion": "Manifiesto y primer segmento accesibles en GitHub Actions 2026-10-27; respaldo alternativo validado del mismo canal. Pendiente prueba TV Box.",
+      "backups": [
+        {
+          "url": "https://unlimited6-cl.dps.live/nettv/nettv.smil/playlist.m3u8"
+        }
+      ]
     },
     {
       "nombre": "El Trece",
       "tvg_id": "ElTrece.ar",
       "categoria": "TV Abierta Argentina",
-      "url": "https://live-01-02-eltrece.vodgc.net/eltrecetv_noti/index.m3u8",
-      "verificacion": "Aportada por usuario. Pendiente de verificar"
+      "url": "https://livetrx01.vodgc.net/eltrecetv/index.m3u8",
+      "verificacion": "HLS y segmento accesibles en GitHub Actions 2026-10-27. La fuente anterior entregaba variante no HLS desde el runner. Pendiente prueba TV Box.",
+      "referrer": "https://vodgc.net"
     },
     {
-      "nombre": "Telefe",
-      "tvg_id": "Telefe.ar",
-      "categoria": "TV Abierta Argentina",
-      "url": "https://mdstrm.com/live-stream-playlist/6a024684fd4ca6a938f3a118.m3u8",
-      "verificacion": "NO validado: HLS sin sesión respondió HTTP 403"
+      "nombre": "Telefe Tucumán (regional)",
+      "tvg_id": "TelefeTucuman.ar",
+      "categoria": "TV Regional Tucumán",
+      "url": "https://g2.mc-hor.transport.edge-access.net/a05/ngrp:elochotv-100168_all/Playlist.m3u8?sense=true",
+      "verificacion": "No es Telefe Buenos Aires/nacional. Señal de Telefe Tucumán encontrada en iptv-org; manifiesto + segmento accesibles GitHub Actions 2026-10-27. Pendiente verificar imagen y sonido TV Box."
     },
     {
       "nombre": "América TV",
       "tvg_id": "AmericaTV.ar",
       "categoria": "TV Abierta Argentina",
-      "url": "https://dai.google.com/linear/hls/pa/event/OY2i_lL4SMyXE5Zaj4ULEg/stream/5d5907c2-e5f6-415b-b81e-a2f1663c1eba:SCL2/master.m3u8",
-      "verificacion": "Aportada por usuario. Pendiente de verificar"
+      "url": "https://prepublish.f.qaotic.net/a07/americahls-100056/playlist_720p.m3u8",
+      "verificacion": "HLS y primer segmento accesibles GitHub Actions 2026-10-27. Fuente DAI anterior respondió HTTP 410; pendiente comprobar video en TV Box.",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/112.0.0.0 Mobile Safari/537.36"
     },
     {
       "nombre": "Telemax",
       "tvg_id": "Telemax.ar",
       "categoria": "TV Abierta Argentina",
-      "url": "https://live-edge01.telecentro.net.ar/live/smil:tlx.smil/playlist.m3u8",
-      "verificacion": "Pendiente de verificar"
+      "url": "https://stream-gtlc.telecentro.net.ar/hls/telemaxhls/main.m3u8",
+      "verificacion": "HLS y primer segmento accesibles GitHub Actions 2026-10-27. Fuente anterior tuvo error de conexión; pendiente prueba TV Box."
     },
     {
       "nombre": "TV Universidad (UNLP)",
