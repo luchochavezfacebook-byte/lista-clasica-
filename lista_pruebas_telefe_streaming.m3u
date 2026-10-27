@@ -1,0 +1,15 @@
+#EXTM3U
+#PLAYLIST:Pruebas Telefe LUZU OLGA
+# Lista experimental: enlaces permanentes de YouTube, NO HLS directos
+# Requiere reproductor que resuelva videos y directos de YouTube
+# No usar como reemplazo de lista_clasica.m3u en TV FULL PRO V62
+# El manifiesto googlevideo firmado del 2026-10-27 no se publica: expira y puede estar vinculado a una IP
+
+#EXTINF:-1 tvg-id="TelefeNacional.test" tvg-name="Telefe nacional (video de referencia; prueba)" group-title="Pruebas Streaming Argentina",Telefe nacional (prueba)
+https://www.youtube.com/watch?v=JPCtsX3dxag
+
+#EXTINF:-1 tvg-id="LuzuTV.ar" tvg-name="LUZU TV (prueba)" group-title="Pruebas Streaming Argentina",LUZU TV (prueba)
+https://www.youtube.com/@luzutv/live
+
+#EXTINF:-1 tvg-id="Olga.ar" tvg-name="OLGA (prueba)" group-title="Pruebas Streaming Argentina",OLGA (prueba)
+https://www.youtube.com/@olgaenvivo_/live
