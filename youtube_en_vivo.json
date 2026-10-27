@@ -85,6 +85,15 @@
       "categoria": "Noticias Argentina",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@lanacion/live"
+    },
+    {
+      "nombre": "Telefe Noticias — 24 h",
+      "tvg_id": "TelefeNoticias.ar",
+      "categoria": "Noticias Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@telefenoticias/live",
+      "video_id_referencia": "XhAYcYpPzTc",
+      "url_video_referencia": "https://www.youtube.com/watch?v=XhAYcYpPzTc"
     }
   ]
 }
