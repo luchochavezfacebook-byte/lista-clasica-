@@ -94,6 +94,46 @@
       "url_permanente": "https://www.youtube.com/@telefenoticias/live",
       "video_id_referencia": "XhAYcYpPzTc",
       "url_video_referencia": "https://www.youtube.com/watch?v=XhAYcYpPzTc"
+    },
+    {
+      "nombre": "TN - Todo Noticias",
+      "tvg_id": "TodoNoticias.ar",
+      "categoria": "Noticias Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@todonoticias/live",
+      "nota": "Emisión en vivo habitual; URL de canal, no HLS"
+    },
+    {
+      "nombre": "A24 - América 24",
+      "tvg_id": "A24.ar",
+      "categoria": "Noticias Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@a24com/live",
+      "nota": "Emisión en vivo habitual; URL de canal, no HLS"
+    },
+    {
+      "nombre": "C5N",
+      "tvg_id": "C5N.ar",
+      "categoria": "Noticias Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@c5n/live",
+      "nota": "Emisión en vivo habitual; URL de canal, no HLS"
+    },
+    {
+      "nombre": "Infobae en Vivo",
+      "tvg_id": "InfobaeEnVivo.ar",
+      "categoria": "Noticias Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@infobae/live",
+      "nota": "Transmisiones en horarios de programación; no emite continuamente"
+    },
+    {
+      "nombre": "Telenueve",
+      "tvg_id": "Telenueve.ar",
+      "categoria": "Noticias Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@telenuevec9/live",
+      "nota": "Noticieros en horarios de programación; no emite continuamente"
     }
   ]
 }
