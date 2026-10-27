@@ -1,0 +1,36 @@
+name: Auditar salud de canales HLS
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'fuentes.json'
+      - 'diagnosticos/candidatos.json'
+      - 'scripts/verificar_canales.py'
+      - '.github/workflows/auditar-hls.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '15 */6 * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Revisar manifiestos y primer segmento (solo diagnóstico)
+        run: python3 scripts/verificar_canales.py
+      - name: Guardar reporte, incluso con fuentes caídas
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: auditoria-hls-${{ github.run_number }}
+          path: reporte_verificacion.json
+          if-no-files-found: warn
+          retention-days: 7
