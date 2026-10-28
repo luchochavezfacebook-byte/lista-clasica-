@@ -44,7 +44,15 @@
       "tvg_id": "TelefeTucuman.ar",
       "categoria": "TV Regional Tucumán",
       "url": "https://g2.mc-hor.transport.edge-access.net/a05/ngrp:elochotv-100168_all/Playlist.m3u8?sense=true",
-      "verificacion": "No es Telefe Buenos Aires/nacional. Señal de Telefe Tucumán encontrada en iptv-org; manifiesto + segmento accesibles GitHub Actions 2026-10-27. Pendiente verificar imagen y sonido TV Box."
+      "verificacion": "No es Telefe Buenos Aires/nacional. Señal de Telefe Tucumán encontrada en iptv-org; manifiesto + segmento accesibles GitHub Actions 2026-10-27. Pendiente verificar imagen y sonido TV Box.",
+      "candidato_temporal": {
+        "proveedor": "YouTube HLS",
+        "video_id": "SeTWBqy85AE",
+        "vence_utc": "2026-10-28T21:21:44Z",
+        "url_host": "manifest.googlevideo.com",
+        "estado": "Referencia suministrada por usuario; URL firmada por IP, no integrada en reproducción por expiración",
+        "nota": "No reemplazar señal principal; obtener autorización y URL vigente desde la misma sesión/dispositivo antes de prueba."
+      }
     },
     {
       "nombre": "América TV",
