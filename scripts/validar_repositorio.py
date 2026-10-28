@@ -10,12 +10,14 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def main():
     hls = json.loads((ROOT / 'fuentes.json').read_text(encoding='utf-8'))['canales']
+    mundo = json.loads((ROOT / 'fuentes_mundotv.json').read_text(encoding='utf-8'))['canales']
+    all_hls = hls + mundo
     youtube = json.loads((ROOT / 'youtube_en_vivo.json').read_text(encoding='utf-8'))['canales']
-    assert hls and youtube, 'Catálogos vacíos'
-    assert len({c['tvg_id'] for c in hls}) == len(hls), 'Canales HLS duplicados'
+    assert hls and mundo and youtube, 'Catálogos vacíos'
+    assert len({c['tvg_id'] for c in all_hls}) == len(all_hls), 'IDs HLS duplicados'
     assert len({c['tvg_id'] for c in youtube}) == len(youtube), 'Canales YouTube duplicados'
 
-    for channel in hls:
+    for channel in all_hls:
         url = channel['url'].strip()
         parts = urlsplit(url)
         assert parts.scheme == 'https' and parts.hostname, 'URL inválida: ' + channel['nombre']
@@ -58,9 +60,9 @@ def main():
         assert content.startswith('#EXTM3U\n'), 'Encabezado M3U inválido'
         assert 'manifest.googlevideo.com' not in content
         assert 'access_token=' not in content and 'expire/' not in content
-        assert content.count('#EXTINF:') == len(hls if filename == 'lista_clasica.m3u' else youtube)
+        assert content.count('#EXTINF:') == (len({c['url'] for c in all_hls}) if filename == 'lista_clasica.m3u' else len(youtube))
 
-    print(f'OK: {len(hls)} HLS y {len(youtube)} YouTube, sin sesiones privadas.')
+    print(f'OK: {len(hls)} HLS originales + {len(mundo)} Mundo TV; {len({c["url"] for c in all_hls})} URL HLS únicas y {len(youtube)} YouTube, sin sesiones privadas.')
     print('Advertencia: pruebas estructurales, no certificación de disponibilidad.')
 
 

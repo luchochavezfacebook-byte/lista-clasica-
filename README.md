@@ -1,10 +1,10 @@
 # Canales — Lista Clásica
 
-Repositorio **independiente de TV FULL PRO** con una lista de señales gratuitas argentinas y una lista complementaria de transmisiones en YouTube.
+Repositorio **independiente de TV FULL PRO** con una lista de señales HLS argentinas, un catálogo complementario Mundo TV y referencias a transmisiones en YouTube.
 
 ## Listas
 
-- [Lista Clásica HLS](lista_clasica.m3u): 11 fuentes HLS candidatas. **No todas están verificadas ni garantizadas**.
+- [Lista Clásica HLS](lista_clasica.m3u): 251 enlaces HLS únicos (11 originales y 245 importados de Mundo TV, con 5 coincidencias por URL). **No todos están verificados ni garantizados**.
 - [YouTube LIVE](lista_clasica_youtube.m3u): 26 referencias a canales oficiales de YouTube. **No son enlaces HLS** y requieren reproductor compatible con YouTube.
 
 Usá la dirección RAW para cargar la lista HLS en un reproductor compatible:
@@ -17,7 +17,8 @@ https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/l
 
 ## Archivos y mantenimiento
 
-- `fuentes.json`: fuentes HLS y estado de verificación.
+- `fuentes.json`: 11 fuentes HLS originales y estado de verificación.
+- `fuentes_mundotv.json`: importación saneada de Fútbol Total (${imported.length} HLS HTTPS, sin URL con credenciales o dispositivos).
 - `youtube_en_vivo.json`: canales YouTube con direcciones `/live` persistentes.
 - `scripts/generar_lista.py` y `scripts/generar_lista_youtube.py`: regeneran las listas.
 - `scripts/validar_repositorio.py`: rechaza manifiestos firmados, tokens y duplicados.
@@ -78,3 +79,14 @@ Para reproducirla desde TV FULL PRO se necesita una función específica: **abri
 Los enlaces `manifest.googlevideo.com` de YouTube con `expire`, `sig` o dirección IP son **temporales** y no se publican. Algunas fuentes, particularmente Telefe, han respondido HTTP 403 desde ciertas redes. Una entrada en la lista no certifica que el video funcione o que esté autorizada su redistribución.
 
 El repositorio es **independiente del código de tvplayer**, pero V62 consume su archivo RAW `lista_clasica.m3u`. No usa Xtream Codes, Proveedor 2, ClearKey ni DRM. No incluye credenciales ni retransmite contenido.
+
+## Mundo TV — importación 2026-10-28
+
+Se incorporó `ft-mundotv.json` recuperado desde Fútbol Total a la Lista Clásica existente mediante `fuentes_mundotv.json`. No se alteró TV FULL PRO ni Proveedor 2. La APK V62 consume el enlace RAW de `lista_clasica.m3u`; al actualizar la lista, encontrará los canales incorporados en grupos `Mundo TV / ...`.
+
+- Fuente original: **261 entradas en 13 categorías**.
+- Publicadas: **245 fuentes HTTPS/HLS** (sin duplicar URL ya presentes); **251 canales HLS únicos en la M3U final**.
+- No publicadas: **16 referencias** (14 HTTP, 1 sin ruta M3U8 y 1 con identificador `did` de posible dispositivo). Se conservan solo en el archivo aportado por el usuario, no en este repositorio público.
+- Los logos y categorías se mantienen cuando son compatibles. Canales con nombres repetidos pueden tener URLs diferentes, por lo que se conservan con IDs distintos.
+- No se verificó reproducción en TV Box ni disponibilidad geográfica de los nuevos enlaces. `scripts/verificar_canales.py` y la auditoría cada seis horas siguen analizando las 11 fuentes originales; las importadas requieren pruebas separadas antes de afirmarlas estables.
+- Regenerar/validar: `python3 scripts/generar_lista.py && python3 scripts/validar_repositorio.py`.
