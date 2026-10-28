@@ -1,7 +1,7 @@
 {
   "nombre": "Lista Clásica",
   "proyecto": "Canales",
-  "descripcion": "HLS directos y canales YouTube que requieren la APK V62 corregida con apertura externa.",
+  "descripcion": "Canales gratuitos HLS; fuentes verificadas desde runner remoto sin garantizar disponibilidad regional o decodificación.",
   "fecha": "2026-10-27",
   "advertencia": "Enlaces candidatos sujetos a pruebas; no publicar tokens, firmas ni sesiones.",
   "canales": [
@@ -89,51 +89,6 @@
       "categoria": "Noticias Argentina",
       "url": "https://unlimited1-us.dps.live/perfiltv/perfiltv.smil/playlist.m3u8",
       "verificacion": "Candidata HLS listada en catálogo Free-TV / iptv-org. NO verificada en TV FULL PRO; comprobar que emita Canal E / Perfil y no otra señal."
-    },
-    {
-      "nombre": "Telefe nacional (YouTube)",
-      "tvg_id": "TelefeNacional.test",
-      "categoria": "TV Abierta Argentina",
-      "tipo": "youtube_live",
-      "url": "https://www.youtube.com/@telefe/live",
-      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Telefe%20Logo.svg",
-      "verificacion": "Abrir en aplicación YouTube externa desde V62 corregida; no compatible con Media3 directo."
-    },
-    {
-      "nombre": "LN+ / La Nación (YouTube)",
-      "tvg_id": "LNPlus.test",
-      "categoria": "Noticias Argentina",
-      "tipo": "youtube_live",
-      "url": "https://www.youtube.com/@lanacion/live",
-      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/La-Nacion-Mas-Logo.svg",
-      "verificacion": "Abrir en aplicación YouTube externa desde V62 corregida; no compatible con Media3 directo."
-    },
-    {
-      "nombre": "C5N (YouTube)",
-      "tvg_id": "C5N.test",
-      "categoria": "Noticias Argentina",
-      "tipo": "youtube_live",
-      "url": "https://www.youtube.com/@c5n/live",
-      "logo": "https://www.c5n.com/css-custom/326/images/logo-c5n.svg",
-      "verificacion": "Abrir en aplicación YouTube externa desde V62 corregida; no compatible con Media3 directo."
-    },
-    {
-      "nombre": "LUZU TV (YouTube)",
-      "tvg_id": "LuzuTV.test",
-      "categoria": "Streaming Argentina",
-      "tipo": "youtube_live",
-      "url": "https://www.youtube.com/@luzutv/live",
-      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Luzu%20Tv%21%202025.png",
-      "verificacion": "Abrir en aplicación YouTube externa desde V62 corregida; no compatible con Media3 directo."
-    },
-    {
-      "nombre": "OLGA (YouTube)",
-      "tvg_id": "Olga.test",
-      "categoria": "Streaming Argentina",
-      "tipo": "youtube_live",
-      "url": "https://www.youtube.com/@olgaenvivo_/live",
-      "logo": "https://unavatar.io/youtube/@olgaenvivo_",
-      "verificacion": "Abrir en aplicación YouTube externa desde V62 corregida; no compatible con Media3 directo."
     }
   ]
 }
