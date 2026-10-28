@@ -66,6 +66,8 @@ def build(data):
 
 if __name__ == '__main__':
     data = json.loads((ROOT / 'fuentes.json').read_text(encoding='utf-8'))
+    mundo = json.loads((ROOT / 'fuentes_mundotv.json').read_text(encoding='utf-8'))
+    data['canales'].extend(mundo['canales'])
     path = ROOT / 'lista_clasica.m3u'
     path.write_text(build(data), encoding='utf-8')
     print(f"Creada: {path} ({len(data['canales'])} canales)")
