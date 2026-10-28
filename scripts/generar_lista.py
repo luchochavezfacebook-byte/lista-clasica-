@@ -24,11 +24,7 @@ def build(data):
     for channel in data['canales']:
         url = channel['url'].strip()
         parsed = urlsplit(url)
-        if channel.get('tipo') == 'youtube_live':
-            valid = parsed.scheme == 'https' and parsed.hostname == 'www.youtube.com' and parsed.path.endswith('/live') and not parsed.query
-        else:
-            valid = parsed.scheme == 'https' and bool(parsed.netloc) and parsed.path.lower().endswith('.m3u8')
-        if not valid:
+        if parsed.scheme != 'https' or not parsed.netloc or not parsed.path.lower().endswith('.m3u8'):
             raise ValueError(f"URL HLS no válida para {channel['nombre']}")
         if url in seen:
             continue
