@@ -16,7 +16,7 @@ def build(data):
         '#EXTM3U',
         '#PLAYLIST:Lista Clásica - Canales gratuitos',
         '# Proyecto: Canales (independiente de TV FULL PRO)',
-        '# HLS y enlaces YouTube: los segundos requieren apertura externa en APK corregida.',
+        '# Solo HLS directo: sin enlaces watch de YouTube, sin cuentas Xtream ni DRM',
         '# IMPORTANTE: enlaces de prueba, disponibilidad sujeta a verificación',
         '',
     ]
