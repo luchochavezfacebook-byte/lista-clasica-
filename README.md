@@ -1,46 +1,41 @@
-# Lista Clásica — TV FULL PRO
+# Lista Clásica — TV FULL PRO V62
 
-La lista principal está organizada **por país de la señal**, con Argentina primero y los enlaces de YouTube separados en **Argentina YT**. Es un catálogo independiente del código de TV FULL PRO, no una promesa de funcionamiento de todos los reproductores.
+## Estado de recuperación — 10/11/2026
 
-## Listas
+Se retiraron **27 enlaces de YouTube** que se habían agregado por error a la lista M3U principal. Se detectó que V62 los entregaba a Media3 como si fueran URLs HLS, lo cual produce **Formato de señal no compatible**. No son HLS y una categoría como «Argentina YT» no puede cambiar su formato.
 
-- [**Lista principal**](lista_clasica.m3u): **251 fuentes HLS únicas**, más **27 referencias de YouTube** en Argentina YT; 278 entradas en total. Las 251 HLS conservan sus URLs, cabeceras, logos y respaldos anteriores.
-- [**YouTube en vivo**](lista_clasica_youtube.m3u): 27 referencias a transmisiones públicas que requieren un cliente compatible con YouTube.
+**Lista principal:** [lista_clasica.m3u](lista_clasica.m3u) — **251 enlaces HLS únicos**, por país, con Argentina primero. Conserva los **251 URL, 238 logos declarados, User-Agent, Referer y respaldos** del catálogo previo al error. No se alteraron URLs, proveedores ni claves.
 
-URL RAW principal para TV FULL PRO:
+**Referencias de YouTube:** [lista_clasica_youtube.m3u](lista_clasica_youtube.m3u) — **27 enlaces de canales**, incluidos Canal 10 Tucumán, C5N, LUZU, OLGA y otros. Se conservan para reproductores compatibles con YouTube, pero **no deben cargarse como HLS en TV FULL PRO V62**. No se mezclan en `lista_clasica.m3u`.
+
+### Fuente RAW usada por la APK
 
 https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/lista_clasica.m3u
 
-## Categorías por país y tipo de fuente — revisión 2026-11-10
+## Agrupación
 
-La lista principal agrupa los **251 canales HLS** por país, con **59 señales en Argentina TV**, y agrega **todos los 27 enlaces de `youtube_en_vivo.json`** dentro de **Argentina YT**. Esta última es una categoría técnica para distinguir YouTube, no una atribución de nacionalidad: incluye también CNN en Español y DW Español.
+Los HLS están organizados por país mediante `group-title="<País> TV"`: Argentina TV primero; luego países por orden alfabético; Internacional TV para procedencia multinacional o incierta. **No se quitó ningún HLS al recuperar la lista.**
 
-**Total: 278 entradas**, agrupadas en **38 categorías**. Las señales HLS mantienen los nombres, logos, respaldos y direcciones anteriores. Los enlaces YT se identifican con el sufijo «YouTube - requiere app externa», porque V62 no los reproduce directamente.
+## Logos
 
-El generador usa los 27 enlaces de `youtube_en_vivo.json` (en lugar de uno solo) para que una regeneración no los quite. Los identificadores YT no se confunden con los HLS.
+El catálogo HLS contenía **238 logos explícitos** antes de agregar las entradas YouTube; conserva los mismos 238 después de la recuperación. **Los 13 HLS restantes no tenían logo declarado en la M3U original**, por lo que el reproductor puede depender de su índice interno. No se inventan URLs de logos. La pérdida visible reciente corresponde a las 27 entradas YouTube, que no tenían logo. Si persisten logos vacíos en un HLS existente, será necesario comprobar el índice de logos y la caché de la APK.
 
-## Canal 10 Tucumán
+## Canal 8 y Canal 10 Tucumán
 
-Se agregó **Canal 10 Tucumán (YouTube - requiere app externa)** también a `lista_clasica.m3u`, dentro de **Argentina YT** junto con los otros 26 enlaces YouTube, usando su referencia estable:
+- **Canal 8 / Telefe Tucumán** se conserva como señal HLS, incluida la cabecera de compatibilidad previamente configurada. Su reproducción debe verificarse desde una red argentina; GitHub Actions solo certificó manifiesto y un segmento, no imagen/sonido.
+- **Canal 10 Tucumán** solo tiene una referencia estable a YouTube en el catálogo; no se ha identificado un HLS directo estable, público y verificado para la APK. La URL firmada `manifest.googlevideo.com` vence y puede depender de IP/sesión, por eso **no se publica**. Canal 10 permanece en la lista YouTube independiente hasta que se encuentre una fuente HLS legítima o se incorpore un reproductor de YouTube en la APK.
 
-https://www.youtube.com/channel/UCRlakPhec4-k3vkBeyWBojg/live
+## Mantenimiento
 
-**Advertencia técnica importante:** es una URL de YouTube, **no un manifiesto HLS**; **TV FULL PRO V62 no puede reproducirla directamente**. Es visible en el catálogo, pero requeriría que una versión futura de la aplicación invoque YouTube o un reproductor autorizado. No se ha encontrado un HLS permanente oficial de este canal. No se publicó ninguna URL temporal de `manifest.googlevideo.com`: esas URLs caducan y pueden estar vinculadas a la sesión o la IP.
+- `fuentes.json`: 11 fuentes HLS originales
+- `fuentes_mundotv.json`: 245 fuentes HLS importadas, clasificadas por país
+- `youtube_en_vivo.json`: 27 referencias YouTube, separadas del reproductor HLS
+- `scripts/generar_lista.py`: genera **solo HLS**
+- `scripts/generar_lista_youtube.py`: genera la lista de YouTube por separado
+- `scripts/validar_repositorio.py`: comprueba estructura, URLs, logos y ausencia de enlaces YouTube en la lista principal
+- `scripts/verificar_canales.py` y `.github/workflows/auditar-hls.yml`: chequean conectividad HLS original; **no garantizan reproducción** en un TV Box
 
-No confundir Canal 10 Tucumán con **Canal 10 Televida (Mendoza)** ni con **Canal 8 / Telefe Tucumán**. Son señales distintas.
-
-## Mantenimiento y validación
-
-- `fuentes.json`: 11 fuentes argentinas principales, con encabezados y respaldos que tenía la lista.
-- `fuentes_mundotv.json`: 245 fuentes importadas, clasificadas por país.
-- `youtube_en_vivo.json`: referencias permanentes a YouTube.
-- `scripts/generar_lista.py`: crea la lista principal con Argentina primero y la referencia Canal 10.
-- `scripts/generar_lista_youtube.py`: mantiene la lista complementaria de YouTube.
-- `scripts/validar_repositorio.py`: verifica países, URLs, duplicados, firmas temporales y estructura M3U.
-- `scripts/verificar_canales.py`: comprueba las 11 fuentes originales y algunos candidatos, **no las 251 señales**.
-- `.github/workflows/auditar-hls.yml`: diagnóstico cada 6 horas; no reemplaza automáticamente enlaces.
-
-Para comprobar la coherencia de la lista:
+### Comprobación automática
 
 ```bash
 python3 scripts/validar_repositorio.py
@@ -49,10 +44,4 @@ python3 scripts/generar_lista_youtube.py
 git diff --exit-code -- lista_clasica.m3u lista_clasica_youtube.m3u
 ```
 
-La clasificación por país **no certifica la reproducción**. Las fuentes pueden tener restricciones regionales o fallar en dispositivos Android TV; se necesita comprobar imagen/sonido en la APK. No se han añadido credenciales, claves DRM ni enlaces de pago.
-
-## Antecedentes
-
-La lista original contenía 11 canales argentinos y 245 importados (251 URLs HLS únicas después de deduplicar). Se conservan todos los enlaces HLS. Se mantiene el encabezado de compatibilidad de **Canal 8 / Telefe Tucumán**, actualizado anteriormente, pero todavía pendiente de prueba física.
-
-**TV FULL PRO V62 y Proveedor 2 no fueron modificados.**
+**No se modificaron TV FULL PRO V62 ni Proveedor 2.**
