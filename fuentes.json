@@ -12,7 +12,8 @@
       "url": "https://live-01-01-tn.vodgc.net/TN_DAI_Beta/index.m3u8",
       "verificacion": "Aportada por usuario. HTTP 403 desde consulta externa",
       "categoria_original": "Noticias Argentina",
-      "pais": "Argentina"
+      "pais": "Argentina",
+      "logo": "https://i.postimg.cc/tTnKwx9g/250px-TN-todo-noticias-logo-svg.png"
     },
     {
       "nombre": "Canal 26",
@@ -21,7 +22,8 @@
       "url": "https://stream-gtlc.telecentro.net.ar/hls/canal26hls/main.m3u8",
       "verificacion": "Pendiente de verificar en TV Box",
       "categoria_original": "Noticias Argentina",
-      "pais": "Argentina"
+      "pais": "Argentina",
+      "logo": "https://i.postimg.cc/3Rbg4kG3/images-q-tbn-ANd9Gc-Se0i-OYk-MVUv8b-RSmev324PVm-Iah3Lbnmk-a-A-s.png"
     },
     {
       "nombre": "Net TV",
@@ -35,7 +37,8 @@
         }
       ],
       "categoria_original": "TV Abierta Argentina",
-      "pais": "Argentina"
+      "pais": "Argentina",
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/2/21/NETTV2018.png/revision/latest/scale-to-width-down/1000?cb=20210315130135&path-prefix=es"
     },
     {
       "nombre": "El Trece",
@@ -45,7 +48,8 @@
       "verificacion": "HLS y segmento accesibles en GitHub Actions 2026-10-27. La fuente anterior entregaba variante no HLS desde el runner. Pendiente prueba TV Box.",
       "referrer": "https://vodgc.net",
       "categoria_original": "TV Abierta Argentina",
-      "pais": "Argentina"
+      "pais": "Argentina",
+      "logo": "https://i.postimg.cc/HWRGw34L/Logo-Canal-13-200-8.png"
     },
     {
       "nombre": "Telefe Tucumán (regional)",
@@ -64,7 +68,8 @@
       "user_agent": "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
       "referrer": "https://vmf.edge-apps.net/",
       "categoria_original": "TV Regional Tucumán",
-      "pais": "Argentina"
+      "pais": "Argentina",
+      "logo": "https://i.postimg.cc/x8MSJbZX/330px-Telefe-(nuevo-logo).png"
     },
     {
       "nombre": "América TV",
@@ -74,7 +79,8 @@
       "verificacion": "HLS y primer segmento accesibles GitHub Actions 2026-10-27. Fuente DAI anterior respondió HTTP 410; pendiente comprobar video en TV Box.",
       "user_agent": "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/112.0.0.0 Mobile Safari/537.36",
       "categoria_original": "TV Abierta Argentina",
-      "pais": "Argentina"
+      "pais": "Argentina",
+      "logo": "https://i.postimg.cc/k4MCH4Dh/America-TV-(Nuevo-logo-Junio-2020).png"
     },
     {
       "nombre": "Telemax",
@@ -83,7 +89,8 @@
       "url": "https://stream-gtlc.telecentro.net.ar/hls/telemaxhls/main.m3u8",
       "verificacion": "HLS y primer segmento accesibles GitHub Actions 2026-10-27. Fuente anterior tuvo error de conexión; pendiente prueba TV Box.",
       "categoria_original": "TV Abierta Argentina",
-      "pais": "Argentina"
+      "pais": "Argentina",
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/2/29/08%29Telemax_%282018%29.png/revision/latest?cb=20220113152551&path-prefix=es"
     },
     {
       "nombre": "TV Universidad (UNLP)",
@@ -101,7 +108,8 @@
       "url": "https://5fb24b460df87.streamlock.net/live-cont.ar/deportv/playlist.m3u8",
       "verificacion": "Pendiente de verificar",
       "categoria_original": "Deportes Argentina",
-      "pais": "Argentina"
+      "pais": "Argentina",
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/0/0e/DeporTV_%282020%29.png/revision/latest/scale-to-width-down/1000?cb=20210101172130&path-prefix=es"
     },
     {
       "nombre": "A24 - América 24 (prueba)",
@@ -111,7 +119,8 @@
       "user_agent": "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/112.0.0.0 Mobile Safari/537.36",
       "verificacion": "Candidata HLS encontrada en iptv-org 2026-10-27. NO verificada en TV FULL PRO ni conectividad real; requiere User-Agent Android; probar en TV Box.",
       "categoria_original": "Noticias Argentina",
-      "pais": "Argentina"
+      "pais": "Argentina",
+      "logo": "https://i.postimg.cc/VL2YNmHh/images-q-tbn-ANd9Gc-T8yf-XBu-Qmon9WVy3ETX9fuq0w4U8Hvq391YA-s.png"
     },
     {
       "nombre": "Canal E / Perfil TV (prueba)",
