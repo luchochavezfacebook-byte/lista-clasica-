@@ -1,98 +1,58 @@
-# Canales — Lista Clásica
+# Lista Clásica — TV FULL PRO
 
-Repositorio **independiente de TV FULL PRO** con una lista de señales HLS argentinas, un catálogo complementario Mundo TV y referencias a transmisiones en YouTube.
+La lista principal está organizada **por país de la señal**, con Argentina primero. Es un catálogo independiente del código de TV FULL PRO, no una promesa de funcionamiento de todos los reproductores.
 
 ## Listas
 
-- [Lista Clásica HLS](lista_clasica.m3u): 251 enlaces HLS únicos (11 originales y 245 importados de Mundo TV, con 5 coincidencias por URL). **No todos están verificados ni garantizados**.
-- [YouTube LIVE](lista_clasica_youtube.m3u): 27 referencias a canales oficiales de YouTube. **No son enlaces HLS** y requieren reproductor compatible con YouTube.
+- [**Lista principal**](lista_clasica.m3u): **251 fuentes HLS únicas**, más **una referencia oficial de YouTube para Canal 10 Tucumán**; 252 entradas en total. Las 251 HLS conservan sus URLs, cabeceras, logos y respaldos anteriores.
+- [**YouTube en vivo**](lista_clasica_youtube.m3u): 27 referencias a transmisiones públicas que requieren un cliente compatible con YouTube.
 
-Usá la dirección RAW para cargar la lista HLS en un reproductor compatible:
+URL RAW principal para TV FULL PRO:
 
 https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/lista_clasica.m3u
 
-Para YouTube LIVE (solo en reproductores compatibles):
+## Categorías por países — revisión 2026-11-10
 
-https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/lista_clasica_youtube.m3u
+Todas las entradas usan `group-title="<País> TV"`. Hay **37 grupos**, incluyendo **Internacional TV** para señales de origen multinacional o no determinado con seguridad. No quedan categorías ambiguas como `Mundo TV / GENERAL`, `INT. ASIA` o `Noticias Argentina`.
 
-## Archivos y mantenimiento
+**Argentina TV** aparece primero, con **60 entradas** (incluye Canal 10). El resto de países aparece ordenado alfabéticamente, y las emisoras se ordenan por nombre dentro de cada país.
 
-- `fuentes.json`: 11 fuentes HLS originales y estado de verificación.
-- `fuentes_mundotv.json`: importación saneada de Fútbol Total (${imported.length} HLS HTTPS, sin URL con credenciales o dispositivos).
-- `youtube_en_vivo.json`: canales YouTube con direcciones `/live` persistentes.
-- `scripts/generar_lista.py` y `scripts/generar_lista_youtube.py`: regeneran las listas.
-- `scripts/validar_repositorio.py`: rechaza manifiestos firmados, tokens y duplicados.
-- `scripts/verificar_canales.py`: prueba manifiestos HLS y acceso a un segmento, sin confirmar decodificación.
-- `diagnosticos/candidatos.json`: alternativas pendientes de prueba, no incluidas automáticamente en la M3U.
-- `.github/workflows/auditar-hls.yml`: auditoría informativa cada 6 horas; guarda reporte de los canales y alternativas durante 7 días.
-- `.github/workflows/validar-listas.yml`: valida que archivos y listas sean coherentes.
+La atribución de país se guarda en los campos `pais` y `categoria` de `fuentes.json` y `fuentes_mundotv.json`. El campo `categoria_original` conserva la clasificación histórica importada. Algunas señales multinacionales se marcan `Internacional TV` para no asignarles un país sin respaldo.
+
+## Canal 10 Tucumán
+
+Se agregó **Canal 10 Tucumán (YouTube - requiere app externa)** también a `lista_clasica.m3u`, dentro de **Argentina TV**, usando su referencia estable:
+
+https://www.youtube.com/channel/UCRlakPhec4-k3vkBeyWBojg/live
+
+**Advertencia técnica importante:** es una URL de YouTube, **no un manifiesto HLS**; **TV FULL PRO V62 no puede reproducirla directamente**. Es visible en el catálogo, pero requeriría que una versión futura de la aplicación invoque YouTube o un reproductor autorizado. No se ha encontrado un HLS permanente oficial de este canal. No se publicó ninguna URL temporal de `manifest.googlevideo.com`: esas URLs caducan y pueden estar vinculadas a la sesión o la IP.
+
+No confundir Canal 10 Tucumán con **Canal 10 Televida (Mendoza)** ni con **Canal 8 / Telefe Tucumán**. Son señales distintas.
+
+## Mantenimiento y validación
+
+- `fuentes.json`: 11 fuentes argentinas principales, con encabezados y respaldos que tenía la lista.
+- `fuentes_mundotv.json`: 245 fuentes importadas, clasificadas por país.
+- `youtube_en_vivo.json`: referencias permanentes a YouTube.
+- `scripts/generar_lista.py`: crea la lista principal con Argentina primero y la referencia Canal 10.
+- `scripts/generar_lista_youtube.py`: mantiene la lista complementaria de YouTube.
+- `scripts/validar_repositorio.py`: verifica países, URLs, duplicados, firmas temporales y estructura M3U.
+- `scripts/verificar_canales.py`: comprueba las 11 fuentes originales y algunos candidatos, **no las 251 señales**.
+- `.github/workflows/auditar-hls.yml`: diagnóstico cada 6 horas; no reemplaza automáticamente enlaces.
+
+Para comprobar la coherencia de la lista:
 
 ```bash
 python3 scripts/validar_repositorio.py
 python3 scripts/generar_lista.py
 python3 scripts/generar_lista_youtube.py
-python3 scripts/verificar_canales.py
+git diff --exit-code -- lista_clasica.m3u lista_clasica_youtube.m3u
 ```
 
-## Lista HLS conectada a TV FULL PRO V62 — revisión 2026-10-27
+La clasificación por país **no certifica la reproducción**. Las fuentes pueden tener restricciones regionales o fallar en dispositivos Android TV; se necesita comprobar imagen/sonido en la APK. No se han añadido credenciales, claves DRM ni enlaces de pago.
 
-La APK V62 lee `lista_clasica.m3u` directamente. **11 entradas HLS**, actualizadas tras una auditoría ejecutada en GitHub Actions:
+## Antecedentes
 
-- **América TV:** fuente DAI anterior devolvía HTTP 410. Sustituida por HLS directo catalogado en iptv-org con `User-Agent` declarado; el manifiesto y un segmento respondieron desde GitHub.
-- **El Trece:** fuente anterior devolvía una variante que no era HLS en el runner. Sustituida por la alternativa que requiere `Referer: https://vodgc.net`; manifiesto y un segmento respondieron.
-- **Telemax:** fuente anterior no respondió; sustituida por `stream-gtlc.telecentro.net.ar/hls/telemaxhls/main.m3u8`, que pasó el mismo chequeo.
-- **Telefe:** la fuente nacional anterior `mdstrm.com` devolvía HTTP 403 y el usuario confirmó que no reproduce. Se quitó de la M3U activa y se incorporó **Telefe Tucumán (regional)** en una categoría propia. La señal regional **NO es la misma emisión que Telefe Buenos Aires/nacional**.
-- **Net TV:** conserva su fuente principal y suma un respaldo de `unlimited6-cl.dps.live`, compatible con el fallback de V62 mediante `#EXT-X-TVFULL-BACKUP`.
-- **TN, Canal 26, A24 y Canal E:** manifestos y primer segmento accesibles desde el runner; no se modificaron.
-- **DeporTV y TV Universidad:** error de red desde el runner; se conservan sin declararlos caídos en Argentina.
+La lista original contenía 11 canales argentinos y 245 importados (251 URLs HLS únicas después de deduplicar). Se conservan todos los enlaces HLS. Se mantiene el encabezado de compatibilidad de **Canal 8 / Telefe Tucumán**, actualizado anteriormente, pero todavía pendiente de prueba física.
 
-**ATENCIÓN:** el estado `segmento_accesible` significa que se pudo descargar el manifiesto y una muestra del primer fragmento, **no que haya imagen, sonido ni estabilidad continua en los TV Box argentinos**. Los 403 externos tampoco son prueba de caída global debido a restricciones geográficas.
-
-Se ejecuta una auditoría automática cada seis horas, con resultados en la sección Actions del repositorio. **No cambia los enlaces automáticamente** para evitar publicar fuentes incorrectas, fuera de región o temporales.
-
-Para probar: entrar a Lista Clásica en V62, elegir **Actualizar listas** y verificar el nuevo canal **Telefe Tucumán (regional)**, América TV, El Trece, Telemax y el respaldo de Net TV. Los cambios no requieren actualizar la APK ni afectan Proveedor 2.
-
-La lista complementaria de YouTube contiene **C5N, Crónica, LN+, Telefe Noticias, LUZU, OLGA** y otras referencias que V62 todavía no reproduce directamente; no mezclarlas como HLS.
-
-## Streaming argentino conocido — LUZU, OLGA y otros
-
-Agregados a **`lista_clasica_youtube.m3u`**: **LUZU TV**, **OLGA**, **BLENDER**, **GELATINA**, **Vorterix**, **Bondi Live**, **Futurock FM**, **AZZ Streaming**, **Neura Media** y **Carajo Stream**. La categoría M3U es `Streaming Argentina`.
-
-Son rutas permanentes hacia el canal de YouTube (`/@canal/live`), no manifiestos HLS. Algunas señales emiten solo en horarios de programación y la disponibilidad puede cambiar. No se encontraron ni verificaron URLs HLS permanentes para esos diez medios. No almacenar `manifest.googlevideo.com` firmado ni copiar sesiones de navegador como enlaces públicos.
-
-**IMPORTANTE — TV FULL PRO V62:** la APK está conectada exclusivamente a `lista_clasica.m3u` (11 HLS) y **no mostrará estas 10 incorporaciones al apretar Actualizar listas**. Para agregarlas en una nueva versión sin enlaces rotos se requiere integrar un reproductor oficial de YouTube o lanzar la aplicación de YouTube del TV Box. La Lista Clásica HLS fue revisada en 2026-10-27. La APK y el Proveedor 2 permanecen sin cambios.
-
-## Noticias argentinas más conocidas (YouTube)
-
-La lista complementaria incluye TN, A24, C5N, Canal 26, Crónica TV, LN+, Telefe Noticias, Argentina/12, Infobae en Vivo y Telenueve, además de otras referencias. Los nuevos enlaces usan rutas `/@canal/live` que no contienen firmas temporales.
-
-**No implica emisión las 24 horas:** Infobae en Vivo y Telenueve tienen programación en franjas horarias. La pestaña `/live` puede no ofrecer directo cuando no están transmitiendo. Todas estas URLs necesitan un cliente de YouTube compatible; **TV FULL PRO V62 no reproduce estos enlaces directamente con Media3**.
-
-## Telefe Noticias: referencia persistente y actualizaciones
-
-La referencia estable de **Telefe Noticias — 24 h** es `https://www.youtube.com/@telefenoticias/live` (video observado: `XhAYcYpPzTc`). Está incluida **solo** en `lista_clasica_youtube.m3u`, no en `lista_clasica.m3u`, porque la aplicación TV FULL PRO V62 espera HLS directo y **no interpreta una URL `youtube.com/@.../live` como video**.
-
-Si el directo cambia de identificador, la ruta `/@telefenoticias/live` es una referencia al canal; el reproductor oficial de YouTube resuelve la emisión vigente al abrirla. Si el canal deja de emitir o restringe incorporaciones, no se puede garantizar reproducción. La URL de la transmisión en sí no es un M3U8 y no debe enviarse directamente a Media3/ExoPlayer como HLS.
-
-Para reproducirla desde TV FULL PRO se necesita una función específica: **abrir el directo con el reproductor oficial de YouTube o utilizar el IFrame Player autorizado**, sin alterar las fuentes HLS existentes. Este soporte **no está disponible en la V62**. No usar GitHub Actions para reemplazar HLS firmados por sesiones obtenidas en la IP de un runner: los tokens son de corta vida y pueden estar vinculados a la IP o sesión.
-
-Los enlaces `manifest.googlevideo.com` de YouTube con `expire`, `sig` o dirección IP son **temporales** y no se publican. Algunas fuentes, particularmente Telefe, han respondido HTTP 403 desde ciertas redes. Una entrada en la lista no certifica que el video funcione o que esté autorizada su redistribución.
-
-El repositorio es **independiente del código de tvplayer**, pero V62 consume su archivo RAW `lista_clasica.m3u`. No usa Xtream Codes, Proveedor 2, ClearKey ni DRM. No incluye credenciales ni retransmite contenido.
-
-## Mundo TV — importación 2026-10-28
-
-Se incorporó `ft-mundotv.json` recuperado desde Fútbol Total a la Lista Clásica existente mediante `fuentes_mundotv.json`. No se alteró TV FULL PRO ni Proveedor 2. La APK V62 consume el enlace RAW de `lista_clasica.m3u`; al actualizar la lista, encontrará los canales incorporados en grupos `Mundo TV / ...`.
-
-- Fuente original: **261 entradas en 13 categorías**.
-- Publicadas: **245 fuentes HTTPS/HLS** (sin duplicar URL ya presentes); **251 canales HLS únicos en la M3U final**.
-- No publicadas: **16 referencias** (14 HTTP, 1 sin ruta M3U8 y 1 con identificador `did` de posible dispositivo). Se conservan solo en el archivo aportado por el usuario, no en este repositorio público.
-- Los logos y categorías se mantienen cuando son compatibles. Canales con nombres repetidos pueden tener URLs diferentes, por lo que se conservan con IDs distintos.
-- No se verificó reproducción en TV Box ni disponibilidad geográfica de los nuevos enlaces. `scripts/verificar_canales.py` y la auditoría cada seis horas siguen analizando las 11 fuentes originales; las importadas requieren pruebas separadas antes de afirmarlas estables.
-- Regenerar/validar: `python3 scripts/generar_lista.py && python3 scripts/validar_repositorio.py`.
-
-## Canal 10 Tucumán — YouTube oficial
-
-Se incorporó **Canal 10 Tucumán** a `youtube_en_vivo.json` y a `lista_clasica_youtube.m3u` usando la URL estable del canal oficial: `https://www.youtube.com/channel/UCRlakPhec4-k3vkBeyWBojg/live`.
-
-Una captura de 2026-11-10 observó un manifiesto HLS firmado de YouTube, con vencimiento el 2026-11-11; **no se publica** porque está asociado a una sesión/IP y no sirve como URL estable. Este registro de YouTube **no es un M3U8 directo** y TV FULL PRO V62 no lo reproduce con Media3. Se necesita un reproductor oficial de YouTube o integración autorizada. `lista_clasica.m3u` y las 251 fuentes HLS permanecen sin cambios.
+**TV FULL PRO V62 y Proveedor 2 no fueron modificados.**
