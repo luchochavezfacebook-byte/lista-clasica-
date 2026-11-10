@@ -4,7 +4,7 @@
 
 Se retiraron **27 enlaces de YouTube** que se habían agregado por error a la lista M3U principal. Se detectó que V62 los entregaba a Media3 como si fueran URLs HLS, lo cual produce **Formato de señal no compatible**. No son HLS y una categoría como «Argentina YT» no puede cambiar su formato.
 
-**Lista principal:** [lista_clasica.m3u](lista_clasica.m3u) — **252 enlaces HLS únicos**, por país, con Argentina primero. Conserva los **251 URL HLS originales más Crónica TV, User-Agent, Referer y respaldos** previos al error. Se añadieron **9 logos** ya presentes en el índice de la APK, con lo que la lista principal ahora declara **248 logos**. No se alteraron URLs, proveedores ni claves.
+**Lista principal:** [lista_clasica.m3u](lista_clasica.m3u) — **251 enlaces HLS únicos**, por país, con Argentina primero. Conserva los **251 URL HLS originales, User-Agent, Referer y respaldos** previos al error. Se añadieron **9 logos** ya presentes en el índice de la APK, con lo que la lista principal ahora declara **247 logos**. No se alteraron URLs, proveedores ni claves.
 
 **Referencias de YouTube:** [lista_clasica_youtube.m3u](lista_clasica_youtube.m3u) — **27 enlaces de canales**, incluidos Canal 10 Tucumán, C5N, LUZU, OLGA y otros. Se conservan para reproductores compatibles con YouTube, pero **no deben cargarse como HLS en TV FULL PRO V62**. No se mezclan en `lista_clasica.m3u`.
 
@@ -14,20 +14,26 @@ https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/l
 
 ## Agrupación
 
-Los HLS están organizados por país mediante `group-title="<País> TV"`: Argentina TV primero; luego países por orden alfabético; Internacional TV para procedencia multinacional o incierta. **No se quitó ningún HLS al recuperar la lista.** Se agregó **Crónica TV** a Argentina TV mediante una URL HLS directa cuya accesibilidad (manifiesto y segmento) fue validada el 10/11/2026 por GitHub Actions. La reproducción en la TV Box queda pendiente de comprobación.
+Los HLS están organizados por país mediante `group-title="<País> TV"`: Argentina TV primero; luego países por orden alfabético; Internacional TV para procedencia multinacional o incierta. **No se quitó ningún HLS al recuperar la lista.**
 
 ## Logos
 
-La lista original tenía **238 logos** en 251 señales HLS. Se copiaron **9 URL públicas de logos del propio índice de TV FULL PRO** a los canales HLS originales que carecían de `tvg-logo`, alcanzando **247 logos declarados** antes de incorporar Crónica TV; ahora son **248**. Se mantienen **4 canales sin logo explícito** porque no se encontró una correspondencia fiable en ese índice (Canal E, TV Universidad, Canal y Cine Acción). Estos cambios son solo metadatos visuales, no alteran reproducción. La disponibilidad de cada imagen externa no se ha probado en todos los dispositivos.
+La lista original tenía **238 logos** en 251 señales HLS. Se copiaron **9 URL públicas de logos del propio índice de TV FULL PRO** a los canales HLS originales que carecían de `tvg-logo`, alcanzando **247 logos declarados**. Se mantienen **4 canales sin logo explícito** porque no se encontró una correspondencia fiable en ese índice (Canal E, TV Universidad, Canal y Cine Acción). Estos cambios son solo metadatos visuales, no alteran reproducción. La disponibilidad de cada imagen externa no se ha probado en todos los dispositivos.
 
 ## Canal 8 y Canal 10 Tucumán
 
 - **Canal 8 / Telefe Tucumán** se conserva como señal HLS, incluida la cabecera de compatibilidad previamente configurada. Su reproducción debe verificarse desde una red argentina; GitHub Actions solo certificó manifiesto y un segmento, no imagen/sonido.
 - **Canal 10 Tucumán** solo tiene una referencia estable a YouTube en el catálogo; no se ha identificado un HLS directo estable, público y verificado para la APK. La URL firmada `manifest.googlevideo.com` vence y puede depender de IP/sesión, por eso **no se publica**. Canal 10 permanece en la lista YouTube independiente hasta que se encuentre una fuente HLS legítima o se incorpore un reproductor de YouTube en la APK.
 
+## Crónica TV — fuente HLS descartada por decodificación fallida (10/11/2026)
+
+Se retiró de la lista principal el HLS comunitario g5 de Crónica TV tras el reporte de falla en TV FULL PRO y el diagnóstico independiente [GitHub Actions #42900191922](https://github.com/luchochavezfacebook-byte/lista-clasica-/actions/runs/42900191922). Aunque el manifiesto y 2048 bytes de un segmento respondían, FFmpeg registró errores de H.264 `decode_slice_header` y no consiguió completar 3 segundos de decodificación en los servidores g5 ni g3 (tiempo de espera). La ruta g1 consultada respondió HTTP 404. Como control, Canal 8 Tucumán decodificó correctamente 3 segundos.
+
+**No atribuir el error solo al reproductor:** el servidor HLS no superó la prueba técnica. Ninguna de esas fuentes se incorpora como HLS válido sin reproducción verificada. La referencia oficial de Crónica en YouTube sigue catalogada por separado en `lista_clasica_youtube.m3u`; TV FULL PRO V62 no reproduce sus enlaces `/live` directamente.
+
 ## Mantenimiento
 
-- `fuentes.json`: 11 fuentes HLS originales + Crónica TV
+- `fuentes.json`: 11 fuentes HLS originales
 - `fuentes_mundotv.json`: 245 fuentes HLS importadas, clasificadas por país
 - `youtube_en_vivo.json`: 27 referencias YouTube, separadas del reproductor HLS
 - `scripts/generar_lista.py`: genera **solo HLS**
