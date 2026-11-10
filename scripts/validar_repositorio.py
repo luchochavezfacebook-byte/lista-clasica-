@@ -18,6 +18,7 @@ def main():
     assert len({c['tvg_id'] for c in youtube}) == len(youtube), 'Canales YouTube duplicados'
 
     for channel in all_hls:
+        assert channel.get('pais') and channel.get('categoria') == channel['pais'] + ' TV', 'País/categoría inválido: ' + channel['nombre']
         url = channel['url'].strip()
         parts = urlsplit(url)
         assert parts.scheme == 'https' and parts.hostname, 'URL inválida: ' + channel['nombre']
@@ -60,7 +61,13 @@ def main():
         assert content.startswith('#EXTM3U\n'), 'Encabezado M3U inválido'
         assert 'manifest.googlevideo.com' not in content
         assert 'access_token=' not in content and 'expire/' not in content
-        assert content.count('#EXTINF:') == (len({c['url'] for c in all_hls}) if filename == 'lista_clasica.m3u' else len(youtube))
+        assert content.count('#EXTINF:') == (len({c['url'] for c in all_hls}) + 1 if filename == 'lista_clasica.m3u' else len(youtube))
+        if filename == 'lista_clasica.m3u':
+            canal10 = next(c for c in youtube if c['tvg_id'] == 'Canal10Tucuman.ar')
+            assert content.count(canal10['url_permanente']) == 1, 'Falta Canal 10 Tucumán estable'
+            assert 'group-title="Argentina TV"' in content
+            assert 'Mundo TV /' not in content
+            assert content.count('#EXTINF:') == 252
 
     print(f'OK: {len(hls)} HLS originales + {len(mundo)} Mundo TV; {len({c["url"] for c in all_hls})} URL HLS únicas y {len(youtube)} YouTube, sin sesiones privadas.')
     print('Advertencia: pruebas estructurales, no certificación de disponibilidad.')
