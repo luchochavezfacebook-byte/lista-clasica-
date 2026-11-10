@@ -32,12 +32,6 @@
       "nombre": "Telefe Tucumán (señal regional independiente)",
       "url": "https://g2.mc-hor.transport.edge-access.net/a05/ngrp:elochotv-100168_all/Playlist.m3u8?sense=true",
       "origen": "iptv-org/iptv streams/ar.m3u — NO reemplaza Telefe nacional"
-    },
-    {
-      "nombre": "Crónica TV (HLS candidato)",
-      "url": "https://g5.vxral-slo.transport.edge-access.net/a09/ngrp:cronicatv_video1-100044_all/Playlist.m3u8?sense=true",
-      "origen": "Repositorio público luimont/tv-arg (Crónica TV), a comprobar en GitHub Actions",
-      "nota": "No publicar en M3U hasta comprobar manifiesto y segmento"
     }
   ]
 }
