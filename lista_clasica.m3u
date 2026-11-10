@@ -1,7 +1,7 @@
 #EXTM3U
 #PLAYLIST:Lista Clásica - Canales por país
 # 251 señales HLS únicas y una referencia YouTube (Canal 10 Tucumán)
-# Países organizados como: Argentina TV, España TV, Colombia TV, etc.
+# Países organizados como: Argentina TV (HLS), Argentina YT (YouTube), España TV, Colombia TV, etc.
 # IMPORTANTE: Canal 10 Tucumán es YouTube: requiere reproductor externo; TV FULL PRO V62 no lo reproduce.
 # Sin tokens, firmas temporales ni claves; disponibilidad HLS no certificada en TV Box.
 
