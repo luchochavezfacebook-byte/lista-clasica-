@@ -48,6 +48,14 @@
       "url_permanente": "https://www.youtube.com/@elochotuc/live"
     },
     {
+      "nombre": "Canal 10 Tucumán",
+      "tvg_id": "Canal10Tucuman.ar",
+      "categoria": "TV Regional Tucumán",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/channel/UCRlakPhec4-k3vkBeyWBojg/live",
+      "nota": "Canal oficial de YouTube; transmite según programación. No es HLS y TV FULL PRO V62 no reproduce estas URLs directamente."
+    },
+    {
       "nombre": "Melisa Tim Noticias (Neuquén)",
       "tvg_id": "MelisaTimNoticias.ar",
       "categoria": "Noticias Neuquén",
