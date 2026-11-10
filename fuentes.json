@@ -130,6 +130,16 @@
       "verificacion": "Candidata HLS listada en catálogo Free-TV / iptv-org. NO verificada en TV FULL PRO; comprobar que emita Canal E / Perfil y no otra señal.",
       "categoria_original": "Noticias Argentina",
       "pais": "Argentina"
+    },
+    {
+      "nombre": "Crónica TV",
+      "tvg_id": "CronicaTV.ar",
+      "categoria": "Argentina TV",
+      "pais": "Argentina",
+      "url": "https://g5.vxral-slo.transport.edge-access.net/a09/ngrp:cronicatv_video1-100044_all/Playlist.m3u8?sense=true",
+      "logo": "https://i.postimg.cc/cJ0GKH76/Cronica-TV-logotipo-(2016).png",
+      "user_agent": "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+      "verificacion": "2026-11-10: GitHub Actions auditoría 42898197765 verificó manifiesto M3U8 y primer segmento accesibles. Pendiente reproducción imagen y audio en TV FULL PRO V62 desde Argentina."
     }
   ]
 }
