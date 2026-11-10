@@ -1,0 +1,34 @@
+name: Diagnosticar Crónica HLS sin publicar
+on:
+  push:
+    branches:
+      - diag/cronicatv-ffmpeg-20261110
+permissions:
+  contents: read
+jobs:
+  prueba-video:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Probar video y decodificación de candidatos HLS
+        shell: bash
+        run: |
+          set +e
+          command -v ffprobe || exit 1
+          command -v ffmpeg || exit 1
+          UA="Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
+          for label in cronica_g5 cronica_g3 cronica_g1 canal8_control; do
+            case "$label" in
+              cronica_g5) url="https://g5.vxral-slo.transport.edge-access.net/a09/ngrp:cronicatv_video1-100044_all/Playlist.m3u8?sense=true" ;;
+              cronica_g3) url="https://g3.vxral-slo.transport.edge-access.net/a09/ngrp:cronicatv_video1-100044_all/Playlist.m3u8?sense=true" ;;
+              cronica_g1) url="https://g1.mc-hor.transport.edge-access.net/a10/ngrp:cronicatv_video1-100044_all/Playlist.m3u8" ;;
+              canal8_control) url="https://g2.mc-hor.transport.edge-access.net/a05/ngrp:elochotv-100168_all/Playlist.m3u8?sense=true" ;;
+            esac
+            echo "===== $label : ffprobe streams ====="
+            timeout 32s ffprobe -v error -user_agent "$UA" -analyzeduration 5000000 -probesize 5000000 -show_entries stream=codec_name,codec_type,width,height -of json "$url" 2>&1 | tail -45
+            echo "===== $label : ffmpeg decodificar 3 segundos ====="
+            timeout 32s ffmpeg -hide_banner -nostdin -loglevel error -user_agent "$UA" -i "$url" -t 3 -f null - >/tmp/decoded.log 2>&1
+            status=$?
+            echo "decode_exit=$status"
+            tail -12 /tmp/decoded.log
+          done
