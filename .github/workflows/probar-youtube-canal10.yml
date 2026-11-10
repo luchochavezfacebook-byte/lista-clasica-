@@ -1,0 +1,42 @@
+name: Probar disponibilidad YouTube Canal 10 (solo diagnostico)
+on:
+  push:
+    branches: [poc/youtube-to-hls-canal10-20261110]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  extraer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --quiet --upgrade yt-dlp
+      - name: Comprobar si YouTube ofrece un HLS de Canal 10 (sin publicar URLs firmadas)
+        run: |
+          python - <<'PY'
+          import sys
+          from yt_dlp import YoutubeDL
+          url = 'https://www.youtube.com/watch?v=3yE5L3UxVmU'
+          try:
+              with YoutubeDL({'quiet': True, 'no_warnings': True, 'skip_download': True, 'noplaylist': True}) as yt:
+                  info = yt.extract_info(url, download=False)
+              fmts = info.get('formats') or []
+              hls = [f for f in fmts if str(f.get('protocol') or '').startswith('m3u8')]
+              av = [f for f in hls if f.get('vcodec') not in (None, 'none') and f.get('acodec') not in (None, 'none')]
+              print('titulo:', str(info.get('title') or '')[:120])
+              print('live_status:', info.get('live_status'))
+              print('is_live:', info.get('is_live'))
+              print('formatos_hls:', len(hls))
+              print('hls_audio_y_video:', len(av))
+              print('codigos:', sorted({str((f.get('vcodec'), f.get('acodec'))) for f in av})[:15])
+              print('NOTA: nunca se publican URL googlevideo firmadas; falta probar decodificacion y TV Box')
+              if not av:
+                  sys.exit(2)
+          except Exception as exc:
+              print('yt-dlp no pudo extraer esta transmision desde GitHub Actions:', type(exc).__name__)
+              sys.exit(1)
+          PY
