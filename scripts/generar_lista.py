@@ -6,7 +6,6 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
-CANAL10_ID = 'Canal10Tucuman.ar'
 
 
 def escape_attr(value):
@@ -23,17 +22,11 @@ def norm(value):
 def sort_key(c):
     country = c['pais']
     country_rank = '0' if country == 'Argentina' else ('2' if country == 'Internacional' else '1')
-    kind_rank = '1' if c.get('tipo') == 'youtube_live' else '0'
-    return f"{country_rank}|{norm(country)}|{kind_rank}|{norm(c['nombre'])}|{norm(c['tvg_id'])}"
+    return f"{country_rank}|{norm(country)}|{norm(c['nombre'])}|{norm(c['tvg_id'])}"
 
 
-def build(data, youtube):
+def build(data):
     base = data['canales']
-    yt_channels = youtube['canales']
-    if not yt_channels:
-        raise ValueError('Sin fuentes YouTube')
-    if len({c['url_permanente'] for c in yt_channels}) != len(yt_channels):
-        raise ValueError('YouTube contiene URL duplicadas')
     seen = set()
     channels = []
     for channel in base:
@@ -47,31 +40,16 @@ def build(data, youtube):
             continue
         seen.add(url)
         channels.append(channel)
-    for item in yt_channels:
-        yt_url = item['url_permanente']
-        parts = urlsplit(yt_url)
-        if parts.scheme != 'https' or parts.hostname not in ('youtube.com', 'www.youtube.com') or not parts.path.endswith('/live') or parts.query:
-            raise ValueError('Referencia YouTube inválida: ' + item['nombre'])
-        channels.append({
-            'nombre': item['nombre'] + ' (YouTube - requiere app externa)',
-            'tvg_id': item['tvg_id'] if item['tvg_id'] == CANAL10_ID else 'YT.' + item['tvg_id'],
-            'pais': 'Argentina',
-            'categoria': 'Argentina YT',
-            'tipo': 'youtube_live',
-            'url': yt_url
-        })
     lines = [
         '#EXTM3U',
         '#PLAYLIST:Lista Clásica - Canales por país',
-        '# 251 señales HLS únicas y 27 referencias YouTube',
-        '# Países organizados como: Argentina TV (HLS), Argentina YT (YouTube), España TV, Colombia TV, etc.',
-        '# IMPORTANTE: Canal 10 Tucumán es YouTube: requiere reproductor externo; TV FULL PRO V62 no lo reproduce.',
+        '# Solo fuentes HLS directas compatibles con Media3; sin URLs YouTube.',
+        '# Categorías por país: Argentina TV, España TV, Colombia TV, etc.',
+        '# Fuentes YouTube separadas: lista_clasica_youtube.m3u (no compatible directamente con V62).',
         '# Sin tokens, firmas temporales ni claves; disponibilidad HLS no certificada en TV Box.',
         ''
     ]
     for channel in sorted(channels, key=sort_key):
-        if channel.get('tipo') == 'youtube_live':
-            lines.append('# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62')
         name = escape_attr(channel['nombre'])
         category = escape_attr(channel['categoria'])
         tvg_id = escape_attr(channel['tvg_id'])
@@ -105,8 +83,7 @@ def build(data, youtube):
 if __name__ == '__main__':
     data = json.loads((ROOT / 'fuentes.json').read_text(encoding='utf-8'))
     mundo = json.loads((ROOT / 'fuentes_mundotv.json').read_text(encoding='utf-8'))
-    youtube = json.loads((ROOT / 'youtube_en_vivo.json').read_text(encoding='utf-8'))
     data['canales'].extend(mundo['canales'])
     path = ROOT / 'lista_clasica.m3u'
-    path.write_text(build(data, youtube), encoding='utf-8')
-    print(f"Creada: {path} ({len(data['canales'])} fuentes HLS y {len(youtube['canales'])} referencias YouTube)")
+    path.write_text(build(data), encoding='utf-8')
+    print(f"Creada: {path} ({len({c['url'] for c in data['canales']})} fuentes HLS únicas, YouTube separado)")
