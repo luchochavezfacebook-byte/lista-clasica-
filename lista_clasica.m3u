@@ -1,8 +1,8 @@
 #EXTM3U
 #PLAYLIST:Lista Clásica - Canales por país
-# 251 señales HLS únicas y 27 referencias YouTube
-# Países organizados como: Argentina TV (HLS), Argentina YT (YouTube), España TV, Colombia TV, etc.
-# IMPORTANTE: Canal 10 Tucumán es YouTube: requiere reproductor externo; TV FULL PRO V62 no lo reproduce.
+# Solo fuentes HLS directas compatibles con Media3; sin URLs YouTube.
+# Categorías por país: Argentina TV, España TV, Colombia TV, etc.
+# Fuentes YouTube separadas: lista_clasica_youtube.m3u (no compatible directamente con V62).
 # Sin tokens, firmas temporales ni claves; disponibilidad HLS no certificada en TV Box.
 
 #EXTINF:-1 tvg-id="MundoTV.0241" tvg-name="24/7 Canal de Noticias" tvg-logo="https://i.imgur.com/4hDCB1M.png" group-title="Argentina TV",24/7 Canal de Noticias
@@ -187,114 +187,6 @@ https://5f700d5b2c46f.streamlock.net/vertv/vertv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0068" tvg-name="X Level Media" tvg-logo="https://i.imgur.com/BGwQdQW.jpeg" group-title="Argentina TV",X Level Media
 https://tuvideoonline.com.ar:3332/live/xlevelmedialive.m3u8
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.A24.ar" tvg-name="A24 - América 24 (YouTube - requiere app externa)" group-title="Argentina YT",A24 - América 24 (YouTube - requiere app externa)
-https://www.youtube.com/@a24com/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.Argentina12.ar" tvg-name="Argentina 12 (YouTube - requiere app externa)" group-title="Argentina YT",Argentina 12 (YouTube - requiere app externa)
-https://www.youtube.com/@argentina12ok/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.Azz.ar" tvg-name="AZZ Streaming (YouTube - requiere app externa)" group-title="Argentina YT",AZZ Streaming (YouTube - requiere app externa)
-https://www.youtube.com/@somosazz/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.Blender.ar" tvg-name="BLENDER (YouTube - requiere app externa)" group-title="Argentina YT",BLENDER (YouTube - requiere app externa)
-https://www.youtube.com/@estoesblender/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.BondiLive.ar" tvg-name="Bondi Live (YouTube - requiere app externa)" group-title="Argentina YT",Bondi Live (YouTube - requiere app externa)
-https://www.youtube.com/@Bondi_liveok/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.C5N.ar" tvg-name="C5N (YouTube - requiere app externa)" group-title="Argentina YT",C5N (YouTube - requiere app externa)
-https://www.youtube.com/@c5n/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="Canal10Tucuman.ar" tvg-name="Canal 10 Tucumán (YouTube - requiere app externa)" group-title="Argentina YT",Canal 10 Tucumán (YouTube - requiere app externa)
-https://www.youtube.com/channel/UCRlakPhec4-k3vkBeyWBojg/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.Canal26.ar" tvg-name="Canal 26 (YouTube - requiere app externa)" group-title="Argentina YT",Canal 26 (YouTube - requiere app externa)
-https://www.youtube.com/channel/UCrpMfcQNog595v5gAS-oUsQ/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.TVPublica.ar" tvg-name="Canal Siete / TV Pública (YouTube - requiere app externa)" group-title="Argentina YT",Canal Siete / TV Pública (YouTube - requiere app externa)
-https://www.youtube.com/@canalsieteok/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.CarajoStream.ar" tvg-name="Carajo Stream (YouTube - requiere app externa)" group-title="Argentina YT",Carajo Stream (YouTube - requiere app externa)
-https://www.youtube.com/@CarajoStream/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.CNNEspanol.int" tvg-name="CNN en Español (YouTube - requiere app externa)" group-title="Argentina YT",CNN en Español (YouTube - requiere app externa)
-https://www.youtube.com/@cnnee/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.CronicaTV.ar" tvg-name="Crónica TV (YouTube - requiere app externa)" group-title="Argentina YT",Crónica TV (YouTube - requiere app externa)
-https://www.youtube.com/@cronicatv/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.DWEspanol.int" tvg-name="DW Español (YouTube - requiere app externa)" group-title="Argentina YT",DW Español (YouTube - requiere app externa)
-https://www.youtube.com/@dwespanol/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.ElOchoTucuman.ar" tvg-name="El Ocho (Tucumán) (YouTube - requiere app externa)" group-title="Argentina YT",El Ocho (Tucumán) (YouTube - requiere app externa)
-https://www.youtube.com/@elochotuc/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.Futurock.ar" tvg-name="Futurock FM (YouTube - requiere app externa)" group-title="Argentina YT",Futurock FM (YouTube - requiere app externa)
-https://www.youtube.com/@futurock/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.Gelatina.ar" tvg-name="GELATINA (YouTube - requiere app externa)" group-title="Argentina YT",GELATINA (YouTube - requiere app externa)
-https://www.youtube.com/@somosgelatina/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.InfobaeEnVivo.ar" tvg-name="Infobae en Vivo (YouTube - requiere app externa)" group-title="Argentina YT",Infobae en Vivo (YouTube - requiere app externa)
-https://www.youtube.com/@infobae/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.LNPlus.ar" tvg-name="LA NACION / LN+ (YouTube - requiere app externa)" group-title="Argentina YT",LA NACION / LN+ (YouTube - requiere app externa)
-https://www.youtube.com/@lanacion/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.LuzuTV.ar" tvg-name="LUZU TV (YouTube - requiere app externa)" group-title="Argentina YT",LUZU TV (YouTube - requiere app externa)
-https://www.youtube.com/@luzutv/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.MelisaTimNoticias.ar" tvg-name="Melisa Tim Noticias (Neuquén) (YouTube - requiere app externa)" group-title="Argentina YT",Melisa Tim Noticias (Neuquén) (YouTube - requiere app externa)
-https://www.youtube.com/@MelisaTimNoticias/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.NeuraMedia.ar" tvg-name="Neura Media (YouTube - requiere app externa)" group-title="Argentina YT",Neura Media (YouTube - requiere app externa)
-https://www.youtube.com/@NeuraMedia/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.Olga.ar" tvg-name="OLGA (YouTube - requiere app externa)" group-title="Argentina YT",OLGA (YouTube - requiere app externa)
-https://www.youtube.com/@olgaenvivo_/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.TelefeNoticias.ar" tvg-name="Telefe Noticias — 24 h (YouTube - requiere app externa)" group-title="Argentina YT",Telefe Noticias — 24 h (YouTube - requiere app externa)
-https://www.youtube.com/@telefenoticias/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.Telenueve.ar" tvg-name="Telenueve (YouTube - requiere app externa)" group-title="Argentina YT",Telenueve (YouTube - requiere app externa)
-https://www.youtube.com/@telenuevec9/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.TodoNoticias.ar" tvg-name="TN - Todo Noticias (YouTube - requiere app externa)" group-title="Argentina YT",TN - Todo Noticias (YouTube - requiere app externa)
-https://www.youtube.com/@todonoticias/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.UrbanaPlayFM.ar" tvg-name="Urbana Play 104.3 FM (YouTube - requiere app externa)" group-title="Argentina YT",Urbana Play 104.3 FM (YouTube - requiere app externa)
-https://www.youtube.com/@UrbanaPlayFM/live
-
-# Referencia a YouTube, NO es video HLS compatible con TV FULL PRO V62
-#EXTINF:-1 tvg-id="YT.Vorterix.ar" tvg-name="Vorterix (YouTube - requiere app externa)" group-title="Argentina YT",Vorterix (YouTube - requiere app externa)
-https://www.youtube.com/@vorterixoficial/live
 
 #EXTINF:-1 tvg-id="MundoTV.0202" tvg-name="VizionPlus Albania" tvg-logo="https://graph.facebook.com/vizionplustv/picture?width=200&height=200" group-title="Albania TV",VizionPlus Albania
 https://tringliveviz.akamaized.net/delta/105/out/u/qwaszxerdfcvrtryuy.m3u8
