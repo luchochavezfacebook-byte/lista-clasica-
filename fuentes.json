@@ -8,41 +8,49 @@
     {
       "nombre": "TN - Todo Noticias",
       "tvg_id": "TodoNoticias.ar",
-      "categoria": "Noticias Argentina",
+      "categoria": "Argentina TV",
       "url": "https://live-01-01-tn.vodgc.net/TN_DAI_Beta/index.m3u8",
-      "verificacion": "Aportada por usuario. HTTP 403 desde consulta externa"
+      "verificacion": "Aportada por usuario. HTTP 403 desde consulta externa",
+      "categoria_original": "Noticias Argentina",
+      "pais": "Argentina"
     },
     {
       "nombre": "Canal 26",
       "tvg_id": "Canal26.ar",
-      "categoria": "Noticias Argentina",
+      "categoria": "Argentina TV",
       "url": "https://stream-gtlc.telecentro.net.ar/hls/canal26hls/main.m3u8",
-      "verificacion": "Pendiente de verificar en TV Box"
+      "verificacion": "Pendiente de verificar en TV Box",
+      "categoria_original": "Noticias Argentina",
+      "pais": "Argentina"
     },
     {
       "nombre": "Net TV",
       "tvg_id": "NETTV.ar",
-      "categoria": "TV Abierta Argentina",
+      "categoria": "Argentina TV",
       "url": "https://unlimited1-us.dps.live/nettv/nettv.smil/playlist.m3u8",
       "verificacion": "Manifiesto y primer segmento accesibles en GitHub Actions 2026-10-27; respaldo alternativo validado del mismo canal. Pendiente prueba TV Box.",
       "backups": [
         {
           "url": "https://unlimited6-cl.dps.live/nettv/nettv.smil/playlist.m3u8"
         }
-      ]
+      ],
+      "categoria_original": "TV Abierta Argentina",
+      "pais": "Argentina"
     },
     {
       "nombre": "El Trece",
       "tvg_id": "ElTrece.ar",
-      "categoria": "TV Abierta Argentina",
+      "categoria": "Argentina TV",
       "url": "https://livetrx01.vodgc.net/eltrecetv/index.m3u8",
       "verificacion": "HLS y segmento accesibles en GitHub Actions 2026-10-27. La fuente anterior entregaba variante no HLS desde el runner. Pendiente prueba TV Box.",
-      "referrer": "https://vodgc.net"
+      "referrer": "https://vodgc.net",
+      "categoria_original": "TV Abierta Argentina",
+      "pais": "Argentina"
     },
     {
       "nombre": "Telefe Tucumán (regional)",
       "tvg_id": "TelefeTucuman.ar",
-      "categoria": "TV Regional Tucumán",
+      "categoria": "Argentina TV",
       "url": "https://g2.mc-hor.transport.edge-access.net/a05/ngrp:elochotv-100168_all/Playlist.m3u8?sense=true",
       "verificacion": "2026-11-10: GitHub Actions accedió a manifiesto y segmento con UA Android. El usuario reporta fallo en TV Box; se agregan User-Agent de auditoría y Referer del reproductor integrado por el sitio oficial de El Ocho. Ajuste de compatibilidad experimental: requiere prueba física en V62; NO se certifica reproducción.",
       "candidato_temporal": {
@@ -54,51 +62,65 @@
         "nota": "No reemplazar señal principal; obtener autorización y URL vigente desde la misma sesión/dispositivo antes de prueba."
       },
       "user_agent": "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
-      "referrer": "https://vmf.edge-apps.net/"
+      "referrer": "https://vmf.edge-apps.net/",
+      "categoria_original": "TV Regional Tucumán",
+      "pais": "Argentina"
     },
     {
       "nombre": "América TV",
       "tvg_id": "AmericaTV.ar",
-      "categoria": "TV Abierta Argentina",
+      "categoria": "Argentina TV",
       "url": "https://prepublish.f.qaotic.net/a07/americahls-100056/playlist_720p.m3u8",
       "verificacion": "HLS y primer segmento accesibles GitHub Actions 2026-10-27. Fuente DAI anterior respondió HTTP 410; pendiente comprobar video en TV Box.",
-      "user_agent": "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/112.0.0.0 Mobile Safari/537.36"
+      "user_agent": "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/112.0.0.0 Mobile Safari/537.36",
+      "categoria_original": "TV Abierta Argentina",
+      "pais": "Argentina"
     },
     {
       "nombre": "Telemax",
       "tvg_id": "Telemax.ar",
-      "categoria": "TV Abierta Argentina",
+      "categoria": "Argentina TV",
       "url": "https://stream-gtlc.telecentro.net.ar/hls/telemaxhls/main.m3u8",
-      "verificacion": "HLS y primer segmento accesibles GitHub Actions 2026-10-27. Fuente anterior tuvo error de conexión; pendiente prueba TV Box."
+      "verificacion": "HLS y primer segmento accesibles GitHub Actions 2026-10-27. Fuente anterior tuvo error de conexión; pendiente prueba TV Box.",
+      "categoria_original": "TV Abierta Argentina",
+      "pais": "Argentina"
     },
     {
       "nombre": "TV Universidad (UNLP)",
       "tvg_id": "TVUniversidad.ar",
-      "categoria": "Cultura y Educación Argentina",
+      "categoria": "Argentina TV",
       "url": "https://stratus.stream.cespi.unlp.edu.ar/hls/tvunlp.m3u8",
-      "verificacion": "Pendiente de verificar"
+      "verificacion": "Pendiente de verificar",
+      "categoria_original": "Cultura y Educación Argentina",
+      "pais": "Argentina"
     },
     {
       "nombre": "DeporTV",
       "tvg_id": "DeporTV.ar",
-      "categoria": "Deportes Argentina",
+      "categoria": "Argentina TV",
       "url": "https://5fb24b460df87.streamlock.net/live-cont.ar/deportv/playlist.m3u8",
-      "verificacion": "Pendiente de verificar"
+      "verificacion": "Pendiente de verificar",
+      "categoria_original": "Deportes Argentina",
+      "pais": "Argentina"
     },
     {
       "nombre": "A24 - América 24 (prueba)",
       "tvg_id": "A24.ar",
-      "categoria": "Noticias Argentina",
+      "categoria": "Argentina TV",
       "url": "https://g5.vxral-slo.transport.edge-access.net/a12/ngrp:a24-100056_all/playlist.m3u8?sense=true",
       "user_agent": "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/112.0.0.0 Mobile Safari/537.36",
-      "verificacion": "Candidata HLS encontrada en iptv-org 2026-10-27. NO verificada en TV FULL PRO ni conectividad real; requiere User-Agent Android; probar en TV Box."
+      "verificacion": "Candidata HLS encontrada en iptv-org 2026-10-27. NO verificada en TV FULL PRO ni conectividad real; requiere User-Agent Android; probar en TV Box.",
+      "categoria_original": "Noticias Argentina",
+      "pais": "Argentina"
     },
     {
       "nombre": "Canal E / Perfil TV (prueba)",
       "tvg_id": "CanalE.ar",
-      "categoria": "Noticias Argentina",
+      "categoria": "Argentina TV",
       "url": "https://unlimited1-us.dps.live/perfiltv/perfiltv.smil/playlist.m3u8",
-      "verificacion": "Candidata HLS listada en catálogo Free-TV / iptv-org. NO verificada en TV FULL PRO; comprobar que emita Canal E / Perfil y no otra señal."
+      "verificacion": "Candidata HLS listada en catálogo Free-TV / iptv-org. NO verificada en TV FULL PRO; comprobar que emita Canal E / Perfil y no otra señal.",
+      "categoria_original": "Noticias Argentina",
+      "pais": "Argentina"
     }
   ]
 }
