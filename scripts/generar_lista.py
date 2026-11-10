@@ -10,7 +10,7 @@ CANAL10_ID = 'Canal10Tucuman.ar'
 
 
 def escape_attr(value):
-    return str(value or '').replace('"', "'").replace('\\n', ' ').replace('\\r', ' ')
+    return str(value or '').replace('"', "'").replace('\n', ' ').replace('\r', ' ')
 
 
 def norm(value):
@@ -95,7 +95,7 @@ def build(data, youtube):
                 'url': backup_url, 'headers': backup.get('headers', {})
             }, ensure_ascii=False, separators=(',', ':')))
         lines.extend([channel['url'], ''])
-    return '\\n'.join(lines).rstrip() + '\\n'
+    return '\n'.join(lines).rstrip() + '\n'
 
 
 if __name__ == '__main__':
