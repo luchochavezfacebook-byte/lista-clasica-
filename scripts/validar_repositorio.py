@@ -68,22 +68,20 @@ def main():
             assert 'group-title="Argentina YT"' not in content, 'Fuentes YouTube dentro del reproductor HLS'
             assert 'youtube.com/' not in content and 'youtu.be/' not in content, 'Enlace YouTube no reproducible en V62'
             assert 'Mundo TV /' not in content
-            assert set(re.findall(r'^https://[^\\s]+
-
-    print(f'OK: {len(hls)} HLS originales + {len(mundo)} Mundo TV; {len({c["url"] for c in all_hls})} URL HLS únicas y {len(youtube)} YouTube, sin sesiones privadas.')
-    print('Advertencia: pruebas estructurales, no certificación de disponibilidad.')
-
-
-if __name__ == '__main__':
-    main()
-, content, re.M)) == {c['url'] for c in all_hls}, 'Falta o sobra una URL HLS'
-            assert content.count('tvg-logo="') == sum(bool(c.get('logo')) for c in {
-                c['url']: c for c in reversed(all_hls)
-            }.values()), 'Se perdieron logos HLS'
+            urls_m3u = {line.strip() for line in content.splitlines() if line.startswith('https://')}
+            assert urls_m3u == {c['url'] for c in all_hls}, 'Falta o sobra una URL HLS'
+            seen_urls = set()
+            logo_expected = 0
+            for c in all_hls:
+                if c['url'] in seen_urls:
+                    continue
+                seen_urls.add(c['url'])
+                logo_expected += bool(c.get('logo'))
+            assert content.count('tvg-logo="') == logo_expected, 'Se perdieron logos HLS'
         else:
             assert all(c['url_permanente'] in content for c in youtube), 'Lista YouTube incompleta'
 
-    print(f'OK: {len(hls)} HLS originales + {len(mundo)} Mundo TV; {len({c["url"] for c in all_hls})} URL HLS únicas y {len(youtube)} YouTube, sin sesiones privadas.')
+    print(f'OK: {len(hls)} HLS originales + {len(mundo)} Mundo TV; {len({c["url"] for c in all_hls})} URL HLS únicas, {len(youtube)} YouTube separadas.')
     print('Advertencia: pruebas estructurales, no certificación de disponibilidad.')
 
 
