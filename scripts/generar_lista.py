@@ -23,7 +23,8 @@ def norm(value):
 def sort_key(c):
     country = c['pais']
     country_rank = '0' if country == 'Argentina' else ('2' if country == 'Internacional' else '1')
-    return f"{country_rank}|{norm(country)}|{norm(c['nombre'])}|{norm(c['tvg_id'])}"
+    kind_rank = '1' if c.get('tipo') == 'youtube_live' else '0'
+    return f"{country_rank}|{norm(country)}|{kind_rank}|{norm(c['nombre'])}|{norm(c['tvg_id'])}"
 
 
 def build(data, youtube):
@@ -52,7 +53,7 @@ def build(data, youtube):
         'nombre': 'Canal 10 Tucumán (YouTube - requiere app externa)',
         'tvg_id': CANAL10_ID,
         'pais': 'Argentina',
-        'categoria': 'Argentina TV',
+        'categoria': 'Argentina YT',
         'tipo': 'youtube_live',
         'url': yt_url
     })
@@ -60,7 +61,7 @@ def build(data, youtube):
         '#EXTM3U',
         '#PLAYLIST:Lista Clásica - Canales por país',
         '# 251 señales HLS únicas y una referencia YouTube (Canal 10 Tucumán)',
-        '# Países organizados como: Argentina TV, España TV, Colombia TV, etc.',
+        '# Países organizados como: Argentina TV (HLS), Argentina YT (YouTube), España TV, Colombia TV, etc.',
         '# IMPORTANTE: Canal 10 Tucumán es YouTube: requiere reproductor externo; TV FULL PRO V62 no lo reproduce.',
         '# Sin tokens, firmas temporales ni claves; disponibilidad HLS no certificada en TV Box.',
         ''
