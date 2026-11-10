@@ -61,17 +61,27 @@ def main():
         assert content.startswith('#EXTM3U\n'), 'Encabezado M3U inválido'
         assert 'manifest.googlevideo.com' not in content
         assert 'access_token=' not in content and 'expire/' not in content
-        assert content.count('#EXTINF:') == (len({c['url'] for c in all_hls}) + len(youtube) if filename == 'lista_clasica.m3u' else len(youtube))
+        expected = len({c['url'] for c in all_hls}) if filename == 'lista_clasica.m3u' else len(youtube)
+        assert content.count('#EXTINF:') == expected, 'Cantidad incorrecta de canales'
         if filename == 'lista_clasica.m3u':
-            assert content.count('group-title="Argentina YT"') == len(youtube), 'Grupo Argentina YT incompleto'
-            for c in youtube:
-                yt_url = c['url_permanente']
-                yt_id = c['tvg_id'] if c['tvg_id'] == 'Canal10Tucuman.ar' else 'YT.' + c['tvg_id']
-                assert content.count(yt_url) == 1, 'Falta enlace YouTube: ' + c['nombre']
-                assert f'tvg-id="{yt_id}"' in content, 'Falta ID separado de YouTube: ' + c['nombre']
             assert 'group-title="Argentina TV"' in content
+            assert 'group-title="Argentina YT"' not in content, 'Fuentes YouTube dentro del reproductor HLS'
+            assert 'youtube.com/' not in content and 'youtu.be/' not in content, 'Enlace YouTube no reproducible en V62'
             assert 'Mundo TV /' not in content
-            assert content.count('#EXTINF:') == 251 + len(youtube)
+            assert set(re.findall(r'^https://[^\\s]+
+
+    print(f'OK: {len(hls)} HLS originales + {len(mundo)} Mundo TV; {len({c["url"] for c in all_hls})} URL HLS únicas y {len(youtube)} YouTube, sin sesiones privadas.')
+    print('Advertencia: pruebas estructurales, no certificación de disponibilidad.')
+
+
+if __name__ == '__main__':
+    main()
+, content, re.M)) == {c['url'] for c in all_hls}, 'Falta o sobra una URL HLS'
+            assert content.count('tvg-logo="') == sum(bool(c.get('logo')) for c in {
+                c['url']: c for c in reversed(all_hls)
+            }.values()), 'Se perdieron logos HLS'
+        else:
+            assert all(c['url_permanente'] in content for c in youtube), 'Lista YouTube incompleta'
 
     print(f'OK: {len(hls)} HLS originales + {len(mundo)} Mundo TV; {len({c["url"] for c in all_hls})} URL HLS únicas y {len(youtube)} YouTube, sin sesiones privadas.')
     print('Advertencia: pruebas estructurales, no certificación de disponibilidad.')
