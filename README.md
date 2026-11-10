@@ -5,7 +5,7 @@ Repositorio **independiente de TV FULL PRO** con una lista de señales HLS argen
 ## Listas
 
 - [Lista Clásica HLS](lista_clasica.m3u): 251 enlaces HLS únicos (11 originales y 245 importados de Mundo TV, con 5 coincidencias por URL). **No todos están verificados ni garantizados**.
-- [YouTube LIVE](lista_clasica_youtube.m3u): 26 referencias a canales oficiales de YouTube. **No son enlaces HLS** y requieren reproductor compatible con YouTube.
+- [YouTube LIVE](lista_clasica_youtube.m3u): 27 referencias a canales oficiales de YouTube. **No son enlaces HLS** y requieren reproductor compatible con YouTube.
 
 Usá la dirección RAW para cargar la lista HLS en un reproductor compatible:
 
@@ -90,3 +90,9 @@ Se incorporó `ft-mundotv.json` recuperado desde Fútbol Total a la Lista Clási
 - Los logos y categorías se mantienen cuando son compatibles. Canales con nombres repetidos pueden tener URLs diferentes, por lo que se conservan con IDs distintos.
 - No se verificó reproducción en TV Box ni disponibilidad geográfica de los nuevos enlaces. `scripts/verificar_canales.py` y la auditoría cada seis horas siguen analizando las 11 fuentes originales; las importadas requieren pruebas separadas antes de afirmarlas estables.
 - Regenerar/validar: `python3 scripts/generar_lista.py && python3 scripts/validar_repositorio.py`.
+
+## Canal 10 Tucumán — YouTube oficial
+
+Se incorporó **Canal 10 Tucumán** a `youtube_en_vivo.json` y a `lista_clasica_youtube.m3u` usando la URL estable del canal oficial: `https://www.youtube.com/channel/UCRlakPhec4-k3vkBeyWBojg/live`.
+
+Una captura de 2026-11-10 observó un manifiesto HLS firmado de YouTube, con vencimiento el 2026-11-11; **no se publica** porque está asociado a una sesión/IP y no sirve como URL estable. Este registro de YouTube **no es un M3U8 directo** y TV FULL PRO V62 no lo reproduce con Media3. Se necesita un reproductor oficial de YouTube o integración autorizada. `lista_clasica.m3u` y las 251 fuentes HLS permanecen sin cambios.
