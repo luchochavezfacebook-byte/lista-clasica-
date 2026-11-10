@@ -44,7 +44,7 @@
       "tvg_id": "TelefeTucuman.ar",
       "categoria": "TV Regional Tucumán",
       "url": "https://g2.mc-hor.transport.edge-access.net/a05/ngrp:elochotv-100168_all/Playlist.m3u8?sense=true",
-      "verificacion": "No es Telefe Buenos Aires/nacional. Señal de Telefe Tucumán encontrada en iptv-org; manifiesto + segmento accesibles GitHub Actions 2026-10-27. Pendiente verificar imagen y sonido TV Box.",
+      "verificacion": "2026-11-10: GitHub Actions accedió a manifiesto y segmento con UA Android. El usuario reporta fallo en TV Box; se agregan User-Agent de auditoría y Referer del reproductor integrado por el sitio oficial de El Ocho. Ajuste de compatibilidad experimental: requiere prueba física en V62; NO se certifica reproducción.",
       "candidato_temporal": {
         "proveedor": "YouTube HLS",
         "video_id": "SeTWBqy85AE",
@@ -52,7 +52,9 @@
         "url_host": "manifest.googlevideo.com",
         "estado": "Referencia suministrada por usuario; URL firmada por IP, no integrada en reproducción por expiración",
         "nota": "No reemplazar señal principal; obtener autorización y URL vigente desde la misma sesión/dispositivo antes de prueba."
-      }
+      },
+      "user_agent": "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+      "referrer": "https://vmf.edge-apps.net/"
     },
     {
       "nombre": "América TV",
