@@ -66,6 +66,8 @@ def main():
             canal10 = next(c for c in youtube if c['tvg_id'] == 'Canal10Tucuman.ar')
             assert content.count(canal10['url_permanente']) == 1, 'Falta Canal 10 Tucumán estable'
             assert 'group-title="Argentina TV"' in content
+            assert content.count('group-title="Argentina YT"') == 1, 'YouTube debe figurar en Argentina YT'
+            assert 'tvg-id="Canal10Tucuman.ar" tvg-name="Canal 10 Tucumán (YouTube - requiere app externa)" group-title="Argentina YT"' in content
             assert 'Mundo TV /' not in content
             assert content.count('#EXTINF:') == 252
 
