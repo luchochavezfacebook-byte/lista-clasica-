@@ -19,6 +19,8 @@ https://unlimited1-us.dps.live/nettv/nettv.smil/playlist.m3u8
 https://livetrx01.vodgc.net/eltrecetv/index.m3u8
 
 #EXTINF:-1 tvg-id="TelefeTucuman.ar" tvg-name="Telefe Tucumán (regional)" group-title="TV Regional Tucumán",Telefe Tucumán (regional)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://vmf.edge-apps.net/
 https://g2.mc-hor.transport.edge-access.net/a05/ngrp:elochotv-100168_all/Playlist.m3u8?sense=true
 
 #EXTINF:-1 tvg-id="AmericaTV.ar" tvg-name="América TV" group-title="TV Abierta Argentina",América TV
