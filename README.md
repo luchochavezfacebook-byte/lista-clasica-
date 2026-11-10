@@ -4,24 +4,24 @@ La lista principal está organizada **por país de la señal**, con Argentina pr
 
 ## Listas
 
-- [**Lista principal**](lista_clasica.m3u): **251 fuentes HLS únicas**, más **una referencia oficial de YouTube para Canal 10 Tucumán**; 252 entradas en total. Las 251 HLS conservan sus URLs, cabeceras, logos y respaldos anteriores.
+- [**Lista principal**](lista_clasica.m3u): **251 fuentes HLS únicas**, más **27 referencias de YouTube** en Argentina YT; 278 entradas en total. Las 251 HLS conservan sus URLs, cabeceras, logos y respaldos anteriores.
 - [**YouTube en vivo**](lista_clasica_youtube.m3u): 27 referencias a transmisiones públicas que requieren un cliente compatible con YouTube.
 
 URL RAW principal para TV FULL PRO:
 
 https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/lista_clasica.m3u
 
-## Categorías por países — revisión 2026-11-10
+## Categorías por país y tipo de fuente — revisión 2026-11-10
 
-Las fuentes HLS se agrupan como `group-title="<País> TV"`. Las referencias YouTube dentro de la lista principal van a una categoría **separada**, `Argentina YT`. Hay **38 grupos** en total, incluyendo **Internacional TV** para señales multinacionales o de procedencia incierta. No quedan categorías ambiguas como `Mundo TV / GENERAL`, `INT. ASIA` o `Noticias Argentina`.
+La lista principal agrupa los **251 canales HLS** por país, con **59 señales en Argentina TV**, y agrega **todos los 27 enlaces de `youtube_en_vivo.json`** dentro de **Argentina YT**. Esta última es una categoría técnica para distinguir YouTube, no una atribución de nacionalidad: incluye también CNN en Español y DW Español.
 
-**Argentina TV** aparece primero, con **59 señales HLS**. A continuación aparece **Argentina YT**, con **Canal 10 Tucumán**, que requiere un reproductor compatible con YouTube. El resto de países aparece ordenado alfabéticamente, y las emisoras se ordenan por nombre dentro de cada país.
+**Total: 278 entradas**, agrupadas en **38 categorías**. Las señales HLS mantienen los nombres, logos, respaldos y direcciones anteriores. Los enlaces YT se identifican con el sufijo «YouTube - requiere app externa», porque V62 no los reproduce directamente.
 
-La atribución de país se guarda en los campos `pais` y `categoria` de `fuentes.json` y `fuentes_mundotv.json`. El campo `categoria_original` conserva la clasificación histórica importada. Algunas señales multinacionales se marcan `Internacional TV` para no asignarles un país sin respaldo.
+El generador usa los 27 enlaces de `youtube_en_vivo.json` (en lugar de uno solo) para que una regeneración no los quite. Los identificadores YT no se confunden con los HLS.
 
 ## Canal 10 Tucumán
 
-Se agregó **Canal 10 Tucumán (YouTube - requiere app externa)** también a `lista_clasica.m3u`, dentro de **Argentina YT**, usando su referencia estable:
+Se agregó **Canal 10 Tucumán (YouTube - requiere app externa)** también a `lista_clasica.m3u`, dentro de **Argentina YT** junto con los otros 26 enlaces YouTube, usando su referencia estable:
 
 https://www.youtube.com/channel/UCRlakPhec4-k3vkBeyWBojg/live
 
