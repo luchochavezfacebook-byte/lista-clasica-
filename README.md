@@ -1,6 +1,6 @@
 # Lista Clásica — TV FULL PRO
 
-La lista principal está organizada **por país de la señal**, con Argentina primero. Es un catálogo independiente del código de TV FULL PRO, no una promesa de funcionamiento de todos los reproductores.
+La lista principal está organizada **por país de la señal**, con Argentina primero y los enlaces de YouTube separados en **Argentina YT**. Es un catálogo independiente del código de TV FULL PRO, no una promesa de funcionamiento de todos los reproductores.
 
 ## Listas
 
@@ -13,15 +13,15 @@ https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/l
 
 ## Categorías por países — revisión 2026-11-10
 
-Todas las entradas usan `group-title="<País> TV"`. Hay **37 grupos**, incluyendo **Internacional TV** para señales de origen multinacional o no determinado con seguridad. No quedan categorías ambiguas como `Mundo TV / GENERAL`, `INT. ASIA` o `Noticias Argentina`.
+Las fuentes HLS se agrupan como `group-title="<País> TV"`. Las referencias YouTube dentro de la lista principal van a una categoría **separada**, `Argentina YT`. Hay **38 grupos** en total, incluyendo **Internacional TV** para señales multinacionales o de procedencia incierta. No quedan categorías ambiguas como `Mundo TV / GENERAL`, `INT. ASIA` o `Noticias Argentina`.
 
-**Argentina TV** aparece primero, con **60 entradas** (incluye Canal 10). El resto de países aparece ordenado alfabéticamente, y las emisoras se ordenan por nombre dentro de cada país.
+**Argentina TV** aparece primero, con **59 señales HLS**. A continuación aparece **Argentina YT**, con **Canal 10 Tucumán**, que requiere un reproductor compatible con YouTube. El resto de países aparece ordenado alfabéticamente, y las emisoras se ordenan por nombre dentro de cada país.
 
 La atribución de país se guarda en los campos `pais` y `categoria` de `fuentes.json` y `fuentes_mundotv.json`. El campo `categoria_original` conserva la clasificación histórica importada. Algunas señales multinacionales se marcan `Internacional TV` para no asignarles un país sin respaldo.
 
 ## Canal 10 Tucumán
 
-Se agregó **Canal 10 Tucumán (YouTube - requiere app externa)** también a `lista_clasica.m3u`, dentro de **Argentina TV**, usando su referencia estable:
+Se agregó **Canal 10 Tucumán (YouTube - requiere app externa)** también a `lista_clasica.m3u`, dentro de **Argentina YT**, usando su referencia estable:
 
 https://www.youtube.com/channel/UCRlakPhec4-k3vkBeyWBojg/live
 
