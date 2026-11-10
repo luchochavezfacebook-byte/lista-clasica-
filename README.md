@@ -4,7 +4,7 @@
 
 Se retiraron **27 enlaces de YouTube** que se habían agregado por error a la lista M3U principal. Se detectó que V62 los entregaba a Media3 como si fueran URLs HLS, lo cual produce **Formato de señal no compatible**. No son HLS y una categoría como «Argentina YT» no puede cambiar su formato.
 
-**Lista principal:** [lista_clasica.m3u](lista_clasica.m3u) — **251 enlaces HLS únicos**, por país, con Argentina primero. Conserva los **251 URL, 238 logos declarados, User-Agent, Referer y respaldos** del catálogo previo al error. No se alteraron URLs, proveedores ni claves.
+**Lista principal:** [lista_clasica.m3u](lista_clasica.m3u) — **251 enlaces HLS únicos**, por país, con Argentina primero. Conserva los **251 URL HLS, User-Agent, Referer y respaldos** previos al error. Se añadieron **9 logos** ya presentes en el índice de la APK, con lo que la lista principal ahora declara **247 logos**. No se alteraron URLs, proveedores ni claves.
 
 **Referencias de YouTube:** [lista_clasica_youtube.m3u](lista_clasica_youtube.m3u) — **27 enlaces de canales**, incluidos Canal 10 Tucumán, C5N, LUZU, OLGA y otros. Se conservan para reproductores compatibles con YouTube, pero **no deben cargarse como HLS en TV FULL PRO V62**. No se mezclan en `lista_clasica.m3u`.
 
@@ -18,7 +18,7 @@ Los HLS están organizados por país mediante `group-title="<País> TV"`: Argent
 
 ## Logos
 
-El catálogo HLS contenía **238 logos explícitos** antes de agregar las entradas YouTube; conserva los mismos 238 después de la recuperación. **Los 13 HLS restantes no tenían logo declarado en la M3U original**, por lo que el reproductor puede depender de su índice interno. No se inventan URLs de logos. La pérdida visible reciente corresponde a las 27 entradas YouTube, que no tenían logo. Si persisten logos vacíos en un HLS existente, será necesario comprobar el índice de logos y la caché de la APK.
+La lista original tenía **238 logos** en 251 señales HLS. Se copiaron **9 URL públicas de logos del propio índice de TV FULL PRO** a los canales HLS originales que carecían de `tvg-logo`, alcanzando **247 logos declarados**. Se mantienen **4 canales sin logo explícito** porque no se encontró una correspondencia fiable en ese índice (Canal E, TV Universidad, Canal y Cine Acción). Estos cambios son solo metadatos visuales, no alteran reproducción. La disponibilidad de cada imagen externa no se ha probado en todos los dispositivos.
 
 ## Canal 8 y Canal 10 Tucumán
 
