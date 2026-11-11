@@ -505,6 +505,16 @@
       "nota": "Señal digital 24 h (@canalrcn), identificada por oEmbed. Falta channel_id.",
       "video_id": "_ARCBovOsTE",
       "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/canal-rcn-1ca5dc.png"
+    },
+    {
+      "nombre": "Telefe (por verificar)",
+      "tvg_id": "TelefeStream.ar",
+      "categoria": "Pendientes",
+      "tipo": "youtube_video",
+      "url_permanente": "https://www.youtube.com/watch?v=ja--SOQTmss",
+      "video_id_pendiente": "ja--SOQTmss",
+      "horario": "programado",
+      "nota": "Enviado por el usuario el 11/11/2026 como \"Telefe stream en vivo\". Verificar con oEmbed antes de publicar."
     }
   ],
   "fecha": "2026-11-11"
