@@ -1,0 +1,286 @@
+{
+  "fecha": "2026-11-11",
+  "descripcion": "Auditoría de enlaces abiertos recientes antes de editar lista de producción; menciones a enlaces compartidos no prueban autorización de redistribución",
+  "canales": [
+    {
+      "nombre": "DeporTV ACTUAL",
+      "tvg_id": "DeporTV.ar",
+      "url": "https://5fb24b460df87.streamlock.net/live-cont.ar/deportv/playlist.m3u8",
+      "pais": "Argentina",
+      "tipo": "current",
+      "origen": "archivo propio"
+    },
+    {
+      "nombre": "DeporTV alternativo 538d",
+      "tvg_id": "DeporTV.ar",
+      "url": "https://538d0bde28ccf.streamlock.net/live-cont.ar/deportv/playlist.m3u8",
+      "pais": "Argentina",
+      "tipo": "replace",
+      "origen": "iptv-org/iptv streams/ar.m3u"
+    },
+    {
+      "nombre": "DeporTV alternativa chunklist",
+      "tvg_id": "DeporTV.ar",
+      "url": "https://538d0bde28ccf.streamlock.net/live-cont.ar/deportv/chunklist_w940611112.m3u8",
+      "pais": "Argentina",
+      "tipo": "replace",
+      "origen": "reynaldo1311/listas"
+    },
+    {
+      "nombre": "Canal Nets ACTUAL",
+      "tvg_id": "MundoTV.0039",
+      "url": "https://movil.ejeserver.com/live/nets.m3u8",
+      "pais": "Argentina",
+      "tipo": "current",
+      "origen": "archivo propio"
+    },
+    {
+      "nombre": "Canal 9 Litoral ACTUAL",
+      "tvg_id": "MundoTV.0022",
+      "url": "https://stream.arcast.live/ahora/ahora/playlist.m3u8",
+      "pais": "Argentina",
+      "tipo": "current",
+      "origen": "archivo propio"
+    },
+    {
+      "nombre": "TN Todo Noticias alternativa 2026",
+      "tvg_id": "TodoNoticias.ar",
+      "url": "https://live-01-01-tn.vodgc.net/TN24/index.m3u8",
+      "pais": "Argentina",
+      "tipo": "replace",
+      "origen": "iptv-org/iptv streams/ar.m3u"
+    },
+    {
+      "nombre": "TyC Sports canal 24",
+      "tvg_id": "TyCSports.ar",
+      "url": "https://live-04-11-tyc-app-web.vodgc.net/tyc24/index.m3u8",
+      "pais": "Argentina",
+      "tipo": "new",
+      "origen": "iptv-org/iptv streams/ar.m3u"
+    },
+    {
+      "nombre": "TyC Sports FAST",
+      "tvg_id": "TyCSportsFast.ar",
+      "url": "https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8",
+      "pais": "Argentina",
+      "tipo": "new",
+      "origen": "iptv-org/iptv streams/ar.m3u"
+    },
+    {
+      "nombre": "beIN SPORTS XTRA",
+      "tvg_id": "beINSportsXTRA.us",
+      "url": "https://bein-xtra-bein.amagi.tv/playlist.m3u8",
+      "pais": "Estados Unidos",
+      "tipo": "new",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    },
+    {
+      "nombre": "CBS Sports Golazo",
+      "tvg_id": "CBSSportsGolazoNetwork.us",
+      "url": "https://dai.google.com/linear/hls/event/7f3Wv6f7QEKfQna22jHqLQ/master.m3u8",
+      "pais": "Estados Unidos",
+      "tipo": "new",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    },
+    {
+      "nombre": "Real Madrid TV",
+      "tvg_id": "RealMadridTV.es",
+      "url": "https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8",
+      "pais": "España",
+      "tipo": "new",
+      "origen": "iptv-org/iptv streams/es.m3u"
+    },
+    {
+      "nombre": "N Sports",
+      "tvg_id": "NSports.br",
+      "url": "https://ogc-nsprt-tcl-roku-syndication.otteravision.com/ogc/nsprt/nsprt.m3u8",
+      "pais": "Brasil",
+      "tipo": "new",
+      "origen": "iptv-org/iptv streams/br.m3u"
+    },
+    {
+      "nombre": "Fubo Sports Network",
+      "tvg_id": "FuboSportsNetwork.us",
+      "url": "https://aegis-cloudfront-1.tubi.video/c2ac89da-5c69-439e-b85d-d87de0548b54/5.m3u8",
+      "pais": "Estados Unidos",
+      "tipo": "new",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    },
+    {
+      "nombre": "NBC Sports NOW",
+      "tvg_id": "NBCSportsNOW.us",
+      "url": "https://d4whmvwm0rdvi.cloudfront.net/10007/99993008/hls/master.m3u8?ads.xumo_channelId=99993008",
+      "pais": "Estados Unidos",
+      "tipo": "new",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    },
+    {
+      "nombre": "FTF Sports",
+      "tvg_id": "FTFSports.us",
+      "url": "https://1657061170.rsc.cdn77.org/HLS/FTF-LINEAR.m3u8",
+      "pais": "Estados Unidos",
+      "tipo": "new",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    },
+    {
+      "nombre": "FilmRise Classic TV",
+      "tvg_id": "FilmRiseClassicTV.us",
+      "url": "https://d2tv4k5moji5m7.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-lu4pzh9l4b57p/master.m3u8",
+      "pais": "Estados Unidos",
+      "tipo": "new",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    },
+    {
+      "nombre": "Hallmark Movies & More",
+      "tvg_id": "HallmarkMoviesMore.us",
+      "url": "https://dbrb49pjoymg4.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/master.m3u8?ads.xumo_channelId=99991709",
+      "pais": "Estados Unidos",
+      "tipo": "new",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    },
+    {
+      "nombre": "CinePride",
+      "tvg_id": "CinePride.us",
+      "url": "https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=2223",
+      "pais": "Estados Unidos",
+      "tipo": "new",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    },
+    {
+      "nombre": "Whiplash Cinema",
+      "tvg_id": "WhiplashCinema.us",
+      "url": "https://cdn.whiplash.cc/whiplash-cinema/index.m3u8",
+      "pais": "Estados Unidos",
+      "tipo": "new",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    },
+    {
+      "nombre": "Magnificent Movies Network",
+      "tvg_id": "MagnificentMoviesNetwork.us",
+      "url": "https://mmn1.b-cdn.net/hls/MMN-HLS.m3u8",
+      "pais": "Estados Unidos",
+      "tipo": "new",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    },
+    {
+      "nombre": "Tu Cine",
+      "tvg_id": "TuCineLatam.int",
+      "url": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01024-olympusat-tucinelatam-distro/25f414bc-75d2-4b01-b340-576f49ba41b4/4.m3u8",
+      "pais": "Internacional",
+      "tipo": "new",
+      "origen": "reynaldo1311/listas argentina.m3u"
+    },
+    {
+      "nombre": "Cine Real",
+      "tvg_id": "CineRealLatam.int",
+      "url": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01024-olympusat-cinereallatam-distro/c2ad726d-bf69-4f75-8e5f-1007ef768eb8/4.m3u8",
+      "pais": "Internacional",
+      "tipo": "new",
+      "origen": "reynaldo1311/listas argentina.m3u"
+    },
+    {
+      "nombre": "Cine Sureño",
+      "tvg_id": "CineSurenoLatam.int",
+      "url": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01024-olympusat-cinesureno-distro/1df0767f-74e8-44f4-9cf7-92d8d9204262/4.m3u8",
+      "pais": "Internacional",
+      "tipo": "new",
+      "origen": "reynaldo1311/listas argentina.m3u"
+    },
+    {
+      "nombre": "Top Cine",
+      "tvg_id": "TopCineLatam.int",
+      "url": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01024-olympusat-topcinelatam-distro/520936ec-fb0d-453e-bff9-98f7e65d2c13/4.m3u8",
+      "pais": "Internacional",
+      "tipo": "new",
+      "origen": "reynaldo1311/listas argentina.m3u"
+    },
+    {
+      "nombre": "A3CINE",
+      "tvg_id": "A3Cine.es",
+      "url": "https://live.atresmediainternacional.com/ATRESMEDIA/a3cine-index.m3u8",
+      "pais": "España",
+      "tipo": "new",
+      "origen": "reynaldo1311/listas argentina.m3u"
+    },
+    {
+      "nombre": "Canal Cines Verdi",
+      "tvg_id": "CinesVerdi.es",
+      "url": "https://contracorriente-canalcinesverdi-1-es.samsung.wurl.tv/3000.m3u8",
+      "pais": "España",
+      "tipo": "new",
+      "origen": "reynaldo1311/listas argentina.m3u"
+    },
+    {
+      "nombre": "MyTime Movies",
+      "tvg_id": "MyTimeMovies.int",
+      "url": "https://appletree-mytime-samsungmexico.amagi.tv/playlist.m3u8",
+      "pais": "Internacional",
+      "tipo": "new",
+      "origen": "reynaldo1311/listas argentina.m3u"
+    },
+    {
+      "nombre": "Series Classic",
+      "tvg_id": "SeriesClassic.br",
+      "url": "https://cdn-tiva-video10-logicahost-com-br.smartbit.co/serieclassic/serieclassic/playlist.m3u8",
+      "pais": "Brasil",
+      "tipo": "new",
+      "origen": "iptv-org/iptv streams/br.m3u"
+    },
+    {
+      "nombre": "TV Series Clásicas",
+      "tvg_id": "TVSeries.br",
+      "url": "https://stmv1.srvif.com/tvserie/tvserie/playlist.m3u8",
+      "pais": "Brasil",
+      "tipo": "new",
+      "origen": "iptv-org/iptv streams/br.m3u"
+    },
+    {
+      "nombre": "Filmstream Samsung",
+      "tvg_id": "Filmstream.us",
+      "url": "https://spi-filmstream-1-in.samsung.wurl.tv/playlist.m3u8",
+      "pais": "Estados Unidos",
+      "tipo": "new",
+      "origen": "ToniattoCristianE/IpDTv"
+    },
+    {
+      "nombre": "Maxcine",
+      "tvg_id": "Maxcine.us",
+      "url": "https://live20.bozztv.com/giatvplayout7/giatv-208138/playlist.m3u8",
+      "pais": "Estados Unidos",
+      "tipo": "new",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    },
+    {
+      "nombre": "NBC News NOW",
+      "tvg_id": "NBCNewsNOW.us",
+      "url": "https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99984003",
+      "pais": "Estados Unidos",
+      "tipo": "new",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    },
+    {
+      "nombre": "SBT News",
+      "tvg_id": "SBTNews.br",
+      "url": "https://dai.google.com/linear/hls/event/1XSOdtQ0SH2G8OEmEfGgjQ/master.m3u8",
+      "pais": "Brasil",
+      "tipo": "new",
+      "origen": "iptv-org/iptv streams/br.m3u"
+    },
+    {
+      "nombre": "Record News",
+      "tvg_id": "RecordNews.br",
+      "url": "https://rnw-rn.otteravision.com/rnw/rn/rnw_rn.m3u8",
+      "pais": "Brasil",
+      "tipo": "new",
+      "origen": "iptv-org/iptv streams/br.m3u"
+    },
+    {
+      "nombre": "Newsmax Spanish",
+      "tvg_id": "NewsmaxSpanish.us",
+      "url": "https://n1ottesorkatv.akamaized.net/hls/live/2113795/Live_1/index.m3u8",
+      "pais": "Estados Unidos",
+      "tipo": "new",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    }
+  ]
+}
