@@ -2,7 +2,7 @@ name: Identificar videos YouTube (solo lectura)
 
 on:
   push:
-    branches: [propuesta/organizar-lista-yt]
+    branches: ['propuesta/**']
     paths:
       - 'youtube_en_vivo.json'
       - 'scripts/identificar_youtube.py'

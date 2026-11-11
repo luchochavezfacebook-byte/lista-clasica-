@@ -22,17 +22,17 @@ https://www.youtube.com/channel/UCrpMfcQNog595v5gAS-oUsQ/live
 #EXTINF:-1 tvg-id="CronicaTV.ar" tvg-name="Crónica TV" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/cronica-tv-4b6baa.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCT7KFGv6s2a-rh2Jq8ZdM1g" tvfull-horario="24h",Crónica TV
 https://www.youtube.com/channel/UCT7KFGv6s2a-rh2Jq8ZdM1g/live
 
+#EXTINF:-1 tvg-id="ElNueve.ar" tvg-name="El Nueve (Canal 9)" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/elnueve-9ef869.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-video="yGLVhAklLyM" tvfull-horario="programado",El Nueve (Canal 9)
+https://www.youtube.com/watch?v=yGLVhAklLyM
+
 #EXTINF:-1 tvg-id="InfobaeEnVivo.ar" tvg-name="Infobae en Vivo" tvg-logo="https://www.infobae.com/pf/resources/images/icon-512x512.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCvsU0EGXN7Su7MfNqcTGNHg" tvfull-horario="programado",Infobae en Vivo
 https://www.youtube.com/channel/UCvsU0EGXN7Su7MfNqcTGNHg/live
 
-#EXTINF:-1 tvg-id="LNPlus.ar" tvg-name="LA NACION / LN+" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/la-nacion-3c1703.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCba3hpU7EFBSk817y9qZkiA" tvfull-horario="24h",LA NACION / LN+
-https://www.youtube.com/channel/UCba3hpU7EFBSk817y9qZkiA/live
+#EXTINF:-1 tvg-id="LNPlus.ar" tvg-name="LA NACION / LN+" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/la-nacion-3c1703.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-video="FEWZjXJ7M0c" tvfull-horario="24h",LA NACION / LN+
+https://www.youtube.com/watch?v=FEWZjXJ7M0c
 
 #EXTINF:-1 tvg-id="TelefeNoticias.ar" tvg-name="Telefe Noticias — 24 h" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telefe-noticias-80ace6.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UChxGASjdNEYHhVKpl667Huw" tvfull-horario="programado",Telefe Noticias — 24 h
 https://www.youtube.com/channel/UChxGASjdNEYHhVKpl667Huw/live
-
-#EXTINF:-1 tvg-id="Telenueve.ar" tvg-name="Telenueve" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/elnueve-9ef869.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UC2Q91pxDF0BPf0eK44pgYMw" tvfull-horario="programado",Telenueve
-https://www.youtube.com/channel/UC2Q91pxDF0BPf0eK44pgYMw/live
 
 #EXTINF:-1 tvg-id="TodoNoticias.ar" tvg-name="TN - Todo Noticias" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tn-todo-noticias-d78f36.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCj6PcyLvpnIRT_2W_mwa9Aw" tvfull-horario="24h",TN - Todo Noticias
 https://www.youtube.com/channel/UCj6PcyLvpnIRT_2W_mwa9Aw/live
@@ -69,6 +69,9 @@ https://www.youtube.com/channel/UCJozD5RVug7EZdTjqkGISYQ/live
 
 #EXTINF:-1 tvg-id="RadioMitre.ar" tvg-name="Radio Mitre" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/radio-mitre-836117.png" group-title="Streaming, radio y música" tvfull-player="youtube" tvfull-youtube-channel="UCYvINPByAdCcpA0sWrF3I_w" tvfull-horario="programado",Radio Mitre
 https://www.youtube.com/channel/UCYvINPByAdCcpA0sWrF3I_w/live
+
+#EXTINF:-1 tvg-id="TelefeStream.ar" tvg-name="Telefe Stream" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telefe-0cc706.png" group-title="Streaming, radio y música" tvfull-player="youtube" tvfull-youtube-channel="UCHc3el42hXKKhjs_1vzWk9A" tvfull-youtube-video-alt="ja--SOQTmss" tvfull-horario="programado",Telefe Stream
+https://www.youtube.com/channel/UCHc3el42hXKKhjs_1vzWk9A/live
 
 #EXTINF:-1 tvg-id="Vorterix.ar" tvg-name="Vorterix" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a2/Vorterix.jpg" group-title="Streaming, radio y música" tvfull-player="youtube" tvfull-youtube-channel="UCvCTWHCbBC0b9UIeLeNs8ug" tvfull-horario="programado",Vorterix
 https://www.youtube.com/channel/UCvCTWHCbBC0b9UIeLeNs8ug/live

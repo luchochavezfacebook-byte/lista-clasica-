@@ -122,12 +122,14 @@
       "nombre": "LA NACION / LN+",
       "tvg_id": "LNPlus.ar",
       "categoria": "Noticias Argentina",
-      "tipo": "youtube_live",
-      "url_permanente": "https://www.youtube.com/channel/UCba3hpU7EFBSk817y9qZkiA/live",
-      "channel_id": "UCba3hpU7EFBSk817y9qZkiA",
+      "tipo": "youtube_video",
+      "url_permanente": "https://www.youtube.com/watch?v=FEWZjXJ7M0c",
       "horario": "24h",
       "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCba3hpU7EFBSk817y9qZkiA",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/la-nacion-3c1703.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/la-nacion-3c1703.png",
+      "channel_id_referencia": "UCba3hpU7EFBSk817y9qZkiA",
+      "video_id": "FEWZjXJ7M0c",
+      "nota": "El directo del canal (live_stream?channel) daba \"video no disponible\" en la V63; se usa el video del vivo 24 h enviado por el usuario el 11/11/2026."
     },
     {
       "nombre": "Telefe Noticias — 24 h",
@@ -140,7 +142,9 @@
       "channel_id": "UChxGASjdNEYHhVKpl667Huw",
       "horario": "programado",
       "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UChxGASjdNEYHhVKpl667Huw",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telefe-noticias-80ace6.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telefe-noticias-80ace6.png",
+      "video_no_embebible": "XhAYcYpPzTc",
+      "nota": "El video del vivo XhAYcYpPzTc (11/11/2026) NO permite embeberse (oEmbed 401): no sirve para la app. Se mantiene el directo del canal."
     },
     {
       "nombre": "TN - Todo Noticias",
@@ -191,16 +195,17 @@
       "logo": "https://www.infobae.com/pf/resources/images/icon-512x512.png"
     },
     {
-      "nombre": "Telenueve",
-      "tvg_id": "Telenueve.ar",
+      "nombre": "El Nueve (Canal 9)",
+      "tvg_id": "ElNueve.ar",
       "categoria": "Noticias Argentina",
-      "tipo": "youtube_live",
-      "url_permanente": "https://www.youtube.com/channel/UC2Q91pxDF0BPf0eK44pgYMw/live",
-      "nota": "Noticieros en horarios de programación; no emite continuamente",
-      "channel_id": "UC2Q91pxDF0BPf0eK44pgYMw",
+      "tipo": "youtube_video",
+      "url_permanente": "https://www.youtube.com/watch?v=yGLVhAklLyM",
+      "nota": "Directo «EN VIVO | El Nueve» (@elnueve), enviado por el usuario y verificado por oEmbed el 11/11/2026.",
       "horario": "programado",
       "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UC2Q91pxDF0BPf0eK44pgYMw",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/elnueve-9ef869.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/elnueve-9ef869.png",
+      "channel_id_referencia": "UC2Q91pxDF0BPf0eK44pgYMw",
+      "video_id": "yGLVhAklLyM"
     },
     {
       "nombre": "LUZU TV",
@@ -500,6 +505,19 @@
       "nota": "Señal digital 24 h (@canalrcn), identificada por oEmbed. Falta channel_id.",
       "video_id": "_ARCBovOsTE",
       "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/canal-rcn-1ca5dc.png"
+    },
+    {
+      "nombre": "Telefe Stream",
+      "tvg_id": "TelefeStream.ar",
+      "categoria": "Streaming, radio y música",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/channel/UCHc3el42hXKKhjs_1vzWk9A/live",
+      "horario": "programado",
+      "nota": "Directo actual del canal @Telefe (programas de streaming, por horario).",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telefe-0cc706.png",
+      "channel_id": "UCHc3el42hXKKhjs_1vzWk9A",
+      "video_alternativo": "ja--SOQTmss",
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/@telefe/"
     }
   ],
   "fecha": "2026-11-11"
