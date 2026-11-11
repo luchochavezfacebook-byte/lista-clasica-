@@ -181,7 +181,8 @@
       "nota": "Transmisiones en horarios de programación; no emite continuamente",
       "channel_id": "UCvsU0EGXN7Su7MfNqcTGNHg",
       "horario": "programado",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCvsU0EGXN7Su7MfNqcTGNHg"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCvsU0EGXN7Su7MfNqcTGNHg",
+      "logo": "https://www.infobae.com/pf/resources/images/icon-512x512.png"
     },
     {
       "nombre": "Telenueve",
@@ -204,7 +205,8 @@
       "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa.",
       "channel_id": "UCTHaNTsP7hsVgBxARZTuajw",
       "horario": "programado",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCTHaNTsP7hsVgBxARZTuajw"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCTHaNTsP7hsVgBxARZTuajw",
+      "logo": "https://yt3.ggpht.com/ytc/AIdro_lknWNjGUZv72Le-6lRXKP4vViQ7vylxpiOi7sme0fR0gM=s240-c-k-c0x00ffffff-no-rj"
     },
     {
       "nombre": "OLGA",
@@ -242,7 +244,8 @@
       "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa.",
       "channel_id": "UCvCTWHCbBC0b9UIeLeNs8ug",
       "horario": "programado",
-      "fuente_channel_id": "https://vling.net/en/channel/UCvCTWHCbBC0b9UIeLeNs8ug/channel-info"
+      "fuente_channel_id": "https://vling.net/en/channel/UCvCTWHCbBC0b9UIeLeNs8ug/channel-info",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Vorterix.jpg"
     },
     {
       "nombre": "Bondi Live",
@@ -310,7 +313,8 @@
       "channel_id": "UCBPasXWxj1DYJLqZktw_UWg",
       "horario": "programado",
       "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCBPasXWxj1DYJLqZktw_UWg",
-      "nota": "10.º streaming nativo más visto, octubre 2026 (EDS / CulturaGeek)."
+      "nota": "10.º streaming nativo más visto, octubre 2026 (EDS / CulturaGeek).",
+      "logo": "https://yt3.ggpht.com/-BAWzIWyvVpzrzV2h6gS_vMoi2Bw_m3nBfKEZZSgylO492TkzO9WmauJGd2Sa6aWwuEs9TSO6g=s240-c-k-c0x00ffffff-no-rj"
     },
     {
       "nombre": "Radio Mitre",
