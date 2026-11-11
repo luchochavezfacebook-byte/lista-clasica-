@@ -510,12 +510,14 @@
       "nombre": "Telefe Stream",
       "tvg_id": "TelefeStream.ar",
       "categoria": "Streaming, radio y música",
-      "tipo": "youtube_video",
-      "url_permanente": "https://www.youtube.com/watch?v=ja--SOQTmss",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/channel/UCHc3el42hXKKhjs_1vzWk9A/live",
       "horario": "programado",
-      "nota": "Programa «Anda pa allá» del canal @Telefe (oEmbed OK). El video termina con el programa: reemplazar por el channel_id de @Telefe cuando se confirme.",
-      "video_id": "ja--SOQTmss",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telefe-0cc706.png"
+      "nota": "Directo actual del canal @Telefe (programas de streaming, por horario).",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telefe-0cc706.png",
+      "channel_id": "UCHc3el42hXKKhjs_1vzWk9A",
+      "video_alternativo": "ja--SOQTmss",
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/@telefe/"
     }
   ],
   "fecha": "2026-11-11"
