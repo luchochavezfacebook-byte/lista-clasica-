@@ -10,10 +10,12 @@
       "tvg_id": "TodoNoticias.ar",
       "categoria": "Argentina TV",
       "url": "https://live-01-01-tn.vodgc.net/TN_DAI_Beta/index.m3u8",
-      "verificacion": "Aportada por usuario. HTTP 403 desde consulta externa",
+      "verificacion": "2026-11-11: manifiesto HLS y 2 segundos video decodificado en GitHub Actions al aportar User-Agent y Referer; falta comprobar TV Box en Argentina. Sin cabeceras puede fallar.",
       "categoria_original": "Noticias Argentina",
       "pais": "Argentina",
-      "logo": "https://i.postimg.cc/tTnKwx9g/250px-TN-todo-noticias-logo-svg.png"
+      "logo": "https://i.postimg.cc/tTnKwx9g/250px-TN-todo-noticias-logo-svg.png",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "referrer": "https://tn.com.ar/envivo/24hs"
     },
     {
       "nombre": "Canal 26",
