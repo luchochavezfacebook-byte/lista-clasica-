@@ -25,7 +25,10 @@ def check(c):
         parts = urlsplit(url)
         if parts.scheme != "https" or not parts.hostname or not parts.path.lower().endswith(".m3u8"):
             raise ValueError("Not direct HTTPS HLS")
-        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
+        headers = {"User-Agent": c.get("user_agent", UA), "Accept": "*/*"}
+        if c.get("referrer"):
+            headers["Referer"] = c["referrer"]
+        req = urllib.request.Request(url, headers=headers)
         with urllib.request.urlopen(req, timeout=14) as res:
             body = res.read(150000).decode("utf-8-sig", errors="replace")
             obj["status_code"] = res.status
@@ -34,8 +37,10 @@ def check(c):
             raise ValueError("HTTP reachable but not HLS master/media playlist")
         obj["manifest"] = True
         # ffprobe validation of stream index first; ffmpeg must decode actual frames.
-        cmd = ["ffmpeg", "-hide_banner", "-nostdin", "-v", "error", "-rw_timeout", "12000000", "-user_agent", UA,
-               "-i", url, "-map", "0:v:0", "-t", "2", "-f", "null", "-"]
+        cmd = ["ffmpeg", "-hide_banner", "-nostdin", "-v", "error", "-rw_timeout", "12000000", "-user_agent", c.get("user_agent", UA)]
+        if c.get("referrer"):
+            cmd += ["-headers", "Referer: " + c["referrer"] + "\\r\\n"]
+        cmd += ["-i", url, "-map", "0:v:0", "-t", "2", "-f", "null", "-"]
         p = subprocess.run(cmd, capture_output=True, text=True, timeout=48)
         if p.returncode != 0:
             raise ValueError("FFmpeg decode failed: " + p.stderr.strip()[-210:])
