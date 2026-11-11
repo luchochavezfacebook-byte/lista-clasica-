@@ -14,8 +14,14 @@ jobs:
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
-      - name: Verificar FFmpeg
-        run: ffmpeg -version | head -2
+      - name: Instalar FFmpeg para decodificar video
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          command -v ffmpeg
+          ffmpeg -version | head -2
       - name: Probar manifiesto y decodificación real de cada candidato
         run: python3 scripts/escaneo_populares_hls.py
       - name: Publicar solo reporte privado de la ejecución
