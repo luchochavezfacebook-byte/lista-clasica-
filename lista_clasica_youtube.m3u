@@ -54,3 +54,29 @@ https://www.youtube.com/channel/UC_lEiu6917IJz03TnntWUaQ/live
 
 #EXTINF:-1 tvg-id="DWEspanol.int" tvg-name="DW Español" group-title="Noticias Internacionales" tvfull-player="youtube" tvfull-youtube-channel="UCT4Jg8h03dD0iN3Pb5L0PMA" tvfull-horario="24h",DW Español
 https://www.youtube.com/channel/UCT4Jg8h03dD0iN3Pb5L0PMA/live
+# Enlaces de YouTube recibidos el 11/11/2026: videos concretos, pueden dejar de estar en vivo.
+# Para continuidad 24/7 preferir /channel/UC.../live si se confirma el canal y una sola señal activa.
+
+# Miniatura del video como imagen provisoria hasta confirmar logo del canal
+#EXTINF:-1 tvg-id="CarnavalStreamCiudadanoDuka" tvg-name="Carnaval Stream - Ciudadano Duka" tvg-logo="https://i.ytimg.com/vi/ovgf9TRgGfo/hqdefault.jpg" group-title="Streaming Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCRtgbxUH456ox51IswIQgZQ" tvfull-horario="programado",Carnaval Stream - Ciudadano Duka
+https://www.youtube.com/watch?v=ovgf9TRgGfo
+
+# Nombre e imagen del canal por confirmar; miniatura provisional
+#EXTINF:-1 tvg-id="YouTube9r19d2AVFk8" tvg-name="YouTube - Directo 9r19d2AVFk8 (identificar)" tvg-logo="https://i.ytimg.com/vi/9r19d2AVFk8/hqdefault.jpg" group-title="YouTube - Pendientes" tvfull-player="youtube" tvfull-horario="desconocido",YouTube - Directo 9r19d2AVFk8 (identificar)
+https://www.youtube.com/watch?v=9r19d2AVFk8
+
+# Alternativa del mismo canal ya registrado por UC; la URL de video puede finalizar
+#EXTINF:-1 tvg-id="TelefeNoticiasVideoXhAYcYpPzTc" tvg-name="Telefe Noticias - enlace directo alternativo" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telefe-noticias-80ace6.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UChxGASjdNEYHhVKpl667Huw" tvfull-horario="24h",Telefe Noticias - enlace directo alternativo
+https://www.youtube.com/watch?v=XhAYcYpPzTc
+
+# Alternativa de Canal 26 ya registrado por UC; la URL de video puede finalizar
+#EXTINF:-1 tvg-id="Canal26VideoiaooxPL8G_I" tvg-name="Canal 26 - directo 4K alternativo" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/canal-26-4f67ff.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCrpMfcQNog595v5gAS-oUsQ" tvfull-horario="24h",Canal 26 - directo 4K alternativo
+https://www.youtube.com/watch?v=iaooxPL8G_I
+
+# Video de America Noticias del 10/11/2026; puede finalizar al terminar el programa
+#EXTINF:-1 tvg-id="AmericaTVVideoLmPZofUAQMg" tvg-name="America TV - America Noticias (directo)" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/america-tv-03bef6.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-horario="programado",America TV - America Noticias (directo)
+https://www.youtube.com/watch?v=LmPZofUAQMg
+
+# Nombre e imagen del canal por confirmar; miniatura provisional
+#EXTINF:-1 tvg-id="YouTube4P8uIpjkSR0" tvg-name="YouTube - Directo 4P8uIpjkSR0 (identificar)" tvg-logo="https://i.ytimg.com/vi/4P8uIpjkSR0/hqdefault.jpg" group-title="YouTube - Pendientes" tvfull-player="youtube" tvfull-horario="desconocido",YouTube - Directo 4P8uIpjkSR0 (identificar)
+https://www.youtube.com/watch?v=4P8uIpjkSR0
