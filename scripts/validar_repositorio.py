@@ -55,13 +55,19 @@ def main():
         assert parts.scheme == 'https' and parts.hostname in {'youtube.com', 'www.youtube.com'}
         assert parts.path.endswith('/live') and not parts.query, 'Enlace YouTube no permanente'
         assert 'manifest.googlevideo.com' not in json.dumps(channel)
+        # Lista Clásica YT: el channel_id es opcional (pendiente) pero, si está, debe ser válido.
+        cid = channel.get('channel_id', '')
+        assert cid == '' or re.fullmatch(r'UC[A-Za-z0-9_-]{22}', cid), 'channel_id inválido: ' + channel['nombre']
+        assert channel.get('horario', 'programado') in {'24h', 'programado'}, 'Horario inválido: ' + channel['nombre']
+    youtube_listos = [c for c in youtube if c.get('channel_id')]
+    assert len({c['channel_id'] for c in youtube_listos}) == len(youtube_listos), 'channel_id repetido'
 
     for filename in ('lista_clasica.m3u', 'lista_clasica_youtube.m3u'):
         content = (ROOT / filename).read_text(encoding='utf-8')
         assert content.startswith('#EXTM3U\n'), 'Encabezado M3U inválido'
         assert 'manifest.googlevideo.com' not in content
         assert 'access_token=' not in content and 'expire/' not in content
-        expected = len({c['url'] for c in all_hls}) if filename == 'lista_clasica.m3u' else len(youtube)
+        expected = len({c['url'] for c in all_hls}) if filename == 'lista_clasica.m3u' else len(youtube_listos)
         assert content.count('#EXTINF:') == expected, 'Cantidad incorrecta de canales'
         if filename == 'lista_clasica.m3u':
             assert 'group-title="Argentina TV"' in content
@@ -79,9 +85,11 @@ def main():
                 logo_expected += bool(c.get('logo'))
             assert content.count('tvg-logo="') == logo_expected, 'Se perdieron logos HLS'
         else:
-            assert all(c['url_permanente'] in content for c in youtube), 'Lista YouTube incompleta'
+            assert all(f"https://www.youtube.com/channel/{c['channel_id']}/live" in content for c in youtube_listos), 'Lista YouTube incompleta'
+            assert content.count('tvfull-player="youtube"') == len(youtube_listos), 'Falta marca de reproductor YouTube'
+            assert '.m3u8' not in content, 'La Lista Clásica YT no debe contener HLS'
 
-    print(f'OK: {len(hls)} HLS originales + {len(mundo)} Mundo TV; {len({c["url"] for c in all_hls})} URL HLS únicas, {len(youtube)} YouTube separadas.')
+    print(f'OK: {len(hls)} HLS originales + {len(mundo)} Mundo TV; {len({c["url"] for c in all_hls})} URL HLS únicas, {len(youtube_listos)} YouTube publicadas ({len(youtube) - len(youtube_listos)} pendientes de channel_id).')
     print('Advertencia: pruebas estructurales, no certificación de disponibilidad.')
 
 
