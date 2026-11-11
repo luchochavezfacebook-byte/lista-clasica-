@@ -1,0 +1,160 @@
+{
+  "nombre": "Canales populares HLS abiertos y verificados noviembre 2026",
+  "fecha": "2026-11-11",
+  "nota": "Solo fuentes con manifest HLS y video descodificado; proveedor y disponibilidad regional pueden variar, no sustituye autorización",
+  "canales": [
+    {
+      "nombre": "TyC Sports 24",
+      "tvg_id": "TyCSports.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://live-04-11-tyc-app-web.vodgc.net/tyc24/index.m3u8",
+      "verificacion": "2026-11-11 GitHub Actions: HTTPS #EXTM3U más 2 segundos video FFmpeg decodificado; TV Box Argentina sin comprobar",
+      "origen": "iptv-org/iptv streams/ar.m3u"
+    },
+    {
+      "nombre": "TyC Sports FAST",
+      "tvg_id": "TyCSportsFast.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8",
+      "verificacion": "2026-11-11 GitHub Actions: HTTPS #EXTM3U más 2 segundos video FFmpeg decodificado; TV Box Argentina sin comprobar",
+      "origen": "iptv-org/iptv streams/ar.m3u"
+    },
+    {
+      "nombre": "beIN SPORTS XTRA",
+      "tvg_id": "beINSportsXTRA.us",
+      "pais": "Estados Unidos",
+      "categoria": "Estados Unidos TV",
+      "url": "https://bein-xtra-bein.amagi.tv/playlist.m3u8",
+      "verificacion": "2026-11-11 GitHub Actions: HTTPS #EXTM3U más 2 segundos video FFmpeg decodificado; TV Box Argentina sin comprobar",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    },
+    {
+      "nombre": "CBS Sports Golazo",
+      "tvg_id": "CBSSportsGolazoNetwork.us",
+      "pais": "Estados Unidos",
+      "categoria": "Estados Unidos TV",
+      "url": "https://dai.google.com/linear/hls/event/7f3Wv6f7QEKfQna22jHqLQ/master.m3u8",
+      "verificacion": "2026-11-11 GitHub Actions: HTTPS #EXTM3U más 2 segundos video FFmpeg decodificado; TV Box Argentina sin comprobar",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    },
+    {
+      "nombre": "NBC Sports NOW",
+      "tvg_id": "NBCSportsNOW.us",
+      "pais": "Estados Unidos",
+      "categoria": "Estados Unidos TV",
+      "url": "https://d4whmvwm0rdvi.cloudfront.net/10007/99993008/hls/master.m3u8?ads.xumo_channelId=99993008",
+      "verificacion": "2026-11-11 GitHub Actions: HTTPS #EXTM3U más 2 segundos video FFmpeg decodificado; TV Box Argentina sin comprobar",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    },
+    {
+      "nombre": "FTF Sports",
+      "tvg_id": "FTFSports.us",
+      "pais": "Estados Unidos",
+      "categoria": "Estados Unidos TV",
+      "url": "https://1657061170.rsc.cdn77.org/HLS/FTF-LINEAR.m3u8",
+      "verificacion": "2026-11-11 GitHub Actions: HTTPS #EXTM3U más 2 segundos video FFmpeg decodificado; TV Box Argentina sin comprobar",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    },
+    {
+      "nombre": "FilmRise Classic TV",
+      "tvg_id": "FilmRiseClassicTV.us",
+      "pais": "Estados Unidos",
+      "categoria": "Estados Unidos TV",
+      "url": "https://d2tv4k5moji5m7.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-lu4pzh9l4b57p/master.m3u8",
+      "verificacion": "2026-11-11 GitHub Actions: HTTPS #EXTM3U más 2 segundos video FFmpeg decodificado; TV Box Argentina sin comprobar",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    },
+    {
+      "nombre": "Hallmark Movies & More",
+      "tvg_id": "HallmarkMoviesMore.us",
+      "pais": "Estados Unidos",
+      "categoria": "Estados Unidos TV",
+      "url": "https://dbrb49pjoymg4.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/master.m3u8?ads.xumo_channelId=99991709",
+      "verificacion": "2026-11-11 GitHub Actions: HTTPS #EXTM3U más 2 segundos video FFmpeg decodificado; TV Box Argentina sin comprobar",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    },
+    {
+      "nombre": "CinePride",
+      "tvg_id": "CinePride.us",
+      "pais": "Estados Unidos",
+      "categoria": "Estados Unidos TV",
+      "url": "https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=2223",
+      "verificacion": "2026-11-11 GitHub Actions: HTTPS #EXTM3U más 2 segundos video FFmpeg decodificado; TV Box Argentina sin comprobar",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    },
+    {
+      "nombre": "Whiplash Cinema",
+      "tvg_id": "WhiplashCinema.us",
+      "pais": "Estados Unidos",
+      "categoria": "Estados Unidos TV",
+      "url": "https://cdn.whiplash.cc/whiplash-cinema/index.m3u8",
+      "verificacion": "2026-11-11 GitHub Actions: HTTPS #EXTM3U más 2 segundos video FFmpeg decodificado; TV Box Argentina sin comprobar",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    },
+    {
+      "nombre": "Magnificent Movies Network",
+      "tvg_id": "MagnificentMoviesNetwork.us",
+      "pais": "Estados Unidos",
+      "categoria": "Estados Unidos TV",
+      "url": "https://mmn1.b-cdn.net/hls/MMN-HLS.m3u8",
+      "verificacion": "2026-11-11 GitHub Actions: HTTPS #EXTM3U más 2 segundos video FFmpeg decodificado; TV Box Argentina sin comprobar",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    },
+    {
+      "nombre": "MyTime Movies",
+      "tvg_id": "MyTimeMovies.int",
+      "pais": "Internacional",
+      "categoria": "Internacional TV",
+      "url": "https://appletree-mytime-samsungmexico.amagi.tv/playlist.m3u8",
+      "verificacion": "2026-11-11 GitHub Actions: HTTPS #EXTM3U más 2 segundos video FFmpeg decodificado; TV Box Argentina sin comprobar",
+      "origen": "reynaldo1311/listas argentina.m3u"
+    },
+    {
+      "nombre": "TV Series Clásicas Brasil",
+      "tvg_id": "TVSeries.br",
+      "pais": "Brasil",
+      "categoria": "Brasil TV",
+      "url": "https://stmv1.srvif.com/tvserie/tvserie/playlist.m3u8",
+      "verificacion": "2026-11-11 GitHub Actions: HTTPS #EXTM3U más 2 segundos video FFmpeg decodificado; TV Box Argentina sin comprobar",
+      "origen": "iptv-org/iptv streams/br.m3u"
+    },
+    {
+      "nombre": "NBC News NOW",
+      "tvg_id": "NBCNewsNOW.us",
+      "pais": "Estados Unidos",
+      "categoria": "Estados Unidos TV",
+      "url": "https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99984003",
+      "verificacion": "2026-11-11 GitHub Actions: HTTPS #EXTM3U más 2 segundos video FFmpeg decodificado; TV Box Argentina sin comprobar",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    },
+    {
+      "nombre": "SBT News",
+      "tvg_id": "SBTNews.br",
+      "pais": "Brasil",
+      "categoria": "Brasil TV",
+      "url": "https://dai.google.com/linear/hls/event/1XSOdtQ0SH2G8OEmEfGgjQ/master.m3u8",
+      "verificacion": "2026-11-11 GitHub Actions: HTTPS #EXTM3U más 2 segundos video FFmpeg decodificado; TV Box Argentina sin comprobar",
+      "origen": "iptv-org/iptv streams/br.m3u"
+    },
+    {
+      "nombre": "Record News",
+      "tvg_id": "RecordNews.br",
+      "pais": "Brasil",
+      "categoria": "Brasil TV",
+      "url": "https://rnw-rn.otteravision.com/rnw/rn/rnw_rn.m3u8",
+      "verificacion": "2026-11-11 GitHub Actions: HTTPS #EXTM3U más 2 segundos video FFmpeg decodificado; TV Box Argentina sin comprobar",
+      "origen": "iptv-org/iptv streams/br.m3u"
+    },
+    {
+      "nombre": "Newsmax Spanish",
+      "tvg_id": "NewsmaxSpanish.us",
+      "pais": "Estados Unidos",
+      "categoria": "Estados Unidos TV",
+      "url": "https://n1ottesorkatv.akamaized.net/hls/live/2113795/Live_1/index.m3u8",
+      "verificacion": "2026-11-11 GitHub Actions: HTTPS #EXTM3U más 2 segundos video FFmpeg decodificado; TV Box Argentina sin comprobar",
+      "origen": "iptv-org/iptv streams/us.m3u"
+    }
+  ]
+}
