@@ -46,6 +46,9 @@ https://5f700d5b2c46f.streamlock.net/canal22/canal22/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal26.ar" tvg-name="Canal 26" tvg-logo="https://i.postimg.cc/3Rbg4kG3/images-q-tbn-ANd9Gc-Se0i-OYk-MVUv8b-RSmev324PVm-Iah3Lbnmk-a-A-s.png" group-title="Argentina TV",Canal 26
 https://stream-gtlc.telecentro.net.ar/hls/canal26hls/main.m3u8
 
+#EXTINF:-1 tvg-id="Canal3Formosa.ar" tvg-name="Canal 3 Formosa" group-title="Argentina TV",Canal 3 Formosa
+https://stmvideo6.livecastv.com/agenfor/agenfor/playlist.m3u8
+
 #EXTINF:-1 tvg-id="MundoTV.0009" tvg-name="Canal 3 La Pampa" tvg-logo="https://i.imgur.com/SsNFudZ.png" group-title="Argentina TV",Canal 3 La Pampa
 https://stream.arcast.com.ar/c3lapampa/ngrp:c3lapampa_all/playlist.m3u8
 
@@ -103,8 +106,17 @@ https://movil.ejeserver.com/live/nets.m3u8
 #EXTINF:-1 tvg-id="MundoTV.0168" tvg-name="Canal Orbe 21" tvg-logo="https://i.postimg.cc/gjgm8h55/canalorbe21.png" group-title="Argentina TV",Canal Orbe 21
 https://stream.arcast.net:4443/canal21/ngrp:canal21_all/playlist.m3u8
 
+#EXTINF:-1 tvg-id="CarasTV.ar" tvg-name="Caras TV" group-title="Argentina TV",Caras TV
+https://unlimited1-us.dps.live/carastv/carastv.smil/playlist.m3u8
+
 #EXTINF:-1 tvg-id="MundoTV.0032" tvg-name="Chaco TV" tvg-logo="https://i.imgur.com/b6RerDw.png" group-title="Argentina TV",Chaco TV
 https://wowzasrv.chaco.gov.ar/Streamtv/chacotv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ChamameTV.ar" tvg-name="Chamamé TV" group-title="Argentina TV",Chamamé TV
+https://srv4.zcast.com.br/chamametv/chamametv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="CumbiaMix.ar" tvg-name="Cumbia Mix" group-title="Argentina TV",Cumbia Mix
+https://cloud.tvomix.com/CUMBIAMIX/index.m3u8
 
 #EXTINF:-1 tvg-id="DeporTV.ar" tvg-name="DeporTV" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/0e/DeporTV_%282020%29.png/revision/latest/scale-to-width-down/1000?cb=20210101172130&path-prefix=es" group-title="Argentina TV",DeporTV
 https://5fb24b460df87.streamlock.net/live-cont.ar/deportv/playlist.m3u8
@@ -113,11 +125,17 @@ https://5fb24b460df87.streamlock.net/live-cont.ar/deportv/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://vodgc.net
 https://livetrx01.vodgc.net/eltrecetv/index.m3u8
 
+#EXTINF:-1 tvg-id="FolcloreandoTV.ar" tvg-name="Folcloreando TV" group-title="Argentina TV",Folcloreando TV
+https://stmvideo6.livecastv.com/radioactivasanjuan/radioactivasanjuan/playlist.m3u8
+
 #EXTINF:-1 tvg-id="MundoTV.0169" tvg-name="Frecuencia F TV" tvg-logo="https://i.imgur.com/Cw5k96N.png" group-title="Argentina TV",Frecuencia F TV
 https://tv.frecuenciaf.com/live/envivo.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0252" tvg-name="Garage TV Latin America" tvg-logo="https://i.imgur.com/FqFxog1.png" group-title="Argentina TV",Garage TV Latin America
 https://stream1.sersat.com/hls/garagetv.m3u8
+
+#EXTINF:-1 tvg-id="La100.ar" tvg-name="La 100" group-title="Argentina TV",La 100
+https://mdstrm.com/live-stream-playlist/68b74fd1d6512526f1f7c75a.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0060" tvg-name="La Morada Radio TV" tvg-logo="https://i.imgur.com/E3wDEX5.png" group-title="Argentina TV",La Morada Radio TV
 https://movil.ejeserver.com/live/lamoradatv.m3u8
@@ -133,6 +151,9 @@ https://movil.ejeserver.com/live/masmusica.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0036" tvg-name="Misiones Cuatro" tvg-logo="https://i.imgur.com/HXRpRlK.png" group-title="Argentina TV",Misiones Cuatro
 https://iptv.ixfo.com.ar:30443/live-HD/MISIONES4/playlist.m3u8
+
+#EXTINF:-1 tvg-id="MultivisionFederal.ar" tvg-name="Multivisión Federal" group-title="Argentina TV",Multivisión Federal
+https://videostream.shockmedia.com.ar/hls/multivisionfederal/multivisionfederal.m3u8
 
 #EXTINF:-1 tvg-id="NETTV.ar" tvg-name="Net TV" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/21/NETTV2018.png/revision/latest/scale-to-width-down/1000?cb=20210315130135&path-prefix=es" group-title="Argentina TV",Net TV
 #EXT-X-TVFULL-BACKUP:{"url":"https://unlimited6-cl.dps.live/nettv/nettv.smil/playlist.m3u8","headers":{}}
@@ -187,6 +208,18 @@ https://5f700d5b2c46f.streamlock.net/vertv/vertv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0068" tvg-name="X Level Media" tvg-logo="https://i.imgur.com/BGwQdQW.jpeg" group-title="Argentina TV",X Level Media
 https://tuvideoonline.com.ar:3332/live/xlevelmedialive.m3u8
+
+#EXTINF:-1 tvg-id="XtremaCartoons.ar" tvg-name="Xtrema Cartoons" group-title="Argentina TV",Xtrema Cartoons
+#EXTVLCOPT:http-referrer=https://xtrematv.com/?p=1390
+https://stmv6.voxtvhd.com.br/xtremacartoons/xtremacartoons/playlist.m3u8
+
+#EXTINF:-1 tvg-id="XtremaCineClasico.ar" tvg-name="Xtrema Cine Clásico" group-title="Argentina TV",Xtrema Cine Clásico
+#EXTVLCOPT:http-referrer=https://xtrematv.com/?p=1460
+https://stmv6.voxtvhd.com.br/cineclasico/cineclasico/playlist.m3u8
+
+#EXTINF:-1 tvg-id="XtremaTerror.ar" tvg-name="Xtrema Terror" group-title="Argentina TV",Xtrema Terror
+#EXTVLCOPT:http-referrer=https://xtrematv.com/?p=1456
+https://stmv6.voxtvhd.com.br/cineterror/cineterror/playlist.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0202" tvg-name="VizionPlus Albania" tvg-logo="https://graph.facebook.com/vizionplustv/picture?width=200&height=200" group-title="Albania TV",VizionPlus Albania
 https://tringliveviz.akamaized.net/delta/105/out/u/qwaszxerdfcvrtryuy.m3u8
@@ -253,6 +286,21 @@ https://ocko-live.ssl.cdn.cra.cz/channels/ocko/playlist/cze/live_hq.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0080" tvg-name="Star Chequia CZ" tvg-logo="https://graph.facebook.com/ockostar/picture?width=200&height=200" group-title="Chequia TV",Star Chequia CZ
 https://ocko-live.ssl.cdn.cra.cz/channels/ocko_gold/playlist/cze/live_hq.m3u8
+
+#EXTINF:-1 tvg-id="13Festival.cl" tvg-name="13 Festival" group-title="Chile TV",13 Festival
+https://origin.dpsgo.com/ssai/event/Nftd0fM2SXasfDlRphvUsg/master.m3u8
+
+#EXTINF:-1 tvg-id="13Humor.cl" tvg-name="13 Humor" group-title="Chile TV",13 Humor
+https://origin.dpsgo.com/ssai/event/cKWySXKgSK-SzlJmESkOWw/master.m3u8
+
+#EXTINF:-1 tvg-id="13Kids.cl" tvg-name="13 Kids" group-title="Chile TV",13 Kids
+https://origin.dpsgo.com/ssai/event/LhHrVtyeQkKZ-Ye_xEU75g/master.m3u8
+
+#EXTINF:-1 tvg-id="13T.cl" tvg-name="13 Teleseries" group-title="Chile TV",13 Teleseries
+https://origin.dpsgo.com/ssai/event/f4TrySe8SoiGF8Lu3EIq1g/master.m3u8
+
+#EXTINF:-1 tvg-id="BioBioTV.cl" tvg-name="Bio Bío TV" group-title="Chile TV",Bio Bío TV
+https://redirector.rudo.video/hls-video/339f69c6122f6d8f4574732c235f09b7683e31a5/bbtv/bbtv.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0104" tvg-name="Portal Foxmix Chile" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnj90kC8kqjZ69oiVT718JUs9iedB5o1w9cKfApo=s200" group-title="Chile TV",Portal Foxmix Chile
 https://panel.tvstream.cl:1936/8040/8040/playlist.m3u8
@@ -706,6 +754,9 @@ https://stream.ontvmx.com/ontv/ghxTYEQmKkB2UJyVuW/playlist.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0198" tvg-name="RTCG SAT Montenegro" tvg-logo="https://graph.facebook.com/RTCG.me/picture?width=200&height=200" group-title="Montenegro TV",RTCG SAT Montenegro
 https://rtcg-live-open.morescreens.com/RTCG_1_004/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ParaguayTV.py" tvg-name="Paraguay TV" group-title="Paraguay TV",Paraguay TV
+https://stream.paraguaytv.gov.py/memfs/bbe36fed-9b49-4d1d-adaa-4bd6d1b2e386.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0101" tvg-name="Venus Media Paraguay" tvg-logo="https://pbs.twimg.com/profile_images/1986542413016412160/5a7Yf8-f_200x200.jpg" group-title="Paraguay TV",Venus Media Paraguay
 https://tigocloud.desdeparaguay.net/venusmedia/venusmedia/playlist.m3u8

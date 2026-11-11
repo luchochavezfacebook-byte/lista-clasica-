@@ -83,7 +83,9 @@ def build(data):
 if __name__ == '__main__':
     data = json.loads((ROOT / 'fuentes.json').read_text(encoding='utf-8'))
     mundo = json.loads((ROOT / 'fuentes_mundotv.json').read_text(encoding='utf-8'))
+    popular = json.loads((ROOT / 'fuentes_populares_2026.json').read_text(encoding='utf-8'))
     data['canales'].extend(mundo['canales'])
+    data['canales'].extend(popular['canales'])
     path = ROOT / 'lista_clasica.m3u'
     path.write_text(build(data), encoding='utf-8')
     print(f"Creada: {path} ({len({c['url'] for c in data['canales']})} fuentes HLS únicas, YouTube separado)")
