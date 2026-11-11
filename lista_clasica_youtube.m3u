@@ -80,3 +80,34 @@ https://www.youtube.com/watch?v=LmPZofUAQMg
 # Nombre e imagen del canal por confirmar; miniatura provisional
 #EXTINF:-1 tvg-id="YouTube4P8uIpjkSR0" tvg-name="YouTube - Directo 4P8uIpjkSR0 (identificar)" tvg-logo="https://i.ytimg.com/vi/4P8uIpjkSR0/hqdefault.jpg" group-title="YouTube - Pendientes" tvfull-player="youtube" tvfull-horario="desconocido",YouTube - Directo 4P8uIpjkSR0 (identificar)
 https://www.youtube.com/watch?v=4P8uIpjkSR0
+
+# Nuevos enlaces directos enviados el 11/11/2026. Pueden finalizar tras la emisión.
+# Cuando se confirma un canal UC, se conserva para facilitar la identificación y futuras migraciones.
+
+#EXTINF:-1 tvg-id="ElOnceSaltaLive6v6iCX2WDA" tvg-name="El Once TV - Salta" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/el-once-tv-d22104.png" group-title="TV Regional" tvfull-player="youtube" tvfull-horario="programado",El Once TV - Salta
+https://www.youtube.com/watch?v=6v6iCX_2WDA
+
+# Imagen provisoria del video; confirmar logotipo oficial
+#EXTINF:-1 tvg-id="MultimediosMexicoSM864ZgPpG8" tvg-name="Multimedios - Canal 6 México" tvg-logo="https://i.ytimg.com/vi/SM864ZgPpG8/hqdefault.jpg" group-title="Noticias Internacionales" tvfull-player="youtube" tvfull-horario="programado",Multimedios - Canal 6 México
+https://www.youtube.com/watch?v=SM864ZgPpG8
+
+#EXTINF:-1 tvg-id="QuieroMusicaTVvGNglKWqwcQ" tvg-name="Quiero Música TV" tvg-logo="https://raw.githubusercontent.com/tvboxram27-star/tv-online/main/logos/Logos/Quiero.png" group-title="Música" tvfull-player="youtube" tvfull-horario="programado",Quiero Música TV
+https://www.youtube.com/watch?v=vGNglKWqwcQ
+
+#EXTINF:-1 tvg-id="Radio10jOKmBKi9Flg" tvg-name="Radio 10 - AM 710" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/radio-10-ebbaf3.png" group-title="Radios con video" tvfull-player="youtube" tvfull-youtube-channel="UCJozD5RVug7EZdTjqkGISYQ" tvfull-horario="programado",Radio 10 - AM 710
+https://www.youtube.com/watch?v=jOKmBKi9Flg
+
+# Miniatura del video mientras se confirma logo oficial
+#EXTINF:-1 tvg-id="Argentina12Live21UP3XoRIBU" tvg-name="Argentina/12 - Noticias" tvg-logo="https://i.ytimg.com/vi/21UP3XoRIBU/hqdefault.jpg" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UC1bBjOZieJWHbsFA0LwjjJA" tvfull-horario="24h",Argentina/12 - Noticias
+https://www.youtube.com/watch?v=21UP3XoRIBU
+
+#EXTINF:-1 tvg-id="ElDoceCordobaLiveNndze" tvg-name="El Doce - Córdoba" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/el-doce-a3a772.png" group-title="TV Regional" tvfull-player="youtube" tvfull-youtube-channel="UCiaePeoCqpU8hBHiNrgkzrA" tvfull-horario="24h",El Doce - Córdoba
+https://www.youtube.com/watch?v=nndzeKDSjuc
+
+# Nombre real y logo oficial pendientes de identificar
+#EXTINF:-1 tvg-id="YouTube94NLwdZ4UB4" tvg-name="YouTube - Directo 94NLwdZ4UB4 (identificar)" tvg-logo="https://i.ytimg.com/vi/94NLwdZ4UB4/hqdefault.jpg" group-title="YouTube - Pendientes" tvfull-player="youtube" tvfull-horario="desconocido",YouTube - Directo 94NLwdZ4UB4 (identificar)
+https://www.youtube.com/watch?v=94NLwdZ4UB4
+
+# Nombre real y logo oficial pendientes de identificar
+#EXTINF:-1 tvg-id="YouTubeARCBovOsTE" tvg-name="YouTube - Directo _ARCBovOsTE (identificar)" tvg-logo="https://i.ytimg.com/vi/_ARCBovOsTE/hqdefault.jpg" group-title="YouTube - Pendientes" tvfull-player="youtube" tvfull-horario="desconocido",YouTube - Directo _ARCBovOsTE (identificar)
+https://www.youtube.com/watch?v=_ARCBovOsTE
