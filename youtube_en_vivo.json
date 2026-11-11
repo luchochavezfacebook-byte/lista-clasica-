@@ -24,7 +24,8 @@
       "url_video_referencia": "https://www.youtube.com/watch?v=C_RnFD6xiX8",
       "channel_id": "UCrpMfcQNog595v5gAS-oUsQ",
       "horario": "24h",
-      "fuente_channel_id": "youtube_en_vivo.json original"
+      "fuente_channel_id": "youtube_en_vivo.json original",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/canal-26-4f67ff.png"
     },
     {
       "nombre": "Argentina 12",
@@ -63,7 +64,8 @@
       "nota": "Canal oficial de YouTube; transmite según programación. No es HLS y TV FULL PRO V62 no reproduce estas URLs directamente.",
       "channel_id": "UCRlakPhec4-k3vkBeyWBojg",
       "horario": "programado",
-      "fuente_channel_id": "youtube_en_vivo.json original"
+      "fuente_channel_id": "youtube_en_vivo.json original",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/10-tucuman-5260c2.png"
     },
     {
       "nombre": "Melisa Tim Noticias (Neuquén)",
@@ -83,7 +85,8 @@
       "url_video_referencia": "https://www.youtube.com/watch?v=Qr61waJ6AZg",
       "channel_id": "UC_lEiu6917IJz03TnntWUaQ",
       "horario": "24h",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UC_lEiu6917IJz03TnntWUaQ"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UC_lEiu6917IJz03TnntWUaQ",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/cnn-en-espanol-45226a.png"
     },
     {
       "nombre": "DW Español",
@@ -95,7 +98,8 @@
       "url_video_referencia": "https://www.youtube.com/watch?v=yZh3xsFqCt8",
       "channel_id": "UCT4Jg8h03dD0iN3Pb5L0PMA",
       "horario": "24h",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCT4Jg8h03dD0iN3Pb5L0PMA"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCT4Jg8h03dD0iN3Pb5L0PMA",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/dw-espanol-59a270.png"
     },
     {
       "nombre": "Crónica TV",
@@ -105,7 +109,8 @@
       "url_permanente": "https://www.youtube.com/channel/UCT7KFGv6s2a-rh2Jq8ZdM1g/live",
       "channel_id": "UCT7KFGv6s2a-rh2Jq8ZdM1g",
       "horario": "24h",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCT7KFGv6s2a-rh2Jq8ZdM1g"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCT7KFGv6s2a-rh2Jq8ZdM1g",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/cronica-tv-4b6baa.png"
     },
     {
       "nombre": "LA NACION / LN+",
@@ -115,7 +120,8 @@
       "url_permanente": "https://www.youtube.com/channel/UCba3hpU7EFBSk817y9qZkiA/live",
       "channel_id": "UCba3hpU7EFBSk817y9qZkiA",
       "horario": "24h",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCba3hpU7EFBSk817y9qZkiA"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCba3hpU7EFBSk817y9qZkiA",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/la-nacion-3c1703.png"
     },
     {
       "nombre": "Telefe Noticias — 24 h",
@@ -127,7 +133,8 @@
       "url_video_referencia": "https://www.youtube.com/watch?v=XhAYcYpPzTc",
       "channel_id": "UChxGASjdNEYHhVKpl667Huw",
       "horario": "programado",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UChxGASjdNEYHhVKpl667Huw"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UChxGASjdNEYHhVKpl667Huw",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/telefe-noticias-80ace6.png"
     },
     {
       "nombre": "TN - Todo Noticias",
@@ -138,7 +145,8 @@
       "nota": "Emisión en vivo habitual; URL de canal, no HLS",
       "channel_id": "UCj6PcyLvpnIRT_2W_mwa9Aw",
       "horario": "24h",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/@todonoticias/"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/@todonoticias/",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/tn-todo-noticias-d78f36.png"
     },
     {
       "nombre": "A24 - América 24",
@@ -149,7 +157,8 @@
       "nota": "Emisión en vivo habitual; URL de canal, no HLS",
       "channel_id": "UCR9120YBAqMfntqgRTKmkjQ",
       "horario": "24h",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCR9120YBAqMfntqgRTKmkjQ"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCR9120YBAqMfntqgRTKmkjQ",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/a24-37fe83.png"
     },
     {
       "nombre": "C5N",
@@ -160,7 +169,8 @@
       "nota": "Emisión en vivo habitual; URL de canal, no HLS",
       "channel_id": "UCFgk2Q2mVO1BklRQhSv6p0w",
       "horario": "24h",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/@c5n/"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/@c5n/",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/c5n-244152.png"
     },
     {
       "nombre": "Infobae en Vivo",
@@ -182,7 +192,8 @@
       "nota": "Noticieros en horarios de programación; no emite continuamente",
       "channel_id": "UC2Q91pxDF0BPf0eK44pgYMw",
       "horario": "programado",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UC2Q91pxDF0BPf0eK44pgYMw"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UC2Q91pxDF0BPf0eK44pgYMw",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/elnueve-9ef869.png"
     },
     {
       "nombre": "LUZU TV",
@@ -287,7 +298,8 @@
       "channel_id": "UC72ZaBKI-Bo5fjmWEYonhJw",
       "horario": "programado",
       "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UC72ZaBKI-Bo5fjmWEYonhJw",
-      "nota": "Vivos por evento o programa (p. ej. Superclásico, futsal). No emite la señal de TV completa."
+      "nota": "Vivos por evento o programa (p. ej. Superclásico, futsal). No emite la señal de TV completa.",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/tyc-sports-6d219d.png"
     },
     {
       "nombre": "Secta Deportiva",
@@ -308,7 +320,8 @@
       "url_permanente": "https://www.youtube.com/channel/UCYvINPByAdCcpA0sWrF3I_w/live",
       "channel_id": "UCYvINPByAdCcpA0sWrF3I_w",
       "horario": "programado",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCYvINPByAdCcpA0sWrF3I_w"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCYvINPByAdCcpA0sWrF3I_w",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/radio-mitre-836117.png"
     },
     {
       "nombre": "AFA Estudio",
