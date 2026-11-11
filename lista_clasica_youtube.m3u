@@ -31,8 +31,8 @@ https://www.youtube.com/watch?v=FEWZjXJ7M0c
 #EXTINF:-1 tvg-id="TelefeNoticias.ar" tvg-name="Telefe Noticias — 24 h" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telefe-noticias-80ace6.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UChxGASjdNEYHhVKpl667Huw" tvfull-horario="programado",Telefe Noticias — 24 h
 https://www.youtube.com/channel/UChxGASjdNEYHhVKpl667Huw/live
 
-#EXTINF:-1 tvg-id="Telenueve.ar" tvg-name="Telenueve" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/elnueve-9ef869.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UC2Q91pxDF0BPf0eK44pgYMw" tvfull-horario="programado",Telenueve
-https://www.youtube.com/channel/UC2Q91pxDF0BPf0eK44pgYMw/live
+#EXTINF:-1 tvg-id="Telenueve.ar" tvg-name="Telenueve" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/elnueve-9ef869.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-video="yGLVhAklLyM" tvfull-horario="programado",Telenueve
+https://www.youtube.com/watch?v=yGLVhAklLyM
 
 #EXTINF:-1 tvg-id="TodoNoticias.ar" tvg-name="TN - Todo Noticias" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tn-todo-noticias-d78f36.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCj6PcyLvpnIRT_2W_mwa9Aw" tvfull-horario="24h",TN - Todo Noticias
 https://www.youtube.com/channel/UCj6PcyLvpnIRT_2W_mwa9Aw/live
