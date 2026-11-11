@@ -139,8 +139,7 @@
       "channel_id": "UChxGASjdNEYHhVKpl667Huw",
       "horario": "programado",
       "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UChxGASjdNEYHhVKpl667Huw",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telefe-noticias-80ace6.png",
-      "video_alternativo": "XhAYcYpPzTc"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telefe-noticias-80ace6.png"
     },
     {
       "nombre": "TN - Todo Noticias",
@@ -435,10 +434,10 @@
       "video_id": "LmPZofUAQMg",
       "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/america-tv-03bef6.png",
       "horario": "programado",
-      "nota": "Video de un programa: termina con la emisión. Falta channel_id de América TV."
+      "nota": "Video de un programa de América TV (@americaenvivo): termina con la emisión. Falta channel_id."
     },
     {
-      "nombre": "El Once TV",
+      "nombre": "El Once TV (Salta)",
       "tvg_id": "ElOnceTV.ar",
       "categoria": "TV Regional Argentina",
       "tipo": "youtube_video",
@@ -446,7 +445,7 @@
       "video_id": "6v6iCX_2WDA",
       "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/el-once-tv-d22104.png",
       "horario": "24h",
-      "nota": "Directo 24 h por video. Falta channel_id."
+      "nota": "Directo 24 h por video (@ElOnceTvSalta). Falta channel_id."
     },
     {
       "nombre": "Multimedios (México)",
