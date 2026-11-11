@@ -1,0 +1,31 @@
+name: Auditar reemplazos y canales populares HLS noviembre 2026
+on:
+  push:
+    branches:
+      - fix/hls-populares-nov2026
+    paths:
+      - '.github/workflows/auditar_populares_nov2026.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Instalar FFmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          ffmpeg -version | head -2
+      - name: Validar decodificación de videos y reportar
+        run: python3 scripts/auditar_populares_nov2026.py
+      - name: Guardar diagnóstico completo
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: auditoria-canales-populares-20261111
+          path: diagnosticos/resultado_populares_20261111.json
+          retention-days: 7
+          if-no-files-found: warn
