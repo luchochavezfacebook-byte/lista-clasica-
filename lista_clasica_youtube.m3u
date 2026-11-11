@@ -4,37 +4,37 @@
 # NO son HLS: no cargar en Media3 ni mezclar con lista_clasica.m3u.
 # Cada URL abre el directo actual del canal; fuera de horario el reproductor muestra "sin transmisión".
 
-#EXTINF:-1 tvg-id="A24.ar" tvg-name="A24 - América 24" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/a24-37fe83.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCR9120YBAqMfntqgRTKmkjQ" tvfull-horario="24h",A24 - América 24
+#EXTINF:-1 tvg-id="A24.ar" tvg-name="A24 - América 24" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/a24-37fe83.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCR9120YBAqMfntqgRTKmkjQ" tvfull-horario="24h",A24 - América 24
 https://www.youtube.com/channel/UCR9120YBAqMfntqgRTKmkjQ/live
 
-#EXTINF:-1 tvg-id="C5N.ar" tvg-name="C5N" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/c5n-244152.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCFgk2Q2mVO1BklRQhSv6p0w" tvfull-horario="24h",C5N
+#EXTINF:-1 tvg-id="C5N.ar" tvg-name="C5N" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/c5n-244152.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCFgk2Q2mVO1BklRQhSv6p0w" tvfull-horario="24h",C5N
 https://www.youtube.com/channel/UCFgk2Q2mVO1BklRQhSv6p0w/live
 
-#EXTINF:-1 tvg-id="Canal26.ar" tvg-name="Canal 26" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/canal-26-4f67ff.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCrpMfcQNog595v5gAS-oUsQ" tvfull-horario="24h",Canal 26
+#EXTINF:-1 tvg-id="Canal26.ar" tvg-name="Canal 26" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/canal-26-4f67ff.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCrpMfcQNog595v5gAS-oUsQ" tvfull-horario="24h",Canal 26
 https://www.youtube.com/channel/UCrpMfcQNog595v5gAS-oUsQ/live
 
-#EXTINF:-1 tvg-id="CronicaTV.ar" tvg-name="Crónica TV" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/cronica-tv-4b6baa.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCT7KFGv6s2a-rh2Jq8ZdM1g" tvfull-horario="24h",Crónica TV
+#EXTINF:-1 tvg-id="CronicaTV.ar" tvg-name="Crónica TV" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/cronica-tv-4b6baa.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCT7KFGv6s2a-rh2Jq8ZdM1g" tvfull-horario="24h",Crónica TV
 https://www.youtube.com/channel/UCT7KFGv6s2a-rh2Jq8ZdM1g/live
 
 #EXTINF:-1 tvg-id="InfobaeEnVivo.ar" tvg-name="Infobae en Vivo" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCvsU0EGXN7Su7MfNqcTGNHg" tvfull-horario="programado",Infobae en Vivo
 https://www.youtube.com/channel/UCvsU0EGXN7Su7MfNqcTGNHg/live
 
-#EXTINF:-1 tvg-id="LNPlus.ar" tvg-name="LA NACION / LN+" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/la-nacion-3c1703.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCba3hpU7EFBSk817y9qZkiA" tvfull-horario="24h",LA NACION / LN+
+#EXTINF:-1 tvg-id="LNPlus.ar" tvg-name="LA NACION / LN+" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/la-nacion-3c1703.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCba3hpU7EFBSk817y9qZkiA" tvfull-horario="24h",LA NACION / LN+
 https://www.youtube.com/channel/UCba3hpU7EFBSk817y9qZkiA/live
 
-#EXTINF:-1 tvg-id="TelefeNoticias.ar" tvg-name="Telefe Noticias — 24 h" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/telefe-noticias-80ace6.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UChxGASjdNEYHhVKpl667Huw" tvfull-horario="programado",Telefe Noticias — 24 h
+#EXTINF:-1 tvg-id="TelefeNoticias.ar" tvg-name="Telefe Noticias — 24 h" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telefe-noticias-80ace6.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UChxGASjdNEYHhVKpl667Huw" tvfull-horario="programado",Telefe Noticias — 24 h
 https://www.youtube.com/channel/UChxGASjdNEYHhVKpl667Huw/live
 
-#EXTINF:-1 tvg-id="Telenueve.ar" tvg-name="Telenueve" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/elnueve-9ef869.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UC2Q91pxDF0BPf0eK44pgYMw" tvfull-horario="programado",Telenueve
+#EXTINF:-1 tvg-id="Telenueve.ar" tvg-name="Telenueve" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/elnueve-9ef869.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UC2Q91pxDF0BPf0eK44pgYMw" tvfull-horario="programado",Telenueve
 https://www.youtube.com/channel/UC2Q91pxDF0BPf0eK44pgYMw/live
 
-#EXTINF:-1 tvg-id="TodoNoticias.ar" tvg-name="TN - Todo Noticias" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/tn-todo-noticias-d78f36.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCj6PcyLvpnIRT_2W_mwa9Aw" tvfull-horario="24h",TN - Todo Noticias
+#EXTINF:-1 tvg-id="TodoNoticias.ar" tvg-name="TN - Todo Noticias" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tn-todo-noticias-d78f36.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCj6PcyLvpnIRT_2W_mwa9Aw" tvfull-horario="24h",TN - Todo Noticias
 https://www.youtube.com/channel/UCj6PcyLvpnIRT_2W_mwa9Aw/live
 
 #EXTINF:-1 tvg-id="SectaDeportiva.ar" tvg-name="Secta Deportiva" group-title="Deportes Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCBPasXWxj1DYJLqZktw_UWg" tvfull-horario="programado",Secta Deportiva
 https://www.youtube.com/channel/UCBPasXWxj1DYJLqZktw_UWg/live
 
-#EXTINF:-1 tvg-id="TyCSports.ar" tvg-name="TyC Sports" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/tyc-sports-6d219d.png" group-title="Deportes Argentina" tvfull-player="youtube" tvfull-youtube-channel="UC72ZaBKI-Bo5fjmWEYonhJw" tvfull-horario="programado",TyC Sports
+#EXTINF:-1 tvg-id="TyCSports.ar" tvg-name="TyC Sports" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tyc-sports-6d219d.png" group-title="Deportes Argentina" tvfull-player="youtube" tvfull-youtube-channel="UC72ZaBKI-Bo5fjmWEYonhJw" tvfull-horario="programado",TyC Sports
 https://www.youtube.com/channel/UC72ZaBKI-Bo5fjmWEYonhJw/live
 
 #EXTINF:-1 tvg-id="LuzuTV.ar" tvg-name="LUZU TV" group-title="Streaming Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCTHaNTsP7hsVgBxARZTuajw" tvfull-horario="programado",LUZU TV
@@ -43,14 +43,14 @@ https://www.youtube.com/channel/UCTHaNTsP7hsVgBxARZTuajw/live
 #EXTINF:-1 tvg-id="Vorterix.ar" tvg-name="Vorterix" group-title="Streaming Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCvCTWHCbBC0b9UIeLeNs8ug" tvfull-horario="programado",Vorterix
 https://www.youtube.com/channel/UCvCTWHCbBC0b9UIeLeNs8ug/live
 
-#EXTINF:-1 tvg-id="RadioMitre.ar" tvg-name="Radio Mitre" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/radio-mitre-836117.png" group-title="Radios con video" tvfull-player="youtube" tvfull-youtube-channel="UCYvINPByAdCcpA0sWrF3I_w" tvfull-horario="programado",Radio Mitre
+#EXTINF:-1 tvg-id="RadioMitre.ar" tvg-name="Radio Mitre" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/radio-mitre-836117.png" group-title="Radios con video" tvfull-player="youtube" tvfull-youtube-channel="UCYvINPByAdCcpA0sWrF3I_w" tvfull-horario="programado",Radio Mitre
 https://www.youtube.com/channel/UCYvINPByAdCcpA0sWrF3I_w/live
 
-#EXTINF:-1 tvg-id="Canal10Tucuman.ar" tvg-name="Canal 10 Tucumán" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/10-tucuman-5260c2.png" group-title="TV Regional" tvfull-player="youtube" tvfull-youtube-channel="UCRlakPhec4-k3vkBeyWBojg" tvfull-horario="programado",Canal 10 Tucumán
+#EXTINF:-1 tvg-id="Canal10Tucuman.ar" tvg-name="Canal 10 Tucumán" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/10-tucuman-5260c2.png" group-title="TV Regional" tvfull-player="youtube" tvfull-youtube-channel="UCRlakPhec4-k3vkBeyWBojg" tvfull-horario="programado",Canal 10 Tucumán
 https://www.youtube.com/channel/UCRlakPhec4-k3vkBeyWBojg/live
 
-#EXTINF:-1 tvg-id="CNNEspanol.int" tvg-name="CNN en Español" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/cnn-en-espanol-45226a.png" group-title="Noticias Internacionales" tvfull-player="youtube" tvfull-youtube-channel="UC_lEiu6917IJz03TnntWUaQ" tvfull-horario="24h",CNN en Español
+#EXTINF:-1 tvg-id="CNNEspanol.int" tvg-name="CNN en Español" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/cnn-en-espanol-45226a.png" group-title="Noticias Internacionales" tvfull-player="youtube" tvfull-youtube-channel="UC_lEiu6917IJz03TnntWUaQ" tvfull-horario="24h",CNN en Español
 https://www.youtube.com/channel/UC_lEiu6917IJz03TnntWUaQ/live
 
-#EXTINF:-1 tvg-id="DWEspanol.int" tvg-name="DW Español" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/65692cada1d82a5b9317fb254a431d081cbe4f8a/logos/dw-espanol-59a270.png" group-title="Noticias Internacionales" tvfull-player="youtube" tvfull-youtube-channel="UCT4Jg8h03dD0iN3Pb5L0PMA" tvfull-horario="24h",DW Español
+#EXTINF:-1 tvg-id="DWEspanol.int" tvg-name="DW Español" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/dw-espanol-59a270.png" group-title="Noticias Internacionales" tvfull-player="youtube" tvfull-youtube-channel="UCT4Jg8h03dD0iN3Pb5L0PMA" tvfull-horario="24h",DW Español
 https://www.youtube.com/channel/UCT4Jg8h03dD0iN3Pb5L0PMA/live
