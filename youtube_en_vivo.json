@@ -518,6 +518,16 @@
       "channel_id": "UCHc3el42hXKKhjs_1vzWk9A",
       "video_alternativo": "ja--SOQTmss",
       "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/@telefe/"
+    },
+    {
+      "nombre": "Telefe Noticias (verificación)",
+      "tvg_id": "Verificacion.TelefeNoticias",
+      "categoria": "Pendientes",
+      "tipo": "youtube_video",
+      "url_permanente": "https://www.youtube.com/watch?v=XhAYcYpPzTc",
+      "video_id_pendiente": "XhAYcYpPzTc",
+      "horario": "programado",
+      "nota": "Verificación temporal."
     }
   ],
   "fecha": "2026-11-11"
