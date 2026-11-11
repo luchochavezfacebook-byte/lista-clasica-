@@ -37,6 +37,9 @@ https://www.youtube.com/channel/UC2Q91pxDF0BPf0eK44pgYMw/live
 #EXTINF:-1 tvg-id="TodoNoticias.ar" tvg-name="TN - Todo Noticias" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tn-todo-noticias-d78f36.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCj6PcyLvpnIRT_2W_mwa9Aw" tvfull-horario="24h",TN - Todo Noticias
 https://www.youtube.com/channel/UCj6PcyLvpnIRT_2W_mwa9Aw/live
 
+#EXTINF:-1 tvg-id="TVPublica.ar" tvg-name="TV Pública (Canal Siete)" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tv-publica-77adf8.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-video="4P8uIpjkSR0" tvfull-horario="24h",TV Pública (Canal Siete)
+https://www.youtube.com/watch?v=4P8uIpjkSR0
+
 #EXTINF:-1 tvg-id="Canal10Tucuman.ar" tvg-name="Canal 10 Tucumán" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/10-tucuman-5260c2.png" group-title="TV Regional Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCRlakPhec4-k3vkBeyWBojg" tvfull-horario="programado",Canal 10 Tucumán
 https://www.youtube.com/channel/UCRlakPhec4-k3vkBeyWBojg/live
 
@@ -69,6 +72,9 @@ https://www.youtube.com/channel/UCYvINPByAdCcpA0sWrF3I_w/live
 
 #EXTINF:-1 tvg-id="Vorterix.ar" tvg-name="Vorterix" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a2/Vorterix.jpg" group-title="Streaming, radio y música" tvfull-player="youtube" tvfull-youtube-channel="UCvCTWHCbBC0b9UIeLeNs8ug" tvfull-horario="programado",Vorterix
 https://www.youtube.com/channel/UCvCTWHCbBC0b9UIeLeNs8ug/live
+
+#EXTINF:-1 tvg-id="CanalRCN.co" tvg-name="Canal RCN (Colombia)" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/canal-rcn-1ca5dc.png" group-title="Internacionales" tvfull-player="youtube" tvfull-youtube-video="_ARCBovOsTE" tvfull-horario="24h",Canal RCN (Colombia)
+https://www.youtube.com/watch?v=_ARCBovOsTE
 
 #EXTINF:-1 tvg-id="CNNEspanol.int" tvg-name="CNN en Español" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/cnn-en-espanol-45226a.png" group-title="Internacionales" tvfull-player="youtube" tvfull-youtube-channel="UC_lEiu6917IJz03TnntWUaQ" tvfull-horario="24h",CNN en Español
 https://www.youtube.com/channel/UC_lEiu6917IJz03TnntWUaQ/live

@@ -5,14 +5,15 @@
   "nota": "Canales de YouTube en vivo para el reproductor embebido (WebView) de TV FULL PRO V63+. Solo se publican en lista_clasica_youtube.m3u los canales con channel_id verificado; channel_id_candidato = sin confirmar, no se publica. No son HLS ni van en lista_clasica.m3u.",
   "canales": [
     {
-      "nombre": "Canal Siete / TV Pública",
+      "nombre": "TV Pública (Canal Siete)",
       "tvg_id": "TVPublica.ar",
       "categoria": "Noticias Argentina",
-      "tipo": "youtube_live",
-      "url_permanente": "https://www.youtube.com/@canalsieteok/live",
-      "video_id_referencia": "8BRocXfSogU",
-      "url_video_referencia": "https://www.youtube.com/watch?v=8BRocXfSogU",
-      "horario": "programado"
+      "tipo": "youtube_video",
+      "url_permanente": "https://www.youtube.com/watch?v=4P8uIpjkSR0",
+      "horario": "24h",
+      "video_id": "4P8uIpjkSR0",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tv-publica-77adf8.png",
+      "nota": "Directo «EN VIVO | Canal Siete» (@CanalSieteOk), identificado por oEmbed. Falta channel_id."
     },
     {
       "nombre": "Canal 26",
@@ -470,44 +471,35 @@
       "nota": "Directo 24 h por video. Falta channel_id."
     },
     {
-      "nombre": "Sin identificar (9r19d2AVFk8)",
+      "nombre": "Magaly TV La Firme (Perú, ATV) — episodio de programa",
       "tvg_id": "Pendiente.9r19d2AVFk8",
       "categoria": "Pendientes",
       "tipo": "youtube_video",
       "url_permanente": "https://www.youtube.com/watch?v=9r19d2AVFk8",
       "video_id_pendiente": "9r19d2AVFk8",
       "horario": "programado",
-      "nota": "Enviado el 11/11/2026; falta identificar canal. No se publica."
+      "nota": "Identificado por oEmbed: es un programa, no una señal en vivo. No se publica."
     },
     {
-      "nombre": "Sin identificar (4P8uIpjkSR0)",
-      "tvg_id": "Pendiente.4P8uIpjkSR0",
-      "categoria": "Pendientes",
-      "tipo": "youtube_video",
-      "url_permanente": "https://www.youtube.com/watch?v=4P8uIpjkSR0",
-      "video_id_pendiente": "4P8uIpjkSR0",
-      "horario": "programado",
-      "nota": "Enviado el 11/11/2026; falta identificar canal. No se publica."
-    },
-    {
-      "nombre": "Sin identificar (94NLwdZ4UB4)",
+      "nombre": "MEGA (Chile) — episodio de programa",
       "tvg_id": "Pendiente.94NLwdZ4UB4",
       "categoria": "Pendientes",
       "tipo": "youtube_video",
       "url_permanente": "https://www.youtube.com/watch?v=94NLwdZ4UB4",
       "video_id_pendiente": "94NLwdZ4UB4",
       "horario": "programado",
-      "nota": "Enviado el 11/11/2026; falta identificar canal. No se publica."
+      "nota": "Identificado por oEmbed: es un programa, no una señal en vivo. No se publica."
     },
     {
-      "nombre": "Sin identificar (_ARCBovOsTE)",
-      "tvg_id": "Pendiente._ARCBovOsTE",
-      "categoria": "Pendientes",
+      "nombre": "Canal RCN (Colombia)",
+      "tvg_id": "CanalRCN.co",
+      "categoria": "Internacionales",
       "tipo": "youtube_video",
       "url_permanente": "https://www.youtube.com/watch?v=_ARCBovOsTE",
-      "video_id_pendiente": "_ARCBovOsTE",
-      "horario": "programado",
-      "nota": "Enviado el 11/11/2026; falta identificar canal. No se publica."
+      "horario": "24h",
+      "nota": "Señal digital 24 h (@canalrcn), identificada por oEmbed. Falta channel_id.",
+      "video_id": "_ARCBovOsTE",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/canal-rcn-1ca5dc.png"
     }
   ],
   "fecha": "2026-11-11"
