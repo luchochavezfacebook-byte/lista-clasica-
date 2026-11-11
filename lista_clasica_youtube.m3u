@@ -25,8 +25,8 @@ https://www.youtube.com/channel/UCT7KFGv6s2a-rh2Jq8ZdM1g/live
 #EXTINF:-1 tvg-id="InfobaeEnVivo.ar" tvg-name="Infobae en Vivo" tvg-logo="https://www.infobae.com/pf/resources/images/icon-512x512.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCvsU0EGXN7Su7MfNqcTGNHg" tvfull-horario="programado",Infobae en Vivo
 https://www.youtube.com/channel/UCvsU0EGXN7Su7MfNqcTGNHg/live
 
-#EXTINF:-1 tvg-id="LNPlus.ar" tvg-name="LA NACION / LN+" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/la-nacion-3c1703.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UCba3hpU7EFBSk817y9qZkiA" tvfull-horario="24h",LA NACION / LN+
-https://www.youtube.com/channel/UCba3hpU7EFBSk817y9qZkiA/live
+#EXTINF:-1 tvg-id="LNPlus.ar" tvg-name="LA NACION / LN+" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/la-nacion-3c1703.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-video="FEWZjXJ7M0c" tvfull-horario="24h",LA NACION / LN+
+https://www.youtube.com/watch?v=FEWZjXJ7M0c
 
 #EXTINF:-1 tvg-id="TelefeNoticias.ar" tvg-name="Telefe Noticias — 24 h" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telefe-noticias-80ace6.png" group-title="Noticias Argentina" tvfull-player="youtube" tvfull-youtube-channel="UChxGASjdNEYHhVKpl667Huw" tvfull-horario="programado",Telefe Noticias — 24 h
 https://www.youtube.com/channel/UChxGASjdNEYHhVKpl667Huw/live

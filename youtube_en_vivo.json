@@ -122,12 +122,15 @@
       "nombre": "LA NACION / LN+",
       "tvg_id": "LNPlus.ar",
       "categoria": "Noticias Argentina",
-      "tipo": "youtube_live",
-      "url_permanente": "https://www.youtube.com/channel/UCba3hpU7EFBSk817y9qZkiA/live",
-      "channel_id": "UCba3hpU7EFBSk817y9qZkiA",
+      "tipo": "youtube_video",
+      "url_permanente": "https://www.youtube.com/watch?v=FEWZjXJ7M0c",
       "horario": "24h",
       "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCba3hpU7EFBSk817y9qZkiA",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/la-nacion-3c1703.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/la-nacion-3c1703.png",
+      "channel_id_referencia": "UCba3hpU7EFBSk817y9qZkiA",
+      "video_id": "FEWZjXJ7M0c",
+      "nota": "El directo del canal (live_stream?channel) daba \"video no disponible\" en la V63; se usa el video del vivo 24 h enviado por el usuario el 11/11/2026.",
+      "verificar": true
     },
     {
       "nombre": "Telefe Noticias — 24 h",

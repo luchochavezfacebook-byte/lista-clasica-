@@ -30,7 +30,7 @@ def oembed(video_id):
 if __name__ == '__main__':
     canales = json.loads((ROOT / 'youtube_en_vivo.json').read_text(encoding='utf-8'))['canales']
     # GitHub muestra hasta 10 avisos por paso: primero los pendientes.
-    canales.sort(key=lambda c: 0 if c.get('video_id_pendiente') else 1)
+    canales.sort(key=lambda c: 0 if c.get('video_id_pendiente') else 1 if c.get('verificar') else 2)
     for c in canales:
         vid = c.get('video_id_pendiente') or c.get('video_id') or c.get('video_alternativo')
         if not vid:
