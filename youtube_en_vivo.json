@@ -1,17 +1,18 @@
 {
-  "nombre": "Canales — YouTube Live gratuitos",
+  "nombre": "Lista Clásica YT — YouTube en vivo",
   "proyecto": "Canales",
   "independiente_de_tv_full_pro": true,
-  "nota": "Referencias /live a canales YouTube, no HLS directo ni garantía de emisión continua. ID referenciales no atribuidos cuando existe conflicto.",
+  "nota": "Canales de YouTube en vivo para el reproductor embebido (WebView) de TV FULL PRO V63+. Solo se publican en lista_clasica_youtube.m3u los canales con channel_id verificado; channel_id_candidato = sin confirmar, no se publica. No son HLS ni van en lista_clasica.m3u.",
   "canales": [
     {
       "nombre": "Canal Siete / TV Pública",
       "tvg_id": "TVPublica.ar",
-      "categoria": "TV Abierta Argentina",
+      "categoria": "TV Pública y educativa",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@canalsieteok/live",
       "video_id_referencia": "8BRocXfSogU",
-      "url_video_referencia": "https://www.youtube.com/watch?v=8BRocXfSogU"
+      "url_video_referencia": "https://www.youtube.com/watch?v=8BRocXfSogU",
+      "horario": "programado"
     },
     {
       "nombre": "Canal 26",
@@ -20,7 +21,10 @@
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/channel/UCrpMfcQNog595v5gAS-oUsQ/live",
       "video_id_referencia": "C_RnFD6xiX8",
-      "url_video_referencia": "https://www.youtube.com/watch?v=C_RnFD6xiX8"
+      "url_video_referencia": "https://www.youtube.com/watch?v=C_RnFD6xiX8",
+      "channel_id": "UCrpMfcQNog595v5gAS-oUsQ",
+      "horario": "24h",
+      "fuente_channel_id": "youtube_en_vivo.json original"
     },
     {
       "nombre": "Argentina 12",
@@ -29,127 +33,167 @@
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@argentina12ok/live",
       "video_id_referencia": "21UP3XoRIBU",
-      "url_video_referencia": "https://www.youtube.com/watch?v=21UP3XoRIBU"
+      "url_video_referencia": "https://www.youtube.com/watch?v=21UP3XoRIBU",
+      "horario": "programado"
     },
     {
       "nombre": "Urbana Play 104.3 FM",
       "tvg_id": "UrbanaPlayFM.ar",
-      "categoria": "Radio y Streaming Argentina",
+      "categoria": "Radios con video",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@UrbanaPlayFM/live",
       "video_id_referencia": "36RmH3c-_3k",
-      "url_video_referencia": "https://www.youtube.com/watch?v=36RmH3c-_3k"
+      "url_video_referencia": "https://www.youtube.com/watch?v=36RmH3c-_3k",
+      "horario": "programado"
     },
     {
       "nombre": "El Ocho (Tucumán)",
       "tvg_id": "ElOchoTucuman.ar",
-      "categoria": "TV Regional Tucumán",
+      "categoria": "TV Regional",
       "tipo": "youtube_live",
-      "url_permanente": "https://www.youtube.com/@elochotuc/live"
+      "url_permanente": "https://www.youtube.com/@elochotuc/live",
+      "horario": "programado"
     },
     {
       "nombre": "Canal 10 Tucumán",
       "tvg_id": "Canal10Tucuman.ar",
-      "categoria": "TV Regional Tucumán",
+      "categoria": "TV Regional",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/channel/UCRlakPhec4-k3vkBeyWBojg/live",
-      "nota": "Canal oficial de YouTube; transmite según programación. No es HLS y TV FULL PRO V62 no reproduce estas URLs directamente."
+      "nota": "Canal oficial de YouTube; transmite según programación. No es HLS y TV FULL PRO V62 no reproduce estas URLs directamente.",
+      "channel_id": "UCRlakPhec4-k3vkBeyWBojg",
+      "horario": "programado",
+      "fuente_channel_id": "youtube_en_vivo.json original"
     },
     {
       "nombre": "Melisa Tim Noticias (Neuquén)",
       "tvg_id": "MelisaTimNoticias.ar",
-      "categoria": "Noticias Neuquén",
+      "categoria": "TV Regional",
       "tipo": "youtube_live",
-      "url_permanente": "https://www.youtube.com/@MelisaTimNoticias/live"
+      "url_permanente": "https://www.youtube.com/@MelisaTimNoticias/live",
+      "horario": "programado"
     },
     {
       "nombre": "CNN en Español",
       "tvg_id": "CNNEspanol.int",
       "categoria": "Noticias Internacionales",
       "tipo": "youtube_live",
-      "url_permanente": "https://www.youtube.com/@cnnee/live",
+      "url_permanente": "https://www.youtube.com/channel/UC_lEiu6917IJz03TnntWUaQ/live",
       "video_id_referencia": "Qr61waJ6AZg",
-      "url_video_referencia": "https://www.youtube.com/watch?v=Qr61waJ6AZg"
+      "url_video_referencia": "https://www.youtube.com/watch?v=Qr61waJ6AZg",
+      "channel_id": "UC_lEiu6917IJz03TnntWUaQ",
+      "horario": "24h",
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UC_lEiu6917IJz03TnntWUaQ"
     },
     {
       "nombre": "DW Español",
       "tvg_id": "DWEspanol.int",
       "categoria": "Noticias Internacionales",
       "tipo": "youtube_live",
-      "url_permanente": "https://www.youtube.com/@dwespanol/live",
+      "url_permanente": "https://www.youtube.com/channel/UCT4Jg8h03dD0iN3Pb5L0PMA/live",
       "video_id_referencia": "yZh3xsFqCt8",
-      "url_video_referencia": "https://www.youtube.com/watch?v=yZh3xsFqCt8"
+      "url_video_referencia": "https://www.youtube.com/watch?v=yZh3xsFqCt8",
+      "channel_id": "UCT4Jg8h03dD0iN3Pb5L0PMA",
+      "horario": "24h",
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCT4Jg8h03dD0iN3Pb5L0PMA"
     },
     {
       "nombre": "Crónica TV",
       "tvg_id": "CronicaTV.ar",
       "categoria": "Noticias Argentina",
       "tipo": "youtube_live",
-      "url_permanente": "https://www.youtube.com/@cronicatv/live"
+      "url_permanente": "https://www.youtube.com/channel/UCT7KFGv6s2a-rh2Jq8ZdM1g/live",
+      "channel_id": "UCT7KFGv6s2a-rh2Jq8ZdM1g",
+      "horario": "24h",
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCT7KFGv6s2a-rh2Jq8ZdM1g"
     },
     {
       "nombre": "LA NACION / LN+",
       "tvg_id": "LNPlus.ar",
       "categoria": "Noticias Argentina",
       "tipo": "youtube_live",
-      "url_permanente": "https://www.youtube.com/@lanacion/live"
+      "url_permanente": "https://www.youtube.com/channel/UCba3hpU7EFBSk817y9qZkiA/live",
+      "channel_id": "UCba3hpU7EFBSk817y9qZkiA",
+      "horario": "24h",
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCba3hpU7EFBSk817y9qZkiA"
     },
     {
       "nombre": "Telefe Noticias — 24 h",
       "tvg_id": "TelefeNoticias.ar",
       "categoria": "Noticias Argentina",
       "tipo": "youtube_live",
-      "url_permanente": "https://www.youtube.com/@telefenoticias/live",
+      "url_permanente": "https://www.youtube.com/channel/UChxGASjdNEYHhVKpl667Huw/live",
       "video_id_referencia": "XhAYcYpPzTc",
-      "url_video_referencia": "https://www.youtube.com/watch?v=XhAYcYpPzTc"
+      "url_video_referencia": "https://www.youtube.com/watch?v=XhAYcYpPzTc",
+      "channel_id": "UChxGASjdNEYHhVKpl667Huw",
+      "horario": "programado",
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UChxGASjdNEYHhVKpl667Huw"
     },
     {
       "nombre": "TN - Todo Noticias",
       "tvg_id": "TodoNoticias.ar",
       "categoria": "Noticias Argentina",
       "tipo": "youtube_live",
-      "url_permanente": "https://www.youtube.com/@todonoticias/live",
-      "nota": "Emisión en vivo habitual; URL de canal, no HLS"
+      "url_permanente": "https://www.youtube.com/channel/UCj6PcyLvpnIRT_2W_mwa9Aw/live",
+      "nota": "Emisión en vivo habitual; URL de canal, no HLS",
+      "channel_id": "UCj6PcyLvpnIRT_2W_mwa9Aw",
+      "horario": "24h",
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/@todonoticias/"
     },
     {
       "nombre": "A24 - América 24",
       "tvg_id": "A24.ar",
       "categoria": "Noticias Argentina",
       "tipo": "youtube_live",
-      "url_permanente": "https://www.youtube.com/@a24com/live",
-      "nota": "Emisión en vivo habitual; URL de canal, no HLS"
+      "url_permanente": "https://www.youtube.com/channel/UCR9120YBAqMfntqgRTKmkjQ/live",
+      "nota": "Emisión en vivo habitual; URL de canal, no HLS",
+      "channel_id": "UCR9120YBAqMfntqgRTKmkjQ",
+      "horario": "24h",
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCR9120YBAqMfntqgRTKmkjQ"
     },
     {
       "nombre": "C5N",
       "tvg_id": "C5N.ar",
       "categoria": "Noticias Argentina",
       "tipo": "youtube_live",
-      "url_permanente": "https://www.youtube.com/@c5n/live",
-      "nota": "Emisión en vivo habitual; URL de canal, no HLS"
+      "url_permanente": "https://www.youtube.com/channel/UCFgk2Q2mVO1BklRQhSv6p0w/live",
+      "nota": "Emisión en vivo habitual; URL de canal, no HLS",
+      "channel_id": "UCFgk2Q2mVO1BklRQhSv6p0w",
+      "horario": "24h",
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/@c5n/"
     },
     {
       "nombre": "Infobae en Vivo",
       "tvg_id": "InfobaeEnVivo.ar",
       "categoria": "Noticias Argentina",
       "tipo": "youtube_live",
-      "url_permanente": "https://www.youtube.com/@infobae/live",
-      "nota": "Transmisiones en horarios de programación; no emite continuamente"
+      "url_permanente": "https://www.youtube.com/channel/UCvsU0EGXN7Su7MfNqcTGNHg/live",
+      "nota": "Transmisiones en horarios de programación; no emite continuamente",
+      "channel_id": "UCvsU0EGXN7Su7MfNqcTGNHg",
+      "horario": "programado",
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCvsU0EGXN7Su7MfNqcTGNHg"
     },
     {
       "nombre": "Telenueve",
       "tvg_id": "Telenueve.ar",
       "categoria": "Noticias Argentina",
       "tipo": "youtube_live",
-      "url_permanente": "https://www.youtube.com/@telenuevec9/live",
-      "nota": "Noticieros en horarios de programación; no emite continuamente"
+      "url_permanente": "https://www.youtube.com/channel/UC2Q91pxDF0BPf0eK44pgYMw/live",
+      "nota": "Noticieros en horarios de programación; no emite continuamente",
+      "channel_id": "UC2Q91pxDF0BPf0eK44pgYMw",
+      "horario": "programado",
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UC2Q91pxDF0BPf0eK44pgYMw"
     },
     {
       "nombre": "LUZU TV",
       "tvg_id": "LuzuTV.ar",
       "categoria": "Streaming Argentina",
       "tipo": "youtube_live",
-      "url_permanente": "https://www.youtube.com/@luzutv/live",
-      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa."
+      "url_permanente": "https://www.youtube.com/channel/UCTHaNTsP7hsVgBxARZTuajw/live",
+      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa.",
+      "channel_id": "UCTHaNTsP7hsVgBxARZTuajw",
+      "horario": "programado",
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCTHaNTsP7hsVgBxARZTuajw"
     },
     {
       "nombre": "OLGA",
@@ -157,7 +201,8 @@
       "categoria": "Streaming Argentina",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@olgaenvivo_/live",
-      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa."
+      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa.",
+      "horario": "programado"
     },
     {
       "nombre": "BLENDER",
@@ -165,7 +210,8 @@
       "categoria": "Streaming Argentina",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@estoesblender/live",
-      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa."
+      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa.",
+      "horario": "programado"
     },
     {
       "nombre": "GELATINA",
@@ -173,15 +219,19 @@
       "categoria": "Streaming Argentina",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@somosgelatina/live",
-      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa."
+      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa.",
+      "horario": "programado"
     },
     {
       "nombre": "Vorterix",
       "tvg_id": "Vorterix.ar",
       "categoria": "Streaming Argentina",
       "tipo": "youtube_live",
-      "url_permanente": "https://www.youtube.com/@vorterixoficial/live",
-      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa."
+      "url_permanente": "https://www.youtube.com/channel/UCvCTWHCbBC0b9UIeLeNs8ug/live",
+      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa.",
+      "channel_id": "UCvCTWHCbBC0b9UIeLeNs8ug",
+      "horario": "programado",
+      "fuente_channel_id": "https://vling.net/en/channel/UCvCTWHCbBC0b9UIeLeNs8ug/channel-info"
     },
     {
       "nombre": "Bondi Live",
@@ -189,7 +239,8 @@
       "categoria": "Streaming Argentina",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@Bondi_liveok/live",
-      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa."
+      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa.",
+      "horario": "programado"
     },
     {
       "nombre": "Futurock FM",
@@ -197,7 +248,8 @@
       "categoria": "Streaming Argentina",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@futurock/live",
-      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa."
+      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa.",
+      "horario": "programado"
     },
     {
       "nombre": "AZZ Streaming",
@@ -205,7 +257,8 @@
       "categoria": "Streaming Argentina",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@somosazz/live",
-      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa."
+      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa.",
+      "horario": "programado"
     },
     {
       "nombre": "Neura Media",
@@ -213,7 +266,8 @@
       "categoria": "Streaming Argentina",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@NeuraMedia/live",
-      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa."
+      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa.",
+      "horario": "programado"
     },
     {
       "nombre": "Carajo Stream",
@@ -221,7 +275,116 @@
       "categoria": "Streaming Argentina",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@CarajoStream/live",
-      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa."
+      "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa.",
+      "horario": "programado"
+    },
+    {
+      "nombre": "TyC Sports",
+      "tvg_id": "TyCSports.ar",
+      "categoria": "Deportes Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/channel/UC72ZaBKI-Bo5fjmWEYonhJw/live",
+      "channel_id": "UC72ZaBKI-Bo5fjmWEYonhJw",
+      "horario": "programado",
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UC72ZaBKI-Bo5fjmWEYonhJw",
+      "nota": "Vivos por evento o programa (p. ej. Superclásico, futsal). No emite la señal de TV completa."
+    },
+    {
+      "nombre": "Secta Deportiva",
+      "tvg_id": "SectaDeportiva.ar",
+      "categoria": "Deportes Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/channel/UCBPasXWxj1DYJLqZktw_UWg/live",
+      "channel_id": "UCBPasXWxj1DYJLqZktw_UWg",
+      "horario": "programado",
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCBPasXWxj1DYJLqZktw_UWg",
+      "nota": "10.º streaming nativo más visto, octubre 2026 (EDS / CulturaGeek)."
+    },
+    {
+      "nombre": "Radio Mitre",
+      "tvg_id": "RadioMitre.ar",
+      "categoria": "Radios con video",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/channel/UCYvINPByAdCcpA0sWrF3I_w/live",
+      "channel_id": "UCYvINPByAdCcpA0sWrF3I_w",
+      "horario": "programado",
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCYvINPByAdCcpA0sWrF3I_w"
+    },
+    {
+      "nombre": "AFA Estudio",
+      "tvg_id": "AFAEstudio.ar",
+      "categoria": "Deportes Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@afaestudio/live",
+      "horario": "programado",
+      "nota": "Canal de streaming de la AFA. Falta channel_id."
+    },
+    {
+      "nombre": "Un Poco de Ruido",
+      "tvg_id": "UnPocoDeRuido.ar",
+      "categoria": "Streaming Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@updr/live",
+      "horario": "programado",
+      "nota": "3.º streaming nativo más visto, octubre 2026. Falta channel_id."
+    },
+    {
+      "nombre": "Carnaval Stream",
+      "tvg_id": "CarnavalStream.ar",
+      "categoria": "Streaming Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@CarnavalStream/live",
+      "horario": "programado",
+      "nota": "Falta confirmar handle en YouTube y channel_id."
+    },
+    {
+      "nombre": "Cadena 3",
+      "tvg_id": "Cadena3.ar",
+      "categoria": "Radios con video",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@cadena3/live",
+      "horario": "programado",
+      "nota": "Su web incluye el vivo de YouTube. Falta channel_id."
+    },
+    {
+      "nombre": "El Destape",
+      "tvg_id": "ElDestape.ar",
+      "categoria": "Noticias Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/channel/UC5wAqJ9NF0fpGH9dVf3h6HA/live",
+      "channel_id_candidato": "UC5wAqJ9NF0fpGH9dVf3h6HA",
+      "horario": "programado",
+      "nota": "ID candidato sin confirmar como canal principal. No publicar hasta verificar."
+    },
+    {
+      "nombre": "El Doce (Córdoba)",
+      "tvg_id": "ElDoce.ar",
+      "categoria": "TV Regional",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@eldoce/live",
+      "channel_id_candidato": "UCiaePeoCqpU8hBHiNrgkzrA",
+      "horario": "programado",
+      "nota": "Falta confirmar que transmite en vivo."
+    },
+    {
+      "nombre": "La Voz (Córdoba)",
+      "tvg_id": "LaVoz.ar",
+      "categoria": "Noticias Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@lavozcomar/live",
+      "channel_id_candidato": "UCluV_ArZV6NOdQIWiXTJx3g",
+      "horario": "programado",
+      "nota": "Falta confirmar que transmite en vivo."
+    },
+    {
+      "nombre": "Perfil TV (Canal E / Net TV)",
+      "tvg_id": "PerfilTV.ar",
+      "categoria": "Noticias Argentina",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/@perfiltv/live",
+      "horario": "programado",
+      "nota": "Falta confirmar vivo y channel_id."
     }
-  ]
+  ],
+  "fecha": "2026-11-10"
 }
