@@ -175,16 +175,6 @@
       "pais": "Argentina"
     },
     {
-      "nombre": "Canal 9 Litoral",
-      "tvg_id": "MundoTV.0021",
-      "categoria": "Argentina TV",
-      "url": "https://stream.arcast.live/ahora/ahora/playlist.m3u8",
-      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Canal_9_Litoral_2021.png",
-      "categoria_original": "Mundo TV / GENERAL",
-      "pais": "Argentina"
-    },
-    {
       "nombre": "Canal 11 de la Costa",
       "tvg_id": "MundoTV.0023",
       "categoria": "Argentina TV",
@@ -2302,16 +2292,6 @@
       "logo": "https://pbs.twimg.com/profile_images/1321367703731523584/bNMmbetI_200x200.jpg",
       "categoria_original": "Mundo TV / INFORMATIVOS",
       "pais": "España"
-    },
-    {
-      "nombre": "Canal Nets",
-      "tvg_id": "MundoTV.0246",
-      "categoria": "Argentina TV",
-      "url": "https://movil.ejeserver.com/live/nets.m3u8",
-      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
-      "logo": "https://i.imgur.com/edaAexc.png",
-      "categoria_original": "Mundo TV / ENTRETENIMIENTO",
-      "pais": "Argentina"
     },
     {
       "nombre": "Power Max Radio TV",
