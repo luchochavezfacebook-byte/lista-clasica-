@@ -5,6 +5,8 @@ on:
       - fix/hls-populares-nov2026
     paths:
       - '.github/workflows/auditar_populares_nov2026.yml'
+      - 'scripts/auditar_populares_nov2026.py'
+      - 'diagnosticos/auditoria_populares_20261111.json'
   workflow_dispatch:
 permissions:
   contents: read
