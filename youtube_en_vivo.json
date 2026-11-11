@@ -142,7 +142,9 @@
       "channel_id": "UChxGASjdNEYHhVKpl667Huw",
       "horario": "programado",
       "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UChxGASjdNEYHhVKpl667Huw",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telefe-noticias-80ace6.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telefe-noticias-80ace6.png",
+      "video_no_embebible": "XhAYcYpPzTc",
+      "nota": "El video del vivo XhAYcYpPzTc (11/11/2026) NO permite embeberse (oEmbed 401): no sirve para la app. Se mantiene el directo del canal."
     },
     {
       "nombre": "TN - Todo Noticias",
@@ -193,18 +195,17 @@
       "logo": "https://www.infobae.com/pf/resources/images/icon-512x512.png"
     },
     {
-      "nombre": "Telenueve",
-      "tvg_id": "Telenueve.ar",
+      "nombre": "El Nueve (Canal 9)",
+      "tvg_id": "ElNueve.ar",
       "categoria": "Noticias Argentina",
       "tipo": "youtube_video",
       "url_permanente": "https://www.youtube.com/watch?v=yGLVhAklLyM",
-      "nota": "El directo del canal daba \"video no disponible\" en la V63; se usa el video del vivo enviado por el usuario el 11/11/2026.",
+      "nota": "Directo «EN VIVO | El Nueve» (@elnueve), enviado por el usuario y verificado por oEmbed el 11/11/2026.",
       "horario": "programado",
       "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UC2Q91pxDF0BPf0eK44pgYMw",
       "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/elnueve-9ef869.png",
       "channel_id_referencia": "UC2Q91pxDF0BPf0eK44pgYMw",
-      "video_id": "yGLVhAklLyM",
-      "verificar": true
+      "video_id": "yGLVhAklLyM"
     },
     {
       "nombre": "LUZU TV",
