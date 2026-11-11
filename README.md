@@ -6,7 +6,7 @@ Se retiraron **27 enlaces de YouTube** que se habían agregado por error a la li
 
 **Lista principal:** [lista_clasica.m3u](lista_clasica.m3u) — **251 enlaces HLS únicos**, por país, con Argentina primero. Conserva los **251 URL HLS originales, User-Agent, Referer y respaldos** previos al error. Se añadieron **9 logos** ya presentes en el índice de la APK, con lo que la lista principal ahora declara **247 logos**. No se alteraron URLs, proveedores ni claves.
 
-**Lista Clásica YT:** [lista_clasica_youtube.m3u](lista_clasica_youtube.m3u) — **17 canales de YouTube en vivo** con ID de canal verificado (noticias, deportes, streaming, radio, regional e internacionales). Es una lista **separada**, pensada para el reproductor YouTube embebido (WebView) de **TV FULL PRO V63 o superior**. Cada entrada lleva `tvfull-player="youtube"` y `tvfull-youtube-channel="UC…"`, y su URL `youtube.com/channel/UC…/live` abre el directo actual del canal. **No son HLS:** no se cargan en Media3 ni en `lista_clasica.m3u`, y la V62 no la consulta. Otros **21 canales** quedan como pendientes en `youtube_en_vivo.json` hasta confirmar su ID o que transmiten en vivo.
+**Lista Clásica YT:** [lista_clasica_youtube.m3u](lista_clasica_youtube.m3u) — **25 canales de YouTube en vivo**, todos con logo, en 5 categorías: Noticias Argentina, TV Regional Argentina, Deportes, Streaming, radio y música, e Internacionales. Es una lista **separada**, para el reproductor YouTube embebido (WebView) de **TV FULL PRO V63 o superior**. Se genera desde `youtube_en_vivo.json` con `scripts/generar_lista_youtube.py`: **no editar el .m3u a mano** (el chequeo automático falla). Los canales usan `youtube.com/channel/UC…/live` (directo actual, no vence) o, si no hay ID de canal, el video de un directo 24 h. **No son HLS:** no se cargan en Media3 ni en `lista_clasica.m3u`, y la V62 no la consulta. Los canales sin ID ni video verificado quedan como pendientes en `youtube_en_vivo.json`.
 
 ### Fuente RAW usada por la APK
 
@@ -35,7 +35,8 @@ Se retiró de la lista principal el HLS comunitario g5 de Crónica TV tras el re
 
 - `fuentes.json`: 11 fuentes HLS originales
 - `fuentes_mundotv.json`: 245 fuentes HLS importadas, clasificadas por país
-- `youtube_en_vivo.json`: 38 canales YouTube (17 publicados con `channel_id`, 21 pendientes), separados del reproductor HLS
+- `youtube_en_vivo.json`: canales YouTube (25 publicados, el resto pendientes); **fuente única** de la Lista Clásica YT
+- `scripts/identificar_youtube.py`: identifica videos con oEmbed de YouTube (solo lectura)
 - `scripts/generar_lista.py`: genera **solo HLS**
 - `scripts/generar_lista_youtube.py`: genera la Lista Clásica YT, solo con canales que tienen `channel_id` verificado
 - `scripts/validar_repositorio.py`: comprueba estructura, URLs, logos y ausencia de enlaces YouTube en la lista principal

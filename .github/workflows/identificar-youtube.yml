@@ -1,0 +1,25 @@
+name: Identificar videos YouTube (solo lectura)
+
+on:
+  push:
+    branches: [propuesta/organizar-lista-yt]
+    paths:
+      - 'youtube_en_vivo.json'
+      - 'scripts/identificar_youtube.py'
+      - '.github/workflows/identificar-youtube.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  identificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Consultar oEmbed de YouTube (no modifica la lista)
+        run: python3 scripts/identificar_youtube.py

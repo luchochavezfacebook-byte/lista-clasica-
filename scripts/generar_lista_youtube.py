@@ -3,9 +3,10 @@
 (WebView + IFrame API) de TV FULL PRO V63 o superior.
 
 NO son HLS: nunca se cargan en Media3 ni en lista_clasica.m3u.
-Solo se publican los canales con `channel_id` verificado, porque el reproductor
-embebido abre el directo actual con youtube.com/embed/live_stream?channel=UC…
-Los canales sin ID quedan en youtube_en_vivo.json como pendientes.
+Se publican los canales con `channel_id` verificado (el reproductor abre el
+directo actual con youtube.com/embed/live_stream?channel=UC…) y, cuando no hay
+ID de canal, los que tienen `video_id` de un directo 24 h. El resto queda en
+youtube_en_vivo.json como pendiente.
 """
 import json
 import re
@@ -14,15 +15,14 @@ from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 CHANNEL_ID = re.compile(r'UC[A-Za-z0-9_-]{22}')
+VIDEO_ID = re.compile(r'[A-Za-z0-9_-]{11}')
 HORARIOS = {'24h', 'programado'}
 ORDEN_CATEGORIAS = [
     'Noticias Argentina',
-    'Deportes Argentina',
-    'Streaming Argentina',
-    'Radios con video',
-    'TV Regional',
-    'TV Pública y educativa',
-    'Noticias Internacionales',
+    'TV Regional Argentina',
+    'Deportes',
+    'Streaming, radio y música',
+    'Internacionales',
 ]
 
 
@@ -34,8 +34,9 @@ def texto_seguro(valor, campo, nombre):
 
 
 def listos(datos):
-    """Canales publicables: con channel_id válido."""
-    return [c for c in datos['canales'] if CHANNEL_ID.fullmatch(c.get('channel_id', ''))]
+    """Canales publicables: con channel_id o, si no hay, video_id válido."""
+    return [c for c in datos['canales']
+            if CHANNEL_ID.fullmatch(c.get('channel_id', '')) or VIDEO_ID.fullmatch(c.get('video_id', ''))]
 
 
 def orden(c):
@@ -46,6 +47,12 @@ def orden(c):
 
 def url_canal(channel_id):
     return f'https://www.youtube.com/channel/{channel_id}/live'
+
+
+def url_publicada(c):
+    if CHANNEL_ID.fullmatch(c.get('channel_id', '')):
+        return url_canal(c['channel_id'])
+    return f"https://www.youtube.com/watch?v={c['video_id']}"
 
 
 def generar(datos):
@@ -66,19 +73,30 @@ def generar(datos):
         horario = c.get('horario', 'programado')
         if horario not in HORARIOS:
             raise ValueError('Horario inválido: ' + nombre)
-        u = urlsplit(c['url_permanente'])
-        if u.scheme != 'https' or u.hostname not in ('www.youtube.com', 'youtube.com') or not u.path.endswith('/live'):
-            raise ValueError('URL permanente inválida: ' + nombre)
+        if c.get('categoria') not in ORDEN_CATEGORIAS:
+            raise ValueError('Categoría no permitida: ' + nombre)
+        url = url_publicada(c)
+        if c['url_permanente'] != url:
+            raise ValueError('url_permanente no coincide con channel_id/video_id: ' + nombre)
         attrs = [f'tvg-id="{tvg_id}"', f'tvg-name="{nombre}"']
         if logo:
             attrs.append(f'tvg-logo="{logo}"')
         attrs += [
             f'group-title="{categoria}"',
             'tvfull-player="youtube"',
-            f'tvfull-youtube-channel="{c["channel_id"]}"',
-            f'tvfull-horario="{horario}"',
         ]
-        lines.extend([f'#EXTINF:-1 {" ".join(attrs)},{nombre}', url_canal(c['channel_id']), ''])
+        if c.get('channel_id'):
+            attrs.append(f'tvfull-youtube-channel="{c["channel_id"]}"')
+        else:
+            attrs.append(f'tvfull-youtube-video="{c["video_id"]}"')
+        alt = c.get('video_alternativo', '')
+        if alt:
+            if not VIDEO_ID.fullmatch(alt):
+                raise ValueError('video_alternativo inválido: ' + nombre)
+            # Respaldo para futuras versiones si el directo del canal falla.
+            attrs.append(f'tvfull-youtube-video-alt="{alt}"')
+        attrs.append(f'tvfull-horario="{horario}"')
+        lines.extend([f'#EXTINF:-1 {" ".join(attrs)},{nombre}', url, ''])
     return '\n'.join(lines).rstrip() + '\n'
 
 
@@ -86,4 +104,4 @@ if __name__ == '__main__':
     d = json.loads((ROOT / 'youtube_en_vivo.json').read_text(encoding='utf-8'))
     (ROOT / 'lista_clasica_youtube.m3u').write_text(generar(d), encoding='utf-8')
     total, publicados = len(d['canales']), len(listos(d))
-    print(f'Lista Clásica YT generada: {publicados} canales publicados, {total - publicados} pendientes de channel_id')
+    print(f'Lista Clásica YT generada: {publicados} canales publicados, {total - publicados} pendientes')

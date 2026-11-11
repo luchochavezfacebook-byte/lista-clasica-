@@ -7,7 +7,7 @@
     {
       "nombre": "Canal Siete / TV Pública",
       "tvg_id": "TVPublica.ar",
-      "categoria": "TV Pública y educativa",
+      "categoria": "Noticias Argentina",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@canalsieteok/live",
       "video_id_referencia": "8BRocXfSogU",
@@ -24,22 +24,28 @@
       "url_video_referencia": "https://www.youtube.com/watch?v=C_RnFD6xiX8",
       "channel_id": "UCrpMfcQNog595v5gAS-oUsQ",
       "horario": "24h",
-      "fuente_channel_id": "youtube_en_vivo.json original"
+      "fuente_channel_id": "youtube_en_vivo.json original",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/canal-26-4f67ff.png",
+      "video_alternativo": "iaooxPL8G_I"
     },
     {
-      "nombre": "Argentina 12",
+      "nombre": "Argentina/12",
       "tvg_id": "Argentina12.ar",
       "categoria": "Noticias Argentina",
       "tipo": "youtube_live",
-      "url_permanente": "https://www.youtube.com/@argentina12ok/live",
+      "url_permanente": "https://www.youtube.com/channel/UC1bBjOZieJWHbsFA0LwjjJA/live",
       "video_id_referencia": "21UP3XoRIBU",
       "url_video_referencia": "https://www.youtube.com/watch?v=21UP3XoRIBU",
-      "horario": "programado"
+      "horario": "24h",
+      "channel_id": "UC1bBjOZieJWHbsFA0LwjjJA",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Argentina12_2025.svg/330px-Argentina12_2025.svg.png",
+      "fuente_channel_id": "Agregado por Codex (lista_clasica_youtube.m3u, 11/11/2026)",
+      "video_alternativo": "21UP3XoRIBU"
     },
     {
       "nombre": "Urbana Play 104.3 FM",
       "tvg_id": "UrbanaPlayFM.ar",
-      "categoria": "Radios con video",
+      "categoria": "Streaming, radio y música",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@UrbanaPlayFM/live",
       "video_id_referencia": "36RmH3c-_3k",
@@ -49,7 +55,7 @@
     {
       "nombre": "El Ocho (Tucumán)",
       "tvg_id": "ElOchoTucuman.ar",
-      "categoria": "TV Regional",
+      "categoria": "TV Regional Argentina",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@elochotuc/live",
       "horario": "programado"
@@ -57,18 +63,19 @@
     {
       "nombre": "Canal 10 Tucumán",
       "tvg_id": "Canal10Tucuman.ar",
-      "categoria": "TV Regional",
+      "categoria": "TV Regional Argentina",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/channel/UCRlakPhec4-k3vkBeyWBojg/live",
       "nota": "Canal oficial de YouTube; transmite según programación. No es HLS y TV FULL PRO V62 no reproduce estas URLs directamente.",
       "channel_id": "UCRlakPhec4-k3vkBeyWBojg",
       "horario": "programado",
-      "fuente_channel_id": "youtube_en_vivo.json original"
+      "fuente_channel_id": "youtube_en_vivo.json original",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/10-tucuman-5260c2.png"
     },
     {
       "nombre": "Melisa Tim Noticias (Neuquén)",
       "tvg_id": "MelisaTimNoticias.ar",
-      "categoria": "TV Regional",
+      "categoria": "TV Regional Argentina",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@MelisaTimNoticias/live",
       "horario": "programado"
@@ -76,26 +83,28 @@
     {
       "nombre": "CNN en Español",
       "tvg_id": "CNNEspanol.int",
-      "categoria": "Noticias Internacionales",
+      "categoria": "Internacionales",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/channel/UC_lEiu6917IJz03TnntWUaQ/live",
       "video_id_referencia": "Qr61waJ6AZg",
       "url_video_referencia": "https://www.youtube.com/watch?v=Qr61waJ6AZg",
       "channel_id": "UC_lEiu6917IJz03TnntWUaQ",
       "horario": "24h",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UC_lEiu6917IJz03TnntWUaQ"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UC_lEiu6917IJz03TnntWUaQ",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/cnn-en-espanol-45226a.png"
     },
     {
       "nombre": "DW Español",
       "tvg_id": "DWEspanol.int",
-      "categoria": "Noticias Internacionales",
+      "categoria": "Internacionales",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/channel/UCT4Jg8h03dD0iN3Pb5L0PMA/live",
       "video_id_referencia": "yZh3xsFqCt8",
       "url_video_referencia": "https://www.youtube.com/watch?v=yZh3xsFqCt8",
       "channel_id": "UCT4Jg8h03dD0iN3Pb5L0PMA",
       "horario": "24h",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCT4Jg8h03dD0iN3Pb5L0PMA"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCT4Jg8h03dD0iN3Pb5L0PMA",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/dw-espanol-59a270.png"
     },
     {
       "nombre": "Crónica TV",
@@ -105,7 +114,8 @@
       "url_permanente": "https://www.youtube.com/channel/UCT7KFGv6s2a-rh2Jq8ZdM1g/live",
       "channel_id": "UCT7KFGv6s2a-rh2Jq8ZdM1g",
       "horario": "24h",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCT7KFGv6s2a-rh2Jq8ZdM1g"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCT7KFGv6s2a-rh2Jq8ZdM1g",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/cronica-tv-4b6baa.png"
     },
     {
       "nombre": "LA NACION / LN+",
@@ -115,7 +125,8 @@
       "url_permanente": "https://www.youtube.com/channel/UCba3hpU7EFBSk817y9qZkiA/live",
       "channel_id": "UCba3hpU7EFBSk817y9qZkiA",
       "horario": "24h",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCba3hpU7EFBSk817y9qZkiA"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCba3hpU7EFBSk817y9qZkiA",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/la-nacion-3c1703.png"
     },
     {
       "nombre": "Telefe Noticias — 24 h",
@@ -127,7 +138,9 @@
       "url_video_referencia": "https://www.youtube.com/watch?v=XhAYcYpPzTc",
       "channel_id": "UChxGASjdNEYHhVKpl667Huw",
       "horario": "programado",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UChxGASjdNEYHhVKpl667Huw"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UChxGASjdNEYHhVKpl667Huw",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telefe-noticias-80ace6.png",
+      "video_alternativo": "XhAYcYpPzTc"
     },
     {
       "nombre": "TN - Todo Noticias",
@@ -138,7 +151,8 @@
       "nota": "Emisión en vivo habitual; URL de canal, no HLS",
       "channel_id": "UCj6PcyLvpnIRT_2W_mwa9Aw",
       "horario": "24h",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/@todonoticias/"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/@todonoticias/",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tn-todo-noticias-d78f36.png"
     },
     {
       "nombre": "A24 - América 24",
@@ -149,7 +163,8 @@
       "nota": "Emisión en vivo habitual; URL de canal, no HLS",
       "channel_id": "UCR9120YBAqMfntqgRTKmkjQ",
       "horario": "24h",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCR9120YBAqMfntqgRTKmkjQ"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCR9120YBAqMfntqgRTKmkjQ",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/a24-37fe83.png"
     },
     {
       "nombre": "C5N",
@@ -160,7 +175,8 @@
       "nota": "Emisión en vivo habitual; URL de canal, no HLS",
       "channel_id": "UCFgk2Q2mVO1BklRQhSv6p0w",
       "horario": "24h",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/@c5n/"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/@c5n/",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/c5n-244152.png"
     },
     {
       "nombre": "Infobae en Vivo",
@@ -171,7 +187,8 @@
       "nota": "Transmisiones en horarios de programación; no emite continuamente",
       "channel_id": "UCvsU0EGXN7Su7MfNqcTGNHg",
       "horario": "programado",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCvsU0EGXN7Su7MfNqcTGNHg"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCvsU0EGXN7Su7MfNqcTGNHg",
+      "logo": "https://www.infobae.com/pf/resources/images/icon-512x512.png"
     },
     {
       "nombre": "Telenueve",
@@ -182,23 +199,25 @@
       "nota": "Noticieros en horarios de programación; no emite continuamente",
       "channel_id": "UC2Q91pxDF0BPf0eK44pgYMw",
       "horario": "programado",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UC2Q91pxDF0BPf0eK44pgYMw"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UC2Q91pxDF0BPf0eK44pgYMw",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/elnueve-9ef869.png"
     },
     {
       "nombre": "LUZU TV",
       "tvg_id": "LuzuTV.ar",
-      "categoria": "Streaming Argentina",
+      "categoria": "Streaming, radio y música",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/channel/UCTHaNTsP7hsVgBxARZTuajw/live",
       "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa.",
       "channel_id": "UCTHaNTsP7hsVgBxARZTuajw",
       "horario": "programado",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCTHaNTsP7hsVgBxARZTuajw"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCTHaNTsP7hsVgBxARZTuajw",
+      "logo": "https://yt3.ggpht.com/ytc/AIdro_lknWNjGUZv72Le-6lRXKP4vViQ7vylxpiOi7sme0fR0gM=s240-c-k-c0x00ffffff-no-rj"
     },
     {
       "nombre": "OLGA",
       "tvg_id": "Olga.ar",
-      "categoria": "Streaming Argentina",
+      "categoria": "Streaming, radio y música",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@olgaenvivo_/live",
       "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa.",
@@ -207,7 +226,7 @@
     {
       "nombre": "BLENDER",
       "tvg_id": "Blender.ar",
-      "categoria": "Streaming Argentina",
+      "categoria": "Streaming, radio y música",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@estoesblender/live",
       "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa.",
@@ -216,7 +235,7 @@
     {
       "nombre": "GELATINA",
       "tvg_id": "Gelatina.ar",
-      "categoria": "Streaming Argentina",
+      "categoria": "Streaming, radio y música",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@somosgelatina/live",
       "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa.",
@@ -225,18 +244,19 @@
     {
       "nombre": "Vorterix",
       "tvg_id": "Vorterix.ar",
-      "categoria": "Streaming Argentina",
+      "categoria": "Streaming, radio y música",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/channel/UCvCTWHCbBC0b9UIeLeNs8ug/live",
       "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa.",
       "channel_id": "UCvCTWHCbBC0b9UIeLeNs8ug",
       "horario": "programado",
-      "fuente_channel_id": "https://vling.net/en/channel/UCvCTWHCbBC0b9UIeLeNs8ug/channel-info"
+      "fuente_channel_id": "https://vling.net/en/channel/UCvCTWHCbBC0b9UIeLeNs8ug/channel-info",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Vorterix.jpg"
     },
     {
       "nombre": "Bondi Live",
       "tvg_id": "BondiLive.ar",
-      "categoria": "Streaming Argentina",
+      "categoria": "Streaming, radio y música",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@Bondi_liveok/live",
       "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa.",
@@ -245,7 +265,7 @@
     {
       "nombre": "Futurock FM",
       "tvg_id": "Futurock.ar",
-      "categoria": "Streaming Argentina",
+      "categoria": "Streaming, radio y música",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@futurock/live",
       "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa.",
@@ -254,7 +274,7 @@
     {
       "nombre": "AZZ Streaming",
       "tvg_id": "Azz.ar",
-      "categoria": "Streaming Argentina",
+      "categoria": "Streaming, radio y música",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@somosazz/live",
       "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa.",
@@ -263,7 +283,7 @@
     {
       "nombre": "Neura Media",
       "tvg_id": "NeuraMedia.ar",
-      "categoria": "Streaming Argentina",
+      "categoria": "Streaming, radio y música",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@NeuraMedia/live",
       "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa.",
@@ -272,7 +292,7 @@
     {
       "nombre": "Carajo Stream",
       "tvg_id": "CarajoStream.ar",
-      "categoria": "Streaming Argentina",
+      "categoria": "Streaming, radio y música",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@CarajoStream/live",
       "nota": "Referencia oficial de YouTube. No es M3U8: requiere cliente YouTube y emisión activa.",
@@ -281,39 +301,42 @@
     {
       "nombre": "TyC Sports",
       "tvg_id": "TyCSports.ar",
-      "categoria": "Deportes Argentina",
+      "categoria": "Deportes",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/channel/UC72ZaBKI-Bo5fjmWEYonhJw/live",
       "channel_id": "UC72ZaBKI-Bo5fjmWEYonhJw",
       "horario": "programado",
       "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UC72ZaBKI-Bo5fjmWEYonhJw",
-      "nota": "Vivos por evento o programa (p. ej. Superclásico, futsal). No emite la señal de TV completa."
+      "nota": "Vivos por evento o programa (p. ej. Superclásico, futsal). No emite la señal de TV completa.",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tyc-sports-6d219d.png"
     },
     {
       "nombre": "Secta Deportiva",
       "tvg_id": "SectaDeportiva.ar",
-      "categoria": "Deportes Argentina",
+      "categoria": "Deportes",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/channel/UCBPasXWxj1DYJLqZktw_UWg/live",
       "channel_id": "UCBPasXWxj1DYJLqZktw_UWg",
       "horario": "programado",
       "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCBPasXWxj1DYJLqZktw_UWg",
-      "nota": "10.º streaming nativo más visto, octubre 2026 (EDS / CulturaGeek)."
+      "nota": "10.º streaming nativo más visto, octubre 2026 (EDS / CulturaGeek).",
+      "logo": "https://yt3.ggpht.com/-BAWzIWyvVpzrzV2h6gS_vMoi2Bw_m3nBfKEZZSgylO492TkzO9WmauJGd2Sa6aWwuEs9TSO6g=s240-c-k-c0x00ffffff-no-rj"
     },
     {
       "nombre": "Radio Mitre",
       "tvg_id": "RadioMitre.ar",
-      "categoria": "Radios con video",
+      "categoria": "Streaming, radio y música",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/channel/UCYvINPByAdCcpA0sWrF3I_w/live",
       "channel_id": "UCYvINPByAdCcpA0sWrF3I_w",
       "horario": "programado",
-      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCYvINPByAdCcpA0sWrF3I_w"
+      "fuente_channel_id": "https://vidiq.com/youtube-stats/channel/UCYvINPByAdCcpA0sWrF3I_w",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/radio-mitre-836117.png"
     },
     {
       "nombre": "AFA Estudio",
       "tvg_id": "AFAEstudio.ar",
-      "categoria": "Deportes Argentina",
+      "categoria": "Deportes",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@afaestudio/live",
       "horario": "programado",
@@ -322,7 +345,7 @@
     {
       "nombre": "Un Poco de Ruido",
       "tvg_id": "UnPocoDeRuido.ar",
-      "categoria": "Streaming Argentina",
+      "categoria": "Streaming, radio y música",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@updr/live",
       "horario": "programado",
@@ -331,16 +354,20 @@
     {
       "nombre": "Carnaval Stream",
       "tvg_id": "CarnavalStream.ar",
-      "categoria": "Streaming Argentina",
+      "categoria": "Streaming, radio y música",
       "tipo": "youtube_live",
-      "url_permanente": "https://www.youtube.com/@CarnavalStream/live",
+      "url_permanente": "https://www.youtube.com/channel/UCRtgbxUH456ox51IswIQgZQ/live",
       "horario": "programado",
-      "nota": "Falta confirmar handle en YouTube y channel_id."
+      "nota": "Logo provisorio: miniatura del video; falta logo oficial.",
+      "channel_id": "UCRtgbxUH456ox51IswIQgZQ",
+      "logo": "https://i.ytimg.com/vi/ovgf9TRgGfo/hqdefault.jpg",
+      "fuente_channel_id": "Agregado por Codex (lista_clasica_youtube.m3u, 11/11/2026)",
+      "video_alternativo": "ovgf9TRgGfo"
     },
     {
       "nombre": "Cadena 3",
       "tvg_id": "Cadena3.ar",
-      "categoria": "Radios con video",
+      "categoria": "Streaming, radio y música",
       "tipo": "youtube_live",
       "url_permanente": "https://www.youtube.com/@cadena3/live",
       "horario": "programado",
@@ -359,12 +386,15 @@
     {
       "nombre": "El Doce (Córdoba)",
       "tvg_id": "ElDoce.ar",
-      "categoria": "TV Regional",
+      "categoria": "TV Regional Argentina",
       "tipo": "youtube_live",
-      "url_permanente": "https://www.youtube.com/@eldoce/live",
-      "channel_id_candidato": "UCiaePeoCqpU8hBHiNrgkzrA",
-      "horario": "programado",
-      "nota": "Falta confirmar que transmite en vivo."
+      "url_permanente": "https://www.youtube.com/channel/UCiaePeoCqpU8hBHiNrgkzrA/live",
+      "horario": "24h",
+      "nota": "Falta confirmar que transmite en vivo.",
+      "channel_id": "UCiaePeoCqpU8hBHiNrgkzrA",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/el-doce-a3a772.png",
+      "fuente_channel_id": "Agregado por Codex (lista_clasica_youtube.m3u, 11/11/2026)",
+      "video_alternativo": "nndzeKDSjuc"
     },
     {
       "nombre": "La Voz (Córdoba)",
@@ -384,7 +414,102 @@
       "url_permanente": "https://www.youtube.com/@perfiltv/live",
       "horario": "programado",
       "nota": "Falta confirmar vivo y channel_id."
+    },
+    {
+      "nombre": "Radio 10",
+      "tvg_id": "Radio10.ar",
+      "categoria": "Streaming, radio y música",
+      "tipo": "youtube_live",
+      "url_permanente": "https://www.youtube.com/channel/UCJozD5RVug7EZdTjqkGISYQ/live",
+      "channel_id": "UCJozD5RVug7EZdTjqkGISYQ",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/radio-10-ebbaf3.png",
+      "horario": "programado",
+      "video_alternativo": "jOKmBKi9Flg"
+    },
+    {
+      "nombre": "América Noticias",
+      "tvg_id": "AmericaNoticias.ar",
+      "categoria": "Noticias Argentina",
+      "tipo": "youtube_video",
+      "url_permanente": "https://www.youtube.com/watch?v=LmPZofUAQMg",
+      "video_id": "LmPZofUAQMg",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/america-tv-03bef6.png",
+      "horario": "programado",
+      "nota": "Video de un programa: termina con la emisión. Falta channel_id de América TV."
+    },
+    {
+      "nombre": "El Once TV",
+      "tvg_id": "ElOnceTV.ar",
+      "categoria": "TV Regional Argentina",
+      "tipo": "youtube_video",
+      "url_permanente": "https://www.youtube.com/watch?v=6v6iCX_2WDA",
+      "video_id": "6v6iCX_2WDA",
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/el-once-tv-d22104.png",
+      "horario": "24h",
+      "nota": "Directo 24 h por video. Falta channel_id."
+    },
+    {
+      "nombre": "Multimedios (México)",
+      "tvg_id": "Multimedios.mx",
+      "categoria": "Internacionales",
+      "tipo": "youtube_video",
+      "url_permanente": "https://www.youtube.com/watch?v=SM864ZgPpG8",
+      "video_id": "SM864ZgPpG8",
+      "logo": "https://i.imgur.com/4IGzNdq.png",
+      "horario": "24h",
+      "nota": "Directo 24 h por video. Falta channel_id."
+    },
+    {
+      "nombre": "Quiero Música TV",
+      "tvg_id": "QuieroMusica.ar",
+      "categoria": "Streaming, radio y música",
+      "tipo": "youtube_video",
+      "url_permanente": "https://www.youtube.com/watch?v=vGNglKWqwcQ",
+      "video_id": "vGNglKWqwcQ",
+      "logo": "https://raw.githubusercontent.com/tvboxram27-star/tv-online/main/logos/Logos/Quiero.png",
+      "horario": "24h",
+      "nota": "Directo 24 h por video. Falta channel_id."
+    },
+    {
+      "nombre": "Sin identificar (9r19d2AVFk8)",
+      "tvg_id": "Pendiente.9r19d2AVFk8",
+      "categoria": "Pendientes",
+      "tipo": "youtube_video",
+      "url_permanente": "https://www.youtube.com/watch?v=9r19d2AVFk8",
+      "video_id_pendiente": "9r19d2AVFk8",
+      "horario": "programado",
+      "nota": "Enviado el 11/11/2026; falta identificar canal. No se publica."
+    },
+    {
+      "nombre": "Sin identificar (4P8uIpjkSR0)",
+      "tvg_id": "Pendiente.4P8uIpjkSR0",
+      "categoria": "Pendientes",
+      "tipo": "youtube_video",
+      "url_permanente": "https://www.youtube.com/watch?v=4P8uIpjkSR0",
+      "video_id_pendiente": "4P8uIpjkSR0",
+      "horario": "programado",
+      "nota": "Enviado el 11/11/2026; falta identificar canal. No se publica."
+    },
+    {
+      "nombre": "Sin identificar (94NLwdZ4UB4)",
+      "tvg_id": "Pendiente.94NLwdZ4UB4",
+      "categoria": "Pendientes",
+      "tipo": "youtube_video",
+      "url_permanente": "https://www.youtube.com/watch?v=94NLwdZ4UB4",
+      "video_id_pendiente": "94NLwdZ4UB4",
+      "horario": "programado",
+      "nota": "Enviado el 11/11/2026; falta identificar canal. No se publica."
+    },
+    {
+      "nombre": "Sin identificar (_ARCBovOsTE)",
+      "tvg_id": "Pendiente._ARCBovOsTE",
+      "categoria": "Pendientes",
+      "tipo": "youtube_video",
+      "url_permanente": "https://www.youtube.com/watch?v=_ARCBovOsTE",
+      "video_id_pendiente": "_ARCBovOsTE",
+      "horario": "programado",
+      "nota": "Enviado el 11/11/2026; falta identificar canal. No se publica."
     }
   ],
-  "fecha": "2026-11-10"
+  "fecha": "2026-11-11"
 }

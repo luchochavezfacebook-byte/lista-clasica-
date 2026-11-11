@@ -53,14 +53,24 @@ def main():
         url = channel['url_permanente'].strip()
         parts = urlsplit(url)
         assert parts.scheme == 'https' and parts.hostname in {'youtube.com', 'www.youtube.com'}
-        assert parts.path.endswith('/live') and not parts.query, 'Enlace YouTube no permanente'
+        es_video = channel.get('tipo') == 'youtube_video'
+        if es_video:
+            vid = channel.get('video_id') or channel.get('video_id_pendiente', '')
+            assert re.fullmatch(r'[A-Za-z0-9_-]{11}', vid), 'video_id inválido: ' + channel['nombre']
+            assert url == f'https://www.youtube.com/watch?v={vid}', 'URL de video incoherente: ' + channel['nombre']
+        else:
+            assert parts.path.endswith('/live') and not parts.query, 'Enlace YouTube no permanente'
         assert 'manifest.googlevideo.com' not in json.dumps(channel)
         # Lista Clásica YT: el channel_id es opcional (pendiente) pero, si está, debe ser válido.
         cid = channel.get('channel_id', '')
         assert cid == '' or re.fullmatch(r'UC[A-Za-z0-9_-]{22}', cid), 'channel_id inválido: ' + channel['nombre']
         assert channel.get('horario', 'programado') in {'24h', 'programado'}, 'Horario inválido: ' + channel['nombre']
-    youtube_listos = [c for c in youtube if c.get('channel_id')]
-    assert len({c['channel_id'] for c in youtube_listos}) == len(youtube_listos), 'channel_id repetido'
+    youtube_listos = [c for c in youtube if c.get('channel_id') or c.get('video_id')]
+    ids_canal = [c['channel_id'] for c in youtube_listos if c.get('channel_id')]
+    assert len(set(ids_canal)) == len(ids_canal), 'channel_id repetido'
+    assert all(c.get('logo') for c in youtube_listos), 'Canal YouTube publicado sin logo'
+    categorias = __import__('collections').Counter(c['categoria'] for c in youtube_listos)
+    assert all(n >= 2 for n in categorias.values()), f'Categoría YouTube con un solo canal: {categorias}'
 
     for filename in ('lista_clasica.m3u', 'lista_clasica_youtube.m3u'):
         content = (ROOT / filename).read_text(encoding='utf-8')
@@ -85,11 +95,13 @@ def main():
                 logo_expected += bool(c.get('logo'))
             assert content.count('tvg-logo="') == logo_expected, 'Se perdieron logos HLS'
         else:
-            assert all(f"https://www.youtube.com/channel/{c['channel_id']}/live" in content for c in youtube_listos), 'Lista YouTube incompleta'
+            assert all((f"https://www.youtube.com/channel/{c['channel_id']}/live" if c.get('channel_id')
+                        else f"https://www.youtube.com/watch?v={c['video_id']}") in content
+                       for c in youtube_listos), 'Lista YouTube incompleta'
             assert content.count('tvfull-player="youtube"') == len(youtube_listos), 'Falta marca de reproductor YouTube'
             assert '.m3u8' not in content, 'La Lista Clásica YT no debe contener HLS'
 
-    print(f'OK: {len(hls)} HLS originales + {len(mundo)} Mundo TV; {len({c["url"] for c in all_hls})} URL HLS únicas, {len(youtube_listos)} YouTube publicadas ({len(youtube) - len(youtube_listos)} pendientes de channel_id).')
+    print(f'OK: {len(hls)} HLS originales + {len(mundo)} Mundo TV; {len({c["url"] for c in all_hls})} URL HLS únicas, {len(youtube_listos)} YouTube publicadas ({len(youtube) - len(youtube_listos)} pendientes).')
     print('Advertencia: pruebas estructurales, no certificación de disponibilidad.')
 
 
