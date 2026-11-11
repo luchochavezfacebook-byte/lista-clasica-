@@ -39,7 +39,7 @@ def check(c):
         # ffprobe validation of stream index first; ffmpeg must decode actual frames.
         cmd = ["ffmpeg", "-hide_banner", "-nostdin", "-v", "error", "-rw_timeout", "12000000", "-user_agent", c.get("user_agent", UA)]
         if c.get("referrer"):
-            cmd += ["-headers", "Referer: " + c["referrer"] + "\\r\\n"]
+            cmd += ["-headers", "Referer: " + c["referrer"] + "\r\n"]
         cmd += ["-i", url, "-map", "0:v:0", "-t", "2", "-f", "null", "-"]
         p = subprocess.run(cmd, capture_output=True, text=True, timeout=48)
         if p.returncode != 0:
