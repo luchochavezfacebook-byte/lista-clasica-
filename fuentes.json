@@ -102,16 +102,6 @@
       "pais": "Argentina"
     },
     {
-      "nombre": "DeporTV",
-      "tvg_id": "DeporTV.ar",
-      "categoria": "Argentina TV",
-      "url": "https://5fb24b460df87.streamlock.net/live-cont.ar/deportv/playlist.m3u8",
-      "verificacion": "Pendiente de verificar",
-      "categoria_original": "Deportes Argentina",
-      "pais": "Argentina",
-      "logo": "https://static.wikia.nocookie.net/logopedia/images/0/0e/DeporTV_%282020%29.png/revision/latest/scale-to-width-down/1000?cb=20210101172130&path-prefix=es"
-    },
-    {
       "nombre": "A24 - América 24 (prueba)",
       "tvg_id": "A24.ar",
       "categoria": "Argentina TV",
