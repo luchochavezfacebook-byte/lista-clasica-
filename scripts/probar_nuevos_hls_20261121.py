@@ -31,11 +31,11 @@ def test(c):
             data=f.read(4096);status=f.status
         if not data or status not in (200,206):raise ValueError("Segmento vacío")
         result["segmento"]="accesible"
-        cmd=["ffmpeg","-nostdin","-hide_banner","-loglevel","error","-stats_period","1","-user_agent",headers["User-Agent"]]
-        if "Referer" in headers:cmd.extend(["-headers","Referer: "+headers["Referer"]+"\\r\\n"])
-        cmd.extend(["-rw_timeout","12000000","-i",c["url"],"-t","2","-map","0:v:0","-an","-f","null","-","-progress","pipe:1"])
+        cmd=["ffmpeg","-nostdin","-hide_banner","-loglevel","error","-stats_period","1","-progress","pipe:1","-user_agent",headers["User-Agent"]]
+        if "Referer" in headers:cmd.extend(["-headers","Referer: "+headers["Referer"]+chr(13)+chr(10)])
+        cmd.extend(["-rw_timeout","12000000","-i",c["url"],"-t","2","-map","0:v:0","-an","-f","null","-"])
         p=subprocess.run(cmd,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True,timeout=32)
-        frames=[int(x) for x in re.findall(r"(?m)^frame=(\\d+)$",p.stdout)]
+        frames=[int(x) for x in re.findall(r"(?m)^frame=([0-9]+)$",p.stdout)]
         frames=max(frames) if frames else 0
         result["frames"]=frames
         result["estado"]="video_ok" if p.returncode==0 and frames>0 else "sin_video_decodificado"
