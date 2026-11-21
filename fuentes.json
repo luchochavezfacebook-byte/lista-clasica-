@@ -108,9 +108,14 @@
       "tvg_id": "TVUniversidad.ar",
       "categoria": "Argentina TV",
       "url": "https://stratus.stream.cespi.unlp.edu.ar/hls/tvunlp.m3u8",
-      "verificacion": "Pendiente de verificar",
+      "verificacion": "2026-11-21: La web oficial tv.unlp.edu.ar sigue utilizando exactamente esta URL. El servidor devolvió 403 desde este entorno, tanto sin cabeceras como con Referer y Origin oficiales. Esto no demuestra que haya cesado la transmisión. Se conserva la fuente.",
       "categoria_original": "Cultura y Educación Argentina",
-      "pais": "Argentina"
+      "pais": "Argentina",
+      "diagnostico": {
+        "fecha": "2026-11-21",
+        "estado": "acceso_denegado_no_baja",
+        "baja_confirmada": false
+      }
     },
     {
       "nombre": "A24 - América 24 (prueba)",

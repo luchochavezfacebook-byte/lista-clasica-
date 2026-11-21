@@ -1,5 +1,11 @@
 # Lista Clásica — TV FULL PRO (V63)
 
+## Revisión de señales reportadas — 21/11/2026
+
+Se actualizaron las fuentes principales de **Aire de Santa Fe, Canal 22 y VerTV**, con video y audio decodificados y una segunda muestra correcta. Las direcciones anteriores permanecen como respaldos. **No se eliminó ningún canal**: Canal 4 Jujuy tiene emisión HD con fallos en otras calidades; TV Maná y TV Universidad quedan pendientes de recuperación/acceso. Un error temporal no implica baja definitiva. La lista conserva **300 entradas HLS**.
+
+Detalle de pruebas y criterios: [revisión de seis señales](docs/revision_senales_20261121.md). En la app: **Lista Clásica → Recargar lista → Argentina TV**. No requiere APK nueva.
+
 ## Señales argentinas para prueba — 21/11/2026
 
 Se agregaron **19 canales en Argentina TV**, incluyendo **Metropolitana TV / Canal 12 Tucumán**, y un **respaldo HTTPS de El Ocho / Telefe Tucumán**. La lista tiene **300 enlaces HLS únicos**. Los canales nuevos tienen manifiesto, segmentos y una muestra de 2 segundos de video decodificados; requieren prueba de continuidad en TV Box. El Ocho conserva su fuente principal y añade el respaldo oficial g3 con sus cabeceras.

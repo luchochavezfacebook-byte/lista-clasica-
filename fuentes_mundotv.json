@@ -8,11 +8,24 @@
       "nombre": "Aire de Santa Fe",
       "tvg_id": "MundoTV.0002",
       "categoria": "Argentina TV",
-      "url": "https://unlimited1-us.dps.live/airedesantafetv/airedesantafetv.smil/playlist.m3u8",
-      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "url": "https://mdstrm.com/live-stream-playlist/6931a0eb06778645348008e0.m3u8",
+      "verificacion": "2026-11-21: El enlace DPS anterior responde 404. Se comprobó el reproductor Mediastream que publica la web oficial; dos muestras de video 360p y audio decodificados. Se conserva la URL anterior como respaldo.",
       "logo": "https://i.imgur.com/60vSWW0.png",
       "categoria_original": "Mundo TV / GENERAL",
-      "pais": "Argentina"
+      "pais": "Argentina",
+      "user_agent": "Mozilla/5.0",
+      "referrer": "https://www.airedesantafe.com.ar/",
+      "backups": [
+        {
+          "url": "https://unlimited1-us.dps.live/airedesantafetv/airedesantafetv.smil/playlist.m3u8",
+          "headers": {}
+        }
+      ],
+      "diagnostico": {
+        "fecha": "2026-11-21",
+        "estado": "fuente_actualizada",
+        "baja_confirmada": false
+      }
     },
     {
       "nombre": "Argentinísima Satelital",
@@ -69,10 +82,15 @@
       "tvg_id": "MundoTV.0010",
       "categoria": "Argentina TV",
       "url": "https://5cd577a3dd8ec.streamlock.net/CANAL4/smil:CANAL4.smil/playlist.m3u8",
-      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "verificacion": "2026-11-21: El master HLS responde. Las variantes 480p y 720p devolvieron 404; la variante 1080p produjo imagen y audio reales, con logotipo Canal 4. La selección adaptativa puede escoger una variante que falla. Se mantiene el master original; no se publica el chunklist temporal con identificador de sesión. No es una baja definitiva.",
       "logo": "https://i.imgur.com/qB6I274.png",
       "categoria_original": "Mundo TV / GENERAL",
-      "pais": "Argentina"
+      "pais": "Argentina",
+      "diagnostico": {
+        "fecha": "2026-11-21",
+        "estado": "emision_parcial",
+        "baja_confirmada": false
+      }
     },
     {
       "nombre": "Canal 4 Posadas",
@@ -198,11 +216,31 @@
       "nombre": "Canal 22",
       "tvg_id": "MundoTV.0026",
       "categoria": "Argentina TV",
-      "url": "https://5f700d5b2c46f.streamlock.net/canal22/canal22/playlist.m3u8",
-      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "url": "https://media.cdnvid.com/public/7c3g8h159tip.m3u8",
+      "verificacion": "2026-11-21: La web oficial ahora publica un reproductor CDNVID. Se verificaron sus dos rutas HLS, video 1080p y audio; segunda muestra del principal correcta. El host anterior devuelve timeout/503 desde este entorno; no se da por cerrado y se conserva como respaldo.",
       "logo": "https://i.imgur.com/R4wXVxf.png",
       "categoria_original": "Mundo TV / GENERAL",
-      "pais": "Argentina"
+      "pais": "Argentina",
+      "user_agent": "Mozilla/5.0",
+      "referrer": "https://play.cdnvid.com/",
+      "backups": [
+        {
+          "url": "https://vivo.cdnvid.com/7c3g8h159tip.m3u8",
+          "headers": {
+            "User-Agent": "Mozilla/5.0",
+            "Referer": "https://play.cdnvid.com/"
+          }
+        },
+        {
+          "url": "https://5f700d5b2c46f.streamlock.net/canal22/canal22/playlist.m3u8",
+          "headers": {}
+        }
+      ],
+      "diagnostico": {
+        "fecha": "2026-11-21",
+        "estado": "fuente_actualizada",
+        "baja_confirmada": false
+      }
     },
     {
       "nombre": "Canal 79 La Costa",
@@ -398,11 +436,31 @@
       "nombre": "VerTV",
       "tvg_id": "MundoTV.0051",
       "categoria": "Argentina TV",
-      "url": "https://5f700d5b2c46f.streamlock.net/vertv/vertv/playlist.m3u8",
-      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "url": "https://media.cdnvid.com/public/uovlwqzikeyf.m3u8",
+      "verificacion": "2026-11-21: quierovertv.com publica el reproductor CDNVID aloa. Sus dos rutas HLS reproducen video 1080p; se decodificó audio y se repitió la prueba del principal. La URL anterior devuelve timeout/503 desde este entorno y se conserva como respaldo.",
       "logo": "https://i.imgur.com/TLaausJ.png",
       "categoria_original": "Mundo TV / GENERAL",
-      "pais": "Argentina"
+      "pais": "Argentina",
+      "user_agent": "Mozilla/5.0",
+      "referrer": "https://play.cdnvid.com/",
+      "backups": [
+        {
+          "url": "https://vivo.cdnvid.com/uovlwqzikeyf.m3u8",
+          "headers": {
+            "User-Agent": "Mozilla/5.0",
+            "Referer": "https://play.cdnvid.com/"
+          }
+        },
+        {
+          "url": "https://5f700d5b2c46f.streamlock.net/vertv/vertv/playlist.m3u8",
+          "headers": {}
+        }
+      ],
+      "diagnostico": {
+        "fecha": "2026-11-21",
+        "estado": "fuente_actualizada",
+        "baja_confirmada": false
+      }
     },
     {
       "nombre": "RTV ESPAÑA",
@@ -1588,10 +1646,15 @@
       "tvg_id": "MundoTV.0173",
       "categoria": "Argentina TV",
       "url": "https://w2.manasat.com/tvmana-ar/smil:tvmana-ar.smil/playlist.m3u8",
-      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "verificacion": "2026-11-21: El master responde HTTP 200 y la web oficial mantiene la misma fuente; las tres variantes anunciadas devolvieron 404 en esta revisión, también con Referer/Origin y al renovar la solicitud. Puede ser una interrupción; se conserva el canal y la URL.",
       "logo": "https://i.imgur.com/jars0mP.png",
       "categoria_original": "Mundo TV / RELIGIOSOS",
-      "pais": "Argentina"
+      "pais": "Argentina",
+      "diagnostico": {
+        "fecha": "2026-11-21",
+        "estado": "pendiente_no_dar_de_baja",
+        "baja_confirmada": false
+      }
     },
     {
       "nombre": "Ecclesia COPE España",
@@ -2378,10 +2441,15 @@
       "tvg_id": "MundoTV.0255",
       "categoria": "Argentina TV",
       "url": "https://stratus.stream.cespi.unlp.edu.ar/hls/tvunlp.m3u8",
-      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "verificacion": "2026-11-21: Misma URL de TV Universidad UNLP: 403 desde el entorno de revisión, también con cabeceras de la web oficial. No demuestra fin de transmisión; conservar fuente.",
       "logo": "https://i.imgur.com/0MXsQ25.png",
       "categoria_original": "Mundo TV / OTROS",
-      "pais": "Argentina"
+      "pais": "Argentina",
+      "diagnostico": {
+        "fecha": "2026-11-21",
+        "estado": "acceso_denegado_no_baja",
+        "baja_confirmada": false
+      }
     },
     {
       "nombre": "UMC TV",
