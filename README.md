@@ -1,5 +1,11 @@
 # Lista Clásica — TV FULL PRO (V63)
 
+## Ampliación de señales regionales — 21/11/2026 (dos pruebas)
+
+Se incorporaron **24 canales HLS argentinos nuevos**, luego de verificar manifiesto, primer segmento y decodificación de al menos 20 fotogramas durante 2 segundos de video en **dos ejecuciones independientes** de GitHub Actions. La lista pasa de **300 a 324 señales HLS únicas**. Se conservaron todas las 300 fuentes anteriores, con sus cabeceras y respaldos. Canal 4 Villa Dolores y otros candidatos con pruebas insuficientes **no se incorporaron**. Esto no garantiza reproducción desde una TV Box o disponibilidad permanente.
+
+Auditorías: [primera muestra](https://github.com/luchochavezfacebook-byte/lista-clasica-/actions/runs/44911529535/attempts/1) y [segunda muestra](https://github.com/luchochavezfacebook-byte/lista-clasica-/actions/runs/44911529535/attempts/2). [Listado técnico de incorporaciones](docs/altas_hls_20261121.md).
+
 ## Revisión de señales reportadas — 21/11/2026
 
 Se actualizaron las fuentes principales de **Aire de Santa Fe, Canal 22 y VerTV**, con video y audio decodificados y una segunda muestra correcta. Las direcciones anteriores permanecen como respaldos. **No se eliminó ningún canal**: Canal 4 Jujuy tiene emisión HD con fallos en otras calidades; TV Maná y TV Universidad quedan pendientes de recuperación/acceso. Un error temporal no implica baja definitiva. La lista conserva **300 entradas HLS**.
