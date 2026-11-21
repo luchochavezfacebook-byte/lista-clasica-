@@ -351,7 +351,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://617c5175c970b.streamlock.net:4444/tvcinco/live1/playlist.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 60 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 60 fotogramas; segunda muestra: 60 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {
@@ -360,7 +360,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://vivo.solumedia.com:19360/bvnet/bvnet.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 50 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 50 fotogramas; segunda muestra: 50 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {
@@ -369,7 +369,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://streamlov.alsolnet.com/cadena103/live/playlist.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 60 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 60 fotogramas; segunda muestra: 60 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {
@@ -378,7 +378,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://nd106.republicaservers.com:4433/hls/c6611/index.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 120 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 120 fotogramas; segunda muestra: 120 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {
@@ -387,7 +387,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://tv.streamcasthd.com:3641/live/canal2mdplive.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 26 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 26 fotogramas; segunda muestra: 50 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {
@@ -396,7 +396,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://stream.arcast.com.ar/canal3/canal3/playlist.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 50 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 50 fotogramas; segunda muestra: 50 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {
@@ -405,16 +405,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://stream.arcast.com.ar/canal4esquel/canal4esquel/playlist.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 60 fotogramas). Pendiente TV Box y continuidad.",
-      "origen": "iptv-org/iptv"
-    },
-    {
-      "nombre": "Canal 4 Villa Dolores",
-      "tvg_id": "Canal4VillaDolores.ar",
-      "pais": "Argentina",
-      "categoria": "Argentina TV",
-      "url": "https://stmvideo3.livecastv.com/canal4vd/canal4vd/playlist.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 34 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 60 fotogramas; segunda muestra: 60 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {
@@ -423,7 +414,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://videostream.shockmedia.com.ar:19360/canal5alfatvchepes/canal5alfatvchepes.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 50 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 50 fotogramas; segunda muestra: 50 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {
@@ -432,7 +423,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://vivo.solumedia.com:19360/canal7salta/canal7salta.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 50 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 50 fotogramas; segunda muestra: 50 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {
@@ -441,7 +432,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://g1.mc-hor.transport.edge-access.net/a12/ngrp:canal10mdq-100044_all/Playlist.m3u8?sense=true",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 50 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 50 fotogramas; segunda muestra: 49 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {
@@ -450,7 +441,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://stmvideo3.livecastv.com/canal20/canal20/playlist.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 38 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 38 fotogramas; segunda muestra: 38 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv",
       "referrer": "https://www.canal20villamaria.com.ar/"
     },
@@ -460,7 +451,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://online.coopmorteros.coop/canal50/vivo.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 50 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 50 fotogramas; segunda muestra: 50 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {
@@ -469,7 +460,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://vivo.solumedia.com:19360/cardinal/cardinal.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 60 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 60 fotogramas; segunda muestra: 60 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {
@@ -478,7 +469,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://g4.vxral-hor.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 50 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 50 fotogramas; segunda muestra: 50 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {
@@ -487,7 +478,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://streaming.telered.com.ar/provincial/streaming/mystream.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 60 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 60 fotogramas; segunda muestra: 60 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {
@@ -496,7 +487,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://vs20.live.opencaster.com/canalpulpotv_bdeee6e2/index.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 60 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 60 fotogramas; segunda muestra: 60 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {
@@ -505,7 +496,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://streaming.telered.com.ar/santa-maria/streaming/mystream.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 50 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 50 fotogramas; segunda muestra: 50 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {
@@ -514,7 +505,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://videostream.shockmedia.com.ar/hls/mercuriotv/mercuriotv.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 50 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 50 fotogramas; segunda muestra: 50 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {
@@ -523,7 +514,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://videostream.shockmedia.com.ar:19360/neotvdigital/neotvdigital.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 60 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 60 fotogramas; segunda muestra: 60 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {
@@ -532,7 +523,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://player.videohost.click/senillosatv/senillosatv/playlist.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 100 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 100 fotogramas; segunda muestra: 100 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {
@@ -541,7 +532,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://stream.t5satelital.blog/hls/t5satelitalweb.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 50 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 50 fotogramas; segunda muestra: 50 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {
@@ -550,7 +541,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://cdn.mycloudstream.io/hls/live/broadcast/pgv5kerk/index.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 50 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 50 fotogramas; segunda muestra: 50 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {
@@ -559,7 +550,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://micanal.ovh/livestreams/515.AUTOOAAZ721F.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 60 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 60 fotogramas; segunda muestra: 60 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {
@@ -568,7 +559,7 @@
       "pais": "Argentina",
       "categoria": "Argentina TV",
       "url": "https://vivo.solumedia.com:19360/vivetv/vivetv.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 60 fotogramas). Pendiente TV Box y continuidad.",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 60 fotogramas; segunda muestra: 60 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     }
   ]
