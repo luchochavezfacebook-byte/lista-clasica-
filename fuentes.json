@@ -58,7 +58,7 @@
       "tvg_id": "TelefeTucuman.ar",
       "categoria": "Argentina TV",
       "url": "https://g2.mc-hor.transport.edge-access.net/a05/ngrp:elochotv-100168_all/Playlist.m3u8?sense=true",
-      "verificacion": "2026-11-10: GitHub Actions accedió a manifiesto y segmento con UA Android. El usuario reporta fallo en TV Box; se agregan User-Agent de auditoría y Referer del reproductor integrado por el sitio oficial de El Ocho. Ajuste de compatibilidad experimental: requiere prueba física en V62; NO se certifica reproducción.",
+      "verificacion": "2026-11-10: GitHub Actions accedió a manifiesto y segmento con UA Android. El usuario reporta fallo en TV Box; se agregan User-Agent de auditoría y Referer del reproductor integrado por el sitio oficial de El Ocho. Ajuste de compatibilidad experimental: requiere prueba física en V62; NO se certifica reproducción. 2026-11-21: respaldo HTTPS g3 publicado por el reproductor oficial, con 2 s de video 480p decodificado usando UA Mozilla/5.0 y Referer vmf.edge-apps.net; TV física pendiente.",
       "candidato_temporal": {
         "proveedor": "YouTube HLS",
         "video_id": "SeTWBqy85AE",
@@ -71,7 +71,16 @@
       "referrer": "https://vmf.edge-apps.net/",
       "categoria_original": "TV Regional Tucumán",
       "pais": "Argentina",
-      "logo": "https://i.postimg.cc/x8MSJbZX/330px-Telefe-(nuevo-logo).png"
+      "logo": "https://i.postimg.cc/x8MSJbZX/330px-Telefe-(nuevo-logo).png",
+      "backups": [
+        {
+          "url": "https://g3.proy-slo.transport.edge-access.net/a05/ngrp:elochotv-100168_all/Playlist.m3u8?sense=true",
+          "headers": {
+            "User-Agent": "Mozilla/5.0",
+            "Referer": "https://vmf.edge-apps.net/"
+          }
+        }
+      ]
     },
     {
       "nombre": "América TV",

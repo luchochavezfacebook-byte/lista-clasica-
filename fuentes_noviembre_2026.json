@@ -1,7 +1,7 @@
 {
   "nombre": "Canales populares HLS abiertos y verificados noviembre 2026",
-  "fecha": "2026-11-11",
-  "nota": "Solo fuentes con manifest HLS y video descodificado; proveedor y disponibilidad regional pueden variar, no sustituye autorización",
+  "fecha": "2026-11-21",
+  "nota": "Solo fuentes con manifest HLS y video descodificado; proveedor y disponibilidad regional pueden variar, no sustituye autorización Ampliación 21/11: 19 señales regionales argentinas con video decodificado, para prueba en TV Box.",
   "canales": [
     {
       "nombre": "TyC Sports 24",
@@ -155,6 +155,195 @@
       "url": "https://n1ottesorkatv.akamaized.net/hls/live/2113795/Live_1/index.m3u8",
       "verificacion": "2026-11-11 GitHub Actions: HTTPS #EXTM3U más 2 segundos video FFmpeg decodificado; TV Box Argentina sin comprobar",
       "origen": "iptv-org/iptv streams/us.m3u"
+    },
+    {
+      "nombre": "ABTV Bariloche",
+      "tvg_id": "ABTVBariloche.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://videostream.shockmedia.com.ar/hls/abtvbariloche/abtvbariloche.m3u8",
+      "verificacion": "2026-11-21: manifiesto HLS, dos segmentos y 2 segundos de video decodificados con FFmpeg; captura revisada. Incorporación para prueba en TV Box Argentina; continuidad pendiente.",
+      "origen": "iptv-org/iptv streams/ar.m3u; IamJony/IPTVListaLibre generated/ar_canales.m3u",
+      "logo": "https://i.imgur.com/l4TSfDr.png"
+    },
+    {
+      "nombre": "Canal 2 Misiones / Telefe",
+      "tvg_id": "Canal2Misiones.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://nd106.republicaservers.com:4433/hls/canal2misioness/index.m3u8",
+      "verificacion": "2026-11-21: manifiesto HLS, dos segmentos y 2 segundos de video decodificados con FFmpeg; captura revisada. Incorporación para prueba en TV Box Argentina; continuidad pendiente.",
+      "origen": "iptv-org/iptv streams/ar.m3u; IamJony/IPTVListaLibre generated/ar_canales.m3u",
+      "logo": "https://i.imgur.com/YqTNXDf.png"
+    },
+    {
+      "nombre": "Canal Universidad Mar del Plata",
+      "tvg_id": "CanalUniversidad.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://videostream.shockmedia.com.ar/hls/canaluniversidadmdp/canaluniversidadmdp.m3u8",
+      "verificacion": "2026-11-21: manifiesto HLS, dos segmentos y 2 segundos de video decodificados con FFmpeg; captura revisada. Incorporación para prueba en TV Box Argentina; continuidad pendiente.",
+      "origen": "iptv-org/iptv streams/ar.m3u; IamJony/IPTVListaLibre generated/ar_canales.m3u",
+      "logo": "https://i.imgur.com/trmPKYw.png"
+    },
+    {
+      "nombre": "Catamarca TV",
+      "tvg_id": "CatamarcaTV.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://stream.arcast.com.ar/canal7catamarca/ngrp:canal7catamarca_all/playlist.m3u8?DVR=",
+      "verificacion": "2026-11-21: manifiesto HLS, dos segmentos y 2 segundos de video decodificados con FFmpeg; captura revisada. Incorporación para prueba en TV Box Argentina; continuidad pendiente.",
+      "origen": "iptv-org/iptv streams/ar.m3u; IamJony/IPTVListaLibre generated/ar_canales.m3u",
+      "logo": "https://i.imgur.com/CEuPoqG.png"
+    },
+    {
+      "nombre": "Litus TV",
+      "tvg_id": "LitusTV.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://edge.enhdtv.com/litustv/index.m3u8",
+      "verificacion": "2026-11-21: manifiesto HLS, dos segmentos y 2 segundos de video decodificados con FFmpeg; captura revisada. Incorporación para prueba en TV Box Argentina; continuidad pendiente.",
+      "origen": "iptv-org/iptv streams/ar.m3u; IamJony/IPTVListaLibre generated/ar_canales.m3u",
+      "logo": "https://i.imgur.com/QIGSf4L.png"
+    },
+    {
+      "nombre": "NG Federal",
+      "tvg_id": "NGFederal.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://617c5175c970b.streamlock.net:4444/tvlink/live/playlist.m3u8",
+      "verificacion": "2026-11-21: manifiesto HLS, dos segmentos y 2 segundos de video decodificados con FFmpeg; captura revisada. Incorporación para prueba en TV Box Argentina; continuidad pendiente.",
+      "origen": "iptv-org/iptv streams/ar.m3u; IamJony/IPTVListaLibre generated/ar_canales.m3u"
+    },
+    {
+      "nombre": "TV Publica Fueguina",
+      "tvg_id": "TVPublicaFueguina.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://nd106.republicaservers.com/hls/c8094/index.m3u8",
+      "verificacion": "2026-11-21: manifiesto HLS, dos segmentos y 2 segundos de video decodificados con FFmpeg; captura revisada. Incorporación para prueba en TV Box Argentina; continuidad pendiente.",
+      "origen": "iptv-org/iptv streams/ar.m3u; IamJony/IPTVListaLibre generated/ar_canales.m3u",
+      "logo": "https://i.imgur.com/4dUvFqa.png"
+    },
+    {
+      "nombre": "TV Publica Marcos Paz",
+      "tvg_id": "TVPublicaMarcosPaz.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://ca.centaurychile.com:2443/hls/mediospublicos.m3u8",
+      "verificacion": "2026-11-21: manifiesto HLS, dos segmentos y 2 segundos de video decodificados con FFmpeg; captura revisada. Incorporación para prueba en TV Box Argentina; continuidad pendiente.",
+      "origen": "iptv-org/iptv streams/ar.m3u; IamJony/IPTVListaLibre generated/ar_canales.m3u",
+      "logo": "https://i.imgur.com/CRmY4Oi.png"
+    },
+    {
+      "nombre": "Canal 2 Gualeguay",
+      "tvg_id": "Canal2Gualeguay.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://stream.arcast.net:4443/gualeguay/gualeguay/playlist.m3u8",
+      "verificacion": "2026-11-21: manifiesto HLS, dos segmentos y 2 segundos de video decodificados con FFmpeg; captura revisada. Incorporación para prueba en TV Box Argentina; continuidad pendiente.",
+      "origen": "iptv-org/iptv streams/ar.m3u; IamJony/IPTVListaLibre generated/ar_canales.m3u",
+      "logo": "https://i.imgur.com/TOlncyp.png"
+    },
+    {
+      "nombre": "Canal 2 NexTV Rafaela",
+      "tvg_id": "Canal2NexTVRafaela.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://edge.enhdtv.com/nexthd/index.m3u8",
+      "verificacion": "2026-11-21: manifiesto HLS, dos segmentos y 2 segundos de video decodificados con FFmpeg; captura revisada. Incorporación para prueba en TV Box Argentina; continuidad pendiente.",
+      "origen": "iptv-org/iptv streams/ar.m3u; IamJony/IPTVListaLibre generated/ar_canales.m3u",
+      "logo": "https://i.imgur.com/hgj3CaR.jpeg"
+    },
+    {
+      "nombre": "Canal 3 Arroyito",
+      "tvg_id": "Canal3Arroyito.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://envivo.cespalarroyito.coop/live/Canal3Arroyito.m3u8",
+      "verificacion": "2026-11-21: manifiesto HLS, dos segmentos y 2 segundos de video decodificados con FFmpeg; captura revisada. Incorporación para prueba en TV Box Argentina; continuidad pendiente.",
+      "origen": "iptv-org/iptv streams/ar.m3u; IamJony/IPTVListaLibre generated/ar_canales.m3u",
+      "logo": "https://i.imgur.com/FHVdMwg.jpeg"
+    },
+    {
+      "nombre": "Canal 9 Link Resistencia",
+      "tvg_id": "Canal9Link.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://617c5175c970b.streamlock.net:4444/9linklivert/smil:9linkmultibr.smil/playlist.m3u8",
+      "verificacion": "2026-11-21: manifiesto HLS, dos segmentos y 2 segundos de video decodificados con FFmpeg; captura revisada. Incorporación para prueba en TV Box Argentina; continuidad pendiente.",
+      "origen": "iptv-org/iptv streams/ar.m3u; IamJony/IPTVListaLibre generated/ar_canales.m3u",
+      "logo": "https://audios.radiosnet.com.ar/imgwikidat/img_cuerpo/canal+9+buenos+aires9.jpg"
+    },
+    {
+      "nombre": "Canal 10 Goya",
+      "tvg_id": "Canal10Goya.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://tv.streamcasthd.com:3637/live/canal10goyalive.m3u8",
+      "verificacion": "2026-11-21: manifiesto HLS, dos segmentos y 2 segundos de video decodificados con FFmpeg; captura revisada. Incorporación para prueba en TV Box Argentina; continuidad pendiente.",
+      "origen": "iptv-org/iptv streams/ar.m3u; IamJony/IPTVListaLibre generated/ar_canales.m3u",
+      "logo": "https://i.ibb.co/cySdXxP/unnamed-5.png"
+    },
+    {
+      "nombre": "Canal 12 Venado Tuerto",
+      "tvg_id": "Canal12VenadoTuerto.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://nd106.republicaservers.com:4433/hls/diegologonitv/index.m3u8",
+      "verificacion": "2026-11-21: manifiesto HLS, dos segmentos y 2 segundos de video decodificados con FFmpeg; captura revisada. Incorporación para prueba en TV Box Argentina; continuidad pendiente.",
+      "origen": "iptv-org/iptv streams/ar.m3u; IamJony/IPTVListaLibre generated/ar_canales.m3u",
+      "logo": "https://i.imgur.com/b93YC0V.jpeg"
+    },
+    {
+      "nombre": "Ciudad TV Resistencia",
+      "tvg_id": "CiudadTVResistencia.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://617c5175c970b.streamlock.net:4444/chacodxdtv/livenew/playlist.m3u8",
+      "verificacion": "2026-11-21: manifiesto HLS, dos segmentos y 2 segundos de video decodificados con FFmpeg; captura revisada. Incorporación para prueba en TV Box Argentina; continuidad pendiente.",
+      "origen": "iptv-org/iptv streams/ar.m3u; IamJony/IPTVListaLibre generated/ar_canales.m3u",
+      "logo": "https://i.imgur.com/oL8SMTL.png"
+    },
+    {
+      "nombre": "Correa Radiovision",
+      "tvg_id": "CorreaRadiovision.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://stream.arcast.net:4443/correadigital/canal12/playlist.m3u8",
+      "verificacion": "2026-11-21: manifiesto HLS, dos segmentos y 2 segundos de video decodificados con FFmpeg; captura revisada. Incorporación para prueba en TV Box Argentina; continuidad pendiente.",
+      "origen": "iptv-org/iptv streams/ar.m3u; IamJony/IPTVListaLibre generated/ar_canales.m3u",
+      "logo": "https://i.imgur.com/bNCGzjf.jpeg"
+    },
+    {
+      "nombre": "Corrientes TV",
+      "tvg_id": "CorrientesTV.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://617c5175c970b.streamlock.net:4444/13max2/live13maxtv2026/playlist.m3u8",
+      "verificacion": "2026-11-21: manifiesto HLS, dos segmentos y 2 segundos de video decodificados con FFmpeg; captura revisada. Incorporación para prueba en TV Box Argentina; continuidad pendiente.",
+      "origen": "iptv-org/iptv streams/ar.m3u; IamJony/IPTVListaLibre generated/ar_canales.m3u",
+      "logo": "https://i.imgur.com/7PBkvRp.png"
+    },
+    {
+      "nombre": "Itel TV Canal 2",
+      "tvg_id": "ItelTVCanal2.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://proxystream.iteltv.com.ar/output/iteltv/playlist.m3u8",
+      "verificacion": "2026-11-21: manifiesto HLS, dos segmentos y 2 segundos de video decodificados con FFmpeg; captura revisada. Incorporación para prueba en TV Box Argentina; continuidad pendiente.",
+      "origen": "iptv-org/iptv streams/ar.m3u; IamJony/IPTVListaLibre generated/ar_canales.m3u",
+      "logo": "https://i.imgur.com/OxmpRDx.png"
+    },
+    {
+      "nombre": "Metropolitana TV - Canal 12 Tucumán",
+      "tvg_id": "MetroTV.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://streamtv12.ddns.net:5443/LiveApp/streams/193945633734205616732920.m3u8",
+      "verificacion": "2026-11-21: manifiesto HLS, dos segmentos y 2 segundos de video decodificados con FFmpeg; captura revisada. Incorporación para prueba en TV Box Argentina; continuidad pendiente. Ventana HLS corta: se probaron los últimos segmentos disponibles.",
+      "origen": "https://cadenametro.com.ar/ — reproductor público LiveApp",
+      "logo": "https://i.imgur.com/7f7M7zl.png"
     }
   ]
 }

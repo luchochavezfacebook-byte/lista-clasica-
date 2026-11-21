@@ -1,5 +1,11 @@
 # Lista Clásica — TV FULL PRO (V63)
 
+## Señales argentinas para prueba — 21/11/2026
+
+Se agregaron **19 canales en Argentina TV**, incluyendo **Metropolitana TV / Canal 12 Tucumán**, y un **respaldo HTTPS de El Ocho / Telefe Tucumán**. La lista tiene **300 enlaces HLS únicos**. Los canales nuevos tienen manifiesto, segmentos y una muestra de 2 segundos de video decodificados; requieren prueba de continuidad en TV Box. El Ocho conserva su fuente principal y añade el respaldo oficial g3 con sus cabeceras.
+
+En la app: abrir **Lista Clásica → Recargar lista → Argentina TV**. No requiere recompilar ni instalar APK. Los cambios están en `fuentes_noviembre_2026.json` y `fuentes.json`; `lista_clasica.m3u` se regenera desde esos catálogos. Detalle de canales y evidencia: [incorporación Argentina 21/11](docs/argentina_pruebas_20261121.md).
+
 ## Actualización de salud y canales populares — 11/11/2026
 
 La Lista Clásica ahora tiene **281 enlaces HLS únicos**. Se **eliminaron** DeporTV (HTTPS certificado inválido en tres intentos), Canal Nets (404) y Canal 9 Litoral (404). Las alternativas abiertas localizadas para esos canales fallaron, así que no se sustituyeron por señales incorrectas.
