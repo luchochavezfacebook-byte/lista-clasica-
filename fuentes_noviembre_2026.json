@@ -344,6 +344,232 @@
       "verificacion": "2026-11-21: manifiesto HLS, dos segmentos y 2 segundos de video decodificados con FFmpeg; captura revisada. Incorporación para prueba en TV Box Argentina; continuidad pendiente. Ventana HLS corta: se probaron los últimos segmentos disponibles.",
       "origen": "https://cadenametro.com.ar/ — reproductor público LiveApp",
       "logo": "https://i.imgur.com/7f7M7zl.png"
+    },
+    {
+      "nombre": "5tv",
+      "tvg_id": "5tv.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://617c5175c970b.streamlock.net:4444/tvcinco/live1/playlist.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 60 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
+    },
+    {
+      "nombre": "BVC",
+      "tvg_id": "BVC.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://vivo.solumedia.com:19360/bvnet/bvnet.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 50 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
+    },
+    {
+      "nombre": "Cadena103.TV",
+      "tvg_id": "Cadena103TV.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://streamlov.alsolnet.com/cadena103/live/playlist.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 60 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
+    },
+    {
+      "nombre": "Canal 2 de Ushuaia",
+      "tvg_id": "Canal2deUshuaia.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://nd106.republicaservers.com:4433/hls/c6611/index.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 120 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
+    },
+    {
+      "nombre": "Canal 2 Mar del Plata",
+      "tvg_id": "Canal2MardelPlata.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://tv.streamcasthd.com:3641/live/canal2mdplive.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 26 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
+    },
+    {
+      "nombre": "Canal 3 Las Heras",
+      "tvg_id": "Canal3LasHeras.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://stream.arcast.com.ar/canal3/canal3/playlist.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 50 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
+    },
+    {
+      "nombre": "Canal 4 Esquel",
+      "tvg_id": "Canal4Esquel.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://stream.arcast.com.ar/canal4esquel/canal4esquel/playlist.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 60 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
+    },
+    {
+      "nombre": "Canal 4 Villa Dolores",
+      "tvg_id": "Canal4VillaDolores.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://stmvideo3.livecastv.com/canal4vd/canal4vd/playlist.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 34 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
+    },
+    {
+      "nombre": "Canal 5 TV Chepes",
+      "tvg_id": "Canal5TVChepes.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://videostream.shockmedia.com.ar:19360/canal5alfatvchepes/canal5alfatvchepes.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 50 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
+    },
+    {
+      "nombre": "Canal 7 Salta",
+      "tvg_id": "Canal7Salta.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://vivo.solumedia.com:19360/canal7salta/canal7salta.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 50 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
+    },
+    {
+      "nombre": "Canal 10 Mar del Plata",
+      "tvg_id": "Canal10MardelPlata.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://g1.mc-hor.transport.edge-access.net/a12/ngrp:canal10mdq-100044_all/Playlist.m3u8?sense=true",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 50 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
+    },
+    {
+      "nombre": "Canal 20 Villa Maria",
+      "tvg_id": "Canal20VillaMaria.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://stmvideo3.livecastv.com/canal20/canal20/playlist.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 38 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv",
+      "referrer": "https://www.canal20villamaria.com.ar/"
+    },
+    {
+      "nombre": "Canal 50 Morteros",
+      "tvg_id": "Canal50Morteros.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://online.coopmorteros.coop/canal50/vivo.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 50 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
+    },
+    {
+      "nombre": "Canal 99 Miramar",
+      "tvg_id": "Canal99Miramar.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://vivo.solumedia.com:19360/cardinal/cardinal.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 60 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
+    },
+    {
+      "nombre": "Canal Luz",
+      "tvg_id": "CanalLuz.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://g4.vxral-hor.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 50 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
+    },
+    {
+      "nombre": "Canal Provincial",
+      "tvg_id": "CanalProvincial.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://streaming.telered.com.ar/provincial/streaming/mystream.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 60 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
+    },
+    {
+      "nombre": "Canal Pulpo TV",
+      "tvg_id": "CanalPulpoTV.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://vs20.live.opencaster.com/canalpulpotv_bdeee6e2/index.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 60 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
+    },
+    {
+      "nombre": "Canal Santa María",
+      "tvg_id": "CanalSantaMaria.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://streaming.telered.com.ar/santa-maria/streaming/mystream.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 50 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
+    },
+    {
+      "nombre": "Mercurio Noticias",
+      "tvg_id": "MercurioNoticias.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://videostream.shockmedia.com.ar/hls/mercuriotv/mercuriotv.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 50 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
+    },
+    {
+      "nombre": "Neo TV",
+      "tvg_id": "NeoTV.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://videostream.shockmedia.com.ar:19360/neotvdigital/neotvdigital.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 60 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
+    },
+    {
+      "nombre": "Senillosa TV",
+      "tvg_id": "SenillosaTV.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://player.videohost.click/senillosatv/senillosatv/playlist.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 100 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
+    },
+    {
+      "nombre": "T5 Satelital",
+      "tvg_id": "T5Satelital.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://stream.t5satelital.blog/hls/t5satelitalweb.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 50 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
+    },
+    {
+      "nombre": "Unife TV",
+      "tvg_id": "UnifeTV.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://cdn.mycloudstream.io/hls/live/broadcast/pgv5kerk/index.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 50 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
+    },
+    {
+      "nombre": "Villa Mantero TV",
+      "tvg_id": "VillaManteroTV.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://micanal.ovh/livestreams/515.AUTOOAAZ721F.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 60 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
+    },
+    {
+      "nombre": "VIVE TV",
+      "tvg_id": "VIVETV.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://vivo.solumedia.com:19360/vivetv/vivetv.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (muestra inicial: 60 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv"
     }
   ]
 }
