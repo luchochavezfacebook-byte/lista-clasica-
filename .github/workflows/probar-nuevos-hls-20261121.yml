@@ -1,0 +1,29 @@
+name: Probar candidatos nuevos HLS 21-11
+on:
+  push:
+    branches:
+      - qa/altas-hls-20261121
+    paths:
+      - 'diagnosticos/candidatos_nuevos_20261121.json'
+      - 'scripts/probar_nuevos_hls_20261121.py'
+      - '.github/workflows/probar-nuevos-hls-20261121.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Comprobar HLS y 2 s de video decodificado
+        run: python3 scripts/probar_nuevos_hls_20261121.py
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reporte-candidatos-hls-20261121
+          path: diagnosticos/reporte_nuevos_20261121.json
+          if-no-files-found: warn
