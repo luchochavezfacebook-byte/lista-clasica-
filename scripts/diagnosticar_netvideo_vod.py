@@ -99,3 +99,25 @@ for mid in ids[:2]:
         d["login_text_present"] = bool(re.search(r"iniciar sesi[oó]n|ingresar|registrarse",res["body"],re.I))
         print("DETAIL",json.dumps({"route":route,**d},ensure_ascii=False,default=dict),flush=True)
     except Exception as e: print("DETAIL_ERROR",str(e)[:150],flush=True)
+
+
+# Revisión del flujo visible en la sección Películas y una ficha de ejemplo.
+for route in ("?movies","?item=1368337&movie","?series"):
+    try:
+        page=fetch(route)["body"]
+        print("FLOW_ROUTE",route,flush=True)
+        for phrase in ("cargar más","loadmore","loadMore","MoreItems","?movies&","?item=","?watch","?play","?movie","?server","ver película","reproducir","playvideo","movieplay","data-link","location.href","window.location","href=\"javascript:void(0)\"","action=","onclick="):
+            hits=list(re.finditer(re.escape(phrase),page,re.I))
+            examples=[]
+            for m in hits[:2]:
+                excerpt=page[max(0,m.start()-220):min(len(page),m.end()+300)]
+                excerpt=re.sub(r"\s+"," ",excerpt)
+                # El HTML puede incluir recursos privados. No volcar URLs multimedia ni sesiones.
+                excerpt=re.sub(r"https?://[^ \t\"'<>\n]+", "[URL]", excerpt)
+                examples.append(excerpt[:500])
+            print("FLOW",json.dumps({"phrase":phrase,"count":len(hits),"excerpts":examples},ensure_ascii=False),flush=True)
+        # Eventos de interfaz con referencias a reproducción / páginas adicionales.
+        tags=re.findall(r"<(?:a|button|form)\b[^>]{0,700}>",page,re.I|re.S)
+        relevant=[re.sub(r"\s+"," ",tag)[:400] for tag in tags if any(p in tag.lower() for p in ("cargar","ver ahora","reprod","load","pagin","play","watch","movie","item="))]
+        print("FLOW_ACTION_TAGS",json.dumps(relevant[:28],ensure_ascii=False),flush=True)
+    except Exception as e:print("FLOW_ERROR",route,type(e).__name__,str(e)[:140],flush=True)
