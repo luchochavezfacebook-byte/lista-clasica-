@@ -11,6 +11,7 @@ pos=page.find(marker)
 if pos < 0:raise RuntimeError("Streams no encontrado")
 end=page.find("];",pos)
 streams=json.loads(page[pos+len(marker):end+1])
+scheme=collections.Counter(urlsplit(c.get("url","")).scheme for c in streams)
 hosts=collections.Counter(urlsplit(c.get("url","")).hostname for c in streams)
 m3u=[c for c in streams if ".m3u8" in c.get("url","").lower()]
 print("CATALOG",json.dumps({"total":len(streams),"m3u8":len(m3u),"schemes":scheme,"domains":hosts,"non_m3u8":[{"name":c["name"],"scheme":urlsplit(c.get("url","")).scheme,"host":urlsplit(c.get("url","")).hostname} for c in streams if c not in m3u]},ensure_ascii=False),flush=True)
