@@ -5,6 +5,7 @@ on:
       - diagnostico/netvideo-vod-20261122
     paths:
       - 'scripts/diagnosticar_netvideo_vod.py'
+      - 'scripts/comprobar_panel_hosting_netvideo.py'
       - '.github/workflows/diagnosticar-netvideo-vod.yml'
   workflow_dispatch:
 permissions:
@@ -19,4 +20,4 @@ jobs:
         with:
           python-version: '3.12'
       - name: Analizar metadatos del catálogo público sin acceder a contenido protegido
-        run: python3 scripts/diagnosticar_netvideo_vod.py
+        run: python3 scripts/comprobar_panel_hosting_netvideo.py
