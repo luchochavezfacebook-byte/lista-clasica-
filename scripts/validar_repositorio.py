@@ -90,7 +90,7 @@ def main():
             assert 'group-title="Argentina YT"' not in content, 'Fuentes YouTube dentro del reproductor HLS'
             assert 'youtube.com/' not in content and 'youtu.be/' not in content, 'Enlace YouTube no reproducible en V62'
             assert 'Mundo TV /' not in content
-            urls_m3u = {line.strip() for line in content.splitlines() if line.startswith('https://')}
+            urls_m3u = {line.strip() for line in content.splitlines() if line.startswith(('https://', 'http://'))}
             assert urls_m3u == {c['url'] for c in all_hls}, 'Falta o sobra una URL HLS'
             seen_urls = set()
             logo_expected = 0
