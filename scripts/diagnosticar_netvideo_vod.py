@@ -121,3 +121,31 @@ for route in ("?movies","?item=1368337&movie","?series"):
         relevant=[re.sub(r"\s+"," ",tag)[:400] for tag in tags if any(p in tag.lower() for p in ("cargar","ver ahora","reprod","load","pagin","play","watch","movie","item="))]
         print("FLOW_ACTION_TAGS",json.dumps(relevant[:28],ensure_ascii=False),flush=True)
     except Exception as e:print("FLOW_ERROR",route,type(e).__name__,str(e)[:140],flush=True)
+
+
+# Comprobación controlada de páginas enlazadas y de la ruta del reproductor visible.
+for route in ("?movies&page=1","?movies&page=2","?movies&page=3","?watch=1368337&movie","?item=1368337&movie"):
+    try:
+        res=fetch(route)
+        page=res["body"]
+        mids=list(dict.fromkeys(re.findall(r"\?item=([0-9]+)&movie",page,re.I)))
+        title=re.search(r"<title\b[^>]*>(.*?)</title>",page,re.I|re.S)
+        next_pages=re.findall(r'href=["\']([^"\']*\?movies&page=[0-9]+)["\']',page,re.I)
+        movie_playback_types={
+            "m3u8":len(re.findall(r"\.m3u8\b",page,re.I)),
+            "mp4":len(re.findall(r"\.mp4\b",page,re.I)),
+            "mpd":len(re.findall(r"\.mpd\b",page,re.I)),
+            "iframe":len(re.findall(r"<iframe\b",page,re.I)),
+            "video":len(re.findall(r"<video\b",page,re.I)),
+            "hls_js":len(re.findall(r"hls\.min|hlsjs|new Hls",page,re.I)),
+            "login_required_text":len(re.findall(r"debes iniciar sesi[oó]n|inicia sesi[oó]n para|accede con tu cuenta|usuario y contrase",page,re.I)),
+        }
+        lines=[]
+        for label in ("director","elenco","trailer","subtitulado","latino","duración","genero","género","año","sinopsis","Reproducir Video","disponible"):
+            m=re.search(re.escape(label),page,re.I)
+            if m:
+                excerpt=re.sub(r"\s+"," ",re.sub(r"<[^>]+>"," ",page[max(0,m.start()-160):m.start()+250]))
+                lines.append({"label":label,"context":excerpt[:260]})
+        print("PAGE_ADV",json.dumps({"route":route,"status":res["status"],"title":re.sub("<[^>]+>","",title.group(1)).strip() if title else "", "unique_movies":len(mids),"id_samples":mids[:8],"next_pages":next_pages[:5],"has_next_button":'cargar más' in page.lower(),"playback_features":movie_playback_types,"text_samples":lines[:8]},ensure_ascii=False),flush=True)
+    except Exception as e:
+        print("PAGE_ADV_ERROR",route,type(e).__name__,str(e)[:140],flush=True)
