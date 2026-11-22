@@ -1,0 +1,22 @@
+name: Diagnóstico HTTP público IP 200.80.230.125
+on:
+  push:
+    branches:
+      - diagnostico/ip-200-80-230-125-5056-20261122
+    paths:
+      - 'scripts/diagnosticar_pagina_5056.py'
+      - '.github/workflows/diagnosticar-pagina-5056.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnostico:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verificar respuesta HTTP y estructura visible sin autenticación
+        run: python3 scripts/diagnosticar_pagina_5056.py
