@@ -1,5 +1,15 @@
 # Lista Clásica — TV FULL PRO (V63)
 
+## Nuevas señales autorizadas de Netvideo — 22/11/2026
+
+Se incorporaron **28 señales HLS nuevas**, con **28 logos** procedentes de la grilla web de Netvideo TvPlay, facilitada por el proveedor para esta integración. Se compararon los **70 elementos** de TvPlay (**62 HLS** y 8 flujos de otro tipo) con Lista Clásica y se descartaron duplicados, incluyendo TN, El Trece, América, Canal 7 Jujuy/Salta, Radio Power Max y LinkTV. Se descartaron también 6 candidatos con pruebas insuficientes, sin declararlos dados de baja.
+
+La lista principal pasa de **324 a 352 señales HLS únicas**. Se conservaron intactas las 324 URL originales, respaldos y Lista Clásica YT. Las 28 señales seleccionadas superaron dos pruebas de fragmentos HLS y decodificación de al menos 20 fotogramas en GitHub Actions. **Su reproducción continua y el audio deben probarse en TV FULL PRO desde Argentina.**
+
+**Nota técnica:** estas señales utilizan HTTP (no HTTPS) en el puerto 5056 de la dirección entregada por el proveedor. El generador solo permite HTTP para ese servidor y para el formato HLS específico de su sitio. Las rutas completas quedan visibles en este repositorio público; confirmar con el proveedor que está autorizada su publicación y distribución. El sitio puede modificar su ruta o controlar acceso por región.
+
+[Detalle técnico y lista de incorporaciones](docs/netvideo_tvplay_20261122.md). En TV FULL PRO: **Lista Clásica → Recargar lista**. No requiere recompilar.
+
 ## Ampliación de señales regionales — 21/11/2026 (dos pruebas)
 
 Se incorporaron **24 canales HLS argentinos nuevos**, luego de verificar manifiesto, primer segmento y decodificación de al menos 20 fotogramas durante 2 segundos de video en **dos ejecuciones independientes** de GitHub Actions. La lista pasa de **300 a 324 señales HLS únicas**. Se conservaron todas las 300 fuentes anteriores, con sus cabeceras y respaldos. Canal 4 Villa Dolores y otros candidatos con pruebas insuficientes **no se incorporaron**. Esto no garantiza reproducción desde una TV Box o disponibilidad permanente.
