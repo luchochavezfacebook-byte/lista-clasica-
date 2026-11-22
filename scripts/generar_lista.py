@@ -34,7 +34,7 @@ def build(data):
         url = channel['url'].strip()
         parsed = urlsplit(url)
         proveedor_http = (parsed.scheme == 'http' and parsed.hostname == '200.80.230.125' and parsed.port == 5056
-                          and re.fullmatch(r'/Live/[0-9a-f]{32}/[A-Za-z0-9_-]+\\.playlist\\.m3u8', parsed.path, re.I))
+                          and re.fullmatch(r'/Live/[0-9a-f]{32}/[A-Za-z0-9_-]+\.playlist\.m3u8', parsed.path, re.I))
         if not (parsed.scheme == 'https' or proveedor_http) or not parsed.netloc or not parsed.path.lower().endswith('.m3u8'):
             raise ValueError(f"URL HLS no válida para {channel['nombre']}")
         if channel['categoria'] != channel['pais'] + ' TV':
