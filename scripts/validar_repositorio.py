@@ -13,7 +13,9 @@ def main():
     mundo = json.loads((ROOT / 'fuentes_mundotv.json').read_text(encoding='utf-8'))['canales']
     popular = json.loads((ROOT / 'fuentes_populares_2026.json').read_text(encoding='utf-8'))['canales']
     noviembre = json.loads((ROOT / 'fuentes_noviembre_2026.json').read_text(encoding='utf-8'))['canales']
-    all_hls = hls + mundo + popular + noviembre
+    netvideo_path = ROOT / 'fuentes_netvideo_2026.json'
+    netvideo = json.loads(netvideo_path.read_text(encoding='utf-8'))['canales'] if netvideo_path.exists() else []
+    all_hls = hls + mundo + popular + noviembre + netvideo
     youtube = json.loads((ROOT / 'youtube_en_vivo.json').read_text(encoding='utf-8'))['canales']
     assert hls and mundo and popular and noviembre and youtube, 'Catálogos vacíos'
     assert len({c['tvg_id'] for c in all_hls}) == len(all_hls), 'IDs HLS duplicados'
@@ -23,7 +25,9 @@ def main():
         assert channel.get('pais') and channel.get('categoria') == channel['pais'] + ' TV', 'País/categoría inválido: ' + channel['nombre']
         url = channel['url'].strip()
         parts = urlsplit(url)
-        assert parts.scheme == 'https' and parts.hostname, 'URL inválida: ' + channel['nombre']
+        proveedor_http = (parts.scheme == 'http' and parts.hostname == '200.80.230.125' and parts.port == 5056
+                          and re.fullmatch(r'/Live/[0-9a-f]{32}/[A-Za-z0-9_-]+\.playlist\.m3u8', parts.path, re.I))
+        assert (parts.scheme == 'https' or proveedor_http) and parts.hostname, 'URL inválida: ' + channel['nombre']
         assert parts.path.lower().endswith('.m3u8'), 'Señal no HLS: ' + channel['nombre']
         assert parts.hostname != 'manifest.googlevideo.com', 'Manifiesto temporal'
         assert not parts.username and not parts.password, 'Credenciales en URL'
@@ -86,7 +90,7 @@ def main():
             assert 'group-title="Argentina YT"' not in content, 'Fuentes YouTube dentro del reproductor HLS'
             assert 'youtube.com/' not in content and 'youtu.be/' not in content, 'Enlace YouTube no reproducible en V62'
             assert 'Mundo TV /' not in content
-            urls_m3u = {line.strip() for line in content.splitlines() if line.startswith('https://')}
+            urls_m3u = {line.strip() for line in content.splitlines() if line.startswith(('https://', 'http://'))}
             assert urls_m3u == {c['url'] for c in all_hls}, 'Falta o sobra una URL HLS'
             seen_urls = set()
             logo_expected = 0
@@ -103,7 +107,7 @@ def main():
             assert content.count('tvfull-player="youtube"') == len(youtube_listos), 'Falta marca de reproductor YouTube'
             assert '.m3u8' not in content, 'La Lista Clásica YT no debe contener HLS'
 
-    print(f'OK: {len(hls)} HLS originales + {len(mundo)} Mundo TV + {len(popular)} populares anteriores + {len(noviembre)} de noviembre 2026; {len({c["url"] for c in all_hls})} URL HLS únicas, {len(youtube_listos)} YouTube publicadas ({len(youtube) - len(youtube_listos)} pendientes).')
+    print(f'OK: {len(hls)} HLS originales + {len(mundo)} Mundo TV + {len(popular)} populares anteriores + {len(noviembre)} de noviembre 2026 + {len(netvideo)} Netvideo; {len({c["url"] for c in all_hls})} URL HLS únicas, {len(youtube_listos)} YouTube publicadas ({len(youtube) - len(youtube_listos)} pendientes).')
     print('Advertencia: pruebas estructurales, no certificación de disponibilidad.')
 
 

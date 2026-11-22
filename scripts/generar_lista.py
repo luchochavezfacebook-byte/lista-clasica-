@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Genera Lista Clásica por país sin perder fuentes ni respaldos."""
 import json
+import re
 import unicodedata
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -32,7 +33,9 @@ def build(data):
     for channel in base:
         url = channel['url'].strip()
         parsed = urlsplit(url)
-        if parsed.scheme != 'https' or not parsed.netloc or not parsed.path.lower().endswith('.m3u8'):
+        proveedor_http = (parsed.scheme == 'http' and parsed.hostname == '200.80.230.125' and parsed.port == 5056
+                          and re.fullmatch(r'/Live/[0-9a-f]{32}/[A-Za-z0-9_-]+\.playlist\.m3u8', parsed.path, re.I))
+        if not (parsed.scheme == 'https' or proveedor_http) or not parsed.netloc or not parsed.path.lower().endswith('.m3u8'):
             raise ValueError(f"URL HLS no válida para {channel['nombre']}")
         if channel['categoria'] != channel['pais'] + ' TV':
             raise ValueError('Categoría por país incoherente: ' + channel['nombre'])
@@ -88,6 +91,9 @@ if __name__ == '__main__':
     data['canales'].extend(mundo['canales'])
     data['canales'].extend(popular['canales'])
     data['canales'].extend(noviembre['canales'])
+    netvideo = ROOT / 'fuentes_netvideo_2026.json'
+    if netvideo.exists():
+        data['canales'].extend(json.loads(netvideo.read_text(encoding='utf-8'))['canales'])
     path = ROOT / 'lista_clasica.m3u'
     path.write_text(build(data), encoding='utf-8')
     print(f"Creada: {path} ({len({c['url'] for c in data['canales']})} fuentes HLS únicas, YouTube separado)")

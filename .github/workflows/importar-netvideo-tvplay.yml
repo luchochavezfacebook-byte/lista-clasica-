@@ -1,0 +1,54 @@
+name: Importar TV en vivo Netvideo (rama de prueba)
+# Segunda ejecución tras ajustar validación de URLs HTTP del proveedor.
+on:
+  push:
+    branches:
+      - feat/importar-tvplay-netvideo-20261122
+    paths:
+      - '.github/workflows/importar-netvideo-tvplay.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  importar:
+    if: github.ref == 'refs/heads/feat/importar-tvplay-netvideo-20261122'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Leer la grilla pública y copiar solo 28 nuevas fuentes previamente verificadas
+        run: python3 scripts/importar_netvideo_tvplay.py
+      - name: Regenerar M3U sin alterar los canales existentes
+        run: python3 scripts/generar_lista.py
+      - name: Validar que las 352 señales y Lista YT sigan íntegras
+        run: |
+          python3 scripts/validar_repositorio.py
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          base=[]
+          for p in ('fuentes.json','fuentes_mundotv.json','fuentes_populares_2026.json','fuentes_noviembre_2026.json'):
+              base.extend(json.loads(Path(p).read_text(encoding='utf-8'))['canales'])
+          added=json.loads(Path('fuentes_netvideo_2026.json').read_text(encoding='utf-8'))['canales']
+          playlist=Path('lista_clasica.m3u').read_text(encoding='utf-8')
+          originals={x['url'] for x in base}
+          old_count=len(originals)
+          assert old_count==324, f'Cantidad original inesperada: {old_count}'
+          assert len(added)==28, f'Faltan fuentes Netvideo: {len(added)}'
+          assert playlist.count('#EXTINF:')==352
+          assert all(("\n"+u+"\n") in playlist for u in originals), "Se perdió fuente anterior"
+          print('OK: 324 fuentes intactas + 28 nuevas. Lista YouTube sin cambios.')
+          PY
+      - name: Crear commit solo en rama de propuesta
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fuentes_netvideo_2026.json lista_clasica.m3u
+          git diff --cached --quiet && exit 0
+          git commit -m "feat: agregar 28 canales Netvideo verificados sin duplicar"
+          git push origin HEAD:feat/importar-tvplay-netvideo-20261122
