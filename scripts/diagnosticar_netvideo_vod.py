@@ -149,3 +149,24 @@ for route in ("?movies&page=1","?movies&page=2","?movies&page=3","?watch=1368337
         print("PAGE_ADV",json.dumps({"route":route,"status":res["status"],"title":re.sub("<[^>]+>","",title.group(1)).strip() if title else "", "unique_movies":len(mids),"id_samples":mids[:8],"next_pages":next_pages[:5],"has_next_button":'cargar más' in page.lower(),"playback_features":movie_playback_types,"text_samples":lines[:8]},ensure_ascii=False),flush=True)
     except Exception as e:
         print("PAGE_ADV_ERROR",route,type(e).__name__,str(e)[:140],flush=True)
+
+
+# Diagnóstico del modelo de fuentes del reproductor (sin exponer enlaces de video).
+for id in ("1368337","1263337"):
+    route=f"?watch={id}&movie"
+    try:
+        body=fetch(route)["body"]
+        variables=re.findall(r"(?:var|let|const)\s+([A-Za-z_$][\w$]*)\s*=",body)
+        keys={k:len(re.findall(r'["\']'+re.escape(k)+r'["\']\s*:',body,re.I))+len(re.findall(r'\[\s*["\']'+re.escape(k)+r'["\']\s*\]',body,re.I)) for k in ("hls_spa","hls_sub","mp4_spa","mp4_sub","id","title","name","url","poster","sources","token","expires")}
+        src_extensions={ext:len(re.findall(re.escape(ext)+r"\b",body,re.I)) for ext in (".m3u8",".mp4",".mpd")}
+        linked_domains={m.group(1) for m in re.finditer(r"https?://([^/'\"\s<>]+)",body,re.I)}
+        # Los enlaces multimedia pueden estar protegidos: NO mostrar dominios internos ni rutas.
+        print("WATCH_ANALYSIS",json.dumps({
+            "route":route,"status":200,
+            "variables":list(dict.fromkeys(variables))[:40],
+            "key_usage":keys,"file_extensions":src_extensions,
+            "inline_http_urls_count":len(re.findall(r"https?://",body,re.I)),
+            "distinct_host_count":len(linked_domains),
+            "media_redirect_markers":{k:len(re.findall(re.escape(k),body,re.I)) for k in ("hls_spa","hls_sub","mp4_spa","mp4_sub","Hls.isSupported","video.src","userId","login")}
+        },ensure_ascii=False),flush=True)
+    except Exception as e:print("WATCH_ERROR",route,type(e).__name__,str(e)[:100],flush=True)
