@@ -39,6 +39,11 @@ for route in PAGES:
   for value in p.links:
    if not value.startswith(("#","javascript:")):
     observed_urls.add(urllib.parse.urljoin(url,value))
+  m=re.search("admin",page,re.I)
+  if m:
+   excerpt=re.sub(r"\\s+"," ",page[max(0,m.start()-130):m.end()+150])
+   excerpt=re.sub(r"https?://[^\\s\'\\\"<>]+","[URL]",excerpt)
+   print("ADMIN_CONTEXT",json.dumps({"route":route or "/","context":excerpt[:300]},ensure_ascii=False),flush=True)
   print("PAGE",json.dumps({"route":route or "/","status":200,
     "server":h.get("Server"),"powered_by":h.get("X-Powered-By"),
     "script_count":len(p.src),"html_term_count":{t:len(re.findall(re.escape(t),page,re.I)) for t in TERMS if re.search(re.escape(t),page,re.I)},
