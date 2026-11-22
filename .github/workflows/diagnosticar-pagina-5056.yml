@@ -12,11 +12,15 @@ permissions:
 jobs:
   diagnostico:
     runs-on: ubuntu-latest
-    timeout-minutes: 2
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Instalar FFmpeg para probar decodificación
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
       - name: Verificar respuesta HTTP y estructura visible sin autenticación
         run: python3 scripts/diagnosticar_pagina_5056.py
