@@ -1,4 +1,5 @@
 name: Importar TV en vivo Netvideo (rama de prueba)
+# Segunda ejecución tras ajustar validación de URLs HTTP del proveedor.
 on:
   push:
     branches:
