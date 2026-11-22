@@ -1,0 +1,22 @@
+name: Diagnóstico catálogo VOD público Netvideo
+on:
+  push:
+    branches:
+      - diagnostico/netvideo-vod-20261122
+    paths:
+      - 'scripts/diagnosticar_netvideo_vod.py'
+      - '.github/workflows/diagnosticar-netvideo-vod.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  analizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Analizar metadatos del catálogo público sin acceder a contenido protegido
+        run: python3 scripts/diagnosticar_netvideo_vod.py
