@@ -26,7 +26,7 @@ def main():
         url = channel['url'].strip()
         parts = urlsplit(url)
         proveedor_http = (parts.scheme == 'http' and parts.hostname == '200.80.230.125' and parts.port == 5056
-                          and re.fullmatch(r'/Live/[0-9a-f]{32}/[A-Za-z0-9_-]+\\.playlist\\.m3u8', parts.path, re.I))
+                          and re.fullmatch(r'/Live/[0-9a-f]{32}/[A-Za-z0-9_-]+\.playlist\.m3u8', parts.path, re.I))
         assert (parts.scheme == 'https' or proveedor_http) and parts.hostname, 'URL inválida: ' + channel['nombre']
         assert parts.path.lower().endswith('.m3u8'), 'Señal no HLS: ' + channel['nombre']
         assert parts.hostname != 'manifest.googlevideo.com', 'Manifiesto temporal'
