@@ -1,33 +1,42 @@
 #!/usr/bin/env python3
-"""Diagnóstico de lectura de HTTP público. Sin autenticación ni enumeración."""
-import http.client, json, re, socket, ssl, time, urllib.request, urllib.error
-from urllib.parse import urlsplit
-url="http://200.80.230.125:5056/"
-results=[]
-for scheme in ("http","https"):
-    address=scheme+"://200.80.230.125:5056/"
-    record={"url":address}
-    try:
-        req=urllib.request.Request(address,headers={"User-Agent":"Mozilla/5.0 (compatible; SiteConnectivityCheck/1.0)","Accept":"text/html,application/json,text/plain,*/*"})
-        with urllib.request.urlopen(req,timeout=12) as r:
-            body=r.read(100000)
-            content_type=r.headers.get("Content-Type","")
-            snippet=body.decode("utf-8","replace")
-            title_match=re.search(r"<title[^>]*>(.*?)</title>",snippet,re.I|re.S)
-            record.update(status=r.status,redirected_to=r.url,content_type=content_type,server=r.headers.get("Server",""),content_bytes_sampled=len(body),title=(re.sub(r"\\s+"," ",title_match.group(1))[:200] if title_match else None))
-            record["page_shape"]={
-                "html":bool(re.search(r"<html|<!doctype",snippet,re.I)),
-                "m3u":snippet.strip().startswith("#EXTM3U"),
-                "json":snippet.lstrip().startswith(("{","[")),
-                "hls_links":list(dict.fromkeys(re.findall(r"https?://[^'\\\"\\s<>]+?\\.m3u8(?:\\?[^'\\\"\\s<>]*)?",snippet,re.I)))[:30],
-                "path_refs":list(dict.fromkeys(re.findall(r"(?:src|href)=['\\\"]([^'\\\"]+)['\\\"]",snippet,re.I)))[:25],
-                "visible_text_excerpt":re.sub(r"\\s+"," ",re.sub(r"<[^>]+>"," ",snippet))[:400]
-            }
-    except Exception as e:record.update(error=type(e).__name__+": "+str(e)[:250])
-    results.append(record)
-    print("RESULT",json.dumps(record,ensure_ascii=False),flush=True)
-try:
-    with socket.create_connection(("200.80.230.125",5056),timeout=12) as s: 
-        print("TCP_CONNECTION","connected",flush=True)
-except Exception as e:
-    print("TCP_CONNECTION",type(e).__name__,str(e)[:180],flush=True)
+"""Analiza solo páginas públicas enlazadas desde la portada del servidor consultado.
+No elude autenticación, no enumera URLs ocultas y no descarga video."""
+import html, json, re, urllib.request, urllib.error, urllib.parse
+from html.parser import HTMLParser
+
+BASE="http://200.80.230.125:5056/"
+PATHS=["","?index","?movies","?series","?kids","?tvplay","?search","?help","?login","?downapp"]
+class Document(HTMLParser):
+ def __init__(self):
+  super().__init__(); self.text=[];self.links=[];self.scripts=[];self.forms=[];self.media=[];self.stored=[];self.drop=0;self.heading=False;self.title=False;self.titletext=[];self.headings=[]
+ def handle_starttag(self,tag,attrs):
+  d=dict(attrs)
+  if tag in ("style","script"):self.drop+=1
+  if tag=="title":self.title=True
+  if tag in ("h1","h2","h3","h4"):self.heading=tag
+  if tag=="a":self.links.append({"href":d.get("href",""),"title":d.get("title",""),"aria":d.get("aria-label","")})
+  if tag=="script" and d.get("src"):self.scripts.append(d["src"])
+  if tag=="form":self.forms.append({"method":d.get("method","GET"),"action":d.get("action","")})
+  if tag in ("video","audio","source","iframe"):self.media.append({"tag":tag,"src":d.get("src",""),"type":d.get("type","")})
+ def handle_endtag(self,tag):
+  if tag in ("style","script"):self.drop=max(0,self.drop-1)
+  if tag=="title":self.title=False
+  if tag in ("h1","h2","h3","h4"):self.heading=False
+ def handle_data(self,data):
+  if self.title:self.titletext.append(data)
+  if self.heading:self.headings.append(data.strip())
+  if not self.drop and data.strip():self.text.append(data.strip())
+for path in PATHS:
+ url=BASE+path; result={"route":path or "/"}
+ try:
+  req=urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0","Accept":"text/html,application/json,*/*"})
+  with urllib.request.urlopen(req,timeout=15) as resp:
+   raw=resp.read(180000);page=raw.decode("utf-8","replace");target=resp.url
+   result.update(status=resp.status,final=target,server=resp.headers.get("Server"),content_type=resp.headers.get("Content-Type"),bytes=len(raw))
+  doc=Document();doc.feed(page)
+  result.update(title=" ".join(doc.titletext).strip()[:120],headings=[x for x in doc.headings if x][:15],text=" ".join(doc.text)[:850],forms=doc.forms[:10],media=doc.media[:15],scripts=doc.scripts[:20],links=doc.links[:24])
+  result["m3u8_count"]=len(re.findall(r"\\.m3u8",page,re.I))
+  result["external_links"]=[x for x in re.findall(r"https?://[^'\\\"\\s<>]+",page) if "200.80.230.125" not in x][:10]
+  result["javascript_keywords"]={k:len(re.findall(k,page,re.I)) for k in ("m3u8","mpegurl","hls","playlist","videojs","jwplayer","xtream","live","stream","fetch\\(","ajax","player")}
+ except Exception as e:result["error"]=type(e).__name__+": "+str(e)[:180]
+ print("PAGE",json.dumps(result,ensure_ascii=False),flush=True)
