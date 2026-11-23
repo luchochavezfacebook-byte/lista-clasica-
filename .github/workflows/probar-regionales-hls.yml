@@ -1,0 +1,23 @@
+name: Probar nuevos canales regionales españoles (QA)
+on:
+  push:
+    branches:
+      - audit/lista-clasica-completa-20261123
+    paths:
+      - 'scripts/probar_regionales_hls_20261123.py'
+      - '.github/workflows/probar-regionales-hls.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+      - name: Preparar FFmpeg
+        run: |
+          command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y ffmpeg)
+          ffmpeg -version | head -1
+      - name: Confirmar video en dos pasadas (sin modificar catálogos)
+        run: python3 scripts/probar_regionales_hls_20261123.py
