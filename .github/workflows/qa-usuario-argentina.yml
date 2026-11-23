@@ -1,0 +1,65 @@
+name: Depurar canales manualmente agregados — Video HLS
+on:
+  push:
+    branches: [qa/depurar-agregados-argentina-20261123]
+    paths:
+      - 'scripts/qa_usuario_argentina_20261123.py'
+      - '.github/workflows/qa-usuario-argentina.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  auditar-y-regenerar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Preparar FFmpeg
+        run: |
+          python3 -m pip install --disable-pip-version-check --quiet imageio-ffmpeg
+          echo "FFMPEG_BINARY=$(python3 -c 'import imageio_ffmpeg;print(imageio_ffmpeg.get_ffmpeg_exe())')" >> "$GITHUB_ENV"
+      - name: Probar 863 señales añadidas y dos pasadas de las que entreguen video
+        run: python3 scripts/qa_usuario_argentina_20261123.py
+      - name: Reconstruir catálogo y preservar los 353 canales anteriores
+        run: |
+          python3 scripts/generar_lista.py
+          python3 scripts/validar_repositorio.py
+          python3 - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          before=subprocess.check_output(["git","show","bb80b9248a48ff09d3463a7437e775d3f42be9a2:lista_clasica.m3u"],text=True)
+          after=Path("lista_clasica.m3u").read_text()
+          old={x for x in before.splitlines() if x.startswith(("https://","http://"))}
+          new={x for x in after.splitlines() if x.startswith(("https://","http://"))}
+          feeds=json.loads(Path("fuentes_usuario_argentina_20261123.json").read_text())["canales"]
+          assert len(old)==353 and old.issubset(new)
+          assert len(new)==353+len(feeds)
+          assert after.count("#EXTINF:")==353+len(feeds)
+          assert all(x["categoria"]=="Argentina TV" for x in feeds)
+          assert not any("youtube.com/" in x for x in new)
+          print("OK: 353 canales originales preservados, +",len(feeds),"fuentes nuevas probadas en Argentina TV")
+          PY
+      - name: Publicar resultados SOLO en rama de revisión
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fuentes_usuario_argentina_20261123.json diagnosticos/qa_usuario_20261123.json lista_clasica.m3u
+          git diff --cached --quiet && exit 0
+          git commit -m "qa: conservar solo canales añadidos con video en dos pruebas"
+          git push origin HEAD:qa/depurar-agregados-argentina-20261123
+      - name: Subir resultado de diagnóstico
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostico-canales-agregados
+          path: |
+            diagnosticos/qa_usuario_20261123.json
+            fuentes_usuario_argentina_20261123.json
+          if-no-files-found: ignore
+          retention-days: 7
