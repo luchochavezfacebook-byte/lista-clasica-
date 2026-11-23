@@ -104,20 +104,6 @@
       "logo": "https://static.wikia.nocookie.net/logopedia/images/2/29/08%29Telemax_%282018%29.png/revision/latest?cb=20220113152551&path-prefix=es"
     },
     {
-      "nombre": "TV Universidad (UNLP)",
-      "tvg_id": "TVUniversidad.ar",
-      "categoria": "Argentina TV",
-      "url": "https://stratus.stream.cespi.unlp.edu.ar/hls/tvunlp.m3u8",
-      "verificacion": "2026-11-21: La web oficial tv.unlp.edu.ar sigue utilizando exactamente esta URL. El servidor devolvió 403 desde este entorno, tanto sin cabeceras como con Referer y Origin oficiales. Esto no demuestra que haya cesado la transmisión. Se conserva la fuente.",
-      "categoria_original": "Cultura y Educación Argentina",
-      "pais": "Argentina",
-      "diagnostico": {
-        "fecha": "2026-11-21",
-        "estado": "acceso_denegado_no_baja",
-        "baja_confirmada": false
-      }
-    },
-    {
       "nombre": "A24 - América 24 (prueba)",
       "tvg_id": "A24.ar",
       "categoria": "Argentina TV",
