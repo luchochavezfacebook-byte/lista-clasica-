@@ -7,6 +7,7 @@ import concurrent.futures
 import json
 import re
 import subprocess
+import os
 import time
 
 # Fuentes en listas públicas de iptv-org; preferentemente CDNs oficiales/FAST.
@@ -32,7 +33,7 @@ STREAMS=[
 def test(item,phase):
  name,country,url=item
  try:
-  cp=subprocess.run(["ffmpeg","-hide_banner","-nostdin","-loglevel","error",
+  cp=subprocess.run([os.environ.get("FFMPEG_BINARY","ffmpeg"),"-hide_banner","-nostdin","-loglevel","error",
    "-rw_timeout","10000000","-user_agent","Mozilla/5.0",
    "-i",url,"-map","0:v:0","-an","-frames:v","25",
    "-progress","pipe:1","-f","null","-"],
