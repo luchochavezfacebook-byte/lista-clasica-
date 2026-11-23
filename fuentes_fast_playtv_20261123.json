@@ -62,6 +62,22 @@
       "origen": "Rakuten GLORY FAST / iptv-org streams/pl_rakuten.m3u",
       "verificacion": "2026-11-23: dos pasadas con FFmpeg, 25 fotogramas decodificados en ambas. Evidencia: https://github.com/luchochavezfacebook-byte/lista-clasica-/actions/runs/45222921973. Verificar geobloqueo y audio en Argentina.",
       "user_agent": "Mozilla/5.0"
+    },
+    {
+      "nombre": "Telemundo Deportes Ahora",
+      "tvg_id": "PlayTVFree.TelemundoDeportesAhora",
+      "pais": "Estados Unidos",
+      "categoria": "Estados Unidos TV",
+      "url": "https://xumo-drct-tda-8hacu.fast.nbcuni.com/live/master.m3u8",
+      "origen": "NBCUniversal/Telemundo FAST (distribución gratuita de deportes), CDN NBCU",
+      "verificacion": "2026-11-23: dos pasadas FFmpeg de 25 fotogramas en principal y respaldo; https://github.com/luchochavezfacebook-byte/lista-clasica-/actions/runs/45223271790. Pendiente geobloqueo y TV Box.",
+      "user_agent": "Mozilla/5.0",
+      "backups": [
+        {
+          "url": "https://tda-nnaa-drct-pa6dy.fast.nbcuni.com/live/master.m3u8",
+          "headers": {}
+        }
+      ]
     }
   ]
 }
