@@ -1,5 +1,17 @@
 # Lista Clásica — TV FULL PRO (V63)
 
+## Depuración de 863 señales añadidas manualmente — 23/11/2026 (última actualización)
+
+El commit `7f53dcb` había agregado 863 entradas directamente a `lista_clasica.m3u`, sin integrarlas al generador, sin categorías útiles y rompiendo las comprobaciones de integridad. Se preservaron **los 353 canales anteriores**, se auditaron todas las incorporaciones por separado y se reconstruyó la lista desde los catálogos fuente.
+
+**Resultados FFmpeg desde GitHub Actions:** 863 entradas nuevas; 862 aptas para prueba (1 URL excluida por seguridad); 594 decodificaron al menos 12 fotogramas en **dos muestras**; 269 no se publican. El nuevo total es **947 fuentes HLS únicas (353 originales + 594 incorporadas)**. No se ha tocado la Lista Clásica YT ni la APK.
+
+Los **594 canales incorporados están en la categoría `Argentina TV`**, como se pidió. Esto define **dónde aparecen en el menú**, no que la emisora sea argentina ni que la señal pueda recibirse sin restricciones desde Argentina: **las dos pruebas fueron realizadas desde la red de GitHub Actions fuera de Argentina**. Un bloqueo geográfico, EPG, codecs de TV Box o falta de derechos de retransmisión requieren comprobación independiente. No se certificaron todas esas condiciones.
+
+Para retirar o restaurar alguno sin tocar los demás, está el catálogo separado `fuentes_usuario_argentina_20261123.json`; las 269 descartadas y el motivo de cada una están en `diagnosticos/qa_usuario_20261123.json`. También se puede recuperar la versión manual completa desde el commit `7f53dcb`.
+
+**Pruebas reproducibles:** [Auditoría de las 863 fuentes](https://github.com/luchochavezfacebook-byte/lista-clasica-/actions/runs/45240741627). En TV FULL PRO: **Lista Clásica → Recargar lista → Argentina TV**. No requiere nueva APK.
+
 ## Deportes temporales para prueba — 23/11/2026
 
 **Se incorporan 7 señales deportivas HLS abiertas a Lista Clásica, identificadas con `(PRUEBA)`**, tras superar 2 rondas de FFmpeg con 25 fotogramas decodificados: TVS Sports, TVS Classic Sports, TVS Sports Bureau, TVS Women Sports, África 24 Sport, DD Sports HD (con respaldo también aprobado) y Sport1 Alemania. Ya había FTF Sports, cuya URL alternativa superó la prueba pero coincide exactamente con la fuente publicada. Se excluyeron 7 candidatos que no pudieron reproducir video desde GitHub Actions (Fight Network, Willow Sports FAST, ambas variantes Esport3, Teledeporte RTVE, N Sports y Trace Sport Stars).
