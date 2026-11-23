@@ -97,6 +97,9 @@ if __name__ == '__main__':
     tvplay_es = ROOT / 'fuentes_tvplay_es_2026.json'
     if tvplay_es.exists():
         data['canales'].extend(json.loads(tvplay_es.read_text(encoding='utf-8'))['canales'])
+    regional = ROOT / 'fuentes_regionales_20261123.json'
+    if regional.exists():
+        data['canales'].extend(json.loads(regional.read_text(encoding='utf-8'))['canales'])
     path = ROOT / 'lista_clasica.m3u'
     path.write_text(build(data), encoding='utf-8')
     print(f"Creada: {path} ({len({c['url'] for c in data['canales']})} fuentes HLS únicas, YouTube separado)")
