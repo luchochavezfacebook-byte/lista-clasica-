@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Genera Lista Clásica por país sin perder fuentes ni respaldos."""
 import json
+import ipaddress
 import re
 import unicodedata
 from pathlib import Path
@@ -35,7 +36,13 @@ def build(data):
         parsed = urlsplit(url)
         proveedor_http = (parsed.scheme == 'http' and parsed.hostname == '200.80.230.125' and parsed.port == 5056
                           and re.fullmatch(r'/Live/[0-9a-f]{32}/[A-Za-z0-9_-]+\.playlist\.m3u8', parsed.path, re.I))
-        if not (parsed.scheme == 'https' or proveedor_http) or not parsed.netloc or not parsed.path.lower().endswith('.m3u8'):
+        proveedor_usuario_http = False
+        if parsed.scheme == 'http' and channel.get('origen') == 'catalogo_usuario_20261123' and parsed.hostname and not parsed.query and not parsed.username and not parsed.password:
+            try:
+                proveedor_usuario_http = ipaddress.ip_address(parsed.hostname).is_global
+            except ValueError:
+                proveedor_usuario_http = False
+        if not (parsed.scheme == 'https' or proveedor_http or proveedor_usuario_http) or not parsed.netloc or not parsed.path.lower().endswith('.m3u8'):
             raise ValueError(f"URL HLS no válida para {channel['nombre']}")
         if channel['categoria'] != channel['pais'] + ' TV':
             raise ValueError('Categoría por país incoherente: ' + channel['nombre'])
@@ -106,6 +113,9 @@ if __name__ == '__main__':
     deportes_test = ROOT / 'fuentes_deportes_prueba_20261123.json'
     if deportes_test.exists():
         data['canales'].extend(json.loads(deportes_test.read_text(encoding='utf-8'))['canales'])
+    manual = ROOT / 'fuentes_usuario_argentina_20261123.json'
+    if manual.exists():
+        data['canales'].extend(json.loads(manual.read_text(encoding='utf-8'))['canales'])
     path = ROOT / 'lista_clasica.m3u'
     path.write_text(build(data), encoding='utf-8')
     print(f"Creada: {path} ({len({c['url'] for c in data['canales']})} fuentes HLS únicas, YouTube separado)")
