@@ -17,7 +17,9 @@ def main():
     netvideo = json.loads(netvideo_path.read_text(encoding='utf-8'))['canales'] if netvideo_path.exists() else []
     tvplay_es_path = ROOT / 'fuentes_tvplay_es_2026.json'
     tvplay_es = json.loads(tvplay_es_path.read_text(encoding='utf-8'))['canales'] if tvplay_es_path.exists() else []
-    all_hls = hls + mundo + popular + noviembre + netvideo + tvplay_es
+    regional_path = ROOT / 'fuentes_regionales_20261123.json'
+    regional = json.loads(regional_path.read_text(encoding='utf-8'))['canales'] if regional_path.exists() else []
+    all_hls = hls + mundo + popular + noviembre + netvideo + tvplay_es + regional
     youtube = json.loads((ROOT / 'youtube_en_vivo.json').read_text(encoding='utf-8'))['canales']
     assert hls and mundo and popular and noviembre and youtube, 'Catálogos vacíos'
     assert len({c['tvg_id'] for c in all_hls}) == len(all_hls), 'IDs HLS duplicados'
@@ -109,7 +111,7 @@ def main():
             assert content.count('tvfull-player="youtube"') == len(youtube_listos), 'Falta marca de reproductor YouTube'
             assert '.m3u8' not in content, 'La Lista Clásica YT no debe contener HLS'
 
-    print(f'OK: {len(hls)} HLS originales + {len(mundo)} Mundo TV + {len(popular)} populares anteriores + {len(noviembre)} de noviembre 2026 + {len(netvideo)} Netvideo + {len(tvplay_es)} TVPlay ES; {len({c["url"] for c in all_hls})} URL HLS únicas, {len(youtube_listos)} YouTube publicadas ({len(youtube) - len(youtube_listos)} pendientes).')
+    print(f'OK: {len(hls)} HLS originales + {len(mundo)} Mundo TV + {len(popular)} populares anteriores + {len(noviembre)} de noviembre 2026 + {len(netvideo)} Netvideo + {len(tvplay_es)} TVPlay ES + {len(regional)} regionales; {len({c["url"] for c in all_hls})} URL HLS únicas, {len(youtube_listos)} YouTube publicadas ({len(youtube) - len(youtube_listos)} pendientes).')
     print('Advertencia: pruebas estructurales, no certificación de disponibilidad.')
 
 
