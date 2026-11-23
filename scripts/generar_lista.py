@@ -103,6 +103,9 @@ if __name__ == '__main__':
     fast_playtv = ROOT / 'fuentes_fast_playtv_20261123.json'
     if fast_playtv.exists():
         data['canales'].extend(json.loads(fast_playtv.read_text(encoding='utf-8'))['canales'])
+    deportes_test = ROOT / 'fuentes_deportes_prueba_20261123.json'
+    if deportes_test.exists():
+        data['canales'].extend(json.loads(deportes_test.read_text(encoding='utf-8'))['canales'])
     path = ROOT / 'lista_clasica.m3u'
     path.write_text(build(data), encoding='utf-8')
     print(f"Creada: {path} ({len({c['url'] for c in data['canales']})} fuentes HLS únicas, YouTube separado)")

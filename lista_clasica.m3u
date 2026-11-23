@@ -420,6 +420,10 @@ https://mts1.iptv-playoutcenter.de/mts/mts-web/playlist.m3u8
 #EXTINF:-1 tvg-id="MundoTV.0193" tvg-name="NDR Niedersachsen Alemania DE" tvg-logo="https://graph.facebook.com/ndrniedersachsen/picture?width=200&height=200" group-title="Alemania TV",NDR Niedersachsen Alemania DE
 https://ndrint.akamaized.net/hls/live/2020766/ndr_int/master.m3u8
 
+#EXTINF:-1 tvg-id="DeportesTest20261123.sport1-de" tvg-name="Sport1 Alemania (PRUEBA)" group-title="Alemania TV",Sport1 Alemania (PRUEBA)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/sport1/live.livx/playlist.m3u8
+
 #EXTINF:-1 tvg-id="MundoTV.0195" tvg-name="SR Saarland Alemania DE" tvg-logo="https://graph.facebook.com/SRinfo.sr/picture?width=200&height=200" group-title="Alemania TV",SR Saarland Alemania DE
 https://srfs.akamaized.net/hls/live/689649/srfsgeo/index.m3u8
 
@@ -879,6 +883,22 @@ https://xumo-drct-tda-8hacu.fast.nbcuni.com/live/master.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://xumo-xumoent-ch827-uj0ch.fast.nbcuni.com/live/master.m3u8
 
+#EXTINF:-1 tvg-id="DeportesTest20261123.tvs-classic" tvg-name="TVS Classic Sports (PRUEBA)" group-title="Estados Unidos TV",TVS Classic Sports (PRUEBA)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://rpn.bozztv.com/gusa/gusa-tvs/index.m3u8
+
+#EXTINF:-1 tvg-id="DeportesTest20261123.tvs-sports" tvg-name="TVS Sports (PRUEBA)" group-title="Estados Unidos TV",TVS Sports (PRUEBA)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://rpn.bozztv.com/gusa/gusa-tvssports/index.m3u8
+
+#EXTINF:-1 tvg-id="DeportesTest20261123.tvs-bureau" tvg-name="TVS Sports Bureau (PRUEBA)" group-title="Estados Unidos TV",TVS Sports Bureau (PRUEBA)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://rpn.bozztv.com/gusa/gusa-tvssportsbureau/index.m3u8
+
+#EXTINF:-1 tvg-id="DeportesTest20261123.tvs-women" tvg-name="TVS Women Sports (PRUEBA)" group-title="Estados Unidos TV",TVS Women Sports (PRUEBA)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://rpn.bozztv.com/gusa/gusa-tvswsn/index.m3u8
+
 #EXTINF:-1 tvg-id="PlayTVFree.ZonaTUDN" tvg-name="ViX Deportes 24/7 (Zona TUDN)" group-title="Estados Unidos TV",ViX Deportes 24/7 (Zona TUDN)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://linear-357.frequency.stream/mt/vizio/357/hls/master/playlist.m3u8
@@ -906,6 +926,15 @@ https://m2b2.worldcast.tv:7443/dancetelevisionfive/2/dancetelevisionfive.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0099" tvg-name="Dance TV Estonia" tvg-logo="https://pbs.twimg.com/profile_images/1268129322730127364/OJlQBZpS_200x200.jpg" group-title="Estonia TV",Dance TV Estonia
 https://mbit1.worldcast.tv:9443/dancetelevisionnine/multibit.m3u8
+
+#EXTINF:-1 tvg-id="DeportesTest20261123.africa24-sport" tvg-name="África 24 Sport (PRUEBA)" group-title="Francia TV",África 24 Sport (PRUEBA)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://africa24.vedge.infomaniak.com/livecast/ik:africa24sport/manifest.m3u8
+
+#EXTINF:-1 tvg-id="DeportesTest20261123.dd-sports" tvg-name="DD Sports HD (PRUEBA)" group-title="India TV",DD Sports HD (PRUEBA)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXT-X-TVFULL-BACKUP:{"url":"https://mumbai-edge.smartplaytv.in/DDSportsHD/index.m3u8","headers":{}}
+https://cdn.pishow.tv/ott/live/1161/master.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0210" tvg-name="India Today EN" tvg-logo="https://graph.facebook.com/IndiaToday/picture?width=200&height=200" group-title="India TV",India Today EN
 https://indiatodaylive.akamaized.net/hls/live/2014320/indiatoday/indiatodaylive/playlist.m3u8

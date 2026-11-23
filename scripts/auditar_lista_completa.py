@@ -22,6 +22,7 @@ CATALOGS=[
     'fuentes_tvplay_es_2026.json',
     'fuentes_regionales_20261123.json',
     'fuentes_fast_playtv_20261123.json',
+    'fuentes_deportes_prueba_20261123.json',
 ]
 GOOD={'segmento_accesible'}
 def tag(src, kind='principal'):

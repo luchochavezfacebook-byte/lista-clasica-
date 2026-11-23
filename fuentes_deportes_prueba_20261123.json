@@ -1,0 +1,84 @@
+{
+  "nombre": "Deportes de prueba 23/11/2026",
+  "fecha": "2026-11-23",
+  "advertencia": "Solo 7 señales de acceso abierto con video decodificado en 2 muestras; provisionales y reversibles. No se incorporan servicios premium de pago ni credenciales. No garantizado en TV Box Argentina.",
+  "reporte": "https://github.com/luchochavezfacebook-byte/lista-clasica-/actions/runs/45233893770",
+  "canales": [
+    {
+      "nombre": "TVS Sports (PRUEBA)",
+      "tvg_id": "DeportesTest20261123.tvs-sports",
+      "pais": "Estados Unidos",
+      "categoria": "Estados Unidos TV",
+      "url": "https://rpn.bozztv.com/gusa/gusa-tvssports/index.m3u8",
+      "user_agent": "Mozilla/5.0",
+      "origen": "iptv-org/iptv; candidato abierto para ensayos en TV FULL PRO",
+      "verificacion": "2026-11-23: 2 pasadas independientes FFmpeg, 25 fotogramas decodificados por pasada; pendiente audio, región, TV Box y permisos de distribución"
+    },
+    {
+      "nombre": "TVS Classic Sports (PRUEBA)",
+      "tvg_id": "DeportesTest20261123.tvs-classic",
+      "pais": "Estados Unidos",
+      "categoria": "Estados Unidos TV",
+      "url": "https://rpn.bozztv.com/gusa/gusa-tvs/index.m3u8",
+      "user_agent": "Mozilla/5.0",
+      "origen": "iptv-org/iptv; candidato abierto para ensayos en TV FULL PRO",
+      "verificacion": "2026-11-23: 2 pasadas independientes FFmpeg, 25 fotogramas decodificados por pasada; pendiente audio, región, TV Box y permisos de distribución"
+    },
+    {
+      "nombre": "TVS Sports Bureau (PRUEBA)",
+      "tvg_id": "DeportesTest20261123.tvs-bureau",
+      "pais": "Estados Unidos",
+      "categoria": "Estados Unidos TV",
+      "url": "https://rpn.bozztv.com/gusa/gusa-tvssportsbureau/index.m3u8",
+      "user_agent": "Mozilla/5.0",
+      "origen": "iptv-org/iptv; candidato abierto para ensayos en TV FULL PRO",
+      "verificacion": "2026-11-23: 2 pasadas independientes FFmpeg, 25 fotogramas decodificados por pasada; pendiente audio, región, TV Box y permisos de distribución"
+    },
+    {
+      "nombre": "TVS Women Sports (PRUEBA)",
+      "tvg_id": "DeportesTest20261123.tvs-women",
+      "pais": "Estados Unidos",
+      "categoria": "Estados Unidos TV",
+      "url": "https://rpn.bozztv.com/gusa/gusa-tvswsn/index.m3u8",
+      "user_agent": "Mozilla/5.0",
+      "origen": "iptv-org/iptv; candidato abierto para ensayos en TV FULL PRO",
+      "verificacion": "2026-11-23: 2 pasadas independientes FFmpeg, 25 fotogramas decodificados por pasada; pendiente audio, región, TV Box y permisos de distribución"
+    },
+    {
+      "nombre": "África 24 Sport (PRUEBA)",
+      "tvg_id": "DeportesTest20261123.africa24-sport",
+      "pais": "Francia",
+      "categoria": "Francia TV",
+      "url": "https://africa24.vedge.infomaniak.com/livecast/ik:africa24sport/manifest.m3u8",
+      "user_agent": "Mozilla/5.0",
+      "origen": "iptv-org/iptv; candidato abierto para ensayos en TV FULL PRO",
+      "verificacion": "2026-11-23: 2 pasadas independientes FFmpeg, 25 fotogramas decodificados por pasada; pendiente audio, región, TV Box y permisos de distribución"
+    },
+    {
+      "nombre": "DD Sports HD (PRUEBA)",
+      "tvg_id": "DeportesTest20261123.dd-sports",
+      "pais": "India",
+      "categoria": "India TV",
+      "url": "https://cdn.pishow.tv/ott/live/1161/master.m3u8",
+      "user_agent": "Mozilla/5.0",
+      "origen": "iptv-org/iptv; candidato abierto para ensayos en TV FULL PRO",
+      "verificacion": "2026-11-23: 2 pasadas independientes FFmpeg, 25 fotogramas decodificados por pasada; pendiente audio, región, TV Box y permisos de distribución",
+      "backups": [
+        {
+          "url": "https://mumbai-edge.smartplaytv.in/DDSportsHD/index.m3u8",
+          "headers": {}
+        }
+      ]
+    },
+    {
+      "nombre": "Sport1 Alemania (PRUEBA)",
+      "tvg_id": "DeportesTest20261123.sport1-de",
+      "pais": "Alemania",
+      "categoria": "Alemania TV",
+      "url": "https://r.eu.cdn-redge.media/livehls/oeu/mt/live/sport1/live.livx/playlist.m3u8",
+      "user_agent": "Mozilla/5.0",
+      "origen": "iptv-org/iptv; candidato abierto para ensayos en TV FULL PRO",
+      "verificacion": "2026-11-23: 2 pasadas independientes FFmpeg, 25 fotogramas decodificados por pasada; pendiente audio, región, TV Box y permisos de distribución"
+    }
+  ]
+}
