@@ -1,7 +1,7 @@
 #EXTM3U
-#PLAYLIST:Prueba deportiva TV FULL PRO — señales abiertas, sin garantía de funcionamiento
-# QA: no incluida en Lista Clásica estable; no contiene canales premium de pago ni accesos privados
-# Disponible para pruebas técnicas; no presume derechos de distribución.
+#PLAYLIST:Deportes — prueba técnica, señales con vídeo verificadas 23/11/2026
+# Test de deportes separado de Lista Clásica estable; revisar geobloqueo y permisos de difusión
+# Nuevas: video FFmpeg (dos pasadas, 25 fotogramas). No usar para acreditar continuidad ni licencias.
 
 #EXTINF:-1 tvg-id="TyCSports.ar" tvg-name="TyC Sports 24" group-title="Deportes · Lista Clásica",TyC Sports 24
 https://live-04-11-tyc-app-web.vodgc.net/tyc24/index.m3u8
@@ -72,47 +72,26 @@ https://d63fabad.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdX
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://6f972d29.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0dsb3J5S2lja2JveGluZ19ITFM/playlist.m3u8
 
-#EXTINF:-1 tvg-name="TVS Sports" group-title="Deportes · Candidatos (sin certificar)",TVS Sports
+#EXTINF:-1 tvg-name="TVS Sports" group-title="Deportes · Probados FFmpeg",TVS Sports
 https://rpn.bozztv.com/gusa/gusa-tvssports/index.m3u8
 
-#EXTINF:-1 tvg-name="TVS Classic Sports" group-title="Deportes · Candidatos (sin certificar)",TVS Classic Sports
+#EXTINF:-1 tvg-name="TVS Classic Sports" group-title="Deportes · Probados FFmpeg",TVS Classic Sports
 https://rpn.bozztv.com/gusa/gusa-tvs/index.m3u8
 
-#EXTINF:-1 tvg-name="TVS Sports Bureau" group-title="Deportes · Candidatos (sin certificar)",TVS Sports Bureau
+#EXTINF:-1 tvg-name="TVS Sports Bureau" group-title="Deportes · Probados FFmpeg",TVS Sports Bureau
 https://rpn.bozztv.com/gusa/gusa-tvssportsbureau/index.m3u8
 
-#EXTINF:-1 tvg-name="TVS Women Sports" group-title="Deportes · Candidatos (sin certificar)",TVS Women Sports
+#EXTINF:-1 tvg-name="TVS Women Sports" group-title="Deportes · Probados FFmpeg",TVS Women Sports
 https://rpn.bozztv.com/gusa/gusa-tvswsn/index.m3u8
 
-#EXTINF:-1 tvg-name="Fight Network" group-title="Deportes · Candidatos (sin certificar)",Fight Network
-https://d12a2vxqkkh1bo.cloudfront.net/hls/main.m3u8
-
-#EXTINF:-1 tvg-name="Willow Sports FAST" group-title="Deportes · Candidatos (sin certificar)",Willow Sports FAST
-https://amg01269-amg01269c1-sportstribal-emea-5204.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg01269-willowtvfast-willowplus-sportstribalemea/playlist.m3u8
-
-#EXTINF:-1 tvg-name="Esport3" group-title="Deportes · Candidatos (sin certificar)",Esport3
-https://directes-tv-int.3catdirectes.cat/live-content/esport3-hls/master.m3u8
-
-#EXTINF:-1 tvg-name="Esport3 (alternativa oficial)" group-title="Deportes · Candidatos (sin certificar)",Esport3 (alternativa oficial)
-https://directes-tv-int.3catdirectes.cat/live-origin/esport3-hls/master.m3u8
-
-#EXTINF:-1 tvg-name="Teledeporte RTVE" group-title="Deportes · Candidatos (sin certificar)",Teledeporte RTVE
-https://rtvelivestream.rtve.es/rtvesec/tdp/tdp_main.m3u8
-
-#EXTINF:-1 tvg-name="N Sports" group-title="Deportes · Candidatos (sin certificar)",N Sports
-https://ogc-nsprt-tcl-roku-syndication.otteravision.com/ogc/nsprt/nsprt.m3u8
-
-#EXTINF:-1 tvg-name="África 24 Sport" group-title="Deportes · Candidatos (sin certificar)",África 24 Sport
+#EXTINF:-1 tvg-name="África 24 Sport" group-title="Deportes · Probados FFmpeg",África 24 Sport
 https://africa24.vedge.infomaniak.com/livecast/ik:africa24sport/manifest.m3u8
 
-#EXTINF:-1 tvg-name="DD Sports HD" group-title="Deportes · Candidatos (sin certificar)",DD Sports HD
+#EXTINF:-1 tvg-name="DD Sports HD" group-title="Deportes · Probados FFmpeg",DD Sports HD
 https://cdn.pishow.tv/ott/live/1161/master.m3u8
 
-#EXTINF:-1 tvg-name="DD Sports" group-title="Deportes · Candidatos (sin certificar)",DD Sports
+#EXTINF:-1 tvg-name="DD Sports" group-title="Deportes · Probados FFmpeg",DD Sports
 https://mumbai-edge.smartplaytv.in/DDSportsHD/index.m3u8
 
-#EXTINF:-1 tvg-name="Trace Sport Stars" group-title="Deportes · Candidatos (sin certificar)",Trace Sport Stars
-https://channels.trace.plus/Traceprod/TRACE_SPORT_STARS_sd/index.m3u8
-
-#EXTINF:-1 tvg-name="Sport1 Alemania" group-title="Deportes · Candidatos (sin certificar)",Sport1 Alemania
+#EXTINF:-1 tvg-name="Sport1 Alemania" group-title="Deportes · Probados FFmpeg",Sport1 Alemania
 https://r.eu.cdn-redge.media/livehls/oeu/mt/live/sport1/live.livx/playlist.m3u8
