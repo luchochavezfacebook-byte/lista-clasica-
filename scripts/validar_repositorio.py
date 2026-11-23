@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Validación offline; no comprueba reproducción ni descarga video."""
 import json
+import ipaddress
 import re
 from pathlib import Path
 from urllib.parse import urlsplit, parse_qsl
@@ -23,7 +24,9 @@ def main():
     fast = json.loads(fast_path.read_text(encoding='utf-8'))['canales'] if fast_path.exists() else []
     sports_path = ROOT / 'fuentes_deportes_prueba_20261123.json'
     sports = json.loads(sports_path.read_text(encoding='utf-8'))['canales'] if sports_path.exists() else []
-    all_hls = hls + mundo + popular + noviembre + netvideo + tvplay_es + regional + fast + sports
+    manual_path = ROOT / 'fuentes_usuario_argentina_20261123.json'
+    manual = json.loads(manual_path.read_text(encoding='utf-8'))['canales'] if manual_path.exists() else []
+    all_hls = hls + mundo + popular + noviembre + netvideo + tvplay_es + regional + fast + sports + manual
     youtube = json.loads((ROOT / 'youtube_en_vivo.json').read_text(encoding='utf-8'))['canales']
     assert hls and mundo and popular and noviembre and youtube, 'Catálogos vacíos'
     assert len({c['tvg_id'] for c in all_hls}) == len(all_hls), 'IDs HLS duplicados'
@@ -35,7 +38,13 @@ def main():
         parts = urlsplit(url)
         proveedor_http = (parts.scheme == 'http' and parts.hostname == '200.80.230.125' and parts.port == 5056
                           and re.fullmatch(r'/Live/[0-9a-f]{32}/[A-Za-z0-9_-]+\.playlist\.m3u8', parts.path, re.I))
-        assert (parts.scheme == 'https' or proveedor_http) and parts.hostname, 'URL inválida: ' + channel['nombre']
+        proveedor_usuario_http = False
+        if parts.scheme == 'http' and channel.get('origen') == 'catalogo_usuario_20261123' and parts.hostname and not parts.query and not parts.username and not parts.password:
+            try:
+                proveedor_usuario_http = ipaddress.ip_address(parts.hostname).is_global
+            except ValueError:
+                proveedor_usuario_http = False
+        assert (parts.scheme == 'https' or proveedor_http or proveedor_usuario_http) and parts.hostname, 'URL inválida: ' + channel['nombre']
         assert parts.path.lower().endswith('.m3u8'), 'Señal no HLS: ' + channel['nombre']
         assert parts.hostname != 'manifest.googlevideo.com', 'Manifiesto temporal'
         assert not parts.username and not parts.password, 'Credenciales en URL'
@@ -115,7 +124,7 @@ def main():
             assert content.count('tvfull-player="youtube"') == len(youtube_listos), 'Falta marca de reproductor YouTube'
             assert '.m3u8' not in content, 'La Lista Clásica YT no debe contener HLS'
 
-    print(f'OK: {len(hls)} HLS originales + {len(mundo)} Mundo TV + {len(popular)} populares anteriores + {len(noviembre)} de noviembre 2026 + {len(netvideo)} Netvideo + {len(tvplay_es)} TVPlay ES + {len(regional)} regionales + {len(fast)} FAST PlayTV + {len(sports)} deportes prueba; {len({c["url"] for c in all_hls})} URL HLS únicas, {len(youtube_listos)} YouTube publicadas ({len(youtube) - len(youtube_listos)} pendientes).')
+    print(f'OK: {len(hls)} HLS originales + {len(mundo)} Mundo TV + {len(popular)} populares anteriores + {len(noviembre)} de noviembre 2026 + {len(netvideo)} Netvideo + {len(tvplay_es)} TVPlay ES + {len(regional)} regionales + {len(fast)} FAST PlayTV + {len(sports)} deportes prueba + {len(manual)} fuentes usuario Argentina; {len({c["url"] for c in all_hls})} URL HLS únicas, {len(youtube_listos)} YouTube publicadas ({len(youtube) - len(youtube_listos)} pendientes).')
     print('Advertencia: pruebas estructurales, no certificación de disponibilidad.')
 
 
