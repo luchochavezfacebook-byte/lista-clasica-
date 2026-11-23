@@ -55,12 +55,19 @@ def main():
             val = channel.get(field, '')
             assert isinstance(val, str) and len(val) <= 240 and not re.search(r'[\r\n]', val), 'Encabezado inválido'
         backups = channel.get('backups', [])
-        assert isinstance(backups, list) and len(backups) <= 2, 'Demasiados respaldos'
+        max_backups = 64 if channel.get('origen') == 'catalogo_usuario_20261123' else 2
+        assert isinstance(backups, list) and len(backups) <= max_backups, 'Demasiados respaldos'
         for backup in backups:
             assert isinstance(backup, dict), 'Respaldo no válido'
             backup_url = backup.get('url', '')
             parts = urlsplit(backup_url)
-            assert parts.scheme == 'https' and parts.hostname, 'Respaldo URL no HTTPS'
+            respaldo_usuario_http = False
+            if channel.get('origen') == 'catalogo_usuario_20261123' and parts.scheme == 'http' and parts.hostname and not parts.query and not parts.username and not parts.password:
+                try:
+                    respaldo_usuario_http = ipaddress.ip_address(parts.hostname).is_global
+                except ValueError:
+                    respaldo_usuario_http = False
+            assert (parts.scheme == 'https' or respaldo_usuario_http) and parts.hostname and not parts.username and not parts.password, 'Respaldo URL inválida'
             assert parts.path.lower().endswith('.m3u8') and parts.hostname != 'manifest.googlevideo.com', 'Respaldo no HLS o firmado'
             backup_params = {name.lower() for name, _ in parse_qsl(parts.query, keep_blank_values=True)}
             assert not backup_params.intersection({'access_token', 'token', 'sig', 'signature', 'expire', 'sid', 'uid'}), 'Respaldo con token'
@@ -71,6 +78,13 @@ def main():
                        and not re.search(r'[\r\n]', k + v)
                        and k.lower() not in ('cookie', 'authorization')
                        for k, v in headers.items()), 'Credencial o encabezado inválido'
+
+    if manual:
+        assert len({c['nombre'].casefold() for c in manual}) == len(manual), 'Canales usuario repetidos'
+        assert all(c.get('logo', '').startswith('https://') for c in manual), 'Canal usuario sin logo'
+        assert all(c.get('backups') is not None for c in manual), 'Falta inventario de respaldos usuario'
+        assert all(c.get('categoria') == 'Argentina TV' for c in manual), 'Categoría usuario fuera de Argentina TV'
+        assert len({x for c in manual for x in [c['url'], *(b['url'] for b in c['backups'])]}) == sum(1 + len(c['backups']) for c in manual), 'Fuentes de usuario repetidas'
 
     for channel in youtube:
         url = channel['url_permanente'].strip()
