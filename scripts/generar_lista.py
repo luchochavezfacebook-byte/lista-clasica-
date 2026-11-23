@@ -79,7 +79,13 @@ def build(data):
         for backup in channel.get('backups', []):
             backup_url = backup['url'].strip()
             p = urlsplit(backup_url)
-            if p.scheme != 'https' or not p.hostname or not p.path.lower().endswith('.m3u8'):
+            respaldo_usuario_http = False
+            if channel.get('origen') == 'catalogo_usuario_20261123' and p.scheme == 'http' and p.hostname and not p.query and not p.username and not p.password:
+                try:
+                    respaldo_usuario_http = ipaddress.ip_address(p.hostname).is_global
+                except ValueError:
+                    respaldo_usuario_http = False
+            if not (p.scheme == 'https' or respaldo_usuario_http) or not p.hostname or p.username or p.password or not p.path.lower().endswith('.m3u8'):
                 raise ValueError('Respaldo HLS inválido: ' + name)
             if p.hostname == 'manifest.googlevideo.com':
                 raise ValueError('No publicar respaldos de YouTube temporales')
