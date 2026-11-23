@@ -1,0 +1,118 @@
+#EXTM3U
+#PLAYLIST:Prueba deportiva TV FULL PRO — señales abiertas, sin garantía de funcionamiento
+# QA: no incluida en Lista Clásica estable; no contiene canales premium de pago ni accesos privados
+# Disponible para pruebas técnicas; no presume derechos de distribución.
+
+#EXTINF:-1 tvg-id="TyCSports.ar" tvg-name="TyC Sports 24" group-title="Deportes · Lista Clásica",TyC Sports 24
+https://live-04-11-tyc-app-web.vodgc.net/tyc24/index.m3u8
+
+#EXTINF:-1 tvg-id="MundoTV.0240" tvg-name="MoreThanSports TV" tvg-logo="https://graph.facebook.com/mtssportstv/picture?width=200&height=200" group-title="Deportes · Lista Clásica",MoreThanSports TV
+https://mts1.iptv-playoutcenter.de/mts/mts-web/playlist.m3u8
+
+#EXTINF:-1 tvg-id="MundoTV.0235" tvg-name="beIN-SPORTS" tvg-logo="https://cdn.bein.net/ca/wp-content/uploads/2017/02/beIN-SPORTS-H-Purple.png" group-title="Deportes · Lista Clásica",beIN-SPORTS
+https://bein-esp-xumo.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="MundoTV.0104" tvg-name="Portal Foxmix Chile" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnj90kC8kqjZ69oiVT718JUs9iedB5o1w9cKfApo=s200" group-title="Deportes · Lista Clásica",Portal Foxmix Chile
+https://panel.tvstream.cl:1936/8040/8040/playlist.m3u8
+
+#EXTINF:-1 tvg-id="beINSportsXTRA.us" tvg-name="beIN SPORTS XTRA" group-title="Deportes · Lista Clásica",beIN SPORTS XTRA
+https://bein-xtra-bein.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="CBSSportsGolazoNetwork.us" tvg-name="CBS Sports Golazo" group-title="Deportes · Lista Clásica",CBS Sports Golazo
+https://dai.google.com/linear/hls/event/7f3Wv6f7QEKfQna22jHqLQ/master.m3u8
+
+#EXTINF:-1 tvg-id="TvPlayES.fox-deportes" tvg-name="Fox Deportes" group-title="Deportes · Lista Clásica",Fox Deportes
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (TVFullPro QA)
+https://live-manifest.production-public.tubi.io/live/d906efca-1302-4e29-b0d9-9a1d7a305d69/playlist.m3u8
+
+#EXTINF:-1 tvg-id="FTFSports.us" tvg-name="FTF Sports" group-title="Deportes · Lista Clásica",FTF Sports
+https://1657061170.rsc.cdn77.org/HLS/FTF-LINEAR.m3u8
+
+#EXTINF:-1 tvg-id="PlayTVFree.FuboSportsNetwork" tvg-name="Fubo Sports Network" group-title="Deportes · Lista Clásica",Fubo Sports Network
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://wurlfubo.global.transmit.live/hls/67eb094ee3ed1615e41629ae/v1/fubotv_fubo_sports_network_1/vizio_us/latest/main/hls/playlist.m3u8
+
+#EXTINF:-1 tvg-id="NBCSportsNOW.us" tvg-name="NBC Sports NOW" group-title="Deportes · Lista Clásica",NBC Sports NOW
+https://d4whmvwm0rdvi.cloudfront.net/10007/99993008/hls/master.m3u8?ads.xumo_channelId=99993008
+
+#EXTINF:-1 tvg-id="PlayTVFree.TelemundoDeportesAhora" tvg-name="Telemundo Deportes Ahora" group-title="Deportes · Lista Clásica",Telemundo Deportes Ahora
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXT-X-TVFULL-BACKUP:{"url":"https://tda-nnaa-drct-pa6dy.fast.nbcuni.com/live/master.m3u8","headers":{}}
+https://xumo-drct-tda-8hacu.fast.nbcuni.com/live/master.m3u8
+
+#EXTINF:-1 tvg-id="PlayTVFree.ZonaTUDN" tvg-name="ViX Deportes 24/7 (Zona TUDN)" group-title="Deportes · Lista Clásica",ViX Deportes 24/7 (Zona TUDN)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://linear-357.frequency.stream/mt/vizio/357/hls/master/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TvPlayES.azteca-deportes" tvg-name="Azteca Deportes Network" group-title="Deportes · Lista Clásica",Azteca Deportes Network
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (TVFullPro QA)
+https://live-manifest.production-public.tubi.io/live/6bf131c3-d664-424c-93c9-49188a788980/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TvPlayES.itv-deportes" tvg-name="ITV Deportes" group-title="Deportes · Lista Clásica",ITV Deportes
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (TVFullPro QA)
+https://thm-it-roku.otteravision.com/thm/it/it.m3u8
+
+#EXTINF:-1 tvg-id="PlayTVFree.TelemundoPuertoRico" tvg-name="Telemundo Puerto Rico (WKAQ)" group-title="Deportes · Lista Clásica",Telemundo Puerto Rico (WKAQ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8
+
+#EXTINF:-1 tvg-id="TvPlayES.cdn-deportes" tvg-name="CDN Deportes" group-title="Deportes · Lista Clásica",CDN Deportes
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (TVFullPro QA)
+https://hls.tvabierta.net/hls/036.m3u8
+
+#EXTINF:-1 tvg-id="TvPlayES.as3-sport" tvg-name="AS3 Sport TV" group-title="Deportes · Lista Clásica",AS3 Sport TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (TVFullPro QA)
+https://streamtv.as3sport.online:3394/hybrid/play.m3u8
+
+#EXTINF:-1 tvg-id="TvPlayES.fifa-es" tvg-name="FIFA+ (Español)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/FIFA%2B_(2025).svg/960px-FIFA%2B_(2025).svg.png" group-title="Deportes · Lista Clásica",FIFA+ (Español)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (TVFullPro QA)
+https://d63fabad.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWVzX0ZJRkFQbHVzU3BhbmlzaF9ITFM/playlist.m3u8
+
+#EXTINF:-1 tvg-id="PlayTVFree.GloryKickboxing" tvg-name="GLORY Kickboxing" group-title="Deportes · Lista Clásica",GLORY Kickboxing
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://6f972d29.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0dsb3J5S2lja2JveGluZ19ITFM/playlist.m3u8
+
+#EXTINF:-1 tvg-name="TVS Sports" group-title="Deportes · Candidatos (sin certificar)",TVS Sports
+https://rpn.bozztv.com/gusa/gusa-tvssports/index.m3u8
+
+#EXTINF:-1 tvg-name="TVS Classic Sports" group-title="Deportes · Candidatos (sin certificar)",TVS Classic Sports
+https://rpn.bozztv.com/gusa/gusa-tvs/index.m3u8
+
+#EXTINF:-1 tvg-name="TVS Sports Bureau" group-title="Deportes · Candidatos (sin certificar)",TVS Sports Bureau
+https://rpn.bozztv.com/gusa/gusa-tvssportsbureau/index.m3u8
+
+#EXTINF:-1 tvg-name="TVS Women Sports" group-title="Deportes · Candidatos (sin certificar)",TVS Women Sports
+https://rpn.bozztv.com/gusa/gusa-tvswsn/index.m3u8
+
+#EXTINF:-1 tvg-name="Fight Network" group-title="Deportes · Candidatos (sin certificar)",Fight Network
+https://d12a2vxqkkh1bo.cloudfront.net/hls/main.m3u8
+
+#EXTINF:-1 tvg-name="Willow Sports FAST" group-title="Deportes · Candidatos (sin certificar)",Willow Sports FAST
+https://amg01269-amg01269c1-sportstribal-emea-5204.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg01269-willowtvfast-willowplus-sportstribalemea/playlist.m3u8
+
+#EXTINF:-1 tvg-name="Esport3" group-title="Deportes · Candidatos (sin certificar)",Esport3
+https://directes-tv-int.3catdirectes.cat/live-content/esport3-hls/master.m3u8
+
+#EXTINF:-1 tvg-name="Esport3 (alternativa oficial)" group-title="Deportes · Candidatos (sin certificar)",Esport3 (alternativa oficial)
+https://directes-tv-int.3catdirectes.cat/live-origin/esport3-hls/master.m3u8
+
+#EXTINF:-1 tvg-name="Teledeporte RTVE" group-title="Deportes · Candidatos (sin certificar)",Teledeporte RTVE
+https://rtvelivestream.rtve.es/rtvesec/tdp/tdp_main.m3u8
+
+#EXTINF:-1 tvg-name="N Sports" group-title="Deportes · Candidatos (sin certificar)",N Sports
+https://ogc-nsprt-tcl-roku-syndication.otteravision.com/ogc/nsprt/nsprt.m3u8
+
+#EXTINF:-1 tvg-name="África 24 Sport" group-title="Deportes · Candidatos (sin certificar)",África 24 Sport
+https://africa24.vedge.infomaniak.com/livecast/ik:africa24sport/manifest.m3u8
+
+#EXTINF:-1 tvg-name="DD Sports HD" group-title="Deportes · Candidatos (sin certificar)",DD Sports HD
+https://cdn.pishow.tv/ott/live/1161/master.m3u8
+
+#EXTINF:-1 tvg-name="DD Sports" group-title="Deportes · Candidatos (sin certificar)",DD Sports
+https://mumbai-edge.smartplaytv.in/DDSportsHD/index.m3u8
+
+#EXTINF:-1 tvg-name="Trace Sport Stars" group-title="Deportes · Candidatos (sin certificar)",Trace Sport Stars
+https://channels.trace.plus/Traceprod/TRACE_SPORT_STARS_sd/index.m3u8
+
+#EXTINF:-1 tvg-name="Sport1 Alemania" group-title="Deportes · Candidatos (sin certificar)",Sport1 Alemania
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/sport1/live.livx/playlist.m3u8
