@@ -1,5 +1,11 @@
 # Lista Clásica — TV FULL PRO (V63)
 
+## Canales nuevos consolidados y logos — 23/11/2026
+
+Se reorganizaron las **594 fuentes** que había añadido el usuario en **196 canales visibles**, conservando **398 URL alternativas como respaldos**. Todos los canales nuevos tienen logo: **123 logos de Fútbol Total**, **46 de IPTV-org** y **27 identificadores PNG locales con el nombre** para marcas no encontradas. La Lista Clásica ahora tiene **549 entradas HLS visibles**, sin tocar los **353 canales históricos** (comparación exacta de cada entrada, incluida su metadata).
+
+Los nuevos siguen en `Argentina TV`; esto organiza el menú, pero **no demuestra geobloqueo inexistente** ni reproducción desde una IP argentina. Los respaldos están almacenados en JSON y etiquetas `#EXT-X-TVFULL-BACKUP`; su uso automático por la APK no fue verificado. [Informe completo](docs/agrupacion_respaldos_logos_20261123.md). Recargar la lista en la app para ver los cambios.
+
 ## Depuración de 863 señales añadidas manualmente — 23/11/2026 (última actualización)
 
 El commit `7f53dcb` había agregado 863 entradas directamente a `lista_clasica.m3u`, sin integrarlas al generador, sin categorías útiles y rompiendo las comprobaciones de integridad. Se preservaron **los 353 canales anteriores**, se auditaron todas las incorporaciones por separado y se reconstruyó la lista desde los catálogos fuente.
