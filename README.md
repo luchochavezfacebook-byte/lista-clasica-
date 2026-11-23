@@ -1,5 +1,13 @@
 # Lista Clásica — TV FULL PRO (V63)
 
+## Depuración de señales sin video — 23/11/2026 (última actualización)
+
+**Lista Clásica publicada: 340 fuentes HLS únicas** (frente a 370 antes de la depuración). Se eliminaron de los catálogos activos **31 entradas, correspondientes a 30 URLs únicas**: el canal TV Universidad aparecía duplicado con dos IDs. Se conservaron los registros antiguos, con sus URLs y motivos, en [diagnosticos/bajas_20261123.json](diagnosticos/bajas_20261123.json), para permitir recuperarlos si vuelven a transmitir.
+
+Se cambiaron **3 señales fallidas por fuentes diferentes probadas con video real**: Salsa Gorda Television, 4FUN TV Polonia PL y TV Perú. Los enlaces antiguos de esas tres señales se archivaron en [diagnosticos/reemplazos_20261123.json](diagnosticos/reemplazos_20261123.json), pero ya no están en el M3U. La URL original de Canal 4 Jujuy se conserva porque **sí reprodujo video en ambas pruebas FFmpeg**, aunque los chequeos de manifest muchas veces fallen por una variante HLS. También se conservaron seis señales Dance TV Estonia y una variante funcional de Canal Sur Andalucía. No se eliminaron las fuentes que aprobaron la prueba de reproducción.
+
+**Pruebas:** dos pasadas con FFmpeg, al menos 25 fotogramas por señal: [QA de video y alternativas](https://github.com/luchochavezfacebook-byte/lista-clasica-/actions/runs/45220497264). [Validación estructural y reconstrucción del M3U depurado](https://github.com/luchochavezfacebook-byte/lista-clasica-/actions/runs/45221271216). Ningún cambio en `lista_clasica_youtube.m3u` ni en la APK. El funcionamiento desde Argentina puede diferir del runner; las bajas son técnicas y no afirman que el canal dejara de emitir definitivamente.
+
 ## Auditoría completa y nuevas fuentes regionales — 23/11/2026
 
 **Se corrigió un fallo de cobertura del auditor**: la revisión programada cada 6 horas examinaba solo el pequeño archivo `fuentes.json` y no los demás catálogos. El nuevo `scripts/auditar_lista_completa.py` lee todas las fuentes, prueba un segmento HLS, repite los fallos y comprueba respaldos, sin dar de baja ningún canal por un 403, 404, timeout o corte temporal.
