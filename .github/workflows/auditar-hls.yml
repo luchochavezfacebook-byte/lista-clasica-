@@ -25,7 +25,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Revisar las 364 fuentes, repetir fallos y probar respaldos (sin borrar)
+      - name: Revisar todas las fuentes, repetir fallos y probar respaldos (sin borrar)
         run: python3 scripts/auditar_lista_completa.py
       - name: Guardar reporte, incluso con fuentes caídas
         if: always()
