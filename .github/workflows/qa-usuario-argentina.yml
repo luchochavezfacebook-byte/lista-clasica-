@@ -4,6 +4,8 @@ on:
     branches: [qa/depurar-agregados-argentina-20261123]
     paths:
       - 'scripts/qa_usuario_argentina_20261123.py'
+      - 'scripts/generar_lista.py'
+      - 'scripts/validar_repositorio.py'
       - '.github/workflows/qa-usuario-argentina.yml'
   workflow_dispatch:
 permissions:
