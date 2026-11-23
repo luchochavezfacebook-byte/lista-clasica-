@@ -1,0 +1,84 @@
+name: Consolidar canales de usuario y sus logos
+on:
+  push:
+    branches:
+      - fix/agrupa-respaldos-logos-usuario-20261123
+    paths:
+      - 'fuentes_usuario_argentina_20261123.json'
+      - 'scripts/generar_lista.py'
+      - 'scripts/validar_repositorio.py'
+      - 'scripts/generar_logos_usuario_20261123.py'
+      - '.github/workflows/consolidar-usuario-20261123.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  crear-y-validar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar Pillow para logos de respaldo
+        run: python3 -m pip install --disable-pip-version-check --quiet Pillow
+      - name: Crear imágenes con nombre cuando no hay logo real
+        run: python3 scripts/generar_logos_usuario_20261123.py
+      - name: Generar la lista preservando todos los canales anteriores
+        run: |
+          python3 scripts/generar_lista.py
+          python3 scripts/validar_repositorio.py
+      - name: Verificar 353 originales inalterados, 196 visibles nuevos y todas sus fuentes de respaldo
+        run: |
+          python3 - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+          BASE='331bc3a4d9001f758a6849ebdec5a6d15628c2c0'
+          old=subprocess.check_output(['git','show',f'{BASE}:lista_clasica.m3u'],text=True)
+          new=Path('lista_clasica.m3u').read_text(encoding='utf-8')
+          catalog=json.loads(Path('fuentes_usuario_argentina_20261123.json').read_text())['canales']
+          original=json.loads(Path('diagnosticos/fuentes_usuario_antes_agrupacion_20261123.json').read_text())['canales']
+          def blocks(body):
+              result={}
+              for part in body.split('#EXTINF:')[1:]:
+                  block='#EXTINF:'+part.split('\n\n',1)[0].strip()
+                  urls=[line.strip() for line in block.splitlines() if line.startswith(('https://','http://'))]
+                  assert len(urls)==1, 'Un canal sin exactamente una URL principal'
+                  result[urls[0]]=block
+              return result
+          before,after=blocks(old),blocks(new)
+          originalUrls={x['url'] for x in original}
+          newUrls={x['url'] for x in catalog}
+          backupUrls={x['url'] for c in catalog for x in c.get('backups',[])}
+          assert len(before)==947,len(before)
+          assert len(originalUrls)==594
+          assert len(catalog)==196,len(catalog)
+          assert len(backupUrls)==398,len(backupUrls)
+          assert not newUrls.intersection(backupUrls)
+          assert originalUrls==newUrls|backupUrls, 'Se perdieron fuentes de respaldo'
+          assert len(after)==353+len(catalog)==549,len(after)
+          assert all(u in after for u in newUrls)
+          baseOriginal={k:v for k,v in before.items() if k not in originalUrls}
+          assert len(baseOriginal)==353,len(baseOriginal)
+          assert all(after.get(k)==v for k,v in baseOriginal.items()), 'Alguna de las 353 entradas antiguas cambió'
+          assert all(c['categoria']=='Argentina TV' and c.get('logo','').startswith('https://') for c in catalog)
+          assert all(len(c['backups'])<=64 for c in catalog)
+          assert new.count('#EXT-X-TVFULL-BACKUP:')>=len(backupUrls)
+          for c in catalog:
+              if c.get('logo_origen')=='identificador_generado':
+                  path=Path('logos/usuario_20261123')/c['logo'].rsplit('/',1)[-1]
+                  assert path.is_file() and path.stat().st_size>900,path
+          print('OK: 353 entradas originales IDENTICAS; 196 canales nuevos visibles; 398 backups conservados; 196 logos definidos')
+          PY
+      - name: Guardar M3U y PNG en rama de pruebas
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lista_clasica.m3u logos/usuario_20261123
+          git diff --cached --quiet && exit 0
+          git commit -m "build: 549 canales con logos y 398 backups de usuario"
+          git push origin HEAD:fix/agrupa-respaldos-logos-usuario-20261123
