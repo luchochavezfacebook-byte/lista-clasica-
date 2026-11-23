@@ -4,7 +4,7 @@ on:
   push:
     branches: [main, audit/lista-clasica-completa-20261123]
     paths:
-      - 'fuentes.json'
+      - 'fuentes*.json'
       - 'diagnosticos/candidatos.json'
       - 'scripts/verificar_canales.py'
       - 'scripts/auditar_lista_completa.py'
