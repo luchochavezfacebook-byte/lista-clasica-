@@ -1,0 +1,21 @@
+name: Auditar TVPlay español 2026 (solo prueba)
+on:
+  push:
+    branches:
+      - feature/tvplay-es-hls-20261123
+    paths:
+      - 'scripts/auditar_tvplay_es_2026.py'
+      - '.github/workflows/auditar-tvplay-es.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Comprobar FFmpeg
+        run: ffmpeg -version | head -1
+      - name: Probar dos veces fotogramas de video HLS
+        run: python3 scripts/auditar_tvplay_es_2026.py
