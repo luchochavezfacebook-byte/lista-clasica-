@@ -1,0 +1,30 @@
+{
+  "fecha": "2026-11-23",
+  "prueba": "https://github.com/luchochavezfacebook-byte/lista-clasica-/actions/runs/45220497264",
+  "reemplazos": [
+    {
+      "op": "reemplazo",
+      "file": "fuentes_mundotv.json",
+      "n": "Salsa Gorda Television",
+      "id": "MundoTV.0066",
+      "old": "https://live20.bozztv.com/akamaissh101/ssh101/qMUAZEy/playlist.m3u8",
+      "new": "https://stmv1.voxtvhd.com.br/salsagorda/salsagorda/playlist.m3u8"
+    },
+    {
+      "op": "reemplazo",
+      "file": "fuentes_mundotv.json",
+      "n": "4FUN TV Polonia PL",
+      "id": "MundoTV.0078",
+      "old": "https://stream.4fun.tv:8888/hls/4f_high/index.m3u8",
+      "new": "https://stream.4fun.tv:8888/hls/4f.m3u8"
+    },
+    {
+      "op": "reemplazo",
+      "file": "fuentes_mundotv.json",
+      "n": "TV Perú",
+      "id": "MundoTV.0160",
+      "old": "https://cdnhd.iblups.com/hls/777b4d4cc0984575a7d14f6ee57dbcaf7.m3u8",
+      "new": "https://cdnhd3.iblups.net/hls/2ee85c7a0aff45d4b0f05552d81cadb07.m3u8"
+    }
+  ]
+}

@@ -1,0 +1,730 @@
+{
+  "fecha_utc": "2026-11-23",
+  "razon": "Fuentes fuera de la playlist publicada luego de 2 pruebas FFmpeg sin video y sin respaldo funcional. Datos preservados para restauración si la señal reaparece; la baja es técnica, no afirma fin de emisiones.",
+  "evidencia": {
+    "QA": "https://github.com/luchochavezfacebook-byte/lista-clasica-/actions/runs/45220497264",
+    "auditoria": "https://github.com/luchochavezfacebook-byte/lista-clasica-/actions/runs/45219373443"
+  },
+  "n": 31,
+  "canales": [
+    {
+      "nombre": "TV Universidad (UNLP)",
+      "tvg_id": "TVUniversidad.ar",
+      "categoria": "Argentina TV",
+      "url": "https://stratus.stream.cespi.unlp.edu.ar/hls/tvunlp.m3u8",
+      "verificacion": "2026-11-21: La web oficial tv.unlp.edu.ar sigue utilizando exactamente esta URL. El servidor devolvió 403 desde este entorno, tanto sin cabeceras como con Referer y Origin oficiales. Esto no demuestra que haya cesado la transmisión. Se conserva la fuente.",
+      "categoria_original": "Cultura y Educación Argentina",
+      "pais": "Argentina",
+      "diagnostico": {
+        "fecha": "2026-11-21",
+        "estado": "acceso_denegado_no_baja",
+        "baja_confirmada": false
+      },
+      "archivo_original": "fuentes.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": " 0x5c1ef48cd180] Error opening input: Server returned 403 Forbidden (access denied)\nError opening input file [URL]\nError opening input files"
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": " 0x61deb1a40180] Error opening input: Server returned 403 Forbidden (access denied)\nError opening input file [URL]\nError opening input files"
+        }
+      ]
+    },
+    {
+      "nombre": "Canal 4 San Juan",
+      "tvg_id": "MundoTV.0012",
+      "categoria": "Argentina TV",
+      "url": "https://streamlov.alsolnet.com/canal4sanjuan/live/playlist.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://i.imgur.com/MsCnwRA.png",
+      "categoria_original": "Mundo TV / GENERAL",
+      "pais": "Argentina",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "14557180] Error opening input: Server returned 403 Forbidden (access denied)\nError opening input file [URL]\nError opening input files: Serve"
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "315f7180] Error opening input: Server returned 403 Forbidden (access denied)\nError opening input file [URL]\nError opening input files: Serve"
+        }
+      ]
+    },
+    {
+      "nombre": "Canal 7 Jujuy",
+      "tvg_id": "MundoTV.0016",
+      "categoria": "Argentina TV",
+      "url": "https://stream.arcast.live/canal7jujuy/ngrp:canal7jujuy_all/playlist.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://i.imgur.com/K0jk8p4.png",
+      "categoria_original": "Mundo TV / GENERAL",
+      "pais": "Argentina",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x6060b87bb180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x5c8f0b780180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        }
+      ]
+    },
+    {
+      "nombre": "Canal 21 TV",
+      "tvg_id": "MundoTV.0025",
+      "categoria": "Argentina TV",
+      "url": "https://iptv.ixfo.com.ar:30443/c21tv/hd/c21tv/playlist.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://i.imgur.com/Am7yMXg.png",
+      "categoria_original": "Mundo TV / GENERAL",
+      "pais": "Argentina",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x558720e07180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x636f5e883180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        }
+      ]
+    },
+    {
+      "nombre": "TeleCinco Trelew",
+      "tvg_id": "MundoTV.0043",
+      "categoria": "Argentina TV",
+      "url": "https://videohd.live:19360/8016/8016.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://i.imgur.com/ZDenyAE.png",
+      "categoria_original": "Mundo TV / GENERAL",
+      "pais": "Argentina",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x61a6e2a09180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x55e03fc56180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        }
+      ]
+    },
+    {
+      "nombre": "TV Solidaria",
+      "tvg_id": "MundoTV.0047",
+      "categoria": "Argentina TV",
+      "url": "https://canadaremar2.todostreaming.es/live/argentina-web.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://i.imgur.com/M0fMypR.png",
+      "categoria_original": "Mundo TV / GENERAL",
+      "pais": "Argentina",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "g.es:443 failed: Connection timed out\n[in#0 @ 0x57e8cb9b6180] Error opening input: Connection timed out\nError opening input file [URL]\nError"
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "g.es:443 failed: Connection timed out\n[in#0 @ 0x55e41bb53180] Error opening input: Connection timed out\nError opening input file [URL]\nError"
+        }
+      ]
+    },
+    {
+      "nombre": "Cadena Elite España",
+      "tvg_id": "MundoTV.0071",
+      "categoria": "España TV",
+      "url": "https://cloudvideo.servers10.com:8081/8004/index.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://graph.facebook.com/cadena.elitegranada/picture?width=200&height=200",
+      "categoria_original": "Mundo TV / MUSICALES",
+      "pais": "España",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x600f51b30180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x626fa275b180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        }
+      ]
+    },
+    {
+      "nombre": "Verbena TV España",
+      "tvg_id": "MundoTV.0073",
+      "categoria": "España TV",
+      "url": "https://streamtv2.elitecomunicacion.cloud:3144/live/verbenatvlive.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://pbs.twimg.com/profile_images/1463159511133442059/uVV15n4k_200x200.jpg",
+      "categoria_original": "Mundo TV / MUSICALES",
+      "pais": "España",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x5fd5ebc08180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x5d2af1877180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        }
+      ]
+    },
+    {
+      "nombre": "Dance TV Estonia",
+      "tvg_id": "MundoTV.0097",
+      "categoria": "Estonia TV",
+      "url": "https://mbit1.worldcast.tv/dancetelevisionsix/multibit.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://pbs.twimg.com/profile_images/1268129322730127364/OJlQBZpS_200x200.jpg",
+      "categoria_original": "Mundo TV / MUSICALES",
+      "pais": "Estonia",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x5f6bf8183180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x6332cc322180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        }
+      ]
+    },
+    {
+      "nombre": "Dance TV Estonia",
+      "tvg_id": "MundoTV.0098",
+      "categoria": "Estonia TV",
+      "url": "https://mbit1.worldcast.tv/dancetelevisionseven/multibit.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://pbs.twimg.com/profile_images/1268129322730127364/OJlQBZpS_200x200.jpg",
+      "categoria_original": "Mundo TV / MUSICALES",
+      "pais": "Estonia",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x5859fe7d1180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x626b5d60e180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        }
+      ]
+    },
+    {
+      "nombre": "Retro Plus TV Chile",
+      "tvg_id": "MundoTV.0103",
+      "categoria": "Chile TV",
+      "url": "https://scl.edge.grupoz.cl/retroplustvuno/live/playlist.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://graph.facebook.com/retroplustv/picture?width=200&height=200",
+      "categoria_original": "Mundo TV / MUSICALES",
+      "pais": "Chile",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x5bab053f4180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x591ec6c1c180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        }
+      ]
+    },
+    {
+      "nombre": "Canal Sur Andalucía",
+      "tvg_id": "MundoTV.0106",
+      "categoria": "España TV",
+      "url": "https://live-24-canalsur.interactvty.pro/9bb0f4edcb8946e79f5017ddca6c02b0/26af5488cda642ed2eddd27a6328c93b9c03e9181b9d0a825147a7d978e69202.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://graph.facebook.com/canalsurradioytv/picture?width=200&height=200",
+      "categoria_original": "Mundo TV / ANDALUCÍA",
+      "pais": "España",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "04 Not Found\nError opening input file [URL]\nError opening input files: Server returned 404 Not Found\n"
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "04 Not Found\nError opening input file [URL]\nError opening input files: Server returned 404 Not Found\n"
+        }
+      ]
+    },
+    {
+      "nombre": "7TV Granada",
+      "tvg_id": "MundoTV.0114",
+      "categoria": "España TV",
+      "url": "https://streaming004.gestec-video.com/hls/7TVGRANADA.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200",
+      "categoria_original": "Mundo TV / ANDALUCÍA",
+      "pais": "España",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x5bba51cf8180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x5d9e0df25180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        }
+      ]
+    },
+    {
+      "nombre": "Canal 6 Multimedios Mexico",
+      "tvg_id": "MundoTV.0153",
+      "categoria": "México TV",
+      "url": "https://mdstrm.com/live-stream-playlist/57b4dbf5dbbfc8f16bb63ce1.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://graph.facebook.com/multimediostv/picture?width=200&height=200",
+      "categoria_original": "Mundo TV / INT. AMÉRICA",
+      "pais": "México",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "80] Error opening input: Server returned 403 Forbidden (access denied)\nError opening input file [URL]\nError opening input files: Server retu"
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "80] Error opening input: Server returned 403 Forbidden (access denied)\nError opening input file [URL]\nError opening input files: Server retu"
+        }
+      ]
+    },
+    {
+      "nombre": "TV Perú Noticias",
+      "tvg_id": "MundoTV.0161",
+      "categoria": "Perú TV",
+      "url": "https://cdnhd.iblups.com/hls/902c1a0395264f269f1160efa00660e47.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://graph.facebook.com/noticias.tvperu/picture?width=200&height=200",
+      "categoria_original": "Mundo TV / INT. AMÉRICA",
+      "pais": "Perú",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "1180] Error opening input: Server returned 403 Forbidden (access denied)\nError opening input file [URL]\nError opening input files: Server re"
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "8180] Error opening input: Server returned 403 Forbidden (access denied)\nError opening input file [URL]\nError opening input files: Server re"
+        }
+      ]
+    },
+    {
+      "nombre": "Canal IPe Perú",
+      "tvg_id": "MundoTV.0162",
+      "categoria": "Perú TV",
+      "url": "https://cdnhd.iblups.com/hls/3f2cb1658d114f2693eff18d83199e677.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://graph.facebook.com/canalipe/picture?width=200&height=200",
+      "categoria_original": "Mundo TV / INT. AMÉRICA",
+      "pais": "Perú",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "2180] Error opening input: Server returned 403 Forbidden (access denied)\nError opening input file [URL]\nError opening input files: Server re"
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "e180] Error opening input: Server returned 403 Forbidden (access denied)\nError opening input file [URL]\nError opening input files: Server re"
+        }
+      ]
+    },
+    {
+      "nombre": "Avivamiento TV",
+      "tvg_id": "MundoTV.0167",
+      "categoria": "Colombia TV",
+      "url": "https://s1.abntelevision.com/avivamientoabr/stream/avivamientohd/avivamientohd/playlist.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://i.imgur.com/ydoBp3b.png",
+      "categoria_original": "Mundo TV / RELIGIOSOS",
+      "pais": "Colombia",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "ning input: Invalid data found when processing input\nError opening input file [URL]\nError opening input files: Invalid data found when proce"
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "ning input: Invalid data found when processing input\nError opening input file [URL]\nError opening input files: Invalid data found when proce"
+        }
+      ]
+    },
+    {
+      "nombre": "Radio Sublime Gracia TV",
+      "tvg_id": "MundoTV.0171",
+      "categoria": "Argentina TV",
+      "url": "https://5f700d5b2c46f.streamlock.net/sublime/sublime/playlist.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://i.ibb.co/P9jgTz4/c49b986afb751882bcbee57f9c9b20d7-350x210.png",
+      "categoria_original": "Mundo TV / RELIGIOSOS",
+      "pais": "Argentina",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "443 failed: Connection timed out\n[in#0 @ 0x63681edca180] Error opening input: Connection timed out\nError opening input file [URL]\nError open"
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "443 failed: Connection timed out\n[in#0 @ 0x5fa76819c180] Error opening input: Connection timed out\nError opening input file [URL]\nError open"
+        }
+      ]
+    },
+    {
+      "nombre": "TV Maná Argentina",
+      "tvg_id": "MundoTV.0173",
+      "categoria": "Argentina TV",
+      "url": "https://w2.manasat.com/tvmana-ar/smil:tvmana-ar.smil/playlist.m3u8",
+      "verificacion": "2026-11-21: El master responde HTTP 200 y la web oficial mantiene la misma fuente; las tres variantes anunciadas devolvieron 404 en esta revisión, también con Referer/Origin y al renovar la solicitud. Puede ser una interrupción; se conserva el canal y la URL.",
+      "logo": "https://i.imgur.com/jars0mP.png",
+      "categoria_original": "Mundo TV / RELIGIOSOS",
+      "pais": "Argentina",
+      "diagnostico": {
+        "fecha": "2026-11-21",
+        "estado": "pendiente_no_dar_de_baja",
+        "baja_confirmada": false
+      },
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "Stream map '' matches no streams.\nTo ignore this, add a trailing '?' to the map.\nFailed to set value '0:v:0' for option 'map': Invalid argum"
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "Stream map '' matches no streams.\nTo ignore this, add a trailing '?' to the map.\nFailed to set value '0:v:0' for option 'map': Invalid argum"
+        }
+      ]
+    },
+    {
+      "nombre": "Solidaria TV España",
+      "tvg_id": "MundoTV.0175",
+      "categoria": "España TV",
+      "url": "https://canadaremar2.todostreaming.es/live/solidariatv-webhd.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://graph.facebook.com/solidariatv/picture?width=200&height=200",
+      "categoria_original": "Mundo TV / RELIGIOSOS",
+      "pais": "España",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": ":443 failed: Connection timed out\n[in#0 @ 0x571f80e7d180] Error opening input: Connection timed out\nError opening input file [URL]\nError ope"
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": ":443 failed: Connection timed out\n[in#0 @ 0x58e29a9c3180] Error opening input: Connection timed out\nError opening input file [URL]\nError ope"
+        }
+      ]
+    },
+    {
+      "nombre": "TBN España",
+      "tvg_id": "MundoTV.0178",
+      "categoria": "España TV",
+      "url": "https://edge.xn--tbnespaa-j3a.es/LiveApp/streams/tbnlive.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://graph.facebook.com/TBNEspana/picture?width=200&height=200",
+      "categoria_original": "Mundo TV / RELIGIOSOS",
+      "pais": "España",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x63d249a85180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x62dce33e2180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        }
+      ]
+    },
+    {
+      "nombre": "CGTN China",
+      "tvg_id": "MundoTV.0204",
+      "categoria": "China TV",
+      "url": "https://espanol-livews.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd/playlist.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://graph.facebook.com/cgtnenespanol/picture?width=200&height=200",
+      "categoria_original": "Mundo TV / INT. ASIA",
+      "pais": "China",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "25ffa8180] Error opening input: Connection timed out\nError opening input file [URL]\nError opening input files: Connection timed out\n"
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "pening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server returned 404 Not Found\n"
+        }
+      ]
+    },
+    {
+      "nombre": "Republic World TV India EN",
+      "tvg_id": "MundoTV.0213",
+      "categoria": "India TV",
+      "url": "https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-366023/main.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://graph.facebook.com/RepublicWorld/picture?width=200&height=200",
+      "categoria_original": "Mundo TV / INT. ASIA",
+      "pais": "India",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "Stream map '' matches no streams.\nTo ignore this, add a trailing '?' to the map.\nFailed to set value '0:v:0' for option 'map': Invalid argum"
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "Stream map '' matches no streams.\nTo ignore this, add a trailing '?' to the map.\nFailed to set value '0:v:0' for option 'map': Invalid argum"
+        }
+      ]
+    },
+    {
+      "nombre": "ServusTV WetterPanorama",
+      "tvg_id": "MundoTV.0227",
+      "categoria": "Austria TV",
+      "url": "https://rbmn-live.akamaized.net/hls/live/665268/Wetterpanorama/master.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://graph.facebook.com/ServusTV/picture?width=200&height=200",
+      "categoria_original": "Mundo TV / INT. OTROS",
+      "pais": "Austria",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "Stream map '' matches no streams.\nTo ignore this, add a trailing '?' to the map.\nFailed to set value '0:v:0' for option 'map': Invalid argum"
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "Stream map '' matches no streams.\nTo ignore this, add a trailing '?' to the map.\nFailed to set value '0:v:0' for option 'map': Invalid argum"
+        }
+      ]
+    },
+    {
+      "nombre": "Ultra Casanare TV",
+      "tvg_id": "MundoTV.0250",
+      "categoria": "Colombia TV",
+      "url": "https://eu1.servers10.com:8081/8072/index.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://i.imgur.com/1voWgLI.png",
+      "categoria_original": "Mundo TV / ENTRETENIMIENTO",
+      "pais": "Colombia",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x5e6070d6e180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x5ff2ca152180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        }
+      ]
+    },
+    {
+      "nombre": "Ondambiental TV",
+      "tvg_id": "MundoTV.0253",
+      "categoria": "Colombia TV",
+      "url": "https://stmv4.voxtvhd.com.br/ondastereo/ondastereo/playlist.m3u8",
+      "verificacion": "Importado de ft-mundotv.json; pendiente prueba real en TV FULL PRO.",
+      "logo": "https://i.imgur.com/u5804Au.jpg",
+      "categoria_original": "Mundo TV / OTROS",
+      "pais": "Colombia",
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "c04a180] Error opening input: Server returned 403 Forbidden (access denied)\nError opening input file [URL]\nError opening input files: Server"
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "2cbb180] Error opening input: Server returned 403 Forbidden (access denied)\nError opening input file [URL]\nError opening input files: Server"
+        }
+      ]
+    },
+    {
+      "nombre": "Canal 12 Venado Tuerto",
+      "tvg_id": "Canal12VenadoTuerto.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://nd106.republicaservers.com:4433/hls/diegologonitv/index.m3u8",
+      "verificacion": "2026-11-21: manifiesto HLS, dos segmentos y 2 segundos de video decodificados con FFmpeg; captura revisada. Incorporación para prueba en TV Box Argentina; continuidad pendiente.",
+      "origen": "iptv-org/iptv streams/ar.m3u; IamJony/IPTVListaLibre generated/ar_canales.m3u",
+      "logo": "https://i.imgur.com/b93YC0V.jpeg",
+      "archivo_original": "fuentes_noviembre_2026.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "x55a90ac39180] Error opening input: Invalid data found when processing input\nError opening input file [URL]\nError opening input files: Inval"
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "x568e53e13180] Error opening input: Invalid data found when processing input\nError opening input file [URL]\nError opening input files: Inval"
+        }
+      ]
+    },
+    {
+      "nombre": "Canal 2 de Ushuaia",
+      "tvg_id": "Canal2deUshuaia.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://nd106.republicaservers.com:4433/hls/c6611/index.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 120 fotogramas; segunda muestra: 120 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv",
+      "archivo_original": "fuentes_noviembre_2026.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "in#0 @ 0x5f8f9b1f4180] Error opening input: Invalid data found when processing input\nError opening input file [URL]\nError opening input file"
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "in#0 @ 0x5997fb7a5180] Error opening input: Invalid data found when processing input\nError opening input file [URL]\nError opening input file"
+        }
+      ]
+    },
+    {
+      "nombre": "Canal 10 Mar del Plata",
+      "tvg_id": "Canal10MardelPlata.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://g1.mc-hor.transport.edge-access.net/a12/ngrp:canal10mdq-100044_all/Playlist.m3u8?sense=true",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 50 fotogramas; segunda muestra: 49 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv",
+      "archivo_original": "fuentes_noviembre_2026.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "r returned 403 Forbidden (access denied)\nError opening input file [URL]\nError opening input files: Server returned 403 Forbidden (access den"
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "r returned 403 Forbidden (access denied)\nError opening input file [URL]\nError opening input files: Server returned 403 Forbidden (access den"
+        }
+      ]
+    },
+    {
+      "nombre": "Neo TV",
+      "tvg_id": "NeoTV.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://videostream.shockmedia.com.ar:19360/neotvdigital/neotvdigital.m3u8",
+      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 60 fotogramas; segunda muestra: 60 fotogramas). Pendiente TV Box y continuidad.",
+      "origen": "iptv-org/iptv",
+      "archivo_original": "fuentes_noviembre_2026.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x5f671aa6c180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        },
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "[in#0 @ 0x64a49c04f180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        }
+      ]
+    },
+    {
+      "nombre": "TV Universidad",
+      "tvg_id": "MundoTV.0255",
+      "categoria": "Argentina TV",
+      "url": "https://stratus.stream.cespi.unlp.edu.ar/hls/tvunlp.m3u8",
+      "verificacion": "2026-11-21: Misma URL de TV Universidad UNLP: 403 desde el entorno de revisión, también con cabeceras de la web oficial. No demuestra fin de transmisión; conservar fuente.",
+      "logo": "https://i.imgur.com/0MXsQ25.png",
+      "categoria_original": "Mundo TV / OTROS",
+      "pais": "Argentina",
+      "diagnostico": {
+        "fecha": "2026-11-21",
+        "estado": "acceso_denegado_no_baja",
+        "baja_confirmada": false
+      },
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "Misma URL que TVUniversidad.ar; dos pruebas HTTP 403 y dos pruebas FFmpeg sin video, resultados aplicables a este duplicado."
+        }
+      ]
+    }
+  ]
+}

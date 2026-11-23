@@ -286,16 +286,6 @@
       "logo": "https://i.ibb.co/cySdXxP/unnamed-5.png"
     },
     {
-      "nombre": "Canal 12 Venado Tuerto",
-      "tvg_id": "Canal12VenadoTuerto.ar",
-      "pais": "Argentina",
-      "categoria": "Argentina TV",
-      "url": "https://nd106.republicaservers.com:4433/hls/diegologonitv/index.m3u8",
-      "verificacion": "2026-11-21: manifiesto HLS, dos segmentos y 2 segundos de video decodificados con FFmpeg; captura revisada. Incorporación para prueba en TV Box Argentina; continuidad pendiente.",
-      "origen": "iptv-org/iptv streams/ar.m3u; IamJony/IPTVListaLibre generated/ar_canales.m3u",
-      "logo": "https://i.imgur.com/b93YC0V.jpeg"
-    },
-    {
       "nombre": "Ciudad TV Resistencia",
       "tvg_id": "CiudadTVResistencia.ar",
       "pais": "Argentina",
@@ -373,15 +363,6 @@
       "origen": "iptv-org/iptv"
     },
     {
-      "nombre": "Canal 2 de Ushuaia",
-      "tvg_id": "Canal2deUshuaia.ar",
-      "pais": "Argentina",
-      "categoria": "Argentina TV",
-      "url": "https://nd106.republicaservers.com:4433/hls/c6611/index.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 120 fotogramas; segunda muestra: 120 fotogramas). Pendiente TV Box y continuidad.",
-      "origen": "iptv-org/iptv"
-    },
-    {
       "nombre": "Canal 2 Mar del Plata",
       "tvg_id": "Canal2MardelPlata.ar",
       "pais": "Argentina",
@@ -424,15 +405,6 @@
       "categoria": "Argentina TV",
       "url": "https://vivo.solumedia.com:19360/canal7salta/canal7salta.m3u8",
       "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 50 fotogramas; segunda muestra: 50 fotogramas). Pendiente TV Box y continuidad.",
-      "origen": "iptv-org/iptv"
-    },
-    {
-      "nombre": "Canal 10 Mar del Plata",
-      "tvg_id": "Canal10MardelPlata.ar",
-      "pais": "Argentina",
-      "categoria": "Argentina TV",
-      "url": "https://g1.mc-hor.transport.edge-access.net/a12/ngrp:canal10mdq-100044_all/Playlist.m3u8?sense=true",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 50 fotogramas; segunda muestra: 49 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {
@@ -506,15 +478,6 @@
       "categoria": "Argentina TV",
       "url": "https://videostream.shockmedia.com.ar/hls/mercuriotv/mercuriotv.m3u8",
       "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 50 fotogramas; segunda muestra: 50 fotogramas). Pendiente TV Box y continuidad.",
-      "origen": "iptv-org/iptv"
-    },
-    {
-      "nombre": "Neo TV",
-      "tvg_id": "NeoTV.ar",
-      "pais": "Argentina",
-      "categoria": "Argentina TV",
-      "url": "https://videostream.shockmedia.com.ar:19360/neotvdigital/neotvdigital.m3u8",
-      "verificacion": "2026-11-21: HLS, segmento y 2 segundos de video decodificados en GitHub Actions (primera muestra: 60 fotogramas; segunda muestra: 60 fotogramas). Pendiente TV Box y continuidad.",
       "origen": "iptv-org/iptv"
     },
     {

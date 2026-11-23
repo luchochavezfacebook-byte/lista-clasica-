@@ -1,0 +1,60 @@
+name: Publicar depuración de Lista Clásica (rama QA)
+on:
+  push:
+    branches:
+      - fix/quitar-canales-sin-senal-20261123
+    paths:
+      - 'fuentes.json'
+      - 'fuentes_mundotv.json'
+      - 'fuentes_noviembre_2026.json'
+      - '.github/workflows/depurar-lista-20261123.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  regenerar:
+    if: github.ref == 'refs/heads/fix/quitar-canales-sin-senal-20261123'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Regenerar lista desde catálogos depurados
+        run: python3 scripts/generar_lista.py
+      - name: Validar canales, archivo de bajas, sustituciones y catálogo YouTube
+        run: |
+          python3 scripts/validar_repositorio.py
+          python3 - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          old=subprocess.check_output(['git','show','origin/main:lista_clasica.m3u'],text=True)
+          now=Path('lista_clasica.m3u').read_text(encoding='utf-8')
+          oldurls={line for line in old.splitlines() if line.startswith(('http://','https://'))}
+          newurls={line for line in now.splitlines() if line.startswith(('http://','https://'))}
+          archived=json.loads(Path('diagnosticos/bajas_20261123.json').read_text())['canales']
+          replacements=json.loads(Path('diagnosticos/reemplazos_20261123.json').read_text())['reemplazos']
+          assert len(oldurls)==370
+          assert len(archived)==31
+          assert len(replacements)==3
+          assert len(newurls)==340,(len(newurls),len(oldurls))
+          assert now.count('#EXTINF:')==340
+          assert all(a['url'] not in newurls for a in archived)
+          assert all(a['new'] in newurls and a['old'] not in newurls for a in replacements)
+          assert len(oldurls-newurls)==33, len(oldurls-newurls)
+          assert len(newurls-oldurls)==3, len(newurls-oldurls)
+          assert 'https://www.youtube.com' not in now
+          print('OK: 31 registros retirados, 3 sustituidas por video probado, 340 HLS sin tocar YouTube')
+          PY
+      - name: Guardar solo en la rama de prueba
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lista_clasica.m3u
+          git diff --cached --quiet && exit 0
+          git commit -m "build: publicar 340 HLS excluyendo 31 entradas inactivas y sustituyendo 3"
+          git push origin HEAD:fix/quitar-canales-sin-senal-20261123
