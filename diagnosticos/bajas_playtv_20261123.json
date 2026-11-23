@@ -1,0 +1,19 @@
+{
+  "fecha": "2026-11-23",
+  "reporte": "https://github.com/luchochavezfacebook-byte/lista-clasica-/actions/runs/45222247935",
+  "nota": "Retirado del listado publicado por ausencia de video en dos pruebas FFmpeg. TyC Sports 24 sí funciona y permanece activo. No se afirma que TyC Sports Fan haya cesado emisión.",
+  "canales": [
+    {
+      "nombre": "TyC Sports FAST",
+      "tvg_id": "TyCSportsFast.ar",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8",
+      "verificacion": "2026-11-11 GitHub Actions: HTTPS #EXTM3U más 2 segundos video FFmpeg decodificado; TV Box Argentina sin comprobar",
+      "origen": "iptv-org/iptv streams/ar.m3u",
+      "archivo_original": "fuentes_noviembre_2026.json",
+      "estado": "retirado_sin_video",
+      "errores": "FFmpeg: no video stream en dos intentos"
+    }
+  ]
+}
