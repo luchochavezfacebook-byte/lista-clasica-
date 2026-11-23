@@ -11,7 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 TIMEOUT = 8
-MAX_MANIFEST = 128 * 1024
+MAX_MANIFEST = 1024 * 1024
 UA = ('Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 '
       '(KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36')
 
@@ -23,7 +23,7 @@ def get(url, headers, *, peek=False):
     with urllib.request.urlopen(req, timeout=TIMEOUT, context=ssl.create_default_context()) as response:
         data = response.read(2048 if peek else MAX_MANIFEST + 1)
         if not peek and len(data) > MAX_MANIFEST:
-            raise ValueError('Manifiesto mayor a 128 KiB')
+            raise ValueError('Manifiesto mayor a 1 MiB')
         return data, response.status, response.url
 
 
@@ -44,7 +44,10 @@ def check(source):
             result.update(estado='invalido', detalle='HTTP %s sin manifiesto HLS' % status)
             return result
         lines = [line.strip() for line in text.splitlines() if line.strip()]
-        if any(line.startswith('#EXT-X-STREAM-INF') for line in lines):
+        # Algunos proveedores encadenan dos listas master antes de los segmentos.
+        for _ in range(4):
+            if not any(line.startswith('#EXT-X-STREAM-INF') for line in lines):
+                break
             next_url = next(
                 (lines[i + 1] for i, line in enumerate(lines[:-1])
                  if line.startswith('#EXT-X-STREAM-INF') and not lines[i + 1].startswith('#')), None)
