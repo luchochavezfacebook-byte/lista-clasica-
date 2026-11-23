@@ -1,2443 +1,1639 @@
 {
   "fecha": "2026-11-23",
   "canales_originales_usuario": 594,
-  "canales_unicos_visibles": 204,
-  "variantes_como_respaldo": 390,
+  "canales_unicos_visibles": 196,
+  "variantes_como_respaldo": 398,
   "logos": {
-    "provider": 127,
-    "iptv": 47,
-    "generated": 30
+    "provider": 123,
+    "iptv": 46,
+    "generated": 27
   },
   "agrupaciones": [
     {
       "nombre": "13 C",
       "tvg_id": "Usuario20261123.0186",
-      "variantes": [
-        "13 C",
-        "13 C OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a01r/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/13c-8231da.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/13c-8231da.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "24 HORAS",
       "tvg_id": "Usuario20261123.0187",
-      "variantes": [
-        "24 HORAS",
-        "24 HORAS OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0ak/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/24-horas-2f14ae.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/24-horas-2f14ae.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "A&E",
       "tvg_id": "Usuario20261123.0188",
-      "variantes": [
-        "A&E HD",
-        "A&E",
-        "A&E HD OpciÃ³n 1",
-        "A&E HD OpciÃ³n 2",
-        "A&E HD OpciÃ³n 3",
-        "A&E OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a085/index.m3u8",
       "respaldo": 5,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/a-e-fb5e04.jpg"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/a-e-fb5e04.jpg",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Adult Swim",
       "tvg_id": "Usuario20261123.0199",
-      "variantes": [
-        "Adult Swim OpciÃ³n 1",
-        "Adult Swim OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a01o/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/adult-swim-78ac36.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/adult-swim-78ac36.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "AE Mundo",
       "tvg_id": "Usuario20261123.0190",
-      "variantes": [
-        "AE Mundo",
-        "AE Mundo OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a090/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/ae-mundo.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/ae-mundo.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "AMC",
       "tvg_id": "Usuario20261123.0438",
-      "variantes": [
-        "AMC",
-        "AMC HD OpciÃ³n 1",
-        "AMC HD OpciÃ³n 2",
-        "AMC HD OpciÃ³n 3"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1jn/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/amc-dae160.jpg"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/amc-dae160.jpg",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "AMC Series",
       "tvg_id": "Usuario20261123.0193",
-      "variantes": [
-        "AMC Series"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0ct/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/amc-series-d80be8.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/amc-series-d80be8.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "America TV",
       "tvg_id": "Usuario20261123.0453",
-      "variantes": [
-        "America TV HD",
-        "America TV",
-        "America TV OpciÃ³n 1",
-        "America TV OpciÃ³n 2",
-        "America TV OpciÃ³n 3",
-        "America TV OpciÃ³n 4"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1au/index.m3u8",
       "respaldo": 5,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/america-tv-03bef6.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/america-tv-03bef6.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "America TV PY",
       "tvg_id": "Usuario20261123.0201",
-      "variantes": [
-        "America TV PY",
-        "America TV PY OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a04o/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/america-tv-py.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/america-tv-py.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "Animal Planet",
       "tvg_id": "Usuario20261123.0202",
-      "variantes": [
-        "Animal Planet",
-        "Animal Planet HD OpciÃ³n 1",
-        "Animal Planet OpciÃ³n 1",
-        "Animal Planet OpciÃ³n 2",
-        "Animal Planet OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a05f/index.m3u8",
       "respaldo": 4,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/animal-planet-aec5cb.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/animal-planet-aec5cb.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Antena 3",
       "tvg_id": "Usuario20261123.0205",
-      "variantes": [
-        "Antena 3",
-        "Antena 3 OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a09y/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/antena-3-419e8e.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/antena-3-419e8e.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Atres Series",
       "tvg_id": "Usuario20261123.0206",
-      "variantes": [
-        "Atres Series",
-        "Atres Series OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a08c/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/a3series-4c61c5.jpg"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/a3series-4c61c5.jpg",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "ATV",
       "tvg_id": "Usuario20261123.0194",
-      "variantes": [
-        "ATV",
-        "ATV OpciÃ³n 1",
-        "ATV OpciÃ³n 2",
-        "ATV OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a09u/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/atv-a55864.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/atv-a55864.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "AXN",
       "tvg_id": "Usuario20261123.0196",
-      "variantes": [
-        "AXN",
-        "AXN-OK",
-        "AXN HD OpciÃ³n 1",
-        "AXN HD OpciÃ³n 3",
-        "AXN OpciÃ³n 1",
-        "AXN OpciÃ³n 2",
-        "AXN OpciÃ³n 4"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a09j/index.m3u8",
       "respaldo": 6,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/axn-204d5c.jpg"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/axn-204d5c.jpg",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Baby First",
       "tvg_id": "Usuario20261123.0208",
-      "variantes": [
-        "Baby First"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0b8/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/baby-first.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/baby-first.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "Baby TV",
       "tvg_id": "Usuario20261123.0209",
-      "variantes": [
-        "Baby TV",
-        "Baby TV OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a014/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/baby-tv-51ba67.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/baby-tv-51ba67.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "BETHEL TV",
       "tvg_id": "Usuario20261123.0207",
-      "variantes": [
-        "BETHEL TV",
-        "BETHEL TV OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a05h/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/bethel-tv-ab45af.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/bethel-tv-ab45af.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Bolivia Tv",
       "tvg_id": "Usuario20261123.0793",
-      "variantes": [
-        "Bolivia Tv HD"
-      ],
+      "principal": "http://158.172.155.130:8000/play/a0e4/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/bolivia-tv-4dd84e.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/bolivia-tv-4dd84e.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Bolivision",
       "tvg_id": "Usuario20261123.0794",
-      "variantes": [
-        "Bolivision HD"
-      ],
+      "principal": "http://158.172.155.130:8000/play/a0e8/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "iptv-org",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/7/75/Bolivisi%C3%B3n2025.png"
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/7/75/Bolivisi%C3%B3n2025.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "C9N",
       "tvg_id": "Usuario20261123.0210",
-      "variantes": [
-        "C9N",
-        "C9N OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a00h/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/c9n-6cb451.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/c9n-6cb451.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Cadena A",
       "tvg_id": "Usuario20261123.0796",
-      "variantes": [
-        "Cadena A HD"
-      ],
+      "principal": "http://158.172.155.130:8000/play/a0e9/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/cadena-a-518197.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/cadena-a-518197.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Canal 13",
       "tvg_id": "Usuario20261123.0218",
-      "variantes": [
-        "Canal 13 HD",
-        "Canal 13 HD OpciÃ³n 1",
-        "Canal 13 HD OpciÃ³n 2",
-        "CANAL 13 OpciÃ³n 1",
-        "Canal 13 OpciÃ³n 2",
-        "CANAL 13 OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a083/index.m3u8",
       "respaldo": 5,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/canal-13-dc844e.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/canal-13-dc844e.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Canal 24 Horas",
       "tvg_id": "Usuario20261123.0220",
-      "variantes": [
-        "Canal 24 Horas",
-        "Canal 24 Horas OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a06x/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/24-horas-2f14ae.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/24-horas-2f14ae.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Canal Caracol",
       "tvg_id": "Usuario20261123.0221",
-      "variantes": [
-        "Canal Caracol",
-        "Canal Caracol OpciÃ³n 1",
-        "Canal Caracol OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a009/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/caracol-television-0020a1.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/caracol-television-0020a1.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Canal Claro",
       "tvg_id": "Usuario20261123.0222",
-      "variantes": [
-        "Canal Claro",
-        "Canal Claro OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a04c/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/Kgjfd3J.png"
+      "logo": "https://i.imgur.com/Kgjfd3J.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Canal de la Ciudad",
       "tvg_id": "Usuario20261123.0479",
-      "variantes": [
-        "Canal de la Ciudad"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1cn/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/canal-de-la-ciudad-29a7b9.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/canal-de-la-ciudad-29a7b9.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Canal del Congreso",
       "tvg_id": "Usuario20261123.0227",
-      "variantes": [
-        "Canal del Congreso"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a00e/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/canal-del-congreso.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/canal-del-congreso.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "Canal Institucional",
       "tvg_id": "Usuario20261123.0223",
-      "variantes": [
-        "Canal Institucional"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a00d/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/canal-institucional-d9eac5.png"
-    },
-    {
-      "nombre": "Canal Las Estrellas",
-      "tvg_id": "Usuario20261123.0224",
-      "variantes": [
-        "Canal Las Estrellas",
-        "El Canal  de las Estrellas",
-        "Canal Las Estrellas OpciÃ³n 1"
-      ],
-      "respaldo": 2,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/las-estrellas-4a762d.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/canal-institucional-d9eac5.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Canal RCN",
       "tvg_id": "Usuario20261123.0225",
-      "variantes": [
-        "Canal RCN",
-        "Canal RCN OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a00a/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/canal-rcn-1ca5dc.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/canal-rcn-1ca5dc.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Canal TUVES",
       "tvg_id": "Usuario20261123.0477",
-      "variantes": [
-        "Canal TUVES"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1le/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/canal-tuves.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/canal-tuves.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "Canal Uno",
       "tvg_id": "Usuario20261123.0226",
-      "variantes": [
-        "Canal Uno",
-        "Canal Uno OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a007/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/canal-uno.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/canal-uno.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "Capital",
       "tvg_id": "Usuario20261123.0228",
-      "variantes": [
-        "Capital",
-        "Capital OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a00p/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/capital.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/capital.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "Cartoon Network",
       "tvg_id": "Usuario20261123.0230",
-      "variantes": [
-        "Cartoon Network HD OpciÃ³n 1",
-        "Cartoon Network HD OpciÃ³n 2",
-        "Cartoon Network HD OpciÃ³n 3",
-        "Cartoon Network OpciÃ³n 1",
-        "Cartoon Network OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0ch/index.m3u8",
       "respaldo": 4,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/cartoon-network-7eba1a.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/cartoon-network-7eba1a.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Cartoonito",
       "tvg_id": "Usuario20261123.0484",
-      "variantes": [
-        "Cartoonito OpciÃ³n 1"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1jp/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/6vYWCD0.png"
+      "logo": "https://i.imgur.com/6vYWCD0.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "CHV",
       "tvg_id": "Usuario20261123.0213",
-      "variantes": [
-        "CHV HD",
-        "CHV",
-        "CHV HD OpciÃ³n 1",
-        "CHV OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a06m/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/chilevision-41ac3e.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/chilevision-41ac3e.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Cinecanal",
       "tvg_id": "Usuario20261123.0233",
-      "variantes": [
-        "Cinecanal HD",
-        "Cinecanal HD OpciÃ³n 2",
-        "Cinecanal OpciÃ³n 1",
-        "Cinecanal OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a061/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/cinecanal-325bb0.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/cinecanal-325bb0.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Cinemax",
       "tvg_id": "Usuario20261123.0234",
-      "variantes": [
-        "Cinemax",
-        "Cinemax-OK",
-        "Cinemax OpciÃ³n 1",
-        "Cinemax OpciÃ³n 2",
-        "Cinemax OpciÃ³n 3",
-        "Cinemax OpciÃ³n 4",
-        "Cinemax OpciÃ³n 5"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a04u/index.m3u8",
       "respaldo": 6,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/cinemax-6a2601.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/cinemax-6a2601.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "City TV",
       "tvg_id": "Usuario20261123.0236",
-      "variantes": [
-        "City TV",
-        "City TV OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a00o/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/Pq8XScs.jpg"
+      "logo": "https://i.imgur.com/Pq8XScs.jpg",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Claro Cinema",
       "tvg_id": "Usuario20261123.0237",
-      "variantes": [
-        "Claro Cinema",
-        "Claro Cinema OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a055/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/SOLGQxQ.jpg"
+      "logo": "https://i.imgur.com/SOLGQxQ.jpg",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Claro Sports",
       "tvg_id": "Usuario20261123.0238",
-      "variantes": [
-        "Claro Sports"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0b3/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/n0kd17r.png"
+      "logo": "https://i.imgur.com/n0kd17r.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Clover",
       "tvg_id": "Usuario20261123.0495",
-      "variantes": [
-        "Clover"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1ka/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/clover.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/clover.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "CNN Chile",
       "tvg_id": "Usuario20261123.0214",
-      "variantes": [
-        "CNN Chile"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0ay/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/cnn-chile-557c1a.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/cnn-chile-557c1a.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "CNN en Español",
       "tvg_id": "Usuario20261123.0469",
-      "variantes": [
-        "CNN en Espaæol",
-        "CNN en Espaæol OpciÃ³n 1"
-      ],
-      "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/cnn-en-espanol-45226a.png"
-    },
-    {
-      "nombre": "CNN Espanol",
-      "tvg_id": "Usuario20261123.0215",
-      "variantes": [
-        "CNN Espanol",
-        "CNN Espaæol",
-        "CNN Espanol OpciÃ³n 1",
-        "CNN Espanol OpciÃ³n 2",
-        "CNN Espaæol OpciÃ³n 1"
-      ],
-      "respaldo": 4,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/cnn-en-espanol-45226a.png"
+      "principal": "http://45.188.229.33:8000/play/a1at/index.m3u8",
+      "respaldo": 6,
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/cnn-en-espanol-45226a.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Comedy Central",
       "tvg_id": "Usuario20261123.0239",
-      "variantes": [
-        "Comedy Central HD",
-        "Comedy Central HD OpciÃ³n 1",
-        "Comedy Central HD OpciÃ³n 2",
-        "Comedy Central OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a086/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/comedy-central-e43576.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/comedy-central-e43576.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "DAYSTAR",
       "tvg_id": "Usuario20261123.0241",
-      "variantes": [
-        "DAYSTAR",
-        "DAYSTAR OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0cs/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "iptv-org",
-      "logo": "https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb5541.png"
+      "logo": "https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb5541.png",
+      "logo_origen": "iptv-org"
     },
     {
-      "nombre": "De PelŦcula",
+      "nombre": "De Película",
       "tvg_id": "Usuario20261123.0244",
-      "variantes": [
-        "De PelŦcula"
-      ],
-      "respaldo": 0,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/de-pel-cula.png"
-    },
-    {
-      "nombre": "De Pelicula",
-      "tvg_id": "Usuario20261123.0503",
-      "variantes": [
-        "De Pelicula",
-        "De Pelicula OpciÃ³n 1"
-      ],
-      "respaldo": 1,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/de-pelicula.png"
+      "principal": "http://45.173.231.22:8000/play/a07j/index.m3u8",
+      "respaldo": 2,
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/de-pel-cula.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "DeporTV",
       "tvg_id": "Usuario20261123.0505",
-      "variantes": [
-        "DeporTV"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1cq/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/deportv-978459.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/deportv-978459.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "DHE",
       "tvg_id": "Usuario20261123.0242",
-      "variantes": [
-        "DHE HD",
-        "DHE"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a071/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/nsttoEa.png"
+      "logo": "https://i.imgur.com/nsttoEa.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Discovery Channel",
       "tvg_id": "Usuario20261123.0247",
-      "variantes": [
-        "Discovery Channel  HD",
-        "Discovery Channel",
-        "Discovery Channel  HD OpciÃ³n 1",
-        "Discovery Channel HD OpciÃ³n 1",
-        "Discovery Channel OpciÃ³n 1",
-        "Discovery Channel OpciÃ³n 2",
-        "Discovery Channel OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a05x/index.m3u8",
       "respaldo": 6,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/discovery-channel-5c572f.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/discovery-channel-5c572f.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Discovery H&H",
       "tvg_id": "Usuario20261123.0248",
-      "variantes": [
-        "Discovery H&H",
-        "Home and Health",
-        "Discovery H&H OpciÃ³n 1",
-        "Home and Health OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a09k/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/discovery-h-h-18449e.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/discovery-h-h-18449e.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Discovery Kids",
       "tvg_id": "Usuario20261123.0249",
-      "variantes": [
-        "Discovery Kids",
-        "Discovery Kids OpciÃ³n 1",
-        "Discovery Kids OpciÃ³n 2",
-        "Discovery Kids OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0a6/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/discovery-kids-266fd1.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/discovery-kids-266fd1.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Discovery Science",
       "tvg_id": "Usuario20261123.0251",
-      "variantes": [
-        "Discovery Science",
-        "Discovery Science OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a01f/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/discovery-science-a6ba8a.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/discovery-science-a6ba8a.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Discovery Theater",
       "tvg_id": "Usuario20261123.0252",
-      "variantes": [
-        "Discovery Theater HD OpciÃ³n 1",
-        "Discovery Theater HD OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a06k/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/discovery-theater-60e618.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/discovery-theater-60e618.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Discovery Turbo",
       "tvg_id": "Usuario20261123.0253",
-      "variantes": [
-        "Discovery Turbo",
-        "Discovery Turbo OpciÃ³n 1",
-        "Discovery Turbo OpciÃ³n 2",
-        "Discovery Turbo OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a01a/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/discovery-turbo-c23523.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/discovery-turbo-c23523.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Discovery World",
       "tvg_id": "Usuario20261123.0255",
-      "variantes": [
-        "Discovery World HD OpciÃ³n 1",
-        "Discovery World HD OpciÃ³n 2",
-        "Discovery World HD OpciÃ³n 3",
-        "Discovery World HD OpciÃ³n 4"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a08l/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/discovery-world-22b8ed.webp"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/discovery-world-22b8ed.webp",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Disney Channel",
       "tvg_id": "Usuario20261123.0258",
-      "variantes": [
-        "Disney Channel HD",
-        "Disney Channel HD OpciÃ³n 1",
-        "Disney Channel OpciÃ³n 1",
-        "Disney Channel OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a068/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/disney-channel-94c5c8.webp"
-    },
-    {
-      "nombre": "Disney Jr",
-      "tvg_id": "Usuario20261123.0259",
-      "variantes": [
-        "Disney Jr",
-        "Disney Jr.",
-        "Disney Jr OpciÃ³n 1",
-        "Disney Jr OpciÃ³n 2"
-      ],
-      "respaldo": 3,
-      "logo_origen": "iptv-org",
-      "logo": "https://www.dsmart.com.tr/api/v1/public/images/kanallar/disneyjr.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/disney-channel-94c5c8.webp",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Disney Junior",
       "tvg_id": "Usuario20261123.0526",
-      "variantes": [
-        "Disney Junior OpciÃ³n 2",
-        "Disney Junior OpciÃ³n 3"
-      ],
-      "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/disney-junior-b0cda4.png"
+      "principal": "http://45.188.229.33:8000/play/a0k4/index.m3u8",
+      "respaldo": 5,
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/disney-junior-b0cda4.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Distrito Comedia",
       "tvg_id": "Usuario20261123.0261",
-      "variantes": [
-        "Distrito Comedia",
-        "Distrito Comedia OpciÃ³n 1",
-        "Distrito Comedia OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0d3/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "iptv-org",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/DistritoComediaLOGO2018.png/960px-DistritoComediaLOGO2018.png"
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/DistritoComediaLOGO2018.png/960px-DistritoComediaLOGO2018.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "DSports",
       "tvg_id": "Usuario20261123.0501",
-      "variantes": [
-        "DSports HD"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1iw/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/dsports-2e9f9c.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/dsports-2e9f9c.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "DSports 2",
       "tvg_id": "Usuario20261123.0500",
-      "variantes": [
-        "DSports 2 HD"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1ix/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/dsports-2-068664.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/dsports-2-068664.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "DTV",
       "tvg_id": "Usuario20261123.0803",
-      "variantes": [
-        "DTV"
-      ],
+      "principal": "http://158.172.155.130:8000/play/a0ea/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/OSvegAq.png"
+      "logo": "https://i.imgur.com/OSvegAq.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "DW Español",
       "tvg_id": "Usuario20261123.0243",
-      "variantes": [
-        "DW Espaæol",
-        "DW Espaæol OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0a5/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/dw-espanol-59a270.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/dw-espanol-59a270.png",
+      "logo_origen": "FutbolTotal"
     },
     {
-      "nombre": "E Entertainment",
+      "nombre": "E! Entertainment",
       "tvg_id": "Usuario20261123.0262",
-      "variantes": [
-        "E Entertainment",
-        "E! Entertainment",
-        "E! Entertainment OpciÃ³n 1"
-      ],
-      "respaldo": 2,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/e-entertainment.png"
-    },
-    {
-      "nombre": "E! Entertainment TV",
-      "tvg_id": "Usuario20261123.0263",
-      "variantes": [
-        "E! Entertainment TV",
-        "E! Entertainment TV OpciÃ³n 1"
-      ],
-      "respaldo": 1,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/e-entertainment-tv.png"
+      "principal": "http://45.173.231.22:8000/play/a08t/index.m3u8",
+      "respaldo": 4,
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/e-entertainment.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "ECDF",
       "tvg_id": "Usuario20261123.0264",
-      "variantes": [
-        "ECDF SD",
-        "ECDF SD OpciÃ³n 1",
-        "ECDF SD OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a00q/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/ecdf.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/ecdf.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "Ecuador TV",
       "tvg_id": "Usuario20261123.0289",
-      "variantes": [
-        "Ecuador TV",
-        "Ecuador TV OpciÃ³n 1",
-        "Ecuador TV OpciÃ³n 2",
-        "Ecuador TV OpciÃ³n 3",
-        "Ecuador TV OpciÃ³n 4"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a00w/index.m3u8",
       "respaldo": 4,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/ecuador-tv-1eb44d.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/ecuador-tv-1eb44d.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Ecuavisa",
       "tvg_id": "Usuario20261123.0291",
-      "variantes": [
-        "Ecuavisa",
-        "Ecuavisa OpciÃ³n 1",
-        "Ecuavisa OpciÃ³n 2",
-        "Ecuavisa OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a00u/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/ecuavisa-80a555.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/ecuavisa-80a555.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "El Gourmet",
       "tvg_id": "Usuario20261123.0294",
-      "variantes": [
-        "El Gourmet HD",
-        "El Gourmet",
-        "El Gourmet HD OpciÃ³n 1",
-        "El Gourmet HD OpciÃ³n 2",
-        "El Gourmet OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a02c/index.m3u8",
       "respaldo": 4,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/el-gourmet-6816f1.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/el-gourmet-6816f1.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "el nueve",
       "tvg_id": "Usuario20261123.0782",
-      "variantes": [
-        "el nueve HD",
-        "el nueve HD OpciÃ³n 1"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1aw/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/cJHP7bU.png"
+      "logo": "https://i.imgur.com/cJHP7bU.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "El Trece",
       "tvg_id": "Usuario20261123.0296",
-      "variantes": [
-        "El Trece",
-        "el trece HD OpciÃ³n 1",
-        "el trece HD OpciÃ³n 2",
-        "El Trece OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a09x/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/el-trece-451260.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/el-trece-451260.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Enlace",
       "tvg_id": "Usuario20261123.0297",
-      "variantes": [
-        "Enlace",
-        "Enlace OpciÃ³n 1",
-        "Enlace OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a01n/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/enlace-708364.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/enlace-708364.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "ENT Channel",
       "tvg_id": "Usuario20261123.0001",
-      "variantes": [
-        "ENT Channel"
-      ],
+      "principal": "https://cdn.40mediagroup.com/live/c7eds/ENT_Channel/SA_LIVE_hls_enc/tracks-v1a1/mono.ts.m3u8",
       "respaldo": 0,
-      "logo_origen": "iptv-org",
-      "logo": "https://static.elektamedia.com/ch/entch.png"
+      "logo": "https://static.elektamedia.com/ch/entch.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "ENT Family",
       "tvg_id": "Usuario20261123.0008",
-      "variantes": [
-        "ENT Family"
-      ],
+      "principal": "https://cdn.40mediagroup.com/live/c7eds/ENT_Family/SA_LIVE_hls_enc/tracks-v1a1/mono.ts.m3u8",
       "respaldo": 0,
-      "logo_origen": "iptv-org",
-      "logo": "https://static.elektamedia.com/ch/entf.png"
+      "logo": "https://static.elektamedia.com/ch/entf.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Esne",
       "tvg_id": "Usuario20261123.0299",
-      "variantes": [
-        "Esne",
-        "Esne OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a058/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/esne.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/esne.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "ESPN",
       "tvg_id": "Usuario20261123.0285",
-      "variantes": [
-        "ESPN HD",
-        "ESPN",
-        "ESPN HD OpciÃ³n 2",
-        "ESPN OpciÃ³n 1",
-        "ESPN OpciÃ³n 2",
-        "ESPN OpciÃ³n 3",
-        "ESPN OpciÃ³n 5",
-        "ESPN OpciÃ³n 6",
-        "ESPN OpciÃ³n 7"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a06y/index.m3u8",
       "respaldo": 8,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/espn-a53a2c.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/espn-a53a2c.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "ESPN 2",
       "tvg_id": "Usuario20261123.0270",
-      "variantes": [
-        "ESPN 2 HD",
-        "ESPN 2 HD OpciÃ³n 1",
-        "ESPN 2 HD OpciÃ³n 2",
-        "ESPN 2 HD OpciÃ³n 3",
-        "ESPN 2 HD OpciÃ³n 4",
-        "ESPN 2 OpciÃ³n 2",
-        "ESPN 2 OpciÃ³n 3",
-        "ESPN 2 OpciÃ³n 4",
-        "ESPN 2 OpciÃ³n 5",
-        "ESPN 2 OpciÃ³n 6",
-        "ESPN 2 OpciÃ³n 7",
-        "ESPN 2 OpciÃ³n 8"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a08a/index.m3u8",
       "respaldo": 11,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/espn-2-670c3a.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/espn-2-670c3a.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "ESPN 3",
       "tvg_id": "Usuario20261123.0273",
-      "variantes": [
-        "ESPN 3 HD",
-        "ESPN 3 HD OpciÃ³n 1",
-        "ESPN 3 HD OpciÃ³n 2",
-        "ESPN 3 HD OpciÃ³n 3",
-        "ESPN 3 OpciÃ³n 1",
-        "ESPN 3 OpciÃ³n 3",
-        "ESPN 3 OpciÃ³n 4"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a02k/index.m3u8",
       "respaldo": 6,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/espn-3-83c3b6.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/espn-3-83c3b6.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "ESPN 4",
       "tvg_id": "Usuario20261123.0275",
-      "variantes": [
-        "ESPN 4 HD OpciÃ³n 1",
-        "ESPN 4 HD OpciÃ³n 2",
-        "ESPN 4 HD OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a06a/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/espn-4-5d0ea0.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/espn-4-5d0ea0.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "ESPN 5",
       "tvg_id": "Usuario20261123.0276",
-      "variantes": [
-        "ESPN 5",
-        "ESPN 5 HD OpciÃ³n 1",
-        "ESPN 5 HD OpciÃ³n 2",
-        "ESPN 5 HD OpciÃ³n 3",
-        "ESPN 5 OpciÃ³n 1",
-        "ESPN 5 OpciÃ³n 2",
-        "ESPN 5 OpciÃ³n 3",
-        "ESPN 5 OpciÃ³n 4"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0a4/index.m3u8",
       "respaldo": 7,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/espn-5-55f98f.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/espn-5-55f98f.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "ESPN 6",
       "tvg_id": "Usuario20261123.0280",
-      "variantes": [
-        "ESPN 6",
-        "ESPN 6 HD OpciÃ³n 1",
-        "ESPN 6 HD OpciÃ³n 2",
-        "ESPN 6 OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a096/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/espn-6-8b4bf6.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/espn-6-8b4bf6.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "ESPN 7",
       "tvg_id": "Usuario20261123.0284",
-      "variantes": [
-        "ESPN 7 HD",
-        "ESPN 7",
-        "ESPN 7 HD OpciÃ³n 1",
-        "ESPN 7 OpciÃ³n 1",
-        "ESPN 7 OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a062/index.m3u8",
       "respaldo": 4,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/espn-7-1b30e2.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/espn-7-1b30e2.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "ESPN Premium",
       "tvg_id": "Usuario20261123.0287",
-      "variantes": [
-        "ESPN Premium HD",
-        "ESPN Premium HD OpciÃ³n 1",
-        "ESPN Premium HD OpciÃ³n 2",
-        "ESPN Premium OpciÃ³n 1",
-        "ESPN Premium OpciÃ³n 2",
-        "ESPN Premium OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a072/index.m3u8",
       "respaldo": 5,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/espn-premium-193a85.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/espn-premium-193a85.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Europa Europa",
       "tvg_id": "Usuario20261123.0300",
-      "variantes": [
-        "Europa Europa",
-        "Europa Europa OpciÃ³n 1",
-        "Europa Europa OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0d1/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/europa-europa-f9dd91.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/europa-europa-f9dd91.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Eventos",
       "tvg_id": "Usuario20261123.0579",
-      "variantes": [
-        "Eventos HD"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1dc/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/eventos-452e8c.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/eventos-452e8c.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "EWTN",
       "tvg_id": "Usuario20261123.0288",
-      "variantes": [
-        "EWTN",
-        "EWTN OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a01l/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/sua70RO.png"
+      "logo": "https://i.imgur.com/sua70RO.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Exitosa TV",
       "tvg_id": "Usuario20261123.0580",
-      "variantes": [
-        "Exitosa TV"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1f6/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/exitosa-tv-e25caf.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/exitosa-tv-e25caf.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Film&Arts",
       "tvg_id": "Usuario20261123.0584",
-      "variantes": [
-        "Film&Arts"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a0xr/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/ukdmEKD.png"
+      "logo": "https://i.imgur.com/ukdmEKD.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Fox Sports",
       "tvg_id": "Usuario20261123.0588",
-      "variantes": [
-        "Fox Sports HD",
-        "Fox Sports"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1dh/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/fox-sports-c11945.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/fox-sports-c11945.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Fox Sports 2",
       "tvg_id": "Usuario20261123.0587",
-      "variantes": [
-        "Fox Sports 2 HD",
-        "Fox Sports 2 HD OpciÃ³n 1",
-        "Fox Sports 2 OpciÃ³n 1",
-        "Fox Sports 2 OpciÃ³n 2"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1b1/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/fox-sports-2-c37cf8.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/fox-sports-2-c37cf8.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "France 24",
       "tvg_id": "Usuario20261123.0304",
-      "variantes": [
-        "France 24",
-        "France 24 OpciÃ³n 1",
-        "France 24 OpciÃ³n 2",
-        "France 24 OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0a3/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "iptv-org",
-      "logo": "https://dtil.tmsimg.com/assets/s159111_ld_h15_aa.png?lock=720x540"
+      "logo": "https://dtil.tmsimg.com/assets/s159111_ld_h15_aa.png?lock=720x540",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "FX",
       "tvg_id": "Usuario20261123.0303",
-      "variantes": [
-        "FX HD",
-        "FX",
-        "FX HD OpciÃ³n 1",
-        "FX OpciÃ³n 1",
-        "FX OpciÃ³n 2",
-        "FX OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a06b/index.m3u8",
       "respaldo": 5,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/fx-d60a62.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/fx-d60a62.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "GamaTV",
       "tvg_id": "Usuario20261123.0306",
-      "variantes": [
-        "GamaTV",
-        "GamaTV OpciÃ³n 1",
-        "GamaTV OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a04q/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/gamatv.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/gamatv.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "Gamavisión",
       "tvg_id": "Usuario20261123.0307",
-      "variantes": [
-        "Gamavisiðn",
-        "Gamavisiðn OpciÃ³n 1",
-        "Gamavisiðn OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a00x/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/9FwMwf7.png"
+      "logo": "https://i.imgur.com/9FwMwf7.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Giga Vision",
       "tvg_id": "Usuario20261123.0829",
-      "variantes": [
-        "Giga Vision HD"
-      ],
+      "principal": "http://158.172.155.130:8000/play/a0e7/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/giga-vision.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/giga-vision.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "Global",
       "tvg_id": "Usuario20261123.0308",
-      "variantes": [
-        "Global",
-        "Global OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a09w/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/global.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/global.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "Golden",
       "tvg_id": "Usuario20261123.0311",
-      "variantes": [
-        "Golden HD",
-        "Golden",
-        "Golden HD OpciÃ³n 1",
-        "Golden OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0cp/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/golden-adf5e5.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/golden-adf5e5.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Golden Edge",
       "tvg_id": "Usuario20261123.0310",
-      "variantes": [
-        "Golden Edge",
-        "Golden Edge OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0cy/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/golden-edge-339f45.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/golden-edge-339f45.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "HBO",
       "tvg_id": "Usuario20261123.0316",
-      "variantes": [
-        "HBO HD OpciÃ³n 1",
-        "HBO HD OpciÃ³n 2",
-        "HBO OpciÃ³n 1",
-        "HBO OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a08k/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/hbo-aeb3c1.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/hbo-aeb3c1.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "HBO 2",
       "tvg_id": "Usuario20261123.0313",
-      "variantes": [
-        "HBO 2 OpciÃ³n 1",
-        "HBO 2 OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0af/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/hbo-2-09ea2c.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/hbo-2-09ea2c.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "HBO Family",
       "tvg_id": "Usuario20261123.0315",
-      "variantes": [
-        "HBO Family HD OpciÃ³n 1",
-        "HBO Family HD OpciÃ³n 2",
-        "HBO Family OpciÃ³n 1",
-        "HBO Family OpciÃ³n 2",
-        "HBO Family OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a073/index.m3u8",
       "respaldo": 4,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/hbo-family-914dd2.webp"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/hbo-family-914dd2.webp",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "HBO Mundi",
       "tvg_id": "Usuario20261123.0317",
-      "variantes": [
-        "HBO Mundi OpciÃ³n 1",
-        "HBO Mundi OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0a1/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/hbo-mundi-715690.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/hbo-mundi-715690.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "HBO Plus",
       "tvg_id": "Usuario20261123.0319",
-      "variantes": [
-        "HBO Plus OpciÃ³n 1",
-        "HBO Plus OpciÃ³n 2",
-        "HBO Plus OpciÃ³n 3",
-        "HBO Plus OpciÃ³n 4",
-        "HBO Plus OpciÃ³n 5",
-        "HBO Plus OpciÃ³n 6"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0d2/index.m3u8",
       "respaldo": 5,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/hbo-plus-3fd380.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/hbo-plus-3fd380.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "HBO POP",
       "tvg_id": "Usuario20261123.0318",
-      "variantes": [
-        "HBO POP HD OpciÃ³n 1",
-        "HBO POP HD OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a06q/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/hbo-pop-15c3b9.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/hbo-pop-15c3b9.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "HBO Signature",
       "tvg_id": "Usuario20261123.0321",
-      "variantes": [
-        "HBO Signature OpciÃ³n 1",
-        "HBO Signature OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0a0/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/hbo-signature-9d66b1.webp"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/hbo-signature-9d66b1.webp",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "HBO Xtreme",
       "tvg_id": "Usuario20261123.0323",
-      "variantes": [
-        "HBO Xtreme SD",
-        "HBO Xtreme HD OpciÃ³n 1",
-        "HBO Xtreme HD OpciÃ³n 2",
-        "HBO Xtreme SD OpciÃ³n 1",
-        "HBO Xtreme SD OpciÃ³n 2",
-        "HBO Xtreme SD OpciÃ³n 3",
-        "HBO Xtreme SD OpciÃ³n 4"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0ah/index.m3u8",
       "respaldo": 6,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/hbo-xtreme-a8fda5.jpg"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/hbo-xtreme-a8fda5.jpg",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "HEI",
       "tvg_id": "Usuario20261123.0324",
-      "variantes": [
-        "HEI HD",
-        "HEI HD OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a089/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/hei.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/hei.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "HGTV",
       "tvg_id": "Usuario20261123.0325",
-      "variantes": [
-        "HGTV",
-        "HGTV OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a01j/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/hgtv-c38bdb.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/hgtv-c38bdb.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "History 2",
       "tvg_id": "Usuario20261123.0327",
-      "variantes": [
-        "History 2",
-        "History 2 OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0cq/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/history-2-564f8e.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/history-2-564f8e.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "History Channel",
       "tvg_id": "Usuario20261123.0330",
-      "variantes": [
-        "History Channel HD",
-        "The History Channel HD",
-        "History Channel",
-        "History Channel HD OpciÃ³n 1",
-        "History Channel OpciÃ³n 1",
-        "History Channel OpciÃ³n 2",
-        "History Channel OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a05y/index.m3u8",
       "respaldo": 6,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/history-chanel-acb78e.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/history-chanel-acb78e.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "HOLA TV",
       "tvg_id": "Usuario20261123.0621",
-      "variantes": [
-        "HOLA TV HD"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1im/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/zfVbp7d.png"
+      "logo": "https://i.imgur.com/zfVbp7d.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "HTV",
       "tvg_id": "Usuario20261123.0326",
-      "variantes": [
-        "HTV",
-        "HTV OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0d6/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/NlKFNHS.png"
+      "logo": "https://i.imgur.com/NlKFNHS.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "ID",
       "tvg_id": "Usuario20261123.0332",
-      "variantes": [
-        "ID",
-        "ID HD OpciÃ³n 1",
-        "ID HD OpciÃ³n 2",
-        "ID OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a04a/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/o9SpbMI.png"
+      "logo": "https://i.imgur.com/o9SpbMI.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Kanal D Drama",
       "tvg_id": "Usuario20261123.0334",
-      "variantes": [
-        "Kanal D Drama"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0cf/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.ibb.co/7ykfjhL/unnamed-removebg.png"
+      "logo": "https://i.ibb.co/7ykfjhL/unnamed-removebg.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "La Red",
       "tvg_id": "Usuario20261123.0335",
-      "variantes": [
-        "La Red",
-        "La Red OpciÃ³n 1",
-        "La Red OpciÃ³n 2",
-        "La Red OpciÃ³n 3",
-        "La Red OpciÃ³n 4"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a06w/index.m3u8",
       "respaldo": 4,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/la-red-e73552.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/la-red-e73552.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "La Tele",
       "tvg_id": "Usuario20261123.0337",
-      "variantes": [
-        "La Tele",
-        "La Tele OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a05b/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/la-tele-4ca0f9.webp"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/la-tele-4ca0f9.webp",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Las Estrellas",
-      "tvg_id": "Usuario20261123.0633",
-      "variantes": [
-        "Las Estrellas HD"
-      ],
-      "respaldo": 0,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/las-estrellas-4a762d.png"
+      "tvg_id": "Usuario20261123.0224",
+      "principal": "http://45.173.231.22:8000/play/a094/index.m3u8",
+      "respaldo": 3,
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/las-estrellas-4a762d.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Latina",
       "tvg_id": "Usuario20261123.0338",
-      "variantes": [
-        "Latina",
-        "Latina OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a04g/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/latina-030adc.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/latina-030adc.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Lifetime",
       "tvg_id": "Usuario20261123.0339",
-      "variantes": [
-        "Lifetime",
-        "Lifetime OpciÃ³n 1",
-        "Lifetime OpciÃ³n 2",
-        "Lifetime OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a01m/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "iptv-org",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_Lifetime_2020.svg/960px-Logo_Lifetime_2020.svg.png"
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_Lifetime_2020.svg/960px-Logo_Lifetime_2020.svg.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "MÆsChic",
       "tvg_id": "Usuario20261123.0646",
-      "variantes": [
-        "MÆsChic"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a0xt/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/m-schic.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/m-schic.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "MEGA",
       "tvg_id": "Usuario20261123.0341",
-      "variantes": [
-        "MEGA HD",
-        "Mega",
-        "MEGA HD OpciÃ³n 1",
-        "Mega OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a06s/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/mega-d355d1.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/mega-d355d1.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Movistar Deportes",
       "tvg_id": "Usuario20261123.0644",
-      "variantes": [
-        "Movistar Deportes"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1f3/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/movistar-deportes-b61d93.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/movistar-deportes-b61d93.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Movistar Informa",
       "tvg_id": "Usuario20261123.0645",
-      "variantes": [
-        "Movistar Informa"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1ew/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/movistar-informa.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/movistar-informa.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "MTV",
       "tvg_id": "Usuario20261123.0343",
-      "variantes": [
-        "MTV HD",
-        "MTV",
-        "MTV×00",
-        "MTV HD OpciÃ³n 1",
-        "MTV HD OpciÃ³n 2",
-        "MTV HD OpciÃ³n 3",
-        "MTV OpciÃ³n 1",
-        "MTV×00 OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a08o/index.m3u8",
       "respaldo": 7,
-      "logo_origen": "iptv-org",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MTV_2021_%28brand_version%29.svg/960px-MTV_2021_%28brand_version%29.svg.png"
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MTV_2021_%28brand_version%29.svg/960px-MTV_2021_%28brand_version%29.svg.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Nat Geo",
       "tvg_id": "Usuario20261123.0347",
-      "variantes": [
-        "Nat Geo HD",
-        "National Geographic",
-        "Nat Geo HD OpciÃ³n 1",
-        "Nat Geo OpciÃ³n 1",
-        "Nat Geo OpciÃ³n 2",
-        "Nat Geo OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a05z/index.m3u8",
       "respaldo": 5,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/national-geographic-ae84f3.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/national-geographic-ae84f3.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Nick Jr.",
       "tvg_id": "Usuario20261123.0655",
-      "variantes": [
-        "Nick Jr.",
-        "Nick Jr OpciÃ³n 1",
-        "Nick Jr OpciÃ³n 2",
-        "Nick Jr OpciÃ³n 3"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1ky/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/nick-jr-ffbae0.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/nick-jr-ffbae0.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Nick Music",
       "tvg_id": "Usuario20261123.0656",
-      "variantes": [
-        "Nick Music"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a0xp/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/nick-music.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/nick-music.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "Nickelodeon",
       "tvg_id": "Usuario20261123.0351",
-      "variantes": [
-        "Nickelodeon HD",
-        "Nickelodeon HD OpciÃ³n 1",
-        "Nickelodeon OpciÃ³n 1",
-        "Nickelodeon OpciÃ³n 2",
-        "Nickelodeon OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a06r/index.m3u8",
       "respaldo": 4,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/nickelodeon-748db5.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/nickelodeon-748db5.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "NPY",
       "tvg_id": "Usuario20261123.0346",
-      "variantes": [
-        "NPY",
-        "NPY OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a00j/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/npy-398f88.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/npy-398f88.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "NTN24",
       "tvg_id": "Usuario20261123.0648",
-      "variantes": [
-        "NTN24"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a0xv/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/UoKmSAP.png"
+      "logo": "https://i.imgur.com/UoKmSAP.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Nuestra Tele",
       "tvg_id": "Usuario20261123.0352",
-      "variantes": [
-        "Nuestra Tele",
-        "Nuestra Tele OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0cr/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/nuestra-tele.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/nuestra-tele.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "OROMAR TV",
       "tvg_id": "Usuario20261123.0353",
-      "variantes": [
-        "OROMAR TV",
-        "OROMAR TV OpciÃ³n 1",
-        "OROMAR TV OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0d5/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/oromar-tv-fcf33c.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/oromar-tv-fcf33c.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Panamericana",
       "tvg_id": "Usuario20261123.0356",
-      "variantes": [
-        "Panamericana",
-        "Panamericana TV",
-        "Panamericana OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a09t/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/panamericana.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/panamericana.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "ParaguayTV",
       "tvg_id": "Usuario20261123.0358",
-      "variantes": [
-        "ParaguayTV",
-        "ParaguayTV OpciÃ³n 1",
-        "ParaguayTV OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a04r/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/paraguaytv.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/paraguaytv.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "PARAVISION",
       "tvg_id": "Usuario20261123.0354",
-      "variantes": [
-        "PARAVISION",
-        "PARAVISION OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a00g/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/paravision-719e0d.webp"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/paravision-719e0d.webp",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Pasiones",
       "tvg_id": "Usuario20261123.0359",
-      "variantes": [
-        "Pasiones HD",
-        "Pasiones HD OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a06n/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/pasiones-5e9100.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/pasiones-5e9100.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Playboy",
       "tvg_id": "Usuario20261123.0360",
-      "variantes": [
-        "Playboy HD",
-        "Playboy HD OpciÃ³n 1",
-        "Playboy HD OpciÃ³n 2",
-        "Playboy HD OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a07z/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/playboy-803495.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/playboy-803495.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Plim Plim TV",
       "tvg_id": "Usuario20261123.0670",
-      "variantes": [
-        "Plim Plim TV"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1kq/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/plim-plim-0ff39a.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/plim-plim-0ff39a.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Plus TV Life",
       "tvg_id": "Usuario20261123.0671",
-      "variantes": [
-        "Plus TV Life"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1f4/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/plus-tv-life.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/plus-tv-life.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "POPU TV",
       "tvg_id": "Usuario20261123.0355",
-      "variantes": [
-        "POPU TV OpciÃ³n 1",
-        "POPU TV OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a08e/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/popu-tv-9944d9.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/popu-tv-9944d9.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "RCN Novelas",
       "tvg_id": "Usuario20261123.0362",
-      "variantes": [
-        "RCN Novelas",
-        "RCN Novelas OpciÃ³n 1",
-        "RCN Novelas OpciÃ³n 2",
-        "RCN Novelas OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a049/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/rcn-novelas-2bd67a.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/rcn-novelas-2bd67a.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Red Uno SCZ",
       "tvg_id": "Usuario20261123.0849",
-      "variantes": [
-        "Red Uno SCZ HD"
-      ],
+      "principal": "http://158.172.155.130:8000/play/a0e5/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/red-uno-2d4b5a.webp"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/red-uno-2d4b5a.webp",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "RPP",
       "tvg_id": "Usuario20261123.0363",
-      "variantes": [
-        "RPP",
-        "RPP OpciÃ³n 1",
-        "RPP OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a09v/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/rpp-tv-9946fd.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/rpp-tv-9946fd.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "RT en Español",
       "tvg_id": "Usuario20261123.0677",
-      "variantes": [
-        "RT en Espaæol"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1co/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "iptv-org",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Russia-today-logo.svg/960px-Russia-today-logo.svg.png"
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Russia-today-logo.svg/960px-Russia-today-logo.svg.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "RTS",
       "tvg_id": "Usuario20261123.0364",
-      "variantes": [
-        "RTS OpciÃ³n 1",
-        "RTS OpciÃ³n 2",
-        "RTS OpciÃ³n 3",
-        "RTS OpciÃ³n 4"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a010/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/PML8cJA.png"
+      "logo": "https://i.imgur.com/PML8cJA.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "RTU",
       "tvg_id": "Usuario20261123.0366",
-      "variantes": [
-        "RTU",
-        "RTU OpciÃ³n 1",
-        "RTU OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0d4/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/1OWvMP4.png"
+      "logo": "https://i.imgur.com/1OWvMP4.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Senal Colombia",
       "tvg_id": "Usuario20261123.0369",
-      "variantes": [
-        "Senal Colombia",
-        "Senal Colombia OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a00f/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/senal-colombia-e430af.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/senal-colombia-e430af.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Sextreme",
       "tvg_id": "Usuario20261123.0688",
-      "variantes": [
-        "Sextreme"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1kp/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/jWsW2Rd.png"
+      "logo": "https://i.imgur.com/jWsW2Rd.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Sin Limites",
       "tvg_id": "Usuario20261123.0370",
-      "variantes": [
-        "Sin Limites"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a04n/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/wrFfgzC.png"
+      "logo": "https://i.imgur.com/wrFfgzC.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Sony",
       "tvg_id": "Usuario20261123.0372",
-      "variantes": [
-        "Sony HD",
-        "Sony",
-        "SONY - OK",
-        "Sony HD OpciÃ³n 2",
-        "Sony OpciÃ³n 2",
-        "Sony OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a063/index.m3u8",
       "respaldo": 5,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/sony-channel-ccdb29.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/sony-channel-ccdb29.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Sony Movies",
       "tvg_id": "Usuario20261123.0694",
-      "variantes": [
-        "Sony Movies HD",
-        "Sony Movies",
-        "Sony Movies OpciÃ³n 1"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1b9/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/sony-movies-dc91bb.webp"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/sony-movies-dc91bb.webp",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Space",
       "tvg_id": "Usuario20261123.0375",
-      "variantes": [
-        "Space HD OpciÃ³n 1",
-        "Space HD OpciÃ³n 2",
-        "Space HD OpciÃ³n 3",
-        "Space OpciÃ³n 1",
-        "Space OpciÃ³n 2",
-        "Space OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a067/index.m3u8",
       "respaldo": 5,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/space-b28f2c.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/space-b28f2c.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Star Channel",
       "tvg_id": "Usuario20261123.0376",
-      "variantes": [
-        "Star Channel HD",
-        "Star Channel HD OpciÃ³n 2",
-        "STAR CHANNEL OpciÃ³n 1",
-        "STAR CHANNEL OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a06c/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/star-channel-d1a02f.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/star-channel-d1a02f.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Studio Universal",
       "tvg_id": "Usuario20261123.0377",
-      "variantes": [
-        "Studio Universal OpciÃ³n 2",
-        "Studio Universal OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0al/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/studio-universal.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/studio-universal.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "Sun Channel",
       "tvg_id": "Usuario20261123.0378",
-      "variantes": [
-        "Sun Channel HD",
-        "Sun Channel HD OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a075/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/sun-channel-e405e0.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/sun-channel-e405e0.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "SURTV",
       "tvg_id": "Usuario20261123.0368",
-      "variantes": [
-        "SURTV",
-        "SURTV OpciÃ³n 1",
-        "SURTV OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a00k/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/QZ2kqFL.png"
-    },
-    {
-      "nombre": "TC",
-      "tvg_id": "Usuario20261123.0379",
-      "variantes": [
-        "TC",
-        "TC OpciÃ³n 1",
-        "TC OpciÃ³n 2",
-        "TC OpciÃ³n 3"
-      ],
-      "respaldo": 3,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/tc.png"
+      "logo": "https://i.imgur.com/QZ2kqFL.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "TC Televisión",
       "tvg_id": "Usuario20261123.0380",
-      "variantes": [
-        "TC Televisiðn",
-        "TC Televisiðn OpciÃ³n 1"
-      ],
-      "respaldo": 1,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/okK02EN.png"
+      "principal": "http://45.173.231.22:8000/play/a00y/index.m3u8",
+      "respaldo": 5,
+      "logo": "https://i.imgur.com/okK02EN.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "TCM",
       "tvg_id": "Usuario20261123.0381",
-      "variantes": [
-        "TCM OpciÃ³n 1",
-        "TCM OpciÃ³n 2",
-        "TCM OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0b0/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tcm-8115f8.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tcm-8115f8.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Teen Nick",
       "tvg_id": "Usuario20261123.0738",
-      "variantes": [
-        "Teen Nick"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a0xq/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/teennick-d4c6fb.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/teennick-d4c6fb.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Teleamazonas",
       "tvg_id": "Usuario20261123.0399",
-      "variantes": [
-        "Teleamazonas",
-        "Teleamazonas OpciÃ³n 1",
-        "Teleamazonas OpciÃ³n 2",
-        "Teleamazonas OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a00c/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/yhv3XyU.png"
+      "logo": "https://i.imgur.com/yhv3XyU.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Teleantioquia",
       "tvg_id": "Usuario20261123.0401",
-      "variantes": [
-        "Teleantioquia",
-        "Teleantioquia OpciÃ³n 1",
-        "Teleantioquia OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a04z/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/6WMV2Az.png"
+      "logo": "https://i.imgur.com/6WMV2Az.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Telecafe",
       "tvg_id": "Usuario20261123.0402",
-      "variantes": [
-        "Telecafe",
-        "Telecafe OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a05c/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/28XmS1J.png"
+      "logo": "https://i.imgur.com/28XmS1J.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Telecaribe",
       "tvg_id": "Usuario20261123.0403",
-      "variantes": [
-        "Telecaribe",
-        "Telecaribe OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a05a/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/E35cXHt.png"
+      "logo": "https://i.imgur.com/E35cXHt.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Telefe",
       "tvg_id": "Usuario20261123.0404",
-      "variantes": [
-        "Telefe",
-        "Telefe HD OpciÃ³n 1",
-        "Telefe HD OpciÃ³n 2",
-        "Telefe OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a053/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telefe-0cc706.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telefe-0cc706.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Teleislas",
       "tvg_id": "Usuario20261123.0405",
-      "variantes": [
-        "Teleislas",
-        "Teleislas OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a00n/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/teleislas-d2e68d.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/teleislas-d2e68d.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Telemundo",
       "tvg_id": "Usuario20261123.0406",
-      "variantes": [
-        "Telemundo",
-        "Telemundo OpciÃ³n 1",
-        "Telemundo OpciÃ³n 2",
-        "Telemundo OpciÃ³n 3",
-        "Telemundo OpciÃ³n 4"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a01h/index.m3u8",
       "respaldo": 4,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telemundo-39b610.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telemundo-39b610.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Telepacifico",
       "tvg_id": "Usuario20261123.0408",
-      "variantes": [
-        "Telepacifico",
-        "Telepacifico OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a051/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telepacifico-cd036f.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telepacifico-cd036f.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Telesur",
       "tvg_id": "Usuario20261123.0753",
-      "variantes": [
-        "Telesur"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1f9/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telesur-bae78e.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/telesur-bae78e.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Televicentro",
       "tvg_id": "Usuario20261123.0409",
-      "variantes": [
-        "Televicentro",
-        "Televicentro OpciÃ³n 1",
-        "Televicentro OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a00z/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/televicentro.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/televicentro.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "TLC",
       "tvg_id": "Usuario20261123.0383",
-      "variantes": [
-        "TLC",
-        "TLC OpciÃ³n 1",
-        "TLC OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a092/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "iptv-org",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/TLC_Logo.svg/960px-TLC_Logo.svg.png"
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/TLC_Logo.svg/960px-TLC_Logo.svg.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Tlnovelas",
       "tvg_id": "Usuario20261123.0410",
-      "variantes": [
-        "Tlnovelas",
-        "TLNovelas OpciÃ³n 1",
-        "Tlnovelas OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a07i/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tlnovelas-fdd905.webp"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tlnovelas-fdd905.webp",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "TN",
       "tvg_id": "Usuario20261123.0713",
-      "variantes": [
-        "TN HD",
-        "TN"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1ax/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tn-bfdeb6.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tn-bfdeb6.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "TNT",
       "tvg_id": "Usuario20261123.0385",
-      "variantes": [
-        "TNT HD",
-        "TNT HD OpciÃ³n 2",
-        "TNT OpciÃ³n 1",
-        "TNT OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a060/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tnt-d5ba94.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tnt-d5ba94.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "TNT Novelas",
       "tvg_id": "Usuario20261123.0387",
-      "variantes": [
-        "TNT Novelas HD OpciÃ³n 1",
-        "TNT Novelas HD OpciÃ³n 2",
-        "TNT Novelas HD OpciÃ³n 3",
-        "TNT Novelas OpciÃ³n 1",
-        "TNT Novelas OpciÃ³n 2",
-        "TNT Novelas OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a02j/index.m3u8",
       "respaldo": 5,
-      "logo_origen": "iptv-org",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png"
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "TNT Series",
       "tvg_id": "Usuario20261123.0390",
-      "variantes": [
-        "TNT Series HD",
-        "TNT Series HD OpciÃ³n 2",
-        "TNT Series HD OpciÃ³n 3"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a08g/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tnt-series-42bf42.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tnt-series-42bf42.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "TNT SPORTS",
       "tvg_id": "Usuario20261123.0388",
-      "variantes": [
-        "TNT SPORTS OpciÃ³n 1",
-        "TNT SPORTS OpciÃ³n 2",
-        "TNT Sports OpciÃ³n 3",
-        "TNT SPORTS OpciÃ³n 4",
-        "TNT Sports OpciÃ³n 5"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a081/index.m3u8",
       "respaldo": 4,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tnt-sports-arg-3ba3c6.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tnt-sports-arg-3ba3c6.png",
+      "logo_origen": "FutbolTotal"
     },
     {
-      "nombre": "TNT Sports Premiun",
+      "nombre": "TNT Sports Premium",
       "tvg_id": "Usuario20261123.0729",
-      "variantes": [
-        "TNT Sports Premiun HD",
-        "TNT Sports Premium",
-        "TNT Sports Premium SD",
-        "TNT Sports Premium OpciÃ³n 1"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a137/index.m3u8",
       "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tnt-sports-premium-ab0c01.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tnt-sports-premium-ab0c01.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Tooncast",
       "tvg_id": "Usuario20261123.0411",
-      "variantes": [
-        "Tooncast",
-        "Tooncast OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a01i/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tooncast-5b2c21.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tooncast-5b2c21.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Trece",
       "tvg_id": "Usuario20261123.0412",
-      "variantes": [
-        "Trece",
-        "Trece OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a05d/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/trece-cbdb8f.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/trece-cbdb8f.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "TRO",
       "tvg_id": "Usuario20261123.0394",
-      "variantes": [
-        "TRO",
-        "TRO OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a00m/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/tro.png"
-    },
-    {
-      "nombre": "TV+",
-      "tvg_id": "Usuario20261123.0396",
-      "variantes": [
-        "TV+",
-        "TV+ OpciÃ³n 1"
-      ],
-      "respaldo": 1,
-      "logo_origen": "iptv-org",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/TV%2B_%282018%29.png/960px-TV%2B_%282018%29.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/tro.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "TV Peru",
       "tvg_id": "Usuario20261123.0395",
-      "variantes": [
-        "TV Peru SD",
-        "TV Peru SD OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a04l/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/6io0IrX.png"
+      "logo": "https://i.imgur.com/6io0IrX.png",
+      "logo_origen": "iptv-org"
+    },
+    {
+      "nombre": "TV+",
+      "tvg_id": "Usuario20261123.0396",
+      "principal": "http://45.173.231.22:8000/play/a06u/index.m3u8",
+      "respaldo": 1,
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/TV%2B_%282018%29.png/960px-TV%2B_%282018%29.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "TVE",
       "tvg_id": "Usuario20261123.0397",
-      "variantes": [
-        "TVE"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0b7/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tve-internacional-europe-e80e8d.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tve-internacional-europe-e80e8d.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "TVN",
       "tvg_id": "Usuario20261123.0398",
-      "variantes": [
-        "TVN HD",
-        "TVN HD OpciÃ³n 1",
-        "TVN OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a06l/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tvn-8f19b8.jpg"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tvn-8f19b8.jpg",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "TyC",
       "tvg_id": "Usuario20261123.0413",
-      "variantes": [
-        "TyC",
-        "TyC OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a08y/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tyc-sports-6d219d.png"
-    },
-    {
-      "nombre": "Universal",
-      "tvg_id": "Usuario20261123.0766",
-      "variantes": [
-        "Universal HD",
-        "Universal",
-        "Universal OpciÃ³n 1",
-        "Universal OpciÃ³n 3"
-      ],
-      "respaldo": 3,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/universal-tv-19d216.png"
-    },
-    {
-      "nombre": "UNIVERSAL CHANNEL",
-      "tvg_id": "Usuario20261123.0414",
-      "variantes": [
-        "UNIVERSAL CHANNEL HD",
-        "UNIVERSAL CHANNEL HD OpciÃ³n 1"
-      ],
-      "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/universal-tv-19d216.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tyc-sports-6d219d.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Universal Cinema",
       "tvg_id": "Usuario20261123.0418",
-      "variantes": [
-        "Universal Cinema SD",
-        "Universal Cinema SD OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0ao/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/XxfET68.png"
+      "logo": "https://i.imgur.com/XxfET68.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Universal Comedy",
       "tvg_id": "Usuario20261123.0419",
-      "variantes": [
-        "Universal Comedy SD"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0ap/index.m3u8",
       "respaldo": 0,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/avBL8pQ.png"
+      "logo": "https://i.imgur.com/avBL8pQ.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Universal Premiere",
       "tvg_id": "Usuario20261123.0420",
-      "variantes": [
-        "Universal Premiere SD",
-        "Universal Premiere SD OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0an/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/KdFk80C.png"
+      "logo": "https://i.imgur.com/KdFk80C.png",
+      "logo_origen": "iptv-org"
+    },
+    {
+      "nombre": "Universal TV",
+      "tvg_id": "Usuario20261123.0766",
+      "principal": "http://45.188.229.33:8000/play/a1b8/index.m3u8",
+      "respaldo": 5,
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/universal-tv-19d216.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "USA",
       "tvg_id": "Usuario20261123.0415",
-      "variantes": [
-        "USA",
-        "USA SD",
-        "USA OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0cx/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/usa.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/usa.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Venus",
       "tvg_id": "Usuario20261123.0768",
-      "variantes": [
-        "Venus",
-        "Venus OpciÃ³n 1"
-      ],
+      "principal": "http://45.188.229.33:8000/play/a1k2/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/venus-7af46c.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/venus-7af46c.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Via X",
       "tvg_id": "Usuario20261123.0421",
-      "variantes": [
-        "Via X",
-        "ViaX",
-        "ViaX OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0cj/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "iptv-org",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d3/VIAX-oficial.png"
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d3/VIAX-oficial.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Via X Esports",
       "tvg_id": "Usuario20261123.0422",
-      "variantes": [
-        "Via X Esports",
-        "Via X Esports OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0cw/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "iptv-org",
-      "logo": "https://www.viaxesports.com/wp-content/themes/ViaxExports2/img/viaxesports.png"
-    },
-    {
-      "nombre": "Warner Channel",
-      "tvg_id": "Usuario20261123.0424",
-      "variantes": [
-        "Warner Channel",
-        "Warner Channel HD OpciÃ³n 1",
-        "Warner OpciÃ³n 1",
-        "Warner Channel OpciÃ³n 1",
-        "Warner Channel OpciÃ³n 2",
-        "Warner Channel OpciÃ³n 3"
-      ],
-      "respaldo": 5,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/warner-tv-5b2ebc.png"
+      "logo": "https://www.viaxesports.com/wp-content/themes/ViaxExports2/img/viaxesports.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Warner TV",
-      "tvg_id": "Usuario20261123.0425",
-      "variantes": [
-        "Warner TV HD",
-        "Warner TV HD OpciÃ³n 1",
-        "Warner TV HD OpciÃ³n 2"
-      ],
-      "respaldo": 2,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/warner-tv-5b2ebc.png"
+      "tvg_id": "Usuario20261123.0424",
+      "principal": "http://45.173.231.22:8000/play/a09q/index.m3u8",
+      "respaldo": 8,
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/warner-tv-5b2ebc.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Willax",
       "tvg_id": "Usuario20261123.0426",
-      "variantes": [
-        "Willax",
-        "Willax OpciÃ³n 1",
-        "Willax OpciÃ³n 2"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a04e/index.m3u8",
       "respaldo": 2,
-      "logo_origen": "identificador_generado",
-      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/willax.png"
+      "logo": "https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/willax.png",
+      "logo_origen": "identificador_generado"
     },
     {
       "nombre": "Win",
       "tvg_id": "Usuario20261123.0427",
-      "variantes": [
-        "Win",
-        "Win OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a050/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "FutbolTotal",
-      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/win.png"
+      "logo": "https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/win.png",
+      "logo_origen": "FutbolTotal"
     },
     {
       "nombre": "Zona Latina",
       "tvg_id": "Usuario20261123.0428",
-      "variantes": [
-        "Zona Latina",
-        "Zona Latina OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a0ax/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/lMyZZtk.png"
+      "logo": "https://i.imgur.com/lMyZZtk.png",
+      "logo_origen": "iptv-org"
     },
     {
       "nombre": "Zoom",
       "tvg_id": "Usuario20261123.0430",
-      "variantes": [
-        "Zoom",
-        "Zoom OpciÃ³n 1"
-      ],
+      "principal": "http://45.173.231.22:8000/play/a00l/index.m3u8",
       "respaldo": 1,
-      "logo_origen": "iptv-org",
-      "logo": "https://i.imgur.com/euy5zp6.png"
+      "logo": "https://i.imgur.com/euy5zp6.png",
+      "logo_origen": "iptv-org"
+    }
+  ],
+  "fusiones_adicionales": [
+    {
+      "key": "las estrellas",
+      "merges": [
+        "Canal Las Estrellas",
+        "Las Estrellas"
+      ]
+    },
+    {
+      "key": "cnn en espanol",
+      "merges": [
+        "CNN en Español",
+        "CNN Espanol"
+      ]
+    },
+    {
+      "key": "de pelicula",
+      "merges": [
+        "De PelŦcula",
+        "De Pelicula"
+      ]
+    },
+    {
+      "key": "disney jr",
+      "merges": [
+        "Disney Junior",
+        "Disney Jr"
+      ]
+    },
+    {
+      "key": "e entertainment",
+      "merges": [
+        "E Entertainment",
+        "E! Entertainment TV"
+      ]
+    },
+    {
+      "key": "tc television",
+      "merges": [
+        "TC Televisión",
+        "TC"
+      ]
+    },
+    {
+      "key": "universal",
+      "merges": [
+        "Universal",
+        "UNIVERSAL CHANNEL"
+      ]
+    },
+    {
+      "key": "warner tv",
+      "merges": [
+        "Warner Channel",
+        "Warner TV"
+      ]
     }
   ]
 }
