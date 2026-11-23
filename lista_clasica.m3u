@@ -158,6 +158,10 @@ https://stream.arcast.com.ar/envivo/castv/playlist.m3u8
 #EXTINF:-1 tvg-id="MundoTV.0027" tvg-name="Canal 79 La Costa" tvg-logo="https://i.imgur.com/HYuSqJy.png" group-title="Argentina TV",Canal 79 La Costa
 https://streamconex.com:19360/lacosta/lacosta.m3u8
 
+#EXTINF:-1 tvg-id="Regional20261123.canal79-mdq" tvg-name="Canal 79 Mar del Plata" group-title="Argentina TV",Canal 79 Mar del Plata
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://streamconex.com:19360/mardelplata/mardelplata.m3u8
+
 #EXTINF:-1 tvg-id="MundoTV.0028" tvg-name="Canal 79 Santa Clara del Mar" tvg-logo="https://i.imgur.com/I93ypGY.png" group-title="Argentina TV",Canal 79 Santa Clara del Mar
 https://streamconex.com:19360/santaclara-1/santaclara-1.m3u8
 
@@ -640,6 +644,7 @@ https://ztnr.rtve.es/ztnr/6108720.m3u8
 https://ztnr.rtve.es/ztnr/5473142.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0243" tvg-name="24h" tvg-logo="https://pbs.twimg.com/profile_images/1634293543987453954/mb1Rzmso_200x200.jpg" group-title="España TV",24h
+#EXT-X-TVFULL-BACKUP:{"url":"https://n-5-2.eu.cdn-redge.media/livehls/oeu/mt/live/24h/live.livx/playlist.m3u8","headers":{}}
 https://rtvelivestream.rtve.es/rtvesec/24h/24h_main_dvr.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0244" tvg-name="3Cat Info" tvg-logo="https://pbs.twimg.com/profile_images/1968163923477098496/blka6O_j_200x200.jpg" group-title="España TV",3Cat Info
@@ -761,6 +766,10 @@ https://streaming013.gestec-video.com/hls/negociostv.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0130" tvg-name="Onda Algeciras TV" tvg-logo="https://graph.facebook.com/ondaalgecirastv/picture?width=200&height=200" group-title="España TV",Onda Algeciras TV
 https://cloudtv.provideo.es/live/algecirastv-livestream.m3u8
+
+#EXTINF:-1 tvg-id="Regional20261123.onda-cadiz" tvg-name="Onda Cádiz 24h" group-title="España TV",Onda Cádiz 24h
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://ondacadiztv.es:30443/octv/24h/playlist.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0139" tvg-name="Parlamento de Andalucía" tvg-logo="https://graph.facebook.com/parlamentodeandalucia.es/picture?width=200&height=200" group-title="España TV",Parlamento de Andalucía
 https://stream1.parlamentodeandalucia.es/realizacion1/realizacion1/playlist.m3u8
@@ -1013,6 +1022,14 @@ https://mdstrm.com/live-stream-playlist/60b578b060947317de7b57ac.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (TVFullPro QA)
 https://live-manifest.production-public.tubi.io/live/6bf131c3-d664-424c-93c9-49188a788980/playlist.m3u8
 
+#EXTINF:-1 tvg-id="Regional20261123.canal10-chiapas" tvg-name="Canal 10 Chiapas" group-title="México TV",Canal 10 Chiapas
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://5ca9af4645e15.streamlock.net/chiapas/videochiapas/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Regional20261123.canal10-durango" tvg-name="Canal 10 Durango" group-title="México TV",Canal 10 Durango
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://5e50264bd6766.streamlock.net/canal10durango/videocanal10durango/playlist.m3u8
+
 #EXTINF:-1 tvg-id="MundoTV.0153" tvg-name="Canal 6 Multimedios Mexico" tvg-logo="https://graph.facebook.com/multimediostv/picture?width=200&height=200" group-title="México TV",Canal 6 Multimedios Mexico
 https://mdstrm.com/live-stream-playlist/57b4dbf5dbbfc8f16bb63ce1.m3u8
 
@@ -1024,6 +1041,10 @@ https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00567-estrellamedia-estrellanews-es
 
 #EXTINF:-1 tvg-id="MundoTV.0159" tvg-name="Estrella TV Mexico" tvg-logo="https://graph.facebook.com/EstrellaTVNetwork/picture?width=200&height=200" group-title="México TV",Estrella TV Mexico
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00567-estrellamedia-estrellagames-estrellamedia/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Regional20261123.canal8-lapaz" tvg-name="IERTBCS Canal 8 La Paz" group-title="México TV",IERTBCS Canal 8 La Paz
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://s5.mexside.net:1936/xhbzc81/xhbzc81/playlist.m3u8
 
 #EXTINF:-1 tvg-id="TvPlayES.itv-deportes" tvg-name="ITV Deportes" group-title="México TV",ITV Deportes
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (TVFullPro QA)
@@ -1037,6 +1058,10 @@ https://stream.ontvmx.com/ontv/ghxTYEQmKkB2UJyVuW/playlist.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0198" tvg-name="RTCG SAT Montenegro" tvg-logo="https://graph.facebook.com/RTCG.me/picture?width=200&height=200" group-title="Montenegro TV",RTCG SAT Montenegro
 https://rtcg-live-open.morescreens.com/RTCG_1_004/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Regional20261123.canal8-vision" tvg-name="Canal 8 Visión TV" group-title="Paraguay TV",Canal 8 Visión TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://tigocloudgen.desdeparaguay.net/satelitaltv/satelitaltv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="ParaguayTV.py" tvg-name="Paraguay TV" group-title="Paraguay TV",Paraguay TV
 https://stream.paraguaytv.gov.py/memfs/bbe36fed-9b49-4d1d-adaa-4bd6d1b2e386.m3u8
@@ -1055,6 +1080,7 @@ https://h.jcp.live.opencaster.com/play_src/index.m3u8
 https://cdnhd.iblups.com/hls/902c1a0395264f269f1160efa00660e47.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0160" tvg-name="TV Perú" tvg-logo="https://graph.facebook.com/TVPeruOficial/picture?width=200&height=200" group-title="Perú TV",TV Perú
+#EXT-X-TVFULL-BACKUP:{"url":"https://cdnhd3.iblups.net/hls/2ee85c7a0aff45d4b0f05552d81cadb07.m3u8","headers":{}}
 https://cdnhd.iblups.com/hls/777b4d4cc0984575a7d14f6ee57dbcaf7.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0078" tvg-name="4FUN TV Polonia PL" tvg-logo="https://graph.facebook.com/4FUN.TV/picture?width=200&height=200" group-title="Polonia TV",4FUN TV Polonia PL
