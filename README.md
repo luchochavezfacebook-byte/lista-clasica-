@@ -1,5 +1,13 @@
 # Lista Clásica — TV FULL PRO (V63)
 
+## Deportes temporales para prueba — 23/11/2026
+
+**Se incorporan 7 señales deportivas HLS abiertas a Lista Clásica, identificadas con `(PRUEBA)`**, tras superar 2 rondas de FFmpeg con 25 fotogramas decodificados: TVS Sports, TVS Classic Sports, TVS Sports Bureau, TVS Women Sports, África 24 Sport, DD Sports HD (con respaldo también aprobado) y Sport1 Alemania. Ya había FTF Sports, cuya URL alternativa superó la prueba pero coincide exactamente con la fuente publicada. Se excluyeron 7 candidatos que no pudieron reproducir video desde GitHub Actions (Fight Network, Willow Sports FAST, ambas variantes Esport3, Teledeporte RTVE, N Sports y Trace Sport Stars).
+
+Lista Clásica pasa de **346 a 353 canales HLS únicos**. El catálogo experimental está aislado en `fuentes_deportes_prueba_20261123.json`, con fecha y prueba, para poder retirarlo fácilmente cuando terminen los ensayos. También está la lista deportiva independiente [lista_deportes_prueba.m3u](lista_deportes_prueba.m3u). [Evidencia FFmpeg](https://github.com/luchochavezfacebook-byte/lista-clasica-/actions/runs/45233893770).
+
+No se incorporaron listas de terceros con accesos a ESPN Premium, TNT Sports, DSports ni otros canales de pago, ya que sus direcciones no acreditan acceso autorizado. Para probar fuentes premium propias, integrar los datos legítimos del proveedor en un entorno privado. Dos muestras de video desde GitHub no certifican audio, continuidad ni funcionamiento regional en Argentina. Para ver las señales añadidas: **Lista Clásica → Recargar lista**.
+
 ## Ampliación gratuita similar a PlayTV — 23/11/2026 (última actualización)
 
 **Lista Clásica: 346 señales HLS únicas**. Tras depurar a 340, incorporamos **7 señales de acceso público** comprobadas dos veces con FFmpeg: Telemundo Puerto Rico, ViX Deportes 24/7 (Zona TUDN), Fubo Sports Network, Telemundo Noticias Ahora, Telemundo Acción, GLORY Kickboxing y Telemundo Deportes Ahora (con un respaldo igualmente probado). Quitamos de la lista **TyC Sports FAST**, que no entregó imagen en dos pruebas; TyC Sports 24 permanece activo.
