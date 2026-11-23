@@ -1,0 +1,61 @@
+name: Integrar canales FAST compatibles con PlayTV (rama QA)
+on:
+  push:
+    branches: [feature/alternativas-legales-playtv-20261123]
+    paths:
+      - 'fuentes_fast_playtv_20261123.json'
+      - 'fuentes_noviembre_2026.json'
+      - '.github/workflows/integrar-fast-playtv-20261123.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  integrar:
+    if: github.ref == 'refs/heads/feature/alternativas-legales-playtv-20261123'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Regenerar lista sin alterar YouTube
+        run: python3 scripts/generar_lista.py
+      - name: Validar canales únicos, nuevas fuentes y eliminación TyC inoperante
+        run: |
+          python3 scripts/validar_repositorio.py
+          python3 - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          before=subprocess.check_output(['git','show','origin/main:lista_clasica.m3u'],text=True)
+          after=Path('lista_clasica.m3u').read_text(encoding='utf-8')
+          old={x for x in before.splitlines() if x.startswith(('https://','http://'))}
+          new={x for x in after.splitlines() if x.startswith(('https://','http://'))}
+          feeds=json.loads(Path('fuentes_fast_playtv_20261123.json').read_text())['canales']
+          removed=json.loads(Path('diagnosticos/bajas_playtv_20261123.json').read_text())['canales']
+          assert len(old)==340, len(old)
+          assert len(new)==346, len(new)
+          assert after.count('#EXTINF:')==346
+          assert len(feeds)==7
+          assert len(removed)==1 and removed[0]['tvg_id']=='TyCSportsFast.ar'
+          assert old-new=={removed[0]['url']}, old-new
+          assert new-old=={ch['url'] for ch in feeds}
+          assert all(ch['url'] in new for ch in feeds)
+          assert '#EXT-X-TVFULL-BACKUP:' in after
+          assert all(ch['nombre'] in after for ch in feeds)
+          assert 'TyC Sports 24' in after
+          assert 'TyC Sports FAST' not in after
+          assert not any('youtube.com/' in x for x in new)
+          print('OK: 340 -> 346: +7 FAST públicos con video, -1 TyC FAST sin imagen; video oficial y YouTube intactos')
+          PY
+      - name: Commit de lista renovada en rama de ensayo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lista_clasica.m3u
+          git diff --cached --quiet && exit 0
+          git commit -m "build: regenerar 346 canales con FAST gratuitos verificados"
+          git push origin HEAD:feature/alternativas-legales-playtv-20261123
