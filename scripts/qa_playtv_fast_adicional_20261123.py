@@ -5,6 +5,8 @@ Incluye alternativas por canal, con resultados diferenciados.
 from concurrent.futures import ThreadPoolExecutor,as_completed
 import re,json,subprocess,time
 CANDIDATES=[
+ ["Telemundo Deportes Ahora (NBC)","Estados Unidos","https://xumo-drct-tda-8hacu.fast.nbcuni.com/live/master.m3u8","nuevo"],
+ ["Telemundo Deportes Ahora (alternativa)","Estados Unidos","https://tda-nnaa-drct-pa6dy.fast.nbcuni.com/live/master.m3u8","alternativa"],
  ["Zona TUDN (FAST)","Estados Unidos","https://linear-357.frequency.stream/mt/vizio/357/hls/master/playlist.m3u8","nuevo"],
  ["Fubo Sports Network (Vizio)","Estados Unidos","https://wurlfubo.global.transmit.live/hls/67eb094ee3ed1615e41629ae/v1/fubotv_fubo_sports_network_1/vizio_us/latest/main/hls/playlist.m3u8","nuevo"],
  ["Fubo Sports Network (Tubi)","Estados Unidos","https://apollo.production-public.tubi.io/live/ac-fubo.m3u8","alternativa"],
