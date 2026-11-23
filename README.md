@@ -1,5 +1,11 @@
 # Lista Clásica — TV FULL PRO (V63)
 
+## Ampliación gratuita similar a PlayTV — 23/11/2026 (última actualización)
+
+**Lista Clásica: 346 señales HLS únicas**. Tras depurar a 340, incorporamos **7 señales de acceso público** comprobadas dos veces con FFmpeg: Telemundo Puerto Rico, ViX Deportes 24/7 (Zona TUDN), Fubo Sports Network, Telemundo Noticias Ahora, Telemundo Acción, GLORY Kickboxing y Telemundo Deportes Ahora (con un respaldo igualmente probado). Quitamos de la lista **TyC Sports FAST**, que no entregó imagen en dos pruebas; TyC Sports 24 permanece activo.
+
+No se copió ningún enlace de `cabj91/tvplay/la14hd.m3u` porque sus 108 enlaces tenían tokens caducados. No se agregaron fuentes de canales deportivos premium sin autorización. Informe y pruebas: [PlayTV / FAST noviembre 2026](docs/playtv_free_20261123.md). Las nuevas fuentes se detallan en `fuentes_fast_playtv_20261123.json`, pueden tener geobloqueo en Argentina y están sujetas a los derechos de cada emisora.
+
 ## Depuración de señales sin video — 23/11/2026 (última actualización)
 
 **Lista Clásica publicada: 340 fuentes HLS únicas** (frente a 370 antes de la depuración). Se eliminaron de los catálogos activos **31 entradas, correspondientes a 30 URLs únicas**: el canal TV Universidad aparecía duplicado con dos IDs. Se conservaron los registros antiguos, con sus URLs y motivos, en [diagnosticos/bajas_20261123.json](diagnosticos/bajas_20261123.json), para permitir recuperarlos si vuelven a transmitir.

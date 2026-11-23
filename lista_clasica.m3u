@@ -365,9 +365,6 @@ http://200.80.230.125:5056/Live/04da096ba8a272db444ccd90d7ca36c4/tvpublica.playl
 #EXTINF:-1 tvg-id="TyCSports.ar" tvg-name="TyC Sports 24" group-title="Argentina TV",TyC Sports 24
 https://live-04-11-tyc-app-web.vodgc.net/tyc24/index.m3u8
 
-#EXTINF:-1 tvg-id="TyCSportsFast.ar" tvg-name="TyC Sports FAST" group-title="Argentina TV",TyC Sports FAST
-https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8
-
 #EXTINF:-1 tvg-id="UnifeTV.ar" tvg-name="Unife TV" group-title="Argentina TV",Unife TV
 https://cdn.mycloudstream.io/hls/live/broadcast/pgv5kerk/index.m3u8
 
@@ -829,6 +826,10 @@ https://live-manifest.production-public.tubi.io/live/d906efca-1302-4e29-b0d9-9a1
 #EXTINF:-1 tvg-id="FTFSports.us" tvg-name="FTF Sports" group-title="Estados Unidos TV",FTF Sports
 https://1657061170.rsc.cdn77.org/HLS/FTF-LINEAR.m3u8
 
+#EXTINF:-1 tvg-id="PlayTVFree.FuboSportsNetwork" tvg-name="Fubo Sports Network" group-title="Estados Unidos TV",Fubo Sports Network
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://wurlfubo.global.transmit.live/hls/67eb094ee3ed1615e41629ae/v1/fubotv_fubo_sports_network_1/vizio_us/latest/main/hls/playlist.m3u8
+
 #EXTINF:-1 tvg-id="HallmarkMoviesMore.us" tvg-name="Hallmark Movies & More" group-title="Estados Unidos TV",Hallmark Movies & More
 https://dbrb49pjoymg4.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/master.m3u8?ads.xumo_channelId=99991709
 
@@ -864,6 +865,23 @@ https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00047-tastemade-tastemadeinternatio
 
 #EXTINF:-1 tvg-id="MundoTV.0221" tvg-name="Tastemade" tvg-logo="https://graph.facebook.com/TastemadeEs/picture?width=200&height=200" group-title="Estados Unidos TV",Tastemade
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00047-tastemade-tastemadees16international24i-ono/playlist.m3u8
+
+#EXTINF:-1 tvg-id="PlayTVFree.TelemundoAccion" tvg-name="Telemundo Acción" group-title="Estados Unidos TV",Telemundo Acción
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://xumo-drct-ch835-ekq0p.fast.nbcuni.com/live/master.m3u8
+
+#EXTINF:-1 tvg-id="PlayTVFree.TelemundoDeportesAhora" tvg-name="Telemundo Deportes Ahora" group-title="Estados Unidos TV",Telemundo Deportes Ahora
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXT-X-TVFULL-BACKUP:{"url":"https://tda-nnaa-drct-pa6dy.fast.nbcuni.com/live/master.m3u8","headers":{}}
+https://xumo-drct-tda-8hacu.fast.nbcuni.com/live/master.m3u8
+
+#EXTINF:-1 tvg-id="PlayTVFree.TelemundoNoticiasAhora" tvg-name="Telemundo Noticias Ahora" group-title="Estados Unidos TV",Telemundo Noticias Ahora
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://xumo-xumoent-ch827-uj0ch.fast.nbcuni.com/live/master.m3u8
+
+#EXTINF:-1 tvg-id="PlayTVFree.ZonaTUDN" tvg-name="ViX Deportes 24/7 (Zona TUDN)" group-title="Estados Unidos TV",ViX Deportes 24/7 (Zona TUDN)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://linear-357.frequency.stream/mt/vizio/357/hls/master/playlist.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0147" tvg-name="WeatherNation USA" tvg-logo="https://graph.facebook.com/WeatherNation/picture?width=200&height=200" group-title="Estados Unidos TV",WeatherNation USA
 https://d2ferbiwcx1539.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-8zd06wicndthf-ssai-prd/WNNationalSamsung/WNNationalSamsung.m3u8
@@ -998,6 +1016,10 @@ https://stream.4fun.tv:8888/hls/4f.m3u8
 #EXTINF:-1 tvg-id="MundoTV.0085" tvg-name="On TV Portugal" tvg-logo="https://graph.facebook.com/ONFM93.8/picture?width=200&height=200" group-title="Portugal TV",On TV Portugal
 https://5ce9406b73c33.streamlock.net/ONFM/livestream/master.m3u8
 
+#EXTINF:-1 tvg-id="PlayTVFree.TelemundoPuertoRico" tvg-name="Telemundo Puerto Rico (WKAQ)" group-title="Puerto Rico TV",Telemundo Puerto Rico (WKAQ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8
+
 #EXTINF:-1 tvg-id="MundoTV.0196" tvg-name="GB News Reino Unido EN" tvg-logo="https://graph.facebook.com/GBNewsOnline/picture?width=200&height=200" group-title="Reino Unido TV",GB News Reino Unido EN
 https://amg01076-lightningintern-gbnews-samsunguk-0lu52.amagi.tv/playlist/amg01076-lightningintern-gbnews-samsunguk/playlist.m3u8
 
@@ -1060,6 +1082,10 @@ http://200.80.230.125:5056/Live/04da096ba8a272db444ccd90d7ca36c4/Extrema.playlis
 #EXTINF:-1 tvg-id="TvPlayES.fifa-es" tvg-name="FIFA+ (Español)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/FIFA%2B_(2025).svg/960px-FIFA%2B_(2025).svg.png" group-title="Internacional TV",FIFA+ (Español)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (TVFullPro QA)
 https://d63fabad.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWVzX0ZJRkFQbHVzU3BhbmlzaF9ITFM/playlist.m3u8
+
+#EXTINF:-1 tvg-id="PlayTVFree.GloryKickboxing" tvg-name="GLORY Kickboxing" group-title="Internacional TV",GLORY Kickboxing
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://6f972d29.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0dsb3J5S2lja2JveGluZ19ITFM/playlist.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0034" tvg-name="Kpop Mix" tvg-logo="https://tvomix.com/Logos/Kpopmix.png" group-title="Internacional TV",Kpop Mix
 https://cloud.tvomix.com/KPOPMIX/index.m3u8
