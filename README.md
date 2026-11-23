@@ -1,5 +1,17 @@
 # Lista Clásica — TV FULL PRO (V63)
 
+## Auditoría completa y nuevas fuentes regionales — 23/11/2026
+
+**Se corrigió un fallo de cobertura del auditor**: la revisión programada cada 6 horas examinaba solo el pequeño archivo `fuentes.json` y no los demás catálogos. El nuevo `scripts/auditar_lista_completa.py` lee todas las fuentes, prueba un segmento HLS, repite los fallos y comprueba respaldos, sin dar de baja ningún canal por un 403, 404, timeout o corte temporal.
+
+**Resultado corregido sobre las 364 fuentes previas:** **327 accesibles y 37 pendientes de revisión** desde GitHub Actions; Argentina **116 accesibles y 13 pendientes**. La primera pasada daba 316/48, pero al admitir manifiestos hasta 1 MiB y masters anidados se recuperaron 11 falsos positivos. Detalle en [auditoría completa y diagnóstico](docs/auditoria_completa_20261123.md).
+
+También se integran **6 señales HLS regionales nuevas** (Canal 79 Mar del Plata, Canal 10 Chiapas, Canal 10 Durango, IERTBCS Canal 8 La Paz, Onda Cádiz 24h y Canal 8 Visión TV Paraguay), tras dos pruebas FFmpeg con 30 fotogramas por pasada. Total actualizado: **370 fuentes HLS**, sin eliminar ni reemplazar las 364 anteriores. TV Perú y `24h` de España suman un **respaldo probado** cada uno, conservando la fuente principal.
+
+**Importante:** estos resultados reflejan pruebas de conexión desde GitHub, no certifican reproducción continua, audio, derechos de retransmisión ni funcionamiento desde Argentina. Los 37 canales problemáticos no se consideran definitivamente caídos y no se eliminan automáticamente. Lista Clásica YT queda intacta.
+
+**TV FULL PRO:** Lista Clásica → Recargar lista, sin recompilar.
+
 ## Señales en español de TVPlay — 23/11/2026
 
 Se revisó la lista pública [Appdeveloper365/TvPlay](https://github.com/Appdeveloper365/TvPlay/blob/main/TVPlay.m3u), con **243 entradas de diferentes idiomas**. Se seleccionaron **16 candidatos públicos hispanohablantes**; **12 aprobaron dos pasadas independientes** con FFmpeg (30 fotogramas por pasada). Cuatro fallaron y quedan pendientes: beIN SPORTS XTRA en Español (404), Awapa Sports TV (400), Radio Turrialba TV Sports (error de entrada/salida), Multivision Sports (error 5xx). No se considera que estén permanentemente caídos.

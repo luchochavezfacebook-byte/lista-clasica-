@@ -1,0 +1,62 @@
+name: Integrar 6 regionales y 2 respaldos — QA privada
+on:
+  push:
+    branches:
+      - audit/lista-clasica-completa-20261123
+    paths:
+      - 'fuentes_regionales_20261123.json'
+      - 'fuentes_mundotv.json'
+      - 'scripts/generar_lista.py'
+      - '.github/workflows/integrar-regionales-20261123.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  integrar:
+    if: github.ref == 'refs/heads/audit/lista-clasica-completa-20261123'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Regenerar M3U de fuentes nuevas y respaldos
+        run: python3 scripts/generar_lista.py
+      - name: Validar integridad de M3U y comparar con main
+        run: |
+          python3 scripts/validar_repositorio.py
+          python3 - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          content=Path('lista_clasica.m3u').read_text(encoding='utf-8')
+          before=subprocess.check_output(['git','show','origin/main:lista_clasica.m3u'],text=True)
+          old={line.strip() for line in before.splitlines() if line.startswith(('https://','http://'))}
+          current={line.strip() for line in content.splitlines() if line.startswith(('https://','http://'))}
+          assert len(old)==364,f'base inesperada {len(old)}'
+          assert len(current)==370,f'esperadas 370 únicas, hay {len(current)}'
+          assert old.issubset(current),f'se eliminaron {len(old-current)} originales'
+          assert content.count('#EXTINF:')==370
+          assert 'fuentes_regionales_20261123.json' in subprocess.check_output(['git','ls-files'],text=True)
+          regional=json.loads(Path('fuentes_regionales_20261123.json').read_text())['canales']
+          assert len(regional)==6
+          assert all(ch['url'] in current for ch in regional)
+          for url in [
+            'https://cdnhd3.iblups.net/hls/2ee85c7a0aff45d4b0f05552d81cadb07.m3u8',
+            'https://n-5-2.eu.cdn-redge.media/livehls/oeu/mt/live/24h/live.livx/playlist.m3u8'
+          ]:
+            assert '"url":"'+url+'"' in content,'respaldo no declarado'
+          assert 'youtube.com/' not in content
+          print('OK: 364 URLs originales intactas + 6 nuevas = 370, 2 respaldos conservando principales')
+          PY
+      - name: Guardar lista solo en rama de QA
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lista_clasica.m3u
+          git diff --cached --quiet && exit 0
+          git commit -m "build: regenerar 370 HLS con dos respaldos verificados"
+          git push origin HEAD:audit/lista-clasica-completa-20261123

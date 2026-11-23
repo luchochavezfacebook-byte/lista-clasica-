@@ -1,0 +1,67 @@
+{
+  "nombre": "6 nuevos canales públicos de habla hispana, verificados 23-11-2026",
+  "fecha": "2026-11-23",
+  "nota": "Se seleccionaron de iptv-org; todas las URL HTTPS HLS. Se evitaron canales privados o con tokens temporales. Verificar derechos de redistribución de cada emisor. Fuente de prueba en scripts/probar_regionales_hls_20261123.py y docs/auditoria_completa_20261123.md",
+  "canales": [
+    {
+      "nombre": "Canal 79 Mar del Plata",
+      "tvg_id": "Regional20261123.canal79-mdq",
+      "pais": "Argentina",
+      "categoria": "Argentina TV",
+      "url": "https://streamconex.com:19360/mardelplata/mardelplata.m3u8",
+      "origen": "iptv-org/iptv, streams/ar.m3u (seleccionada 2026-11-23)",
+      "verificacion": "2026-11-23: dos ejecuciones independientes FFmpeg, 30 fotogramas decodificados por pasada; audio, región y reproducción continua pendientes en TV Box.",
+      "user_agent": "Mozilla/5.0"
+    },
+    {
+      "nombre": "Canal 10 Chiapas",
+      "tvg_id": "Regional20261123.canal10-chiapas",
+      "pais": "México",
+      "categoria": "México TV",
+      "url": "https://5ca9af4645e15.streamlock.net/chiapas/videochiapas/playlist.m3u8",
+      "origen": "iptv-org/iptv, streams/mx.m3u (seleccionada 2026-11-23)",
+      "verificacion": "2026-11-23: dos ejecuciones independientes FFmpeg, 30 fotogramas decodificados por pasada; audio, región y reproducción continua pendientes en TV Box.",
+      "user_agent": "Mozilla/5.0"
+    },
+    {
+      "nombre": "Canal 10 Durango",
+      "tvg_id": "Regional20261123.canal10-durango",
+      "pais": "México",
+      "categoria": "México TV",
+      "url": "https://5e50264bd6766.streamlock.net/canal10durango/videocanal10durango/playlist.m3u8",
+      "origen": "iptv-org/iptv, streams/mx.m3u (seleccionada 2026-11-23)",
+      "verificacion": "2026-11-23: dos ejecuciones independientes FFmpeg, 30 fotogramas decodificados por pasada; audio, región y reproducción continua pendientes en TV Box.",
+      "user_agent": "Mozilla/5.0"
+    },
+    {
+      "nombre": "IERTBCS Canal 8 La Paz",
+      "tvg_id": "Regional20261123.canal8-lapaz",
+      "pais": "México",
+      "categoria": "México TV",
+      "url": "https://s5.mexside.net:1936/xhbzc81/xhbzc81/playlist.m3u8",
+      "origen": "iptv-org/iptv, streams/mx.m3u (seleccionada 2026-11-23)",
+      "verificacion": "2026-11-23: dos ejecuciones independientes FFmpeg, 30 fotogramas decodificados por pasada; audio, región y reproducción continua pendientes en TV Box.",
+      "user_agent": "Mozilla/5.0"
+    },
+    {
+      "nombre": "Onda Cádiz 24h",
+      "tvg_id": "Regional20261123.onda-cadiz",
+      "pais": "España",
+      "categoria": "España TV",
+      "url": "https://ondacadiztv.es:30443/octv/24h/playlist.m3u8",
+      "origen": "iptv-org/iptv, streams/es.m3u (seleccionada 2026-11-23)",
+      "verificacion": "2026-11-23: dos ejecuciones independientes FFmpeg, 30 fotogramas decodificados por pasada; audio, región y reproducción continua pendientes en TV Box.",
+      "user_agent": "Mozilla/5.0"
+    },
+    {
+      "nombre": "Canal 8 Visión TV",
+      "tvg_id": "Regional20261123.canal8-vision",
+      "pais": "Paraguay",
+      "categoria": "Paraguay TV",
+      "url": "https://tigocloudgen.desdeparaguay.net/satelitaltv/satelitaltv/playlist.m3u8",
+      "origen": "iptv-org/iptv, streams/py.m3u (seleccionada 2026-11-23)",
+      "verificacion": "2026-11-23: dos ejecuciones independientes FFmpeg, 30 fotogramas decodificados por pasada; audio, región y reproducción continua pendientes en TV Box.",
+      "user_agent": "Mozilla/5.0"
+    }
+  ]
+}

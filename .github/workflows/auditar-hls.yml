@@ -2,11 +2,12 @@ name: Auditar salud de canales HLS
 
 on:
   push:
-    branches: [main]
+    branches: [main, audit/lista-clasica-completa-20261123]
     paths:
-      - 'fuentes.json'
+      - 'fuentes*.json'
       - 'diagnosticos/candidatos.json'
       - 'scripts/verificar_canales.py'
+      - 'scripts/auditar_lista_completa.py'
       - '.github/workflows/auditar-hls.yml'
   workflow_dispatch:
   schedule:
@@ -18,14 +19,14 @@ permissions:
 jobs:
   auditar:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 13
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Revisar manifiestos y primer segmento (solo diagnóstico)
-        run: python3 scripts/verificar_canales.py
+      - name: Revisar las 364 fuentes, repetir fallos y probar respaldos (sin borrar)
+        run: python3 scripts/auditar_lista_completa.py
       - name: Guardar reporte, incluso con fuentes caídas
         if: always()
         uses: actions/upload-artifact@v4
@@ -33,4 +34,4 @@ jobs:
           name: auditoria-hls-${{ github.run_number }}
           path: reporte_verificacion.json
           if-no-files-found: warn
-          retention-days: 7
+          retention-days: 14
