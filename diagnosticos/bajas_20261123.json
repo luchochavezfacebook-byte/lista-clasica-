@@ -5,7 +5,7 @@
     "QA": "https://github.com/luchochavezfacebook-byte/lista-clasica-/actions/runs/45220497264",
     "auditoria": "https://github.com/luchochavezfacebook-byte/lista-clasica-/actions/runs/45219373443"
   },
-  "n": 30,
+  "n": 31,
   "canales": [
     {
       "nombre": "TV Universidad (UNLP)",
@@ -700,6 +700,29 @@
           "resultado": "sin_video",
           "frames": 0,
           "error": "[in#0 @ 0x64a49c04f180] Error opening input: Server returned 404 Not Found\nError opening input file [URL]\nError opening input files: Server "
+        }
+      ]
+    },
+    {
+      "nombre": "TV Universidad",
+      "tvg_id": "MundoTV.0255",
+      "categoria": "Argentina TV",
+      "url": "https://stratus.stream.cespi.unlp.edu.ar/hls/tvunlp.m3u8",
+      "verificacion": "2026-11-21: Misma URL de TV Universidad UNLP: 403 desde el entorno de revisión, también con cabeceras de la web oficial. No demuestra fin de transmisión; conservar fuente.",
+      "logo": "https://i.imgur.com/0MXsQ25.png",
+      "categoria_original": "Mundo TV / OTROS",
+      "pais": "Argentina",
+      "diagnostico": {
+        "fecha": "2026-11-21",
+        "estado": "acceso_denegado_no_baja",
+        "baja_confirmada": false
+      },
+      "archivo_original": "fuentes_mundotv.json",
+      "pruebas": [
+        {
+          "resultado": "sin_video",
+          "frames": 0,
+          "error": "Misma URL que TVUniversidad.ar; dos pruebas HTTP 403 y dos pruebas FFmpeg sin video, resultados aplicables a este duplicado."
         }
       ]
     }
