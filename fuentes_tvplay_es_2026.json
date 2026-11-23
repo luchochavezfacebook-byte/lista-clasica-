@@ -1,0 +1,130 @@
+{
+  "nombre": "Señales públicas en español de TVPlay 2026, verificadas para Lista Clásica",
+  "fecha": "2026-11-23",
+  "fuente": "https://github.com/Appdeveloper365/TvPlay/blob/main/TVPlay.m3u",
+  "origen_sha": "a588a1b3cc4ce151db1db1b1b9605d8d2385099a",
+  "nota": "12 HLS nuevas, probadas dos veces con FFmpeg. Se excluyeron canales de pago sin fuente oficial verificable, duplicados y cuatro candidatos no funcionales. Probar desde Argentina y en Android TV. No se garantizan derechos de retransmisión ni continuidad.",
+  "canales": [
+    {
+      "nombre": "FIFA+ (Español)",
+      "tvg_id": "TvPlayES.fifa-es",
+      "pais": "Internacional",
+      "categoria": "Internacional TV",
+      "url": "https://d63fabad.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWVzX0ZJRkFQbHVzU3BhbmlzaF9ITFM/playlist.m3u8",
+      "origen": "Appdeveloper365/TvPlay TVPlay.m3u (17/10/2026), señal pública aprobada por QA",
+      "verificacion": "23/11/2026: dos muestras independientes con FFmpeg y >=30 fotogramas de video. Pendiente continuidad, audio, región y TV Box.",
+      "user_agent": "Mozilla/5.0 (TVFullPro QA)",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/FIFA%2B_(2025).svg/960px-FIFA%2B_(2025).svg.png"
+    },
+    {
+      "nombre": "Fox Deportes",
+      "tvg_id": "TvPlayES.fox-deportes",
+      "pais": "Estados Unidos",
+      "categoria": "Estados Unidos TV",
+      "url": "https://live-manifest.production-public.tubi.io/live/d906efca-1302-4e29-b0d9-9a1d7a305d69/playlist.m3u8",
+      "origen": "Appdeveloper365/TvPlay TVPlay.m3u (17/10/2026), señal pública aprobada por QA",
+      "verificacion": "23/11/2026: dos muestras independientes con FFmpeg y >=30 fotogramas de video. Pendiente continuidad, audio, región y TV Box.",
+      "user_agent": "Mozilla/5.0 (TVFullPro QA)"
+    },
+    {
+      "nombre": "AS3 Sport TV",
+      "tvg_id": "TvPlayES.as3-sport",
+      "pais": "Venezuela",
+      "categoria": "Venezuela TV",
+      "url": "https://streamtv.as3sport.online:3394/hybrid/play.m3u8",
+      "origen": "Appdeveloper365/TvPlay TVPlay.m3u (17/10/2026), señal pública aprobada por QA",
+      "verificacion": "23/11/2026: dos muestras independientes con FFmpeg y >=30 fotogramas de video. Pendiente continuidad, audio, región y TV Box.",
+      "user_agent": "Mozilla/5.0 (TVFullPro QA)"
+    },
+    {
+      "nombre": "Azteca Deportes Network",
+      "tvg_id": "TvPlayES.azteca-deportes",
+      "pais": "México",
+      "categoria": "México TV",
+      "url": "https://live-manifest.production-public.tubi.io/live/6bf131c3-d664-424c-93c9-49188a788980/playlist.m3u8",
+      "origen": "Appdeveloper365/TvPlay TVPlay.m3u (17/10/2026), señal pública aprobada por QA",
+      "verificacion": "23/11/2026: dos muestras independientes con FFmpeg y >=30 fotogramas de video. Pendiente continuidad, audio, región y TV Box.",
+      "user_agent": "Mozilla/5.0 (TVFullPro QA)"
+    },
+    {
+      "nombre": "ITV Deportes",
+      "tvg_id": "TvPlayES.itv-deportes",
+      "pais": "México",
+      "categoria": "México TV",
+      "url": "https://thm-it-roku.otteravision.com/thm/it/it.m3u8",
+      "origen": "Appdeveloper365/TvPlay TVPlay.m3u (17/10/2026), señal pública aprobada por QA",
+      "verificacion": "23/11/2026: dos muestras independientes con FFmpeg y >=30 fotogramas de video. Pendiente continuidad, audio, región y TV Box.",
+      "user_agent": "Mozilla/5.0 (TVFullPro QA)"
+    },
+    {
+      "nombre": "CDN Deportes",
+      "tvg_id": "TvPlayES.cdn-deportes",
+      "pais": "República Dominicana",
+      "categoria": "República Dominicana TV",
+      "url": "https://hls.tvabierta.net/hls/036.m3u8",
+      "origen": "Appdeveloper365/TvPlay TVPlay.m3u (17/10/2026), señal pública aprobada por QA",
+      "verificacion": "23/11/2026: dos muestras independientes con FFmpeg y >=30 fotogramas de video. Pendiente continuidad, audio, región y TV Box.",
+      "user_agent": "Mozilla/5.0 (TVFullPro QA)"
+    },
+    {
+      "nombre": "Colimdo TV",
+      "tvg_id": "TvPlayES.colimdo-tv",
+      "pais": "República Dominicana",
+      "categoria": "República Dominicana TV",
+      "url": "https://cnn.livestreaminggroup.info:3132/live/colimdotvlive.m3u8",
+      "origen": "Appdeveloper365/TvPlay TVPlay.m3u (17/10/2026), señal pública aprobada por QA",
+      "verificacion": "23/11/2026: dos muestras independientes con FFmpeg y >=30 fotogramas de video. Pendiente continuidad, audio, región y TV Box.",
+      "user_agent": "Mozilla/5.0 (TVFullPro QA)"
+    },
+    {
+      "nombre": "Tour Spot TV",
+      "tvg_id": "TvPlayES.tour-spot-tv",
+      "pais": "República Dominicana",
+      "categoria": "República Dominicana TV",
+      "url": "https://fox.hostlagarto.com:8081/toursporttv/playlist.m3u8",
+      "origen": "Appdeveloper365/TvPlay TVPlay.m3u (17/10/2026), señal pública aprobada por QA",
+      "verificacion": "23/11/2026: dos muestras independientes con FFmpeg y >=30 fotogramas de video. Pendiente continuidad, audio, región y TV Box.",
+      "user_agent": "Mozilla/5.0 (TVFullPro QA)"
+    },
+    {
+      "nombre": "CRTV Chile",
+      "tvg_id": "TvPlayES.crtv-chile",
+      "pais": "Chile",
+      "categoria": "Chile TV",
+      "url": "https://stmv2.voxtvhd.com.br/crtvchile/crtvchile/playlist.m3u8",
+      "origen": "Appdeveloper365/TvPlay TVPlay.m3u (17/10/2026), señal pública aprobada por QA",
+      "verificacion": "23/11/2026: dos muestras independientes con FFmpeg y >=30 fotogramas de video. Pendiente continuidad, audio, región y TV Box.",
+      "user_agent": "Mozilla/5.0 (TVFullPro QA)"
+    },
+    {
+      "nombre": "Teletrak TV",
+      "tvg_id": "TvPlayES.teletrak-tv",
+      "pais": "Chile",
+      "categoria": "Chile TV",
+      "url": "https://unlimited6-cl.dps.live/sportinghd/sportinghd.smil/playlist.m3u8",
+      "origen": "Appdeveloper365/TvPlay TVPlay.m3u (17/10/2026), señal pública aprobada por QA",
+      "verificacion": "23/11/2026: dos muestras independientes con FFmpeg y >=30 fotogramas de video. Pendiente continuidad, audio, región y TV Box.",
+      "user_agent": "Mozilla/5.0 (TVFullPro QA)"
+    },
+    {
+      "nombre": "FTV Bolivia",
+      "tvg_id": "TvPlayES.ftv-bolivia",
+      "pais": "Bolivia",
+      "categoria": "Bolivia TV",
+      "url": "https://master.tucableip.com/ftvhd/index.m3u8",
+      "origen": "Appdeveloper365/TvPlay TVPlay.m3u (17/10/2026), señal pública aprobada por QA",
+      "verificacion": "23/11/2026: dos muestras independientes con FFmpeg y >=30 fotogramas de video. Pendiente continuidad, audio, región y TV Box.",
+      "user_agent": "Mozilla/5.0 (TVFullPro QA)"
+    },
+    {
+      "nombre": "Monterrico TV",
+      "tvg_id": "TvPlayES.monterrico-tv",
+      "pais": "Perú",
+      "categoria": "Perú TV",
+      "url": "https://h.jcp.live.opencaster.com/play_src/index.m3u8",
+      "origen": "Appdeveloper365/TvPlay TVPlay.m3u (17/10/2026), señal pública aprobada por QA",
+      "verificacion": "23/11/2026: dos muestras independientes con FFmpeg y >=30 fotogramas de video. Pendiente continuidad, audio, región y TV Box.",
+      "user_agent": "Mozilla/5.0 (TVFullPro QA)"
+    }
+  ]
+}

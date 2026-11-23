@@ -94,6 +94,9 @@ if __name__ == '__main__':
     netvideo = ROOT / 'fuentes_netvideo_2026.json'
     if netvideo.exists():
         data['canales'].extend(json.loads(netvideo.read_text(encoding='utf-8'))['canales'])
+    tvplay_es = ROOT / 'fuentes_tvplay_es_2026.json'
+    if tvplay_es.exists():
+        data['canales'].extend(json.loads(tvplay_es.read_text(encoding='utf-8'))['canales'])
     path = ROOT / 'lista_clasica.m3u'
     path.write_text(build(data), encoding='utf-8')
     print(f"Creada: {path} ({len({c['url'] for c in data['canales']})} fuentes HLS únicas, YouTube separado)")

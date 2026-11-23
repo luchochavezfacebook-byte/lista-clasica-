@@ -1,5 +1,13 @@
 # Lista Clásica — TV FULL PRO (V63)
 
+## Señales en español de TVPlay — 23/11/2026
+
+Se revisó la lista pública [Appdeveloper365/TvPlay](https://github.com/Appdeveloper365/TvPlay/blob/main/TVPlay.m3u), con **243 entradas de diferentes idiomas**. Se seleccionaron **16 candidatos públicos hispanohablantes**; **12 aprobaron dos pasadas independientes** con FFmpeg (30 fotogramas por pasada). Cuatro fallaron y quedan pendientes: beIN SPORTS XTRA en Español (404), Awapa Sports TV (400), Radio Turrialba TV Sports (error de entrada/salida), Multivision Sports (error 5xx). No se considera que estén permanentemente caídos.
+
+Se integraron **12 nuevas fuentes HLS HTTPS**, sin reemplazar ninguna de las 352 URL anteriores, para un total de **364 señales** en Lista Clásica. Las fuentes nuevas se guardan en `fuentes_tvplay_es_2026.json`, y los resultados de validación están documentados en [auditoría TVPlay ES](docs/tvplay_es_20261123.md). Se conservaron las demás fuentes, respaldos y Lista Clásica YT.
+
+**Limitaciones:** estas pruebas son desde el runner de GitHub y no garantizan audio, continuidad, funcionamiento en Argentina ni disponibilidad en Android TV. La ausencia de protección técnica no equivale a permiso de retransmisión; usar conforme a los derechos de cada canal. En TV FULL PRO: **Lista Clásica → Recargar lista**, sin recompilar.
+
 ## Nuevas señales autorizadas de Netvideo — 22/11/2026
 
 Se incorporaron **28 señales HLS nuevas**, con **28 logos** procedentes de la grilla web de Netvideo TvPlay, facilitada por el proveedor para esta integración. Se compararon los **70 elementos** de TvPlay (**62 HLS** y 8 flujos de otro tipo) con Lista Clásica y se descartaron duplicados, incluyendo TN, El Trece, América, Canal 7 Jujuy/Salta, Radio Power Max y LinkTV. Se descartaron también 6 candidatos con pruebas insuficientes, sin declararlos dados de baja.
