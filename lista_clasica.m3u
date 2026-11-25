@@ -214,6 +214,12 @@ https://vivo.solumedia.com:19360/sicarditv/sicarditv.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 http://45.173.231.22:8000/play/a04n/index.m3u8
 
+#EXTINF:-1 tvg-id="Usuario20261123.0368" tvg-name="SURTV" tvg-logo="https://i.imgur.com/QZ2kqFL.png" group-title="Televisión Nacional",SURTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a1ii/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
+#EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a0vr/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
+http://45.173.231.22:8000/play/a00k/index.m3u8
+
 #EXTINF:-1 tvg-id="T5Satelital.ar" tvg-name="T5 Satelital" group-title="Televisión Nacional",T5 Satelital
 https://stream.t5satelital.blog/hls/t5satelitalweb.m3u8
 
@@ -592,6 +598,12 @@ https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=2223
 #EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a0wb/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
 http://45.173.231.22:8000/play/a055/index.m3u8
 
+#EXTINF:-1 tvg-id="Usuario20261123.0244" tvg-name="De Película" tvg-logo="https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/de-pel-cula.png" group-title="Películas y Series",De Película
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a1j2/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
+#EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a1ec/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
+http://45.173.231.22:8000/play/a07j/index.m3u8
+
 #EXTINF:-1 tvg-id="Usuario20261123.0242" tvg-name="DHE" tvg-logo="https://i.imgur.com/nsttoEa.png" group-title="Películas y Series",DHE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a13k/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
@@ -748,6 +760,11 @@ http://45.173.231.22:8000/play/a067/index.m3u8
 #EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a1ku/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
 http://45.173.231.22:8000/play/a06c/index.m3u8
 
+#EXTINF:-1 tvg-id="Usuario20261123.0377" tvg-name="Studio Universal" tvg-logo="https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/studio-universal.png" group-title="Películas y Series",Studio Universal
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a0u2/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
+http://45.173.231.22:8000/play/a0al/index.m3u8
+
 #EXTINF:-1 tvg-id="Usuario20261123.0381" tvg-name="TCM" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/tcm-8115f8.png" group-title="Películas y Series",TCM
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXT-X-TVFULL-BACKUP:{"url":"http://45.173.231.22:8000/play/a0d0/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
@@ -875,6 +892,9 @@ http://200.80.230.125:5056/Live/04da096ba8a272db444ccd90d7ca36c4/lntv.playlist.m
 #EXTINF:-1 tvg-id="NetvideoTVPlay.MediosProvincia" tvg-name="Medios Provincia" tvg-logo="http://200.80.230.125:5056/images/MediosProvincia.png" group-title="Noticias",Medios Provincia
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 http://200.80.230.125:5056/Live/04da096ba8a272db444ccd90d7ca36c4/MediosProvincia.playlist.m3u8
+
+#EXTINF:-1 tvg-id="MercurioNoticias.ar" tvg-name="Mercurio Noticias" group-title="Noticias",Mercurio Noticias
+https://videostream.shockmedia.com.ar/hls/mercuriotv/mercuriotv.m3u8
 
 #EXTINF:-1 tvg-id="NGFederal.ar" tvg-name="NG Federal" group-title="Noticias",NG Federal
 https://617c5175c970b.streamlock.net:4444/tvlink/live/playlist.m3u8
@@ -1022,8 +1042,9 @@ https://indiatodaylive.akamaized.net/hls/live/2014320/indiatoday/indiatodaylive/
 #EXTINF:-1 tvg-id="MundoTV.0260" tvg-name="Medi1 TV Marruecos" tvg-logo="https://graph.facebook.com/Medi1TV/picture?width=200&height=200" group-title="Noticias Internacionales",Medi1 TV Marruecos
 https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-maghreb_jnbspmg/playlist_dvr.m3u8
 
-#EXTINF:-1 tvg-id="MercurioNoticias.ar" tvg-name="Mercurio Noticias" group-title="Noticias Internacionales",Mercurio Noticias
-https://videostream.shockmedia.com.ar/hls/mercuriotv/mercuriotv.m3u8
+#EXTINF:-1 tvg-id="Usuario20261123.0645" tvg-name="Movistar Informa" tvg-logo="https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/movistar-informa.png" group-title="Noticias Internacionales",Movistar Informa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+http://45.188.229.33:8000/play/a1ew/index.m3u8
 
 #EXTINF:-1 tvg-id="NBCNewsNOW.us" tvg-name="NBC News NOW" group-title="Noticias Internacionales",NBC News NOW
 https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99984003
@@ -1054,6 +1075,9 @@ http://45.173.231.22:8000/play/a00j/index.m3u8
 #EXTINF:-1 tvg-id="Usuario20261123.0648" tvg-name="NTN24" tvg-logo="https://i.imgur.com/UoKmSAP.png" group-title="Noticias Internacionales",NTN24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 http://45.188.229.33:8000/play/a0xv/index.m3u8
+
+#EXTINF:-1 tvg-id="MundoTV.0155" tvg-name="Quiero TV Mexico" tvg-logo="https://graph.facebook.com/quierotvGDL/picture?width=200&height=200" group-title="Noticias Internacionales",Quiero TV Mexico
+https://stream.ontvmx.com/ontv/ghxTYEQmKkB2UJyVuW/playlist.m3u8
 
 #EXTINF:-1 tvg-id="RecordNews.br" tvg-name="Record News" group-title="Noticias Internacionales",Record News
 https://rnw-rn.otteravision.com/rnw/rn/rnw_rn.m3u8
@@ -1177,6 +1201,11 @@ http://45.173.231.22:8000/play/a01i/index.m3u8
 #EXTVLCOPT:http-referrer=https://xtrematv.com/?p=1390
 https://stmv6.voxtvhd.com.br/xtremacartoons/xtremacartoons/playlist.m3u8
 
+#EXTINF:-1 tvg-id="Usuario20261123.0190" tvg-name="AE Mundo" tvg-logo="https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/ae-mundo.png" group-title="Documentales y Cultura",AE Mundo
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a18v/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
+http://45.173.231.22:8000/play/a090/index.m3u8
+
 #EXTINF:-1 tvg-id="MundoTV.0225" tvg-name="AKC TV Dogs EN" tvg-logo="https://graph.facebook.com/WatchAKCTV/picture?width=200&height=200" group-title="Documentales y Cultura",AKC TV Dogs EN
 https://install.akctvcontrol.com/speed/broadcast/138/desktop-playlist.m3u8
 
@@ -1253,6 +1282,13 @@ http://45.173.231.22:8000/play/a0cq/index.m3u8
 #EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a1aq/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
 #EXT-X-TVFULL-BACKUP:{"url":"http://158.172.155.130:8000/play/a0dl/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
 http://45.173.231.22:8000/play/a05y/index.m3u8
+
+#EXTINF:-1 tvg-id="Usuario20261123.0332" tvg-name="ID" tvg-logo="https://i.imgur.com/o9SpbMI.png" group-title="Documentales y Cultura",ID
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXT-X-TVFULL-BACKUP:{"url":"http://45.173.231.22:8000/play/a066/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
+#EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a10c/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
+#EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a0uw/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
+http://45.173.231.22:8000/play/a04a/index.m3u8
 
 #EXTINF:-1 tvg-id="LitusTV.ar" tvg-name="Litus TV" tvg-logo="https://i.imgur.com/QIGSf4L.png" group-title="Documentales y Cultura",Litus TV
 https://edge.enhdtv.com/litustv/index.m3u8
@@ -1441,6 +1477,9 @@ https://movil.ejeserver.com/live/lamoradatv.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0082" tvg-name="m2o Italia IT" tvg-logo="https://graph.facebook.com/radiom2o/picture?width=200&height=200" group-title="Música y Radio",m2o Italia IT
 https://4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S62628868/uhdWBlkC1AoO/playlist.m3u8
+
+#EXTINF:-1 tvg-id="MundoTV.0061" tvg-name="Más FM 95.9" tvg-logo="https://i.imgur.com/TJ4gWQM.png" group-title="Música y Radio",Más FM 95.9
+https://vivo.solumedia.com:19360/masfm/masfm.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0062" tvg-name="MasMusica FM" tvg-logo="https://i.imgur.com/tCg7owd.png" group-title="Música y Radio",MasMusica FM
 https://movil.ejeserver.com/live/masmusica.m3u8
@@ -1757,11 +1796,6 @@ https://s.emisoras.tv:8081/chiclana/index.m3u8
 #EXTINF:-1 tvg-id="MundoTV.0070" tvg-name="Activa TV España" tvg-logo="https://graph.facebook.com/activafm.radiomusical/picture?width=200&height=200" group-title="Televisión Internacional",Activa TV España
 https://streamtv.mediasector.es/hls/activatv/index.m3u8
 
-#EXTINF:-1 tvg-id="Usuario20261123.0190" tvg-name="AE Mundo" tvg-logo="https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/ae-mundo.png" group-title="Televisión Internacional",AE Mundo
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a18v/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
-http://45.173.231.22:8000/play/a090/index.m3u8
-
 #EXTINF:-1 tvg-id="MundoTV.0152" tvg-name="America TeVe USA" tvg-logo="https://graph.facebook.com/americateve/picture?width=200&height=200" group-title="Televisión Internacional",America TeVe USA
 https://live.gideo.video/americateve2/master.m3u8
 
@@ -1916,12 +1950,6 @@ https://limited31.todostreaming.es/live/noroestetv-livestream.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (TVFullPro QA)
 https://stmv2.voxtvhd.com.br/crtvchile/crtvchile/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Usuario20261123.0244" tvg-name="De Película" tvg-logo="https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/de-pel-cula.png" group-title="Televisión Internacional",De Película
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a1j2/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
-#EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a1ec/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
-http://45.173.231.22:8000/play/a07j/index.m3u8
-
 #EXTINF:-1 tvg-id="Usuario20261123.0803" tvg-name="DTV" tvg-logo="https://i.imgur.com/OSvegAq.png" group-title="Televisión Internacional",DTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 http://158.172.155.130:8000/play/a0ea/index.m3u8
@@ -1981,13 +2009,6 @@ http://158.172.155.130:8000/play/a0e7/index.m3u8
 #EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a0x1/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
 http://45.173.231.22:8000/play/a09w/index.m3u8
 
-#EXTINF:-1 tvg-id="Usuario20261123.0332" tvg-name="ID" tvg-logo="https://i.imgur.com/o9SpbMI.png" group-title="Televisión Internacional",ID
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXT-X-TVFULL-BACKUP:{"url":"http://45.173.231.22:8000/play/a066/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
-#EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a10c/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
-#EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a0uw/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
-http://45.173.231.22:8000/play/a04a/index.m3u8
-
 #EXTINF:-1 tvg-id="Regional20261123.canal8-lapaz" tvg-name="IERTBCS Canal 8 La Paz" group-title="Televisión Internacional",IERTBCS Canal 8 La Paz
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://s5.mexside.net:1936/xhbzc81/xhbzc81/playlist.m3u8
@@ -2027,19 +2048,12 @@ http://45.173.231.22:8000/play/a04g/index.m3u8
 #EXTINF:-1 tvg-id="MundoTV.0128" tvg-name="M95 Marbella" tvg-logo="https://graph.facebook.com/m95tvmarbella/picture?width=200&height=200" group-title="Televisión Internacional",M95 Marbella
 https://limited2.todostreaming.es/live/m95-livestream.m3u8
 
-#EXTINF:-1 tvg-id="MundoTV.0061" tvg-name="Más FM 95.9" tvg-logo="https://i.imgur.com/TJ4gWQM.png" group-title="Televisión Internacional",Más FM 95.9
-https://vivo.solumedia.com:19360/masfm/masfm.m3u8
-
 #EXTINF:-1 tvg-id="Usuario20261123.0341" tvg-name="MEGA" tvg-logo="https://raw.githubusercontent.com/ByRafaelSystem/futboltotal-links/main/logos/mega-d355d1.png" group-title="Televisión Internacional",MEGA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXT-X-TVFULL-BACKUP:{"url":"http://45.173.231.22:8000/play/a0aa/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
 #EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a13b/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
 #EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a0tr/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
 http://45.173.231.22:8000/play/a06s/index.m3u8
-
-#EXTINF:-1 tvg-id="Usuario20261123.0645" tvg-name="Movistar Informa" tvg-logo="https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/movistar-informa.png" group-title="Televisión Internacional",Movistar Informa
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-http://45.188.229.33:8000/play/a1ew/index.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0193" tvg-name="NDR Niedersachsen Alemania DE" tvg-logo="https://graph.facebook.com/ndrniedersachsen/picture?width=200&height=200" group-title="Televisión Internacional",NDR Niedersachsen Alemania DE
 https://ndrint.akamaized.net/hls/live/2020766/ndr_int/master.m3u8
@@ -2097,9 +2111,6 @@ http://45.173.231.22:8000/play/a04r/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a0vn/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
 http://45.173.231.22:8000/play/a00g/index.m3u8
-
-#EXTINF:-1 tvg-id="MundoTV.0155" tvg-name="Quiero TV Mexico" tvg-logo="https://graph.facebook.com/quierotvGDL/picture?width=200&height=200" group-title="Televisión Internacional",Quiero TV Mexico
-https://stream.ontvmx.com/ontv/ghxTYEQmKkB2UJyVuW/playlist.m3u8
 
 #EXTINF:-1 tvg-id="MundoTV.0261" tvg-name="RASD TV" tvg-logo="https://graph.facebook.com/televisionsaharaui/picture?width=200&height=200" group-title="Televisión Internacional",RASD TV
 https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=12830&live=1
@@ -2159,19 +2170,8 @@ https://2d006483e2aa43fe812f7b464cb2916d.mediatailor.us-east-1.amazonaws.com/v1/
 #EXTINF:-1 tvg-id="MundoTV.0080" tvg-name="Star Chequia CZ" tvg-logo="https://graph.facebook.com/ockostar/picture?width=200&height=200" group-title="Televisión Internacional",Star Chequia CZ
 https://ocko-live.ssl.cdn.cra.cz/channels/ocko_gold/playlist/cze/live_hq.m3u8
 
-#EXTINF:-1 tvg-id="Usuario20261123.0377" tvg-name="Studio Universal" tvg-logo="https://raw.githubusercontent.com/luchochavezfacebook-byte/lista-clasica-/main/logos/usuario_20261123/studio-universal.png" group-title="Televisión Internacional",Studio Universal
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a0u2/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
-http://45.173.231.22:8000/play/a0al/index.m3u8
-
 #EXTINF:-1 tvg-id="MundoTV.0042" tvg-name="Suram TV" tvg-logo="https://i.imgur.com/2N9LCES.png" group-title="Televisión Internacional",Suram TV
 https://livetv.305streamhd.com:3111/live/suramtvlive.m3u8
-
-#EXTINF:-1 tvg-id="Usuario20261123.0368" tvg-name="SURTV" tvg-logo="https://i.imgur.com/QZ2kqFL.png" group-title="Televisión Internacional",SURTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a1ii/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
-#EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a0vr/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
-http://45.173.231.22:8000/play/a00k/index.m3u8
 
 #EXTINF:-1 tvg-id="Usuario20261123.0380" tvg-name="TC Televisión" tvg-logo="https://i.imgur.com/okK02EN.png" group-title="Televisión Internacional",TC Televisión
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
