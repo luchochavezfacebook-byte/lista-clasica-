@@ -6,6 +6,8 @@ import re
 from pathlib import Path
 from urllib.parse import urlsplit, parse_qsl
 
+from generar_lista import CATEGORIES, thematic_category
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -117,7 +119,9 @@ def main():
         expected = len({c['url'] for c in all_hls}) if filename == 'lista_clasica.m3u' else len(youtube_listos)
         assert content.count('#EXTINF:') == expected, 'Cantidad incorrecta de canales'
         if filename == 'lista_clasica.m3u':
-            assert 'group-title="Argentina TV"' in content
+            groups = re.findall(r'group-title="([^"]+)"', content)
+            assert len(groups) == expected and set(groups) <= set(CATEGORIES), 'Categoría temática inválida'
+            assert [CATEGORIES.index(x) for x in groups] == sorted(CATEGORIES.index(x) for x in groups), 'Orden temático inválido'
             assert 'group-title="Argentina YT"' not in content, 'Fuentes YouTube dentro del reproductor HLS'
             assert 'youtube.com/' not in content and 'youtu.be/' not in content, 'Enlace YouTube no reproducible en V62'
             assert 'Mundo TV /' not in content
