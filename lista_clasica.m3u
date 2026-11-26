@@ -2333,7 +2333,10 @@ http://45.188.229.33:8000/play/a1kp/index.m3u8
 #EXT-X-TVFULL-BACKUP:{"url":"http://45.188.229.33:8000/play/a0y7/index.m3u8","headers":{"User-Agent":"Mozilla/5.0"}}
 http://45.188.229.33:8000/play/a1k2/index.m3u8
 
-#EXTINF:-1 tvg-name="El Trece Noticias" tvg-logo="https://i.postimg.cc/HWRGw34L/Logo-Canal-13-200-8.png" group-title="Televisión Nacional",El Trece Noticias
+#EXTINF:-1 tvg-name="El Trece Noticias online" tvg-logo="https://i.postimg.cc/HWRGw34L/Logo-Canal-13-200-8.png" group-title="Televisión Nacional",El Trece Noticias
 https://live-01-02-eltrece.vodgc.net/eltrecetv_noti/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TN Noticias online" tvg-logo="https://i.postimg.cc/tTnKwx9g/250px-TN-todo-noticias-logo-svg.png" group-title="Televisión Nacional",TN Noticias
+https://live-01-01-tn.vodgc.net/TN_DAI_Beta/index.m3u8
 
 
